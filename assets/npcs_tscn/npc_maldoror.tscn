@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/asset_anims/cow_idle.tres" type="Animation" id=1]
+[ext_resource path="res://assets_raw/raw_assets/cow_maldoror.glb" type="PackedScene" id=2]
+[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=3]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.43828
+height = 0.0869251
+
+[sub_resource type="CapsuleShape" id=2]
+radius = 0.43828
+height = 2.44731
+
+[node name="Maldoror" type="KinematicBody"]
+script = ExtResource( 3 )
+
+[node name="CollisionShape1" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.05554, 0, 2.84864, 2.36388 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 2.24898, 0, 0, 0, 2.83167, 0, 0, 0, 1, 0, 2, 0.165839 )
+shape = SubResource( 2 )
+
+[node name="maldoror" parent="." instance=ExtResource( 2 )]
+
+[node name="MaldororAnimationPlayer" type="AnimationPlayer" parent="maldoror"]
+autoplay = "cow_idle"
+anims/cow_idle = ExtResource( 1 )
+
+[editable path="maldoror"]

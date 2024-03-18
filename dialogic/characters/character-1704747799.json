@@ -1,0 +1,21 @@
+{
+	"color": "#ffa23e9c",
+	"description": "",
+	"display_name": "Jenna",
+	"display_name_bool": false,
+	"id": "character-1704747799.json",
+	"mirror_portraits": false,
+	"name": "Jenna Circle",
+	"nickname": "Jenna",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/zhena_face.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/skyscrapers_tscn/buildingA.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/skyscrapers_tscn/buildingB.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/skyscrapers_tscn/buildingC.tscn" type="PackedScene" id=3]
+
+[node name="BuildingContainer" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.44379, 8.12997, 298.535 )
+
+[node name="buildingA1" type="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 64.6322, -8.12997, 42.214 )
+
+[node name="buildingA2" type="Spatial" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -53.2559, -19.13, 114.243 )
+
+[node name="buildingB1" type="Spatial" parent="." instance=ExtResource( 2 )]
+
+[node name="buildingB2" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 162.883, -9.59545, 27.13 )
+
+[node name="buildingB3" type="Spatial" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -159.1, -9.59545, 74.2821 )
+
+[node name="buildingC1" type="Spatial" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -83.0436, -8.12997, 22.779 )
+
+[node name="buildingC2" type="Spatial" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 132.032, -8.12997, 125.779 )

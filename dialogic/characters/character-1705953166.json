@@ -1,0 +1,21 @@
+{
+	"color": "#ff0af850",
+	"description": "",
+	"display_name": "Tunnel To Somewhere",
+	"display_name_bool": true,
+	"id": "character-1705953166.json",
+	"mirror_portraits": false,
+	"name": "Tunnel",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/tunnel_door.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

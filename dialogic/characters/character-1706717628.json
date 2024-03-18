@@ -1,0 +1,21 @@
+{
+	"color": "#ffff0000",
+	"description": "",
+	"display_name": "Ajax Floodlamp",
+	"display_name_bool": true,
+	"id": "character-1706717628.json",
+	"mirror_portraits": false,
+	"name": "Ajax",
+	"nickname": "Ajax Floodlamp",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/ajax_face.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

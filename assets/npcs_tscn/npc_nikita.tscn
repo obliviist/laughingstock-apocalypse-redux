@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets_raw/raw_assets/nikita.glb" type="PackedScene" id=1]
+[ext_resource path="res://assets/npcs_tscn/npc_nikita.gd" type="Script" id=2]
+[ext_resource path="res://assets/asset_anims/nikita_wave.tres" type="Animation" id=3]
+[ext_resource path="res://assets/asset_anims/nikita_idle.tres" type="Animation" id=4]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.6
+
+[node name="Nikita" type="KinematicBody"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.824085, 0 )
+shape = SubResource( 1 )
+
+[node name="nikita" parent="." instance=ExtResource( 1 )]
+
+[node name="NikitaAnimationPlayer" type="AnimationPlayer" parent="nikita"]
+autoplay = "nikita_idle"
+anims/nikita_idle = ExtResource( 4 )
+anims/nikita_wave = ExtResource( 3 )
+
+[editable path="nikita"]

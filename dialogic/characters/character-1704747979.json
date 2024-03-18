@@ -1,0 +1,21 @@
+{
+	"color": "#ff0040ff",
+	"description": "",
+	"display_name": "Moose",
+	"display_name_bool": false,
+	"id": "character-1704747979.json",
+	"mirror_portraits": false,
+	"name": "Moose Circle",
+	"nickname": "Moose",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/muuzh_face.png"
+		}
+	],
+	"scale": 100,
+	"theme": "theme-1704817479.cfg"
+}

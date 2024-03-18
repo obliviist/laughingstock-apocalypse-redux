@@ -1,0 +1,21 @@
+{
+	"color": "#fff7dd0d",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1705438215.json",
+	"mirror_portraits": false,
+	"name": "Chicken",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/chicken_face.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

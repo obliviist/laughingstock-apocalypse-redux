@@ -1,0 +1,180 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_voyager.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What's your deal anyway?\nYou must not be used to having neighbours out here, huh?\nNot very friendly but I guess us Drifters are used to that."
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "How long have you been living out here?"
+		},
+		{
+			"choice": "My whole life",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can tell. Y'all have a lot of crap out here.\nSurprisingly you don't have much to say, though.\nPretty rare for someone of your age to not have much to say..."
+		},
+		{
+			"choice": "(Lie) I don't live here",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You think we're stupid or something??"
+		},
+		{
+			"choice": "Say nothing",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Where is this hostility coming from? You're no fun, y'know?"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Look, I get it: \"putting yourself out there\" can be embarrassing... but you should try it some time."
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[wave amp 50.0 connected=1]Hahahaha![/wave] I bet you think I sound like your parents!!!!"
+		},
+		{
+			"choice": "They're not my parents",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hm? I guess it was a jerk move to assume.\nI guess you've figured that they left you here or something.\nThat's the only reason we moved in on this campsite because we saw them both leave in such a hurry."
+		},
+		{
+			"choice": "Where are they?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I was about to ask you that! When I saw you approach, it scared the crap outta me!\nI guess you've figured that they left you here or something.\nThat's the only reason we moved in on this campsite because we saw them both leave in such a hurry."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Sooooooo.....\nIs it cool if we hang out here overnight?"
+		},
+		{
+			"choice": "Ask about Niki",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A kid called \"Niki\", you say?\nOh, right. I remember. The kid with the weird alien lookin' cow by his side.\nMatter of fact, I didn't see him. \ni just saw the two adults jet the hell out of here in their camper like the Grim Reaper was hot on their tail."
+		},
+		{
+			"choice": "No. Leave.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We'll be gone in the morning. I'll shake on that.\nJeez... I feel bad for you now, kid.\nIf the other Drifters and I hear or see anything, we'll be sure to tell you."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1707417544.json",
+		"name": "voyager1"
+	}
+}

@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=1]
+[ext_resource path="res://assets_raw/raw_assets/seeker.glb" type="PackedScene" id=2]
+[ext_resource path="res://assets/asset_anims/seeker_sit.tres" type="Animation" id=3]
+[ext_resource path="res://assets/asset_anims/seeker_idle.tres" type="Animation" id=4]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.7
+height = 0.8
+
+[node name="Seeker" type="KinematicBody"]
+script = ExtResource( 1 )
+npc = "seeker"
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1, 0 )
+shape = SubResource( 1 )
+
+[node name="seeker" parent="." instance=ExtResource( 2 )]
+
+[node name="SeekerAnimationPlayer" type="AnimationPlayer" parent="seeker"]
+autoplay = "seeker_sit"
+anims/seeker_idle = ExtResource( 4 )
+anims/seeker_sit = ExtResource( 3 )
+
+[editable path="seeker"]

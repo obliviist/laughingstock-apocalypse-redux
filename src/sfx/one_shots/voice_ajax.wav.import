@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/voice_ajax.wav-0641efaef68c02d04efcf2a47d2cf834.sample"
+
+[deps]
+
+source_file="res://src/sfx/one_shots/voice_ajax.wav"
+dest_files=[ "res://.import/voice_ajax.wav-0641efaef68c02d04efcf2a47d2cf834.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

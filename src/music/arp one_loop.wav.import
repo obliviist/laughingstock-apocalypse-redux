@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/arp one_loop.wav-f1277fba0eed2feed78a13be0687b68e.sample"
+
+[deps]
+
+source_file="res://src/music/arp one_loop.wav"
+dest_files=[ "res://.import/arp one_loop.wav-f1277fba0eed2feed78a13be0687b68e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

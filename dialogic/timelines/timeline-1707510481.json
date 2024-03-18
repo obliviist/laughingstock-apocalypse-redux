@@ -1,0 +1,93 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1707510355.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/npc_cave.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1707510355.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hi, I'm the  [color=#bbff00]Rap Rock Cave[/color]!\nThere’s nothing I hate more than genres, grr!\nI get our inherent need to categorize, classify, and make sense of everything around us.\nBut do we have to beat it to death like we do with, say, sub genres and sub-sub genres?\nIt makes my old brain melt! I just don't get the youth of today!\nMy unsolicited advice is to use your ears and follow your own bliss.\nAnd thank goodness that video games don’t have that issue in this day and age."
+		},
+		{
+			"animation": "slide_out_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1707510355.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Make it stop!!! I can't tell if its being sarcastic or not.\nYou found the wrong exit, chump. Move on or else it'll just keep talking about stuff that doesn't matter."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1707510481.json",
+		"name": "cave0"
+	}
+}

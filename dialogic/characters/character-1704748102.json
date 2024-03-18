@@ -1,0 +1,21 @@
+{
+	"color": "#ff00e529",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1704748102.json",
+	"mirror_portraits": false,
+	"name": "Niki Circle",
+	"nickname": "Niki",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/nikita_face.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

@@ -1,0 +1,161 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_ajax.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "How do I escape this dump?\nThis world sucks!!!\nI should've never left the [color=#ff0000]Urn[/color]. The joke is on both of us.\nMy boss is gonna be pissed off because I fell into the wrong vale.\n...\nYou look like you aren't computing a word I say.\n[color=#0f70ff]Vale of the Living[/color]? [color=#ff0000]Vale of the Dead[/color]? Buddy... do you even know where YOU are?\n[color=#0f70ff]Yav[/color]? [color=#ff0000]Nav[/color]? NO?"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "It's all around us. We've always been here. Especially the [color=#9effef]spiders[/color]."
+		},
+		{
+			"choice": "Spiders?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I HATE the [color=#9effef]spiders[/color], buddy - acting all smart, spinning their webs of lies, skittering all over the place.\nOr even worse: not moving at all like those ones you can see when you look above you.\nCreeps me out, man. I'll never ever get used to them as long as I've been a [color=#ff0000]Reaper[/color].\nI guess, they're nice though? I hate nice things, though.\nThat's why Maldoror and I here are such good pals."
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Any more questions?"
+		},
+		{
+			"choice": "Reaper?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I made a mistake. I shouldn't even really discuss this with you [color=#0f70ff]Yav folk[/color].\nI was off-duty before my fall.\nI reap to eke out a nice deathly existence between [color=#0f70ff]Yav[/color] and [color=#ff0000]Nav[/color]... even if my Boss is a clown, I can't complain.\nBut don't get confused: I don't reap like you do on a \"Farm\". It's the other, less honorable definition.\nSee, when you die here, you end up in a very chaotic, very busy place. \nThe majority of [color=#ff0000]Nav folk[/color] leave this world kicking, screaming, knowing little peace.\nTherefore, [color=#ff0000]Nav folk[/color] are predisposed to panic attacks, melancholy, upset stomachs - \n- you name it - as they try to make sense of deathly existence upon arrival in the [color=#ff0000]Nav[/color].\nAnd that's where I come in.\nI help move corpses and ash so that expired friends, families, and enemies can be reunited in death.\nYou ever see a scary orb of light above a grave? That's no ghost, that's Ajax [color=#ff0000]Floodlamp[/color]."
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good. Who cares, right?\nNo point in saying much of anything these days."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Please get to the point",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Say no more! Say no more!\nI like your style, buddy. Rude, few words to say, and an empty look on your face to match.\nThat's why Maldoror and I here are such good pals."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I guess that's why Maldoror likes you so much, too, huh?"
+		},
+		{
+			"choice": "Maldoror is a cow",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, Maldoror just showed up outta nowhere on your farm, didn't she?\nWhere'd you think she came from? The oddest cow around?\nPlease, let's just get out of here already. \nCheck out these [color=#bbff00]rocks and caves[/color] and see if you can find a way out for us."
+		},
+		{
+			"choice": "Let's leave",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah, that's right! You're good, kid. You really are. I think we could've been frenemies in another world.\nAnyway, check out these rocks and see if you can find a way out for us."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1706718861.json",
+		"name": "ajax0"
+	}
+}

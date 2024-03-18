@@ -1,0 +1,97 @@
+{
+	"events": [
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hey, can I tell you a secret? I found a new place for us to play in."
+		},
+		{
+			"choice": "Secret place?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay, y'know the dump over there that Moose always tells us to stay away from?\nI know it *used* to be a garbage dump but now it's got too many plants growing in it.\nWell, I think I saw a door down there hidden in the grass."
+		},
+		{
+			"choice": "Not now, Niki",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "C'mon VC! I know you're acting all cool and grown up! Please hear me out. Please??"
+		},
+		{
+			"choice": "Secret place?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay, y'know the dump over there that Moose always tells us to stay away from?\nI know it *used* to be a garbage dump but now it's all overgrown and Moose thinks it's unsafe.\nWell, I think I saw a door down there hidden in the grass."
+		},
+		{
+			"choice": "Enough, Niki.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1708754875.json",
+		"name": "nikita2"
+	}
+}

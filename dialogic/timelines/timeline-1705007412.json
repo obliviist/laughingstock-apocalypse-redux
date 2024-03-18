@@ -1,0 +1,92 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_voyager.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey, pal.\nWhy the long face?\nWe're just crashing in this area for the night."
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hope you don't have a problem with that? [wave amp 50.0 connected=1]Hehehehehe...[/wave]"
+		},
+		{
+			"choice": "Never mind",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Insult (STR=0)",
+			"condition": "",
+			"definition": "1708997325-787",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I bet you're really proud of that one but it's not gonna work.\nI've had just about every insult in the book hurled at me.\nTake a walk."
+		},
+		{
+			"choice": "Intimidate (STR+1)",
+			"condition": "==",
+			"definition": "1708997325-787",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Easy, easy!!!\nLoud and clear. I'm sorry we stole your cattle last night. I really am.\nThings are tough for us right now and we were so downtrodden, we were deranged before we found your farm.\nWe won't be any more trouble and we'll be gone in the morning, I promise."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1705007412.json",
+		"name": "voyager0"
+	}
+}

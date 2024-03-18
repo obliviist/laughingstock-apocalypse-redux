@@ -1,0 +1,173 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_cellar_spider.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "BEGONE!!!!!!!\nOh, it's human.\nAhem, WELCOME HUMAN!!!!!\nIt's so bright in this house we can barely see. Ow."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ask Spider:"
+		},
+		{
+			"choice": ".... Niki?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What's that???? We hear you... sort of:\n\"Nicka nicka nan. Give me some pancake, and then I'll be gone...\"\n\"But if you give me none, I'll throw a great stone. And down your door shall come.\""
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Niki, yes?"
+		},
+		{
+			"choice": "No!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "DON'T HURT US!!!! We don't have any food. Pancakes would be sooo nice but we can't cook here."
+		},
+		{
+			"choice": "You ate him?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "NO!!!! Human taste BLEGH!!! Never, ever eat human.\nHuman mind is a terrible, terrible thing to taste."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "This is my cottage",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah, cottage! We love a good cottage. Lots of places for us to hide."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I know, I know! Let's play Hide & Seek: Human versus Spider.\nI get really, really small and hide in [color=#71a33f]Cellar[/color]. Human stay big and seek me in [color=#71a33f]Cellar[/color]..\nDeal?"
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Play Hide & Seek with the Spider?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "YAYYYYYY!!!!\nGood luck!!!"
+		},
+		{
+			"emit_signal": "hide_and_seek",
+			"event_id": "dialogic_040"
+		},
+		{
+			"definition": "1708980730-573",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1708974775.json",
+		"name": "spider0"
+	}
+}

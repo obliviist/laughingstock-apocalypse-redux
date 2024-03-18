@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets_raw/trees and bushes by ElegantCrow/bush03.fbx" type="PackedScene" id=1]
+
+[node name="Bush_Green" instance=ExtResource( 1 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0 )

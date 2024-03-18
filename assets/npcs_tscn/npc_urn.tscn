@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=1]
+[ext_resource path="res://assets/environment_tscn/ajax_urn.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/asset_anims/urn_float.tres" type="Animation" id=3]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.5
+height = 0.3
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 88, 0 ) ]
+}
+
+[node name="Urn" type="KinematicBody"]
+script = ExtResource( 1 )
+npc = "urn"
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.447711, 1.95701e-08 )
+shape = SubResource( 1 )
+
+[node name="ajax_urn" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.0348994, 0, 0.999391, 0, 1, 0, -0.999391, 0, 0.0348994, 0, 0, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ajax_urn"]
+autoplay = "urn_float"
+anims/RESET = SubResource( 2 )
+anims/urn_float = ExtResource( 3 )
+
+[editable path="ajax_urn"]

@@ -1,0 +1,49 @@
+{
+	"glossary": [
+
+	],
+	"variables": [
+		{
+			"id": "1708711763-648",
+			"name": "cow_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1708980730-573",
+			"name": "unlock_hatch",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1708994432-648",
+			"name": "cellar_spider_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1708997325-787",
+			"name": "player_strength",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1709051878-648",
+			"name": "radio_handler",
+			"type": 0,
+			"value": "2"
+		},
+		{
+			"id": "1709064271-787",
+			"name": "hide_seek_win",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1709066220-648",
+			"name": "find_urn",
+			"type": 0,
+			"value": "0"
+		}
+	]
+}

@@ -1,0 +1,102 @@
+{
+	"events": [
+		{
+			"animation": "bouncing_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1708983634.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_spider.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1708983634.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "WRONG!!!!\nAre you crazy? We are NOT playing Hide & Seek.\nKeep looking!!!"
+		},
+		{
+			"definition": "1708994432-648",
+			"event_id": "dialogic_014",
+			"operation": "+",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"condition": ">=",
+			"definition": "1708994432-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1708983634.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Need help?"
+		},
+		{
+			"choice": "Help me?",
+			"condition": "<=",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": "2"
+		},
+		{
+			"character": "character-1708983634.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hm?? We don't feel sorry enough for the human yet.\nKEEP TRYING PATHETIC!!!!"
+		},
+		{
+			"choice": "Helpful Hint",
+			"condition": ">=",
+			"definition": "1708994432-648",
+			"event_id": "dialogic_011",
+			"value": "2"
+		},
+		{
+			"character": "character-1708983634.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Did you forget the rules, human??? SHAME ON YOU!\nYou are looking for a teeny, tiny one of us.\nWe hide very well when tiny. BUT!\nWe could be hiding in a secret place behind stuff, not out in the open.\nGot it?? KEEP TRYING PATHETIC!!!!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1708983729.json",
+		"name": "cellar_spider0"
+	}
+}

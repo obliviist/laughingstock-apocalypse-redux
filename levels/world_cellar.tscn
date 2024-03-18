@@ -1,0 +1,261 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/npcs_tscn/npc_graves.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/environment_tscn/cellar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=4]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/environment_tscn/hatch_forth.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/environment_tscn/rock_void_var2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/gui/game_score.gd" type="Script" id=9]
+[ext_resource path="res://assets/environment_tscn/rock_void_var1.tscn" type="PackedScene" id=10]
+[ext_resource path="res://levels/world_cellar.gd" type="Script" id=11]
+[ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=12]
+[ext_resource path="res://assets/environment_tscn/cellar_wall.tscn" type="PackedScene" id=13]
+[ext_resource path="res://environment/world_cellar_environment.tres" type="Environment" id=14]
+[ext_resource path="res://assets/npcs_tscn/npc_moose.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/npcs_tscn/npc_radio.gd" type="Script" id=16]
+[ext_resource path="res://assets/npcs_tscn/npc_red_flower.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/npcs_tscn/npc_urn.tscn" type="PackedScene" id=18]
+[ext_resource path="res://assets/farm_tscn/basket_var2.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/farm_tscn/logs_var1.tscn" type="PackedScene" id=20]
+[ext_resource path="res://assets/environment_tscn/chair.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/farm_tscn/basket_var1.tscn" type="PackedScene" id=22]
+[ext_resource path="res://assets/npcs_tscn/npc_spider.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/farm_tscn/storage_var5.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/foliage_tscn/bush_green.tscn" type="PackedScene" id=25]
+[ext_resource path="res://assets/environment_tscn/table.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/environment_tscn/barrel_blue.tscn" type="PackedScene" id=27]
+[ext_resource path="res://assets/environment_tscn/photos.tscn" type="PackedScene" id=28]
+[ext_resource path="res://assets/environment_tscn/barrel_red.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/npcs_tscn/npc_jenna.tscn" type="PackedScene" id=30]
+[ext_resource path="res://assets/npcs_tscn/npc_urn.gd" type="Script" id=31]
+
+[sub_resource type="BoxShape" id=60]
+extents = Vector3( 1000, 0.8, 1000 )
+
+[sub_resource type="Animation" id=61]
+resource_name = "cellar_wall_fall"
+length = 1.66667
+tracks/0/type = "transform"
+tracks/0/path = NodePath("cellar_wall_fall")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, -0.417084, 0, 0, 0, 0, 1, 1, 1, 1, 0.0666667, 1, 0, -0.417084, 0, 0, 0, 0, 1, 1, 1, 1, 0.133333, 1, -0.00072724, -0.509266, -0.0045594, 0.00343855, -3.38961e-06, -0.000652793, 0.999994, 1, 1, 1, 0.2, 1, -0.00250494, -0.7346, -0.0157046, 0.016757, -5.00274e-05, -0.00282837, 0.999856, 1, 1, 1, 0.266667, 1, -0.00303017, -0.811773, -0.0189975, 0.0398199, -0.000234808, -0.00569937, 0.999191, 1, 1, 1, 0.333333, 1, -0.00161609, -0.706715, -0.010132, 0.0710141, -0.000596047, -0.00837187, 0.99744, 1, 1, 1, 0.4, 1, -0.000202011, -0.601658, -0.0012665, 0.110537, -0.0010834, -0.00971612, 0.993824, 1, 1, 1, 0.466667, 1, 0, -0.616921, 0, 0.156048, -0.00149419, -0.00925753, 0.987705, 1, 1, 1, 0.533333, 1, 0, -0.715513, 0, 0.206486, -0.00167362, -0.00717301, 0.978422, 1, 1, 1, 0.666667, 1, 0, -0.944789, 0, 0.314029, -0.00084793, -0.0007455, 0.949413, 1, 1, 1, 0.733333, 1, 0, -1.01223, 0, 0.367359, 0.000110937, 0.00234551, 0.930076, 1, 1, 1, 0.8, 1, 0, -1.05426, 0, 0.418084, 0.00111477, 0.00463457, 0.908396, 1, 1, 1, 0.866667, 1, 0, -1.07719, 0, 0.464613, 0.00180008, 0.00557995, 0.885495, 1, 1, 1, 1, 1, 0, -1.10289, 0, 0.541897, 0.00172369, 0.00445037, 0.840431, 1, 1, 1, 1.06667, 1, 0, -1.1238, 0, 0.573026, 0.00120411, 0.00331353, 0.81953, 1, 1, 1, 1.13333, 1, 0, -1.15509, 0, 0.600249, 0.00054485, 0.00211772, 0.79981, 1, 1, 1, 1.4, 1, 0, -1.30152, 0, 0.677012, -0.000625958, -0.000141665, 0.735972, 1, 1, 1, 1.46667, 1, 0, -1.31892, 0, 0.689545, -0.000431498, -0.000119565, 0.724243, 1, 1, 1, 1.53333, 1, 0, -1.3219, 0, 0.698961, -0.000227924, -7.04766e-05, 0.71516, 1, 1, 1, 1.6, 1, 0, -1.3219, 0, 0.704842, -7.0049e-05, -2.32786e-05, 0.709365, 1, 1, 1, 1.66667, 1, 0, -1.3219, 0, 0.707107, 0, 0, 0.707107, 1, 1, 1 )
+
+[sub_resource type="Animation" id=62]
+resource_name = "cellar_wall_fall"
+length = 1.66667
+tracks/0/type = "transform"
+tracks/0/path = NodePath("cellar_wall_fall")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, -0.417084, 0, 0, 0, 0, 1, 1, 1, 1, 0.0666667, 1, 0, -0.417084, 0, 0, 0, 0, 1, 1, 1, 1, 0.133333, 1, -0.00072724, -0.509266, -0.0045594, 0.00343855, -3.38961e-06, -0.000652793, 0.999994, 1, 1, 1, 0.2, 1, -0.00250494, -0.7346, -0.0157046, 0.016757, -5.00274e-05, -0.00282837, 0.999856, 1, 1, 1, 0.266667, 1, -0.00303017, -0.811773, -0.0189975, 0.0398199, -0.000234808, -0.00569937, 0.999191, 1, 1, 1, 0.333333, 1, -0.00161609, -0.706715, -0.010132, 0.0710141, -0.000596047, -0.00837187, 0.99744, 1, 1, 1, 0.4, 1, -0.000202011, -0.601658, -0.0012665, 0.110537, -0.0010834, -0.00971612, 0.993824, 1, 1, 1, 0.466667, 1, 0, -0.616921, 0, 0.156048, -0.00149419, -0.00925753, 0.987705, 1, 1, 1, 0.533333, 1, 0, -0.715513, 0, 0.206486, -0.00167362, -0.00717301, 0.978422, 1, 1, 1, 0.666667, 1, 0, -0.944789, 0, 0.314029, -0.00084793, -0.0007455, 0.949413, 1, 1, 1, 0.733333, 1, 0, -1.01223, 0, 0.367359, 0.000110937, 0.00234551, 0.930076, 1, 1, 1, 0.8, 1, 0, -1.05426, 0, 0.418084, 0.00111477, 0.00463457, 0.908396, 1, 1, 1, 0.866667, 1, 0, -1.07719, 0, 0.464613, 0.00180008, 0.00557995, 0.885495, 1, 1, 1, 1, 1, 0, -1.10289, 0, 0.541897, 0.00172369, 0.00445037, 0.840431, 1, 1, 1, 1.06667, 1, 0, -1.1238, 0, 0.573026, 0.00120411, 0.00331353, 0.81953, 1, 1, 1, 1.13333, 1, 0, -1.15509, 0, 0.600249, 0.00054485, 0.00211772, 0.79981, 1, 1, 1, 1.4, 1, 0, -1.30152, 0, 0.677012, -0.000625958, -0.000141665, 0.735972, 1, 1, 1, 1.46667, 1, 0, -1.31892, 0, 0.689545, -0.000431498, -0.000119565, 0.724243, 1, 1, 1, 1.53333, 1, 0, -1.3219, 0, 0.698961, -0.000227924, -7.04766e-05, 0.71516, 1, 1, 1, 1.6, 1, 0, -1.3219, 0, 0.704842, -7.0049e-05, -2.32786e-05, 0.709365, 1, 1, 1, 1.66667, 1, 0, -1.3219, 0, 0.707107, 0, 0, 0.707107, 1, 1, 1 )
+
+[node name="World_Cellar" type="Spatial"]
+script = ExtResource( 11 )
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 4 )]
+environment = ExtResource( 14 )
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 17.7217, -0.815005 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+
+[node name="Env" parent="." instance=ExtResource( 6 )]
+
+[node name="Death" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.59768, 0 )
+monitorable = false
+
+[node name="WaterCollisionShape" type="CollisionShape" parent="Death"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+shape = SubResource( 60 )
+
+[node name="Score" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.83777, 0 )
+monitorable = false
+
+[node name="WaterCollisionShape" type="CollisionShape" parent="Score"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+shape = SubResource( 60 )
+
+[node name="GUI" parent="." instance=ExtResource( 1 )]
+
+[node name="GameScore" type="Label" parent="."]
+visible = false
+margin_left = 21.0
+margin_top = 21.0
+margin_right = 162.0
+margin_bottom = 69.0
+theme = ExtResource( 12 )
+script = ExtResource( 9 )
+
+[node name="Cellar" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.7, 0 )
+
+[node name="photos" parent="Cellar" instance=ExtResource( 28 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 62.0579, 0.359817, 13.6058 )
+
+[node name="Graves" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.835825, 0.0107227, -0.548892, -0.0128278, 0.999918, 0, 0.548846, 0.00704108, 0.835894, 62.6011, 25.1232, -6.85683 )
+npc = "graves"
+
+[node name="RedFlower" parent="." instance=ExtResource( 17 )]
+transform = Transform( 0.889807, 0, -0.456337, 0, 1, 0, 0.456337, 0, 0.889807, 59.9179, 24.7565, 3.52115 )
+
+[node name="Urn" parent="." instance=ExtResource( 18 )]
+transform = Transform( -0.173665, 0, -0.984805, 0, 1, 0, 0.984805, 0, -0.173665, 60.0715, 15.8679, 5.43279 )
+script = ExtResource( 31 )
+dialog_index = 1
+
+[node name="CellarGate1" parent="." instance=ExtResource( 13 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 55, 15.0579, -10 )
+gate = "wall"
+
+[node name="CellarGate2" parent="." instance=ExtResource( 13 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 55, 15.0579, 10 )
+gate = "wall"
+dialog_index = 1
+
+[node name="AnimationPlayer" parent="CellarGate2/cellar_wall" index="1"]
+anims/cellar_wall_fall = SubResource( 61 )
+
+[node name="CellarWallAnimationPlayer" parent="CellarGate2/cellar_wall" index="2"]
+anims/cellar_wall_fall = SubResource( 62 )
+
+[node name="Hatch" parent="." instance=ExtResource( 7 )]
+transform = Transform( -1.03169, 0, -1.06634e-07, 8.78101e-15, -2.47164, -1.47321e-07, -9.01933e-08, -5.96046e-08, 1.21975, -2.6304e-16, 23.853, -5 )
+gate = "hatch"
+dialog_index = 1
+
+[node name="Rock1" parent="." instance=ExtResource( 10 )]
+transform = Transform( 0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, 50.2438, 18.5842, -4.4315 )
+
+[node name="Rock2" parent="." instance=ExtResource( 10 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 50.3264, 14.9919, -5.1858 )
+
+[node name="Rock3" parent="." instance=ExtResource( 8 )]
+transform = Transform( -0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, -0.258819, 50.6091, 18.9919, 4.41474 )
+
+[node name="Rock4" parent="." instance=ExtResource( 10 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 50.0154, 14.9919, 5.1289 )
+
+[node name="Rock5" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1262, 14.9919, -4.53953 )
+
+[node name="Rock6" parent="." instance=ExtResource( 8 )]
+transform = Transform( 0.0405678, 0, 0.999177, 0, 1, 0, -0.999177, 0, 0.0405678, -26.1105, 14.9919, 4.53375 )
+
+[node name="Chair1" parent="." instance=ExtResource( 21 )]
+transform = Transform( -0.821209, 0, 0.570628, 0, 1, 0, -0.570628, 0, -0.821209, -13.0577, 14.929, 37.7372 )
+
+[node name="Chair2" parent="." instance=ExtResource( 21 )]
+transform = Transform( -0.0386736, 0.751743, 0.658322, 0.998679, 0.0513773, 2.87593e-08, -0.0338227, 0.657452, -0.752737, -13.2342, 15.3792, 33.5078 )
+
+[node name="Chair3" parent="." instance=ExtResource( 21 )]
+transform = Transform( -0.0226608, 0.440485, -0.897474, 0.998679, 0.0513773, 2.87593e-08, 0.0461098, -0.896289, -0.441067, 60.332, 15.3792, -1.68796 )
+
+[node name="logs1" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -7.01966, 14.8, 37.3318 )
+
+[node name="logs2" parent="." instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -10.3956, 14.8, 37.3318 )
+
+[node name="basket1" parent="." instance=ExtResource( 19 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.35818, 15.6172, 33.4914 )
+
+[node name="basket2" parent="." instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.13974, 15.6172, 31.5624 )
+
+[node name="Spider1" parent="." instance=ExtResource( 23 )]
+transform = Transform( -0.0473675, 0, 0.998877, 0, 1, 0, -0.998877, 0, -0.0473675, -32.1532, 15.5959, 5.40166 )
+npc = "cellar_spider"
+
+[node name="Spider2" parent="." instance=ExtResource( 23 )]
+transform = Transform( 0.0306533, 0.310709, 0.950011, 0.0153208, 0.9502, -0.311266, -0.999413, 0.0240962, 0.0243664, -19.6579, 18.4105, 24.9381 )
+npc = "cellar_spider"
+
+[node name="Spider3" parent="." instance=ExtResource( 23 )]
+transform = Transform( -0.337839, -0.041898, -0.940272, 0.0285949, 0.998093, -0.0547492, 0.940773, -0.0453831, -0.335995, 59.8914, 26.5801, 15.8294 )
+npc = "cellar_spider"
+
+[node name="Spider4" parent="." instance=ExtResource( 23 )]
+transform = Transform( 0.278102, -0.0271108, -0.414637, 0.0273965, 0.499045, -0.0142545, 0.414619, -0.0147908, 0.279057, 61.3314, 16.7493, -6.15695 )
+script = ExtResource( 16 )
+dialog_index = 1
+
+[node name="Moose" parent="." instance=ExtResource( 15 )]
+transform = Transform( 0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 59.9548, 14.7806, 3 )
+dialog_index = 1
+
+[node name="Jenna" parent="." instance=ExtResource( 30 )]
+transform = Transform( 0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 58.997, 14.7806, 4.21189 )
+npc = "jenna"
+dialog_index = 1
+
+[node name="table1" parent="." instance=ExtResource( 26 )]
+transform = Transform( 0.311589, -0.0466774, -0.326035, 0.0311697, 0.859221, -0.0114244, 0.480548, -0.0254657, 0.212144, 61.3425, 14.8182, -6.10767 )
+
+[node name="table2" parent="." instance=ExtResource( 26 )]
+transform = Transform( -0.260376, 0.0466775, 0.346096, 0.00100206, -0.859221, 0.0240264, 0.511067, 0.0254657, 0.17628, 58.7011, 16.7548, 14.2809 )
+
+[node name="Storage_Var6" parent="." instance=ExtResource( 24 )]
+transform = Transform( -0.0312785, 0.0558544, 0.999367, -0.00547038, 1.00903, -0.0553778, -1.95106, -0.00372455, -0.0158661, -20.7499, 15.3738, 24.6149 )
+
+[node name="Bush_Green1" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -5.02264, 14.6669, 1.65939 )
+
+[node name="Bush_Green2" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -22.4127, 14.6669, -2.07086 )
+
+[node name="Bush_Green3" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.07688, 14.6669, 9.89684 )
+
+[node name="Bush_Green4" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -4.09565, 14.6669, 21.5955 )
+
+[node name="Bush_Green5" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -12.4556, 14.6669, 29.3531 )
+
+[node name="Bush_Green6" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 13.0802, 14.6669, 30.9116 )
+
+[node name="Bush_Green7" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 35.9322, 14.6669, 30.9939 )
+
+[node name="Bush_Green8" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 41.9839, 14.6669, 38.6452 )
+
+[node name="Bush_Green9" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.191928, 0, -0.230572, 0, 0.3, 0, 0.230572, 0, 0.191928, 34.635, 14.6669, -2.16744 )
+
+[node name="Bush_Green10" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.154431, 0, -0.257199, 0, 0.3, 0, 0.257199, 0, 0.154431, 46.0629, 14.6669, -8.75292 )
+
+[node name="Bush_Green11" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 43.8352, 14.6669, 9.04598 )
+
+[node name="Bush_Green12" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.0469355, 0, -0.296306, 0, 0.3, 0, 0.296306, 0, 0.0469355, 52.5103, 14.6669, -0.167233 )
+
+[node name="barrel_red" parent="." instance=ExtResource( 29 )]
+transform = Transform( 0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, 62.7579, 14.8117, 16.9206 )
+
+[node name="barrel_blue" parent="." instance=ExtResource( 27 )]
+transform = Transform( 0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 61.6127, 14.8117, 17.7528 )
+
+[connection signal="body_entered" from="Death" to="Player" method="_on_Death_body_entered"]
+[connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
+
+[editable path="GUI"]
+[editable path="CellarGate1"]
+[editable path="CellarGate1/cellar_wall"]
+[editable path="CellarGate2"]
+[editable path="CellarGate2/cellar_wall"]

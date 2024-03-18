@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets_raw/raw_assets/wood1.material" type="Material" id=1]
+[ext_resource path="res://assets_raw/raw_assets/table.glb" type="PackedScene" id=2]
+
+[node name="table" instance=ExtResource( 2 )]
+
+[node name="table" parent="." index="0"]
+transform = Transform( 0.666572, 0, 0, 0, 0.0782415, 0, 0, 0, 0.882591, 0, 0.3, 0 )
+material/0 = ExtResource( 1 )

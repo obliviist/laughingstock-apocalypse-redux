@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/asset_anims/chicken_idle.tres" type="Animation" id=1]
+[ext_resource path="res://assets_raw/raw_assets/chicken.glb" type="PackedScene" id=2]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.3
+height = 0.130687
+
+[sub_resource type="CapsuleShape" id=2]
+radius = 0.222196
+height = 0.733686
+
+[node name="Chicken" type="KinematicBody"]
+
+[node name="CollisionShape1" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.08364, 0.619088 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 2.42999, 0, 0, 0, 1.67586, 0, 0, 0, 1, 0, 0.724228, 0.179543 )
+shape = SubResource( 2 )
+
+[node name="chicken" parent="." instance=ExtResource( 2 )]
+
+[node name="ChickenAnimationPlayer" type="AnimationPlayer" parent="chicken"]
+autoplay = "chicken_idle"
+anims/chicken_idle = ExtResource( 1 )
+
+[editable path="chicken"]

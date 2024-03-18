@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/interactable.gd" type="Script" id=1]
+[ext_resource path="res://assets_raw/raw_assets/red_flower.material" type="Material" id=2]
+[ext_resource path="res://assets_raw/raw_assets/red_flower.glb" type="PackedScene" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.597892, 1, 0.511949 )
+
+[node name="Flower" type="RigidBody"]
+script = ExtResource( 1 )
+
+[node name="red_flower" parent="." instance=ExtResource( 3 )]
+
+[node name="red_flower" parent="red_flower" index="0"]
+material/0 = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0560886, 0.688549, -0.119993 )
+shape = SubResource( 1 )
+
+[editable path="red_flower"]

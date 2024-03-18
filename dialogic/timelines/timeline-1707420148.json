@@ -1,0 +1,108 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_ajax.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We did it!\nNow the only things I hate more than geology and Rock music are..."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What does Ajax hate the most?"
+		},
+		{
+			"choice": "Voids?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "HA!!!! That's pretty funny, actually.\nI'm afraid you're incorrect and the objects of my repulsion are [color=#9effef]spiders[/color]."
+		},
+		{
+			"choice": "Families?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wrong! \nJeez, speak for yourself! I had a family once and they weren't so bad.\nI hate [color=#9effef]spiders[/color], of course."
+		},
+		{
+			"choice": "Spiders?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You said it!!! \nYou're a pretty good listener, y'know? That doesn't go unnoticed by someone as bored with conversation as I am."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Watch out for the ones around here, eh?\nThey'll try to help you, cut you into a deal, or whatever sick game they feel like playing on a night like this."
+		},
+		{
+			"change_timeline": "timeline-1708971593.json",
+			"event_id": "dialogic_020"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1707420148.json",
+		"name": "ajax1"
+	}
+}

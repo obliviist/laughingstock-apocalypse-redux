@@ -1,0 +1,21 @@
+{
+	"color": "#ffffc740",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1704748184.json",
+	"mirror_portraits": false,
+	"name": "Cow",
+	"nickname": "cattle, cows",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/cow_face.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

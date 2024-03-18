@@ -1,0 +1,21 @@
+{
+	"color": "#ff71a33f",
+	"description": "",
+	"display_name": "Styrofoam Cellar",
+	"display_name_bool": true,
+	"id": "character-1708146271.json",
+	"mirror_portraits": false,
+	"name": "Hatch",
+	"nickname": "Cellar",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

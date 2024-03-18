@@ -1,0 +1,100 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704747799.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_jenna.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704747799.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "So strange. Where did all of our cattle go?"
+		},
+		{
+			"choice": "How can I help?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704747799.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Do me a favour and have a look around?\nI imagine the cows haven't gotten far but be careful and don't wander too much!\nMaldoror doesn't leave the barn so that gives you a head start, at least.\nIf you need help with cattle numbers, look for Niki.\nYou know how much he loves to give names to each of them.\nI think Niki might be in the barn with Maldoror."
+		},
+		{
+			"choice": "Found Cows",
+			"condition": ">",
+			"definition": "1708711763-648",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"character": "character-1704747799.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can tell from the smell around here you found some of our cattle.\nAdequate work, VC. I would go speak to Niki in the barn once you're done."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "Helpful Hint",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704747799.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Here is how I would go about the search:\nSTEP 1: Carry or throw the cow within barn-distance\nThis is the fun part: pick up a cow with Left-Click, throw with \"F\".\nSTEP 2: Place it somewhere inside the barn Niki and Maldoror are in\nDrop the cow with Left-Click again."
+		},
+		{
+			"emit_signal": "show_cow_score",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1705004380.json",
+		"name": "jenna0"
+	}
+}

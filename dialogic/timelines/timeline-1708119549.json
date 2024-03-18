@@ -1,0 +1,76 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1708119332.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1708119332.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Are you sure you want to enter the [color=#0c5dd4]Styrofoam Cottage[/color]?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "1709064271-787",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"change_scene": "res://src/gui/world_cottage_slide.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "Nah, not yet",
+			"condition": "",
+			"definition": "1709064271-787",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "1709064271-787",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hide & Seek is over. [color=#ff0000]Ajax[/color] is expecting his [color=#ff0000]Urn[/color]."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1708119549.json",
+		"name": "cottage1"
+	}
+}

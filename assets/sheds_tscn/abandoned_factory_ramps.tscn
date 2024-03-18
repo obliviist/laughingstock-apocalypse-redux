@@ -1,0 +1,101 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://assets/sheds_tscn/large_shedB.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/sheds_tscn/leantoA.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/sheds_tscn/chainlink_fence.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/sheds_tscn/pallet.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/sheds_tscn/leantoB.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/sheds_tscn/ramps.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/sheds_tscn/stairs.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/sheds_tscn/shackA.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/sheds_tscn/concrete_barricade.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/sheds_tscn/large_shedC.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/farm_tscn/logs_var1.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/farm_tscn/logs_var2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/farm_tscn/wooden_cart_var2.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/environment_tscn/rocket.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/farm_tscn/wooden_frame.tscn" type="PackedScene" id=15]
+
+[node name="AbandonedFactoryRamps" type="Spatial"]
+transform = Transform( 0.317005, 0, 1.97472, 0, 2, 0, -1.97472, 0, 0.317005, -204.664, 0.999992, 2.03059 )
+
+[node name="ramps" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.99999, 0, 7.49998 )
+
+[node name="concrete_barricade1" parent="." instance=ExtResource( 9 )]
+transform = Transform( 0.966615, 0, -0.256239, 0, 1, 0, 0.256239, 0, 0.966615, -12.7716, 0.0126352, 21.6445 )
+
+[node name="concrete_barricade2" parent="." instance=ExtResource( 9 )]
+transform = Transform( 0.952477, 0, 0.304615, 0, 1, 0, -0.304615, 0, 0.952477, -7.00001, 0.0126352, 21.1105 )
+
+[node name="large_shedB" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, 0, 0, 1, 0, 0, 0, -1, -13, 4, 0.111618 )
+
+[node name="large_shedC" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 2.68221e-07, 0, 1, 0, -2.68221e-07, 0, 1, -10.5488, 0, -14.7043 )
+
+[node name="leantoA" parent="." instance=ExtResource( 2 )]
+transform = Transform( 4.76837e-07, 0, 1, 0, 1, 0, -1, 0, 4.76837e-07, -19, 4, 1.61157 )
+
+[node name="leantoB2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.999995, 0, -8.04663e-07, 0, 1, 0, 8.04663e-07, 0, 0.999995, -7.4734, 4, -1.75192 )
+
+[node name="shackA1" parent="." instance=ExtResource( 8 )]
+transform = Transform( -1.98709, 0, -1.3411e-07, 0, 1.60866, 0, 2.68221e-07, 0, -1, 21.744, 4, -2.25354 )
+
+[node name="shackA2" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1.78814e-07, 0, -1, 0, 1, 0, 1, 0, 1.78814e-07, -1.80196, 2, 4.36147 )
+
+[node name="chainlink_fence1" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 7.45058e-08, 0, 1, 0, -7.45058e-08, 0, 1, -11.5, 4, 7.11159 )
+
+[node name="chainlink_fence2" parent="." instance=ExtResource( 3 )]
+transform = Transform( -1, 0, 2.08616e-07, 0, 1, 0, -2.08616e-07, 0, -1, -14.5359, 4, 7.11156 )
+
+[node name="chainlink_fence3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 7.45058e-08, 0, 1, 0, -7.45058e-08, 0, 1, -11.5, 4, -6.8884 )
+
+[node name="chainlink_fence4" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -13.9371, 4, -6.88839 )
+
+[node name="pallet1" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1.17719e-06, 0, -1.49999, 0, 1.5, 0, 1.49999, 0, -1.17719e-06, -16.4694, 4.01599, 5.20674 )
+
+[node name="pallet2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 0.483172, 0, -1.42004, 0, 1.5, 0, 1.42004, 0, 0.483172, -16.7455, 4.16839, 5.55018 )
+
+[node name="pallet3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1.09742, 0, -1.02257, 0, 1.5, 0, 1.02257, 0, 1.09742, -16.6847, 4.32264, 5.86418 )
+
+[node name="pallet4" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.00188611, 0, -1.49999, 0, 1.5, 0, 1.49999, 0, -0.00188611, -16.6567, 4.47271, 5.24998 )
+
+[node name="stairs1" parent="." instance=ExtResource( 7 )]
+transform = Transform( -8.04663e-07, 0, -0.999995, 0, 1, 0, 0.999995, 0, -8.04663e-07, -16.4734, 2, -9.70848 )
+
+[node name="stairs2" parent="." instance=ExtResource( 7 )]
+transform = Transform( -8.04663e-07, 0, -0.999995, 0, 1, 0, 0.999995, 0, -8.04663e-07, -16.4734, 3, -8.70682 )
+
+[node name="stairs3" parent="." instance=ExtResource( 7 )]
+transform = Transform( -8.04663e-07, 0, -0.999995, 0, 1, 0, 0.999995, 0, -8.04663e-07, -4.4734, 2, -9.70847 )
+
+[node name="stairs4" parent="." instance=ExtResource( 7 )]
+transform = Transform( -8.04663e-07, 0, -0.999995, 0, 1, 0, 0.999995, 0, -8.04663e-07, -4.47339, 3, -8.70681 )
+
+[node name="wooden_cart_var2" parent="." instance=ExtResource( 13 )]
+transform = Transform( 4.17233e-07, 0, 1, 0, 1, 0, -1, 0, 4.17233e-07, -7.97995, 3.97579, 2.99917 )
+
+[node name="logs_var1A" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -4.07395, 4, -3.2321 )
+
+[node name="logs_var1B" parent="." instance=ExtResource( 11 )]
+transform = Transform( -1, 0, -1.49012e-07, 0, 1, 0, 1.49012e-07, 0, -1, -4.07395, 4, -0.732124 )
+
+[node name="logs_var2" parent="." instance=ExtResource( 12 )]
+transform = Transform( 0.0465489, 0, 0.998918, 0, 1, 0, -0.998918, 0, 0.0465489, 17.5443, 4, -1.06046 )
+
+[node name="WoodenFrame" parent="." instance=ExtResource( 15 )]
+transform = Transform( 0.0354572, -0.00576126, -1.99968, 0.0073414, 3.49997, -0.00316247, 1.99967, -0.0127473, 0.035469, 7.44407, 2.06449, -11.4479 )
+
+[node name="rocket2" parent="." instance=ExtResource( 14 )]
+transform = Transform( 0.918414, 0, -0.395627, 0, 1, 0, 0.395627, 0, 0.918414, 7.37164, 2.49981, -11.4325 )

@@ -1,0 +1,79 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704747979.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "SFX",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_moose.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704747979.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "My head hurts! This is so messed up, VC!!!! All our livestock for the winter... gone."
+		},
+		{
+			"choice": "How can I help?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704747979.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Talk to someone other than me!!! Jenna... Niki... Anyone!\nI'm shutting down... I can't cope!"
+		},
+		{
+			"choice": "Try to relax",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704747979.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tried it!\nTalk to someone other than me!!! Jenna... Niki... Anyone!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1704818531.json",
+		"name": "moose0"
+	}
+}

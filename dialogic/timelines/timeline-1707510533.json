@@ -1,0 +1,79 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1707510355.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/npc_cave.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1707510355.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You hear that, maaaan? \nThe  [color=#bbff00]Glam Rock Cave[/color] downstairs is cramping my style, y'know?\nThey just wanna look cool and base their whole personality on what they eat.\nI just wanna smoke some clastic bones and groove with the stars.\nThey call me the [color=#bbff00]Cosmic Rock Cave[/color]!"
+		},
+		{
+			"character": "character-1707510355.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Do you wanna come zone out with me instead?"
+		},
+		{
+			"choice": "No (polite)",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "NO!!!!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1707510355.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Far out, maaaann. No problem!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1707510533.json",
+		"name": "cave4"
+	}
+}

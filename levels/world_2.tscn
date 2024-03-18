@@ -1,0 +1,413 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://levels/environment_1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/environment_tscn/tunnel_forth.tscn" type="PackedScene" id=2]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://levels/world_2.gd" type="Script" id=4]
+[ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/npcs_tscn/npc_seeker.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/environment_tscn/music_player_3D.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/npcs_tscn/npc_voyager.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/npcs_tscn/npc_tracker.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/npcs_tscn/npc_spider.gd" type="Script" id=12]
+[ext_resource path="res://assets/npcs_tscn/npc_ajax.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/farm_tscn/tractor.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/npcs_tscn/npc_maldoror.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/npcs_tscn/npc_chicken.tscn" type="PackedScene" id=16]
+[ext_resource path="res://assets/environment_tscn/music_player_3D.gd" type="Script" id=17]
+[ext_resource path="res://assets/interactable.gd" type="Script" id=18]
+[ext_resource path="res://assets/npcs_tscn/npc_spider.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/npcs_tscn/big_cow.tscn" type="PackedScene" id=20]
+[ext_resource path="res://assets/npcs_tscn/small_cow.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/environment_tscn/cottage_forth.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/music/spiders and cows_loop.wav" type="AudioStream" id=23]
+[ext_resource path="res://src/music/remove1.wav" type="AudioStream" id=24]
+[ext_resource path="res://src/music/remove2.wav" type="AudioStream" id=25]
+[ext_resource path="res://assets/environment_tscn/barrel_green.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/rv_tscn/rv_1.tscn" type="PackedScene" id=27]
+[ext_resource path="res://assets/rv_tscn/rv_3.tscn" type="PackedScene" id=28]
+
+[sub_resource type="BoxShape" id=60]
+extents = Vector3( 1000, 0.8, 1000 )
+
+[sub_resource type="Animation" id=61]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
+
+[sub_resource type="CapsuleShape" id=62]
+radius = 0.922323
+height = 3.30953
+
+[sub_resource type="Animation" id=63]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=64]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=65]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=66]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=67]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=68]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
+
+[node name="World_2" type="Spatial"]
+script = ExtResource( 4 )
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 5 )]
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.08853, 0.586191, 170.348 )
+gravity = -25
+
+[node name="Death" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.5053, 0 )
+monitorable = false
+
+[node name="WaterCollisionShape" type="CollisionShape" parent="Death"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+shape = SubResource( 60 )
+
+[node name="Score" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.5053, 0 )
+monitorable = false
+
+[node name="WaterCollisionShape" type="CollisionShape" parent="Score"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+shape = SubResource( 60 )
+
+[node name="GUI" parent="." instance=ExtResource( 9 )]
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( -0.581016, 0, -0.813892, 0, 1, 0, 0.813892, 0, -0.581016, -32.1559, 3.10715, 36.8689 )
+
+[node name="Tracker" parent="Spatial" instance=ExtResource( 11 )]
+transform = Transform( 1.16025, 0, 0.783478, 0, 1.4, 0, -0.783478, 0, 1.16025, -3.79627, -1.719, -6.98505 )
+dialog_index = 1
+
+[node name="Seeker" parent="Spatial" instance=ExtResource( 7 )]
+transform = Transform( -0.865677, 0, 1.10028, 0, 1.4, 0, -1.10028, 0, -0.865677, -4.18969, -1.719, -1.17226 )
+dialog_index = 1
+
+[node name="Voyager" parent="Spatial" instance=ExtResource( 10 )]
+transform = Transform( -0.966477, 0, -1.01288, 0, 1.4, 0, 1.01288, 0, -0.966477, 1.56075, -1.719, -0.991516 )
+dialog_index = 1
+
+[node name="MusicPlayer" parent="Spatial" instance=ExtResource( 8 )]
+transform = Transform( 0.96864, 0, -0.24847, 0, 1, 0, 0.24847, 0, 0.96864, -1.91814, -0.751122, 0.764326 )
+script = ExtResource( 17 )
+npc = "radio"
+
+[node name="DemoSong1" type="AudioStreamPlayer3D" parent="Spatial/MusicPlayer"]
+transform = Transform( -0.825429, 0, 0.564506, 0, 1, 0, -0.564506, 0, -0.825429, 4.53834, -10.719, -133.196 )
+stream = ExtResource( 24 )
+unit_db = -1.0
+bus = "Music"
+
+[node name="DemoSong2" type="AudioStreamPlayer3D" parent="Spatial/MusicPlayer"]
+transform = Transform( -0.825429, 0, 0.564506, 0, 1, 0, -0.564506, 0, -0.825429, 4.53834, -10.719, -133.196 )
+stream = ExtResource( 25 )
+unit_db = -2.0
+bus = "Music"
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Spatial/MusicPlayer"]
+stream = ExtResource( 23 )
+unit_db = -2.759
+
+[node name="barrel_green" parent="Spatial/MusicPlayer" instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -1.15175, 0.0730457 )
+
+[node name="Ajax" parent="." instance=ExtResource( 13 )]
+transform = Transform( 0.226441, 0.0660922, -0.440858, 0.0431102, 0.48891, 0.0954389, 0.443695, -0.0812337, 0.21572, 21.4145, 11.1094, 142.693 )
+npc = "ajax"
+dialog_index = 1
+
+[node name="Maldoror" parent="." instance=ExtResource( 15 )]
+transform = Transform( 0.226441, 0.0660922, -0.440858, 0.0431102, 0.48891, 0.0954389, 0.443695, -0.0812337, 0.21572, 21.4085, 9.82629, 142.979 )
+script = null
+
+[node name="Chicken" parent="." instance=ExtResource( 16 )]
+transform = Transform( -0.801037, -0.0285194, -0.597935, -0.0444572, 0.99894, 0.0119122, 0.596962, 0.0361247, -0.801456, -26.5259, 1.22423, 41.516 )
+script = ExtResource( 12 )
+npc = "chicken"
+
+[node name="Cottage_Forth" parent="." instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.10897, 2, 24.5956 )
+dialog_index = 1
+
+[node name="Tunnel_Forth" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.553, 1.618, 170.001 )
+gate = "tunnel"
+dialog_index = 1
+
+[node name="Environment_1" parent="." instance=ExtResource( 1 )]
+
+[node name="Tree_Orange4" parent="Environment_1/TreeOrangeCluster2" index="3"]
+transform = Transform( 0.771547, 0, -0.636172, 0, 1, 0, 0.636172, 0, 0.771547, 67.6026, 0.851515, 8.48851 )
+
+[node name="Amb" parent="." instance=ExtResource( 6 )]
+
+[node name="tractor" parent="." instance=ExtResource( 14 )]
+transform = Transform( 0.379828, 0, -0.925057, 0, 1, 0, 0.925057, 0, 0.379828, 104.524, 1.7153, 36.1031 )
+
+[node name="Spider1" parent="." instance=ExtResource( 19 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -38.4033, 5.85375, -103.767 )
+dialog_index = 2
+
+[node name="Apple the Cow" type="RigidBody" parent="." groups=["score"]]
+transform = Transform( -0.0619371, 0, -0.998079, 0, 1, 0, 0.998079, 0, -0.0619371, 52.5036, 1, 28.5422 )
+mass = 0.204082
+gravity_scale = 2.0
+script = ExtResource( 18 )
+
+[node name="BigCow" parent="Apple the Cow" instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, 0, 0 )
+
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="Apple the Cow/BigCow"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 61 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Apple the Cow"]
+transform = Transform( 1.71331, 0, 0, 0, 1.55596, 0, 0, 0, 0.9751, 0, 1.76209, 0.518089 )
+shape = SubResource( 62 )
+
+[node name="Bully the Cow" type="RigidBody" parent="." groups=["score"]]
+transform = Transform( 0.539284, 0, 0.842124, 0, 1, 0, -0.842124, 0, 0.539284, 57.7055, 1, 45.8753 )
+mass = 0.204082
+gravity_scale = 2.0
+script = ExtResource( 18 )
+
+[node name="SmallCow" parent="Bully the Cow" instance=ExtResource( 21 )]
+
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="Bully the Cow/SmallCow"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 63 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Bully the Cow"]
+transform = Transform( -5.30219e-08, 1.056, 0, -1.213, -4.61592e-08, 0, 1.77636e-15, -2.98023e-08, 0.475, -7.62939e-06, 0.877226, 0.275177 )
+shape = SubResource( 62 )
+
+[node name="Candy the Cow" type="RigidBody" parent="." groups=["score"]]
+transform = Transform( 0.132863, 0, -0.991134, 0, 1, 0, 0.991134, 0, 0.132863, 38.6759, 1, 39.4312 )
+mass = 0.204082
+gravity_scale = 2.0
+script = ExtResource( 18 )
+
+[node name="SmallCow" parent="Candy the Cow" instance=ExtResource( 21 )]
+
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="Candy the Cow/SmallCow"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 64 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Candy the Cow"]
+transform = Transform( -5.30219e-08, 1.056, 0, -1.213, -4.61592e-08, 0, 1.77636e-15, -2.98023e-08, 0.475, -7.62939e-06, 0.877226, 0.275177 )
+shape = SubResource( 62 )
+
+[node name="Dizzee the Cow" type="RigidBody" parent="." groups=["score"]]
+transform = Transform( 0.969692, 0, -0.244326, 0, 1, 0, 0.244326, 0, 0.969692, 46.5575, 0.999999, 38.2642 )
+mass = 0.204082
+gravity_scale = 2.0
+script = ExtResource( 18 )
+
+[node name="BigCow" parent="Dizzee the Cow" instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, 0, 0 )
+
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="Dizzee the Cow/BigCow"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 65 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Dizzee the Cow"]
+transform = Transform( 1.71331, 0, 0, 0, 1.55596, 0, 0, 0, 0.9751, 0, 1.76209, 0.518089 )
+shape = SubResource( 62 )
+
+[node name="Honey the Cow" type="RigidBody" parent="." groups=["score"]]
+transform = Transform( 0.729959, 0, 0.683491, 0, 1, 0, -0.683491, 0, 0.729959, 49.9457, 1, 19.7501 )
+mass = 0.204082
+gravity_scale = 2.0
+script = ExtResource( 18 )
+
+[node name="SmallCow" parent="Honey the Cow" instance=ExtResource( 21 )]
+
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="Honey the Cow/SmallCow"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 66 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Honey the Cow"]
+transform = Transform( -5.30219e-08, 1.056, 0, -1.213, -4.61592e-08, 0, 1.77636e-15, -2.98023e-08, 0.475, -7.62939e-06, 0.877226, 0.275177 )
+shape = SubResource( 62 )
+
+[node name="Jumbo the Cow" type="RigidBody" parent="." groups=["score"]]
+transform = Transform( 0.450285, 0, 0.892884, 0, 1, 0, -0.892884, 0, 0.450285, 46.4423, 0.999999, 59.1497 )
+mass = 0.204082
+gravity_scale = 2.0
+script = ExtResource( 18 )
+
+[node name="BigCow" parent="Jumbo the Cow" instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, 0, 0 )
+
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="Jumbo the Cow/BigCow"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 67 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Jumbo the Cow"]
+transform = Transform( 1.71331, 0, 0, 0, 1.55596, 0, 0, 0, 0.9751, 0, 1.76209, 0.518089 )
+shape = SubResource( 62 )
+
+[node name="Suki the Cow" type="RigidBody" parent="." groups=["score"]]
+transform = Transform( -0.4454, 0, 0.89533, 0, 1, 0, -0.89533, 0, -0.4454, 61.5731, 1, 51.1135 )
+mass = 0.204082
+gravity_scale = 2.0
+script = ExtResource( 18 )
+
+[node name="BigCow" parent="Suki the Cow" instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, 0, 0 )
+
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="Suki the Cow/BigCow"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 68 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Suki the Cow"]
+transform = Transform( 1.71331, 0, 0, 0, 2.23655, 0, -5.96046e-08, 0, 0.9751, 0, 1.66343, 0.518097 )
+shape = SubResource( 62 )
+
+[node name="RV_vehicle" parent="." instance=ExtResource( 27 )]
+transform = Transform( -0.0628802, -0.869147, 1.80017, -1.9989, 0.0460243, -0.0476008, -0.0207398, -1.80068, -0.870116, -17.6406, 3.34981, -85.3064 )
+
+[node name="RV_trailer" parent="." instance=ExtResource( 28 )]
+transform = Transform( 0.0774969, 0.429307, 1.95184, -1.99827, 0.0460243, 0.0692174, -0.0300583, -1.95284, 0.430719, -35.5834, 3.53672, -75.3904 )
+
+[connection signal="body_entered" from="Death" to="Player" method="_on_Death_body_entered"]
+
+[editable path="GUI"]
+[editable path="Spatial/Tracker"]
+[editable path="Spatial/Tracker/tracker"]
+[editable path="Spatial/Seeker"]
+[editable path="Spatial/Seeker/seeker"]
+[editable path="Spatial/Voyager"]
+[editable path="Spatial/Voyager/voyager"]
+[editable path="Spatial/MusicPlayer"]
+[editable path="Ajax"]
+[editable path="Ajax/ajax"]
+[editable path="Maldoror"]
+[editable path="Maldoror/maldoror"]
+[editable path="Chicken"]
+[editable path="Chicken/chicken"]
+[editable path="Environment_1"]

@@ -1,0 +1,80 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_cellar_spider.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What a beautiful night!!!!"
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You stare too long, Human. It creeps us out..."
+		},
+		{
+			"choice": ".... Niki?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_spider.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We don't understand. \nTell you what, Human. We know who can help!\nGo to the cottage and talk to our friend who is also named Spider, [wave amp 50.0 connected=1]chchchch![/wave]"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1709135768.json",
+		"name": "spider2"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"color": "#ff14e8e3",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1704748422.json",
+	"mirror_portraits": false,
+	"name": "Voyager",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/voyager_face.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

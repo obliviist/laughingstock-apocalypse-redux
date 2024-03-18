@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=1]
+[ext_resource path="res://assets_raw/raw_assets/red_flower.material" type="Material" id=2]
+[ext_resource path="res://assets_raw/raw_assets/red_flower.glb" type="PackedScene" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.619149, 0.826287, 0.547328 )
+
+[node name="RedFlower" type="KinematicBody"]
+script = ExtResource( 1 )
+npc = "flower"
+
+[node name="red_flower" parent="." instance=ExtResource( 3 )]
+
+[node name="red_flower" parent="red_flower" index="0"]
+material/0 = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0792511, 0.788877, -0.158502 )
+shape = SubResource( 1 )
+
+[editable path="red_flower"]

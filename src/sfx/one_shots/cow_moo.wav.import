@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/cow_moo.wav-050a636743c0284399568855a95a671c.sample"
+
+[deps]
+
+source_file="res://src/sfx/one_shots/cow_moo.wav"
+dest_files=[ "res://.import/cow_moo.wav-050a636743c0284399568855a95a671c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

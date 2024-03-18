@@ -1,0 +1,45 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1708547002.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You can't help but breathe in the acrid stench of this flower..."
+		},
+		{
+			"character": "character-1708547002.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"The sleeper cries out like one condemned to die,\"\n\"until he awakens and discovers that reality is three times worse than dream.\"\n\"I ought to finish digging this grave with my tireless spade that it may be in readiness for tomorrow.\" \n\"To accomplish an important task, one should not do two things at once.\"\n[color=#38f5bc]Les Chants de Maldoror,[/color] [color=#ff0000]Comte De Latreaumont (1868)[/color]"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1708547054.json",
+		"name": "flower0"
+	}
+}

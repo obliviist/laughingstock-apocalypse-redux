@@ -37,7 +37,7 @@
 			"value": "1"
 		},
 		{
-			"change_scene": "res://src/gui/world_2_slide.tscn",
+			"change_scene": "res://levels/world_3.tscn",
 			"event_id": "dialogic_041"
 		},
 		{

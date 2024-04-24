@@ -1,6 +1,7 @@
 extends Spatial
 
 onready var world_env = $WorldEnvironment
+onready var ajax_anim = get_node("Ajax/ajax/AjaxAnimationPlayer")
 
 func _ready():
 	get_tree().paused = false
@@ -9,5 +10,5 @@ func _ready():
 	Amb.stop()
 	Amb.stream = load("res://src/sfx/amb_loops/amb_wind.wav") 
 	Amb.play()
-
+	ajax_anim.play("ajax_idle")
 

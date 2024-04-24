@@ -23,15 +23,15 @@ func end_dialog(data):
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
 func dialogic_signal_event(param):
-	if param == "remove_song1":
+	if param == "song0":
 		Dialogic.set_variable("radio_handler", 0)
 		Music.stop()
-		Music.stream = load("res://src/music/remove1.wav")
+		Music.stream = load("res://src/music/druids picnic_loop.wav")
 		Music.play()
-	if param == "remove_song2":
+	if param == "song1":
 		Dialogic.set_variable("radio_handler", 1)
 		Music.stop()
-		Music.stream = load("res://src/music/remove2.wav")
+		Music.stream = load("res://src/music/the void_loop.wav")
 		Music.play()
 	if param == "song2":
 		Dialogic.set_variable("radio_handler", 2)

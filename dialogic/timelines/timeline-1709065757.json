@@ -32,7 +32,7 @@
 			"character": "character-1707329633.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You found [color=#ff0000]Ajax Floodlamp's Urn[/color]!"
+			"text": "You found [color=#ff0000]Ajax Floodlamp's Urn[/color]!\nReturn to Ajax and finish the mission."
 		},
 		{
 			"definition": "1709066220-648",

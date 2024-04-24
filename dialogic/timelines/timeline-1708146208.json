@@ -51,7 +51,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "There's an intruder in the [color=#0c5dd4]Styrofoam Cottage[/color]!\nWhat are you thinking???"
+			"text": "There's an intruder in the [color=#0c5dd4]Styrofoam Cottage[/color]!\nWhat does the spider want??"
 		},
 		{
 			"event_id": "dialogic_013"

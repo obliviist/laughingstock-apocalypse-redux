@@ -70,7 +70,7 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Really? That's mighty kind of you, BLEH!\nTake a look around, the [color=#ff0000]Urn[/color] could practically be anywhere.\nMy thinking is that it often ends up being found in a cool, dark place.\nI know that sounds like a place [color=#0f70ff]Yav folk[/color] stash their oats or explosive agents.\nGet creative, my friend!"
+			"text": "Really? That's mighty kind of you...\nTake a look around, the [color=#ff0000]Urn[/color] could practically be anywhere.\nMy thinking is that it often ends up being found in a cool, dark place.\nI know that sounds like a place [color=#0f70ff]Yav folk[/color] stash their oats or explosive agents.\nGet creative, my friend!"
 		},
 		{
 			"choice": "Nah",
@@ -129,7 +129,7 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh, those jackasses over at the campsite over there?\nThey're harmless squatters. I wouldn't worry too much.\nThe [color=#0f70ff]Yav[/color] is a hard place to live in, y'know? I see it in the eyes of newly minted [color=#ff0000]Nav folk[/color] daily.\nI don't blame people when there are so many barriers in place. They're doing the best they can.\nI mean, do you?"
+			"text": "Oh, those bozos over at the campsite over there?\nThey're harmless squatters. I wouldn't worry too much.\nThe [color=#0f70ff]Yav[/color] is a hard place to live in, y'know? I see it in the eyes of newly minted [color=#ff0000]Nav folk[/color] daily.\nI don't blame people when there are so many barriers in place. They're doing the best they can.\nI mean, do you?"
 		},
 		{
 			"event_id": "dialogic_013"

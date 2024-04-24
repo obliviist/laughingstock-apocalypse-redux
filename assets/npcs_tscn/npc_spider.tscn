@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets_raw/raw_assets/pavyk.glb" type="PackedScene" id=1]
 [ext_resource path="res://assets/asset_anims/pavyk_idle.tres" type="Animation" id=2]
-[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=3]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.968732
@@ -16,8 +15,6 @@ extents = Vector3( 0.948364, 0.200206, 0.897976 )
 
 [node name="Spider" type="KinematicBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.73266, 0 )
-script = ExtResource( 3 )
-npc = "spider"
 
 [node name="CollisionShape1" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1.11738, 0, 0, 0, 1, 0, 0.603271, 0 )

@@ -7,7 +7,7 @@ export var air_friction = 10
 export var jump_impulse = 20
 export var gravity = -40
 
-export var mouse_sensitivity = 0.1
+export var mouse_sensitivity = 0.2
 export var controller_sensitivity = 3
 
 export (int, 0, 10) var push = 1
@@ -35,12 +35,12 @@ func _ready():
 	GlobalSettings.connect("mouse_sens_updated", self, "_on_mouse_sens_updated")
 
 	
-func _capture_screen():
-	var vpt: Viewport = get_viewport()
-	var tex: Texture = vpt.get_texture()
-	var img: Image = tex.get_data()
-	img.flip_y()
-	img.save_png("res://user/screenshot.png")
+#func _capture_screen():
+	#var vpt: Viewport = get_viewport()
+	#var tex: Texture = vpt.get_texture()
+	#var img: Image = tex.get_data()
+	#img.flip_y()
+	#img.save_png("res://user/screenshot.png")
 	
 func _unhandled_input(event):
 	if event.is_action_pressed("lclick"):
@@ -81,8 +81,8 @@ func _input(event):
 			picked_object.apply_central_impulse(knockback * 5)
 			remove_object()
 			
-	if Input.is_action_just_pressed("capture_screen"):
-		_capture_screen()
+	#if Input.is_action_just_pressed("capture_screen"):
+		#_capture_screen()
 	
 func _physics_process(delta):
 	var input_vector = get_input_vector()
@@ -209,7 +209,6 @@ func _on_fov_updated(value):
 
 func _on_mouse_sens_updated(value):
 	mouse_sensitivity = value
-
 
 func update_interaction():
 	if $InteractArea/CollisionShape.disabled == false:

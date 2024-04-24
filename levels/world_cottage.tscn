@@ -154,6 +154,7 @@ shape = SubResource( 64 )
 [node name="Spider" parent="." instance=ExtResource( 11 )]
 transform = Transform( 0.972541, 0, 0.232733, 0, 1, 0, -0.232733, 0, 0.972541, -1.89911, 24.9055, 1.98988 )
 script = ExtResource( 13 )
+npc = "spider"
 
 [connection signal="body_entered" from="Death" to="Player" method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]

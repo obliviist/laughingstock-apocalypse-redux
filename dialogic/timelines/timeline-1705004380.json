@@ -78,7 +78,7 @@
 			"character": "character-1704747799.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Here is how I would go about the search:\nSTEP 1: Carry or throw the cow within barn-distance\nThis is the fun part: pick up a cow with Left-Click, throw with \"F\".\nSTEP 2: Place it somewhere inside the barn Niki and Maldoror are in\nDrop the cow with Left-Click again."
+			"text": "Here is how I would go about the search:\nSTEP 1: Carry or throw the cow within barn-distance\nThis is the fun part: pick up a cow with Left-Click, throw with \"F\".\nSTEP 2: The cow can be placed anywhere in the barn or just outside if that's too much work.\nDrop the cow with Left-Click again.\nIf the cow makes a noise, that means it shouldn't wander away again."
 		},
 		{
 			"emit_signal": "show_cow_score",

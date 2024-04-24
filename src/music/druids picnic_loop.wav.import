@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/druids picnic_loop.wav-118f5142e97b63893c9ddbf552b9fefe.sample"
+
+[deps]
+
+source_file="res://src/music/druids picnic_loop.wav"
+dest_files=[ "res://.import/druids picnic_loop.wav-118f5142e97b63893c9ddbf552b9fefe.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

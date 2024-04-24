@@ -30,7 +30,7 @@
 			"question": "Change song?"
 		},
 		{
-			"choice": "Demo Cassette 1",
+			"choice": "Druid Cassette",
 			"condition": "!=",
 			"definition": "1709051878-648",
 			"event_id": "dialogic_011",
@@ -40,14 +40,14 @@
 			"character": "character-1708998462.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[color=#ffeb00]\"Me and my husband was gonna have a heart shaped coffen buit when we died but we separated...[/color]\n[color=#ffeb00]i still love him tho\"[/color][color=#25ea28] - @carrotyfiber7016[/color]"
+			"text": "SONG: [color=#ffeb00]\"Druid's Picnic\"[/color]"
 		},
 		{
-			"emit_signal": "remove_song1",
+			"emit_signal": "song0",
 			"event_id": "dialogic_040"
 		},
 		{
-			"choice": "Demo Cassette 2",
+			"choice": "Void Cassette",
 			"condition": "!=",
 			"definition": "1709051878-648",
 			"event_id": "dialogic_011",
@@ -57,10 +57,10 @@
 			"character": "character-1708998462.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[color=#ffeb00]\"that moment when the curtain starts to raise...[/color]\n[color=#ffeb00]GOD i would do anything to have been there seeing it live\"[/color][color=#25ea28] - @floating_spoon[/color]"
+			"text": "SONG: [color=#ffeb00]\"The Void\"[/color]"
 		},
 		{
-			"emit_signal": "remove_song2",
+			"emit_signal": "song1",
 			"event_id": "dialogic_040"
 		},
 		{
@@ -69,6 +69,12 @@
 			"definition": "1709051878-648",
 			"event_id": "dialogic_011",
 			"value": "2"
+		},
+		{
+			"character": "character-1708998462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "SONG: [color=#ffeb00]\"Spiders & Cows\"[/color]"
 		},
 		{
 			"emit_signal": "song2",

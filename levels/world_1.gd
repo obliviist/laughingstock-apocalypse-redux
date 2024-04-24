@@ -8,3 +8,6 @@ func _ready():
 	Amb.stream = load("res://src/sfx/amb_loops/amb_wind.wav") 
 	Amb.play()
 
+
+#func _on_CheatCodeListener_cheat_activated():
+	#get_tree().change_scene("res://src/gui/world_urn_slide.tscn")

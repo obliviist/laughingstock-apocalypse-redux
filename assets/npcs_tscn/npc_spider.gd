@@ -24,4 +24,8 @@ func end_dialog(data):
 func dialogic_signal_event(param):
 	if param == "hide_and_seek":
 		spider.visible = false
+		$CollisionShape1.disabled = true
+		$CollisionShape2.disabled = true
+		$CollisionShape3.disabled = true
+		$CollisionShape4.disabled = true
 		

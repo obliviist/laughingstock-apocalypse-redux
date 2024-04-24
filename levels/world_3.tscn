@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://levels/world_3.gd" type="Script" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
@@ -12,11 +12,11 @@
 [ext_resource path="res://assets/npcs_tscn/npc_jenna.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/npcs_tscn/npc_ajax.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/farm_tscn/tractor.tscn" type="PackedScene" id=12]
-[ext_resource path="res://src/music/remove1.wav" type="AudioStream" id=13]
+[ext_resource path="res://src/music/druids picnic_loop.wav" type="AudioStream" id=13]
 [ext_resource path="res://assets/npcs_tscn/npc_moose.tscn" type="PackedScene" id=14]
 [ext_resource path="res://assets/environment_tscn/cottage_forth.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/environment_tscn/tunnel_forth.tscn" type="PackedScene" id=16]
-[ext_resource path="res://src/music/remove2.wav" type="AudioStream" id=17]
+[ext_resource path="res://src/music/the void_loop.wav" type="AudioStream" id=17]
 [ext_resource path="res://assets/npcs_tscn/npc_maldoror.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/npcs_tscn/npc_chicken.tscn" type="PackedScene" id=19]
 [ext_resource path="res://levels/environment_1.tscn" type="PackedScene" id=20]
@@ -27,6 +27,9 @@
 [ext_resource path="res://assets/environment_tscn/music_player_3D.tscn" type="PackedScene" id=25]
 [ext_resource path="res://assets/rv_tscn/rv_1.tscn" type="PackedScene" id=26]
 [ext_resource path="res://assets/rv_tscn/rv_3.tscn" type="PackedScene" id=27]
+[ext_resource path="res://src/gui/cow_score.tscn" type="PackedScene" id=28]
+[ext_resource path="res://src/sfx/one_shots/sfx.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/farm_tscn/haybale_var3.tscn" type="PackedScene" id=30]
 
 [sub_resource type="BoxShape" id=60]
 extents = Vector3( 1000, 0.8, 1000 )
@@ -197,13 +200,17 @@ shape = SubResource( 60 )
 [node name="GUI" parent="." instance=ExtResource( 5 )]
 
 [node name="Ajax" parent="." instance=ExtResource( 11 )]
-transform = Transform( -0.455669, 0, 0.205828, 0, 0.5, 0, -0.205828, 0, -0.455669, -0.244396, 2.30709, 47.4442 )
+transform = Transform( -0.497143, 0, 0.0533657, 0, 0.5, 0, -0.0533657, 0, -0.497143, -0.55926, 2.67504, 43.706 )
 npc = "ajax"
 dialog_index = 2
 
+[node name="Haybale" parent="." instance=ExtResource( 30 )]
+transform = Transform( 0.999216, 0, -0.0395912, 0, 1, 0, 0.0395912, 0, 0.999216, -0.477541, 1.99268, 43.6967 )
+
 [node name="Maldoror" parent="." instance=ExtResource( 18 )]
-transform = Transform( -0.455669, 0, 0.205828, 0, 0.5, 0, -0.205828, 0, -0.455669, -0.196596, 1.0052, 47.6202 )
-script = null
+transform = Transform( 0.0862831, -0.043044, -0.490614, 0, 0.498087, -0.0436995, 0.492498, 0.00754108, 0.0859529, 4.66438, 3.46282, 46.5309 )
+npc = "maldoror"
+dialog_index = 1
 
 [node name="Chicken" parent="." instance=ExtResource( 19 )]
 transform = Transform( -0.801037, -0.0285194, -0.597935, -0.0444572, 0.99894, 0.0119122, 0.596962, 0.0361247, -0.801456, -26.5259, 1.22423, 41.516 )
@@ -227,7 +234,7 @@ transform = Transform( 0.771547, 0, -0.636172, 0, 1, 0, 0.636172, 0, 0.771547, 6
 [node name="Amb" parent="." instance=ExtResource( 4 )]
 
 [node name="tractor" parent="." instance=ExtResource( 12 )]
-transform = Transform( 0.379828, 0, -0.925057, 0, 1, 0, 0.925057, 0, 0.379828, 104.524, 1.7153, 36.1031 )
+transform = Transform( -0.985043, 0, -0.172308, 0, 1, 0, 0.172308, 0, -0.985043, 3.71383, 0.96221, 46.5648 )
 
 [node name="Moose" parent="." instance=ExtResource( 14 )]
 transform = Transform( 0.999049, 0, 0.0435846, 0, 1, 0, -0.0435846, 0, 0.999049, 51.8104, 1, 51.5958 )
@@ -237,6 +244,12 @@ dialog_index = 1
 transform = Transform( 0.979311, 0, 0.20236, 0, 1, 0, -0.20236, 0, 0.979311, -29.3987, 1.43897, 34.9787 )
 npc = "jenna"
 dialog_index = 2
+
+[node name="CowScore" parent="Jenna" instance=ExtResource( 28 )]
+visible = false
+margin_bottom = 76.0
+
+[node name="Sfx" parent="Jenna/CowScore" instance=ExtResource( 29 )]
 
 [node name="Apple the Cow" type="RigidBody" parent="." groups=["score"]]
 transform = Transform( -0.0619371, 0, -0.998079, 0, 1, 0, 0.998079, 0, -0.0619371, 52.5036, 1, 28.5422 )

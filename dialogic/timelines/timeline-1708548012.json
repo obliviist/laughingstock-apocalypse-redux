@@ -66,7 +66,21 @@
 			"character": "character-1704747799.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Please find a way to get us out of here!"
+			"text": "Please find a way to open the moss covered passages below."
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_moose.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704747979.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I WANT MY BODY BACK!!!"
 		},
 		{
 			"event_id": "dialogic_022",

@@ -10,6 +10,12 @@ func _ready():
 func _unhandled_input(event):
 	if event.is_action_pressed("pause"):
 		self.is_paused = !is_paused
+	else:
+		is_paused = false
+		if event.is_action_pressed("pause"):
+			pass
+	#the above, below else, is used to disable esc key input when menu is opens
+	#NEXT: disable ability to pause when in dialogue: player.gd
 
 func set_is_paused(value):
 	is_paused = value
@@ -23,7 +29,8 @@ func _on_ResumeBtn_pressed():
 	self.is_paused = false
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	
+	else:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _on_SettingsBtn_pressed():
 	settings_menu.popup_centered()

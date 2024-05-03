@@ -25,8 +25,6 @@ var timeout_timer: Timer
 var cooldown_timer: Timer
 
 func _ready() -> void:
-	assert(code is CheatCode, "%s/code MUST be of type `CheatCode`" % get_path())
-
 	timeout_timer = Timer.new()
 	add_child(timeout_timer)
 

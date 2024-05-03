@@ -118,7 +118,6 @@ _global_script_class_icons={
 
 config/name="LaughingstockApocalypseREDUX"
 run/main_scene="res://src/gui/intro_slide1.tscn"
-boot_splash/image="res://src/gui/maldoror_no outline.png"
 config/icon="res://icon.png"
 config/macos_native_icon="res://icon.icns"
 
@@ -141,6 +140,16 @@ enabled=PoolStringArray( "res://addons/CheatCoder/plugin.cfg", "res://addons/dia
 
 [input]
 
+ui_focus_next={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777218,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_focus_prev={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":true,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777218,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
 move_forward={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
@@ -232,6 +241,11 @@ interact={
 toggle_mouse_mode={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+command_line={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":59,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
 

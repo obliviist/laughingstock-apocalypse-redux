@@ -48,6 +48,7 @@ enum KeyCode {
 	KeyBackspace = KEY_BACKSPACE,
 	KeySpace = KEY_SPACE,
 	KeyTab = KEY_TAB,
+	KeySemicolon = KEY_SEMICOLON,
 }
 
 export (Array, KeyCode) var entries

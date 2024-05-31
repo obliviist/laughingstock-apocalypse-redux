@@ -1,0 +1,21 @@
+{
+	"color": "#ff38f5bc",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1716397056.json",
+	"mirror_portraits": false,
+	"name": "Archdemon Maldoror",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/archdemon_face.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/gui/def_oswald_dynamicfont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://addons/CheatCoder/CheatCodeListener.gd" type="Script" id=2]
@@ -12,16 +12,39 @@
 [ext_resource path="res://addons/CheatCoder/Presets/horsepower.tres" type="Resource" id=10]
 [ext_resource path="res://addons/CheatCoder/Presets/fly.tres" type="Resource" id=11]
 
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://src/gui/Oswald.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 28
+outline_size = 2
+outline_color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
+use_filter = true
+font_data = SubResource( 1 )
+
 [node name="CheatConsole" type="Control"]
 pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 3 )
 
-[node name="Label" type="Label" parent="."]
+[node name="LabelHidden" type="Label" parent="."]
 visible = false
 margin_right = 40.0
 margin_bottom = 14.0
+
+[node name="EnterCC" type="Label" parent="."]
+anchor_left = 0.570313
+anchor_top = 0.16
+anchor_right = 0.716797
+anchor_bottom = 0.24
+margin_right = 198.0
+custom_colors/font_color = Color( 0.682353, 1, 0.67451, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "ENTER CHEAT CODE:"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="TheUrnListener" type="Node" parent="."]
 script = ExtResource( 2 )
@@ -56,18 +79,19 @@ script = ExtResource( 2 )
 code = ExtResource( 10 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-anchor_left = 0.25
-anchor_top = 0.05
-anchor_right = 0.789
-anchor_bottom = 0.167
-margin_right = 0.0639648
-margin_bottom = -0.200005
+anchor_left = 0.398438
+anchor_top = 0.186667
+anchor_right = 0.9375
+anchor_bottom = 0.303333
 size_flags_horizontal = 4
 size_flags_vertical = 4
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="LineEdit" type="LineEdit" parent="CenterContainer"]
-margin_left = 180.0
+margin_left = 181.0
 margin_top = 9.0
-margin_right = 370.0
+margin_right = 371.0
 margin_bottom = 60.0
 custom_fonts/font = ExtResource( 1 )

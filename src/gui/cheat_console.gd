@@ -13,8 +13,8 @@ func _input(event):
 		if visible:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			lineEditRef.grab_focus()
-		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		#else:
+			#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 		clearText()
 	elif event.is_action_released("command_line") && isHeldDown:
 		isHeldDown = false
@@ -26,3 +26,10 @@ func _on_LineEdit_text_entered(text : String):
 	
 func clearText():
 	lineEditRef.text = ""
+
+#goldenboi
+func noclip():
+	GlobalSettings.playerRef.noclip()
+	
+func fly():
+	GlobalSettings.playerRef.fly()

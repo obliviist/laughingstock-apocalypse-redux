@@ -12,6 +12,13 @@ export var controller_sensitivity = 3
 
 export (int, 0, 10) var push = 1
 
+#below is hon hons cheat variables
+var gravity_enabled := false
+var move_vec = Vector3.ZERO
+
+var noclip := false
+var fly := false
+
 var velocity = Vector3.ZERO
 var snap_vector = Vector3.ZERO
 
@@ -28,19 +35,13 @@ var pull_power = 4
 var rotation_power = 0.05
 var locked = false
 
+
 func _ready():
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	GlobalSettings.connect("fov_updated", self, "_on_fov_updated")
 	GlobalSettings.connect("mouse_sens_updated", self, "_on_mouse_sens_updated")
 
-	
-#func _capture_screen():
-	#var vpt: Viewport = get_viewport()
-	#var tex: Texture = vpt.get_texture()
-	#var img: Image = tex.get_data()
-	#img.flip_y()
-	#img.save_png("res://user/screenshot.png")
 	
 func _unhandled_input(event):
 	if event.is_action_pressed("lclick"):
@@ -80,9 +81,7 @@ func _input(event):
 			var knockback = picked_object.translation - translation
 			picked_object.apply_central_impulse(knockback * 5)
 			remove_object()
-			
-	#if Input.is_action_just_pressed("capture_screen"):
-		#_capture_screen()
+
 	
 func _physics_process(delta):
 	var input_vector = get_input_vector()
@@ -98,6 +97,7 @@ func _physics_process(delta):
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
+	
 	for idx in get_slide_count():
 		var collision = get_slide_collision(idx)
 		if collision.collider.is_in_group("bodies"):
@@ -109,6 +109,32 @@ func _physics_process(delta):
 		picked_object.set_linear_velocity((b-a)*pull_power)
 	
 	update_interaction()
+	
+	#hons hons noclip code attempt 2 below
+	# i might want to consider folding this code under if grav enabled statement
+	move_vec = Vector3.ZERO
+	if noclip or fly:
+		if Input.is_action_pressed("move_forward"):
+			move_vec -= $Head/Camera.global_transform.basis.z
+		if Input.is_action_pressed("move_backward"):
+			move_vec -= $Head/Camera.global_transform.basis.z
+		if Input.is_action_pressed("move_left"):
+			move_vec -= $Head/Camera.global_transform.basis.z
+		if Input.is_action_pressed("move_right"):
+			move_vec -= $Head/Camera.global_transform.basis.z
+	
+	
+		if gravity_enabled:
+			move_vec = move_vec.normalized() * max_speed
+			velocity.x = move_vec.x
+			velocity.z = move_vec.z
+			if is_on_floor():
+				velocity.y = 0
+			else:
+				velocity.y -= gravity * delta
+		velocity = move_vec.normalized() * max_speed
+	
+	move_and_slide(velocity, Vector3.UP, false)
 
 func _process(delta):
 	var target_dir = Vector2(0, 0)
@@ -142,7 +168,7 @@ func _process(delta):
 		anim.play("vanya_for_right", 0.1)
 		
 	set_anim(target_dir)
-
+	
 func set_anim(dir):
 	if dir == Vector2(0, 0) and anim.current_animation != "vanya_idle":
 		anim.play("vanya_idle", 0.1)
@@ -222,3 +248,16 @@ func _on_InteractArea_body_entered(body):
 	elif body.is_in_group("level_gate"):
 		body.start_level_request_dialog()
 	#the above code can be used to start dialog on load of another level
+	
+
+func _on_NoclipListener_cheat_activated():
+	noclip = !noclip
+	$CollisionShape.disabled = noclip
+
+
+func _on_FlyListener_cheat_activated():
+	fly = !fly
+
+
+func _on_HorsepowerListener_cheat_activated():
+	max_speed = 20

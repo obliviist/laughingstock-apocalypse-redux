@@ -6,5 +6,5 @@ func _ready():
 	yield(get_tree().create_timer(4), "timeout")
 	$AnimationPlayer.play("intro_fade_out")
 	yield(get_tree().create_timer(2), "timeout")
-	#get_tree().change_scene("res://levels/world_1.tscn")
+	#get_tree().change_scene("res://levels/world_cheat.tscn")
 	get_tree().quit()

@@ -2,8 +2,8 @@ extends NonPlayerCharacter
 
 func _ready():
 	Dialogic.set_variable("radio_handler", 2)
-	Music.stream = load("res://src/music/spiders and cows_loop.wav")
-	Music.play()
+	#Music.stream = load("res://src/music/spiders and cows_loop.wav")
+	#Music.play()
 	add_to_group("NPC")
 	
 func interact(body):

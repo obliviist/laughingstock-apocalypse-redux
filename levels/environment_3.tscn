@@ -1,0 +1,139 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets_raw/_textures_cheat/abyss_grounds.png" type="Texture" id=1]
+[ext_resource path="res://assets/farm_tscn/campfire_var1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/cheat_tscn/urn_shovel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/cheat_tscn/abyss_perimeter.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/foliage_tscn/tree_evergreen.tscn" type="PackedScene" id=6]
+
+[sub_resource type="SpatialMaterial" id=66]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 50, 50, 1 )
+
+[sub_resource type="CubeMesh" id=67]
+material = SubResource( 66 )
+size = Vector3( 500, 2, 500 )
+
+[sub_resource type="ConcavePolygonShape" id=65]
+data = PoolVector3Array( -500, 1, 500, 500, 1, 500, -500, -1, 500, 500, 1, 500, 500, -1, 500, -500, -1, 500, 500, 1, -500, -500, 1, -500, 500, -1, -500, -500, 1, -500, -500, -1, -500, 500, -1, -500, 500, 1, 500, 500, 1, -500, 500, -1, 500, 500, 1, -500, 500, -1, -500, 500, -1, 500, -500, 1, -500, -500, 1, 500, -500, -1, -500, -500, 1, 500, -500, -1, 500, -500, -1, -500, 500, 1, 500, -500, 1, 500, 500, 1, -500, -500, 1, 500, -500, 1, -500, 500, 1, -500, -500, -1, 500, 500, -1, 500, -500, -1, -500, 500, -1, 500, 500, -1, -500, -500, -1, -500 )
+
+[node name="Environment_3" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 67 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
+shape = SubResource( 65 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+
+[node name="abyss_perimeter" parent="." instance=ExtResource( 5 )]
+transform = Transform( 2.4, 0, 0, 0, 1, 0, 0, 0, 2.5, 0, 0, 0 )
+
+[node name="AbyssEvergreenContainer1" type="Spatial" parent="."]
+transform = Transform( 8.20318, 0, 0, 0, 5.86518, 0, 0, 0, 8.70045, 0, 0.553681, -182 )
+
+[node name="Tree_Evergreen1" parent="AbyssEvergreenContainer1" instance=ExtResource( 6 )]
+transform = Transform( 0.905132, 0, -0.450903, 0, 1, 0, 0.400834, 0, 0.905132, 0, 0, 0 )
+
+[node name="Tree_Evergreen2" parent="AbyssEvergreenContainer1" instance=ExtResource( 6 )]
+transform = Transform( 0.754754, 0, 0, 0, 0.764679, 0, 0, 0, 1, -5.11997, 0, 0 )
+
+[node name="Tree_Evergreen3" parent="AbyssEvergreenContainer1" instance=ExtResource( 6 )]
+transform = Transform( 0.643075, 0, -0.687827, 0, 0.691874, 0, 0.529897, 0, 0.742046, 5.97329, 0, 0 )
+
+[node name="Tree_Evergreen4" parent="AbyssEvergreenContainer1" instance=ExtResource( 6 )]
+transform = Transform( 0.798292, 0, -0.332534, 0, 0.892141, 0, 0.248513, 0, 0.949579, 11.5809, 0, 2.70953 )
+
+[node name="Tree_Evergreen5" parent="AbyssEvergreenContainer1" instance=ExtResource( 6 )]
+transform = Transform( 0.951605, 0, -0.325953, 0, 0.916911, 0, 0.289759, 0, 0.951605, -14.4718, 0, 4.44147 )
+
+[node name="Tree_Evergreen6" parent="AbyssEvergreenContainer1" instance=ExtResource( 6 )]
+transform = Transform( 0.645604, 0, -0.549397, 0, 0.814539, 0, 0.368616, 0, 0.855382, -9.97574, 0, 2.07216 )
+
+[node name="Tree_Evergreen7" parent="AbyssEvergreenContainer1" instance=ExtResource( 6 )]
+transform = Transform( 0.478231, 0, -0.820539, 0, 0.751277, 0, 0.550537, 0, 0.633624, 17.5745, 0, 6.00441 )
+
+[node name="AbyssEvergreenContainer2" type="Spatial" parent="."]
+transform = Transform( -2.01272, 0, -8.4345, 0, 5.86518, 0, 7.95243, 0, -2.13473, 181.268, 0.553681, 46.1801 )
+
+[node name="Tree_Evergreen1" parent="AbyssEvergreenContainer2" instance=ExtResource( 6 )]
+transform = Transform( 0.905132, 0, -0.450903, 0, 1, 0, 0.400834, 0, 0.905132, 0, 0, 0 )
+
+[node name="Tree_Evergreen2" parent="AbyssEvergreenContainer2" instance=ExtResource( 6 )]
+transform = Transform( 0.754754, 0, 0, 0, 0.764679, 0, 0, 0, 1, -5.11997, 0, 0 )
+
+[node name="Tree_Evergreen3" parent="AbyssEvergreenContainer2" instance=ExtResource( 6 )]
+transform = Transform( 0.643075, 0, -0.687827, 0, 0.691874, 0, 0.529897, 0, 0.742046, 5.97329, 0, 0 )
+
+[node name="Tree_Evergreen4" parent="AbyssEvergreenContainer2" instance=ExtResource( 6 )]
+transform = Transform( 0.798292, 0, -0.332534, 0, 0.892141, 0, 0.248513, 0, 0.949579, 11.5809, 0, 2.70953 )
+
+[node name="Tree_Evergreen5" parent="AbyssEvergreenContainer2" instance=ExtResource( 6 )]
+transform = Transform( 0.951605, 0, -0.325953, 0, 0.916911, 0, 0.289759, 0, 0.951605, -14.4718, 0, 4.44147 )
+
+[node name="Tree_Evergreen6" parent="AbyssEvergreenContainer2" instance=ExtResource( 6 )]
+transform = Transform( 0.645604, 0, -0.549397, 0, 0.814539, 0, 0.368616, 0, 0.855382, -9.97574, 0, 2.07216 )
+
+[node name="Tree_Evergreen7" parent="AbyssEvergreenContainer2" instance=ExtResource( 6 )]
+transform = Transform( 0.478231, 0, -0.820539, 0, 0.751277, 0, 0.550537, 0, 0.633624, 17.5745, 0, 6.00441 )
+
+[node name="AbyssEvergreenContainer3" type="Spatial" parent="."]
+transform = Transform( -7.37573, 0, 3.80802, 0, 5.86518, 0, -3.59037, 0, -7.82284, -74.3235, 0.553681, 166.999 )
+
+[node name="Tree_Evergreen1" parent="AbyssEvergreenContainer3" instance=ExtResource( 6 )]
+transform = Transform( 0.905132, 0, -0.450903, 0, 1, 0, 0.400834, 0, 0.905132, 0, 0, 0 )
+
+[node name="Tree_Evergreen2" parent="AbyssEvergreenContainer3" instance=ExtResource( 6 )]
+transform = Transform( 0.754754, 0, 0, 0, 0.764679, 0, 0, 0, 1, -5.11997, 0, 0 )
+
+[node name="Tree_Evergreen3" parent="AbyssEvergreenContainer3" instance=ExtResource( 6 )]
+transform = Transform( 0.643075, 0, -0.687827, 0, 0.691874, 0, 0.529897, 0, 0.742046, 5.97329, 0, 0 )
+
+[node name="Tree_Evergreen4" parent="AbyssEvergreenContainer3" instance=ExtResource( 6 )]
+transform = Transform( 0.798292, 0, -0.332534, 0, 0.892141, 0, 0.248513, 0, 0.949579, 11.5809, 0, 2.70953 )
+
+[node name="Tree_Evergreen5" parent="AbyssEvergreenContainer3" instance=ExtResource( 6 )]
+transform = Transform( 0.951605, 0, -0.325953, 0, 0.916911, 0, 0.289759, 0, 0.951605, -14.4718, 0, 4.44147 )
+
+[node name="Tree_Evergreen6" parent="AbyssEvergreenContainer3" instance=ExtResource( 6 )]
+transform = Transform( 0.645604, 0, -0.549397, 0, 0.814539, 0, 0.368616, 0, 0.855382, -9.97574, 0, 2.07216 )
+
+[node name="Tree_Evergreen7" parent="AbyssEvergreenContainer3" instance=ExtResource( 6 )]
+transform = Transform( 0.478231, 0, -0.820539, 0, 0.751277, 0, 0.550537, 0, 0.633624, 17.5745, 0, 6.00441 )
+
+[node name="AbyssEvergreenContainer4" type="Spatial" parent="."]
+transform = Transform( 2.69627, 0, 8.21705, 0, 5.86518, 0, -7.74741, 0, 2.85971, -181.991, 0.553666, -81.4946 )
+
+[node name="Tree_Evergreen1" parent="AbyssEvergreenContainer4" instance=ExtResource( 6 )]
+transform = Transform( 0.905132, 0, -0.450903, 0, 1, 0, 0.400834, 0, 0.905132, 0, 0, 0 )
+
+[node name="Tree_Evergreen2" parent="AbyssEvergreenContainer4" instance=ExtResource( 6 )]
+transform = Transform( 0.754754, 0, 0, 0, 0.764679, 0, 0, 0, 1, -5.11997, 0, 0 )
+
+[node name="Tree_Evergreen3" parent="AbyssEvergreenContainer4" instance=ExtResource( 6 )]
+transform = Transform( 0.643075, 0, -0.687827, 0, 0.691874, 0, 0.529897, 0, 0.742046, 5.97329, 0, 0 )
+
+[node name="Tree_Evergreen6" parent="AbyssEvergreenContainer4" instance=ExtResource( 6 )]
+transform = Transform( 0.645604, 0, -0.549397, 0, 0.814539, 0, 0.368616, 0, 0.855382, -9.97574, 0, 2.07216 )
+
+[node name="Tree_Evergreen7" parent="AbyssEvergreenContainer4" instance=ExtResource( 6 )]
+transform = Transform( -0.240524, 0, -1.00532, 0, 0.751277, 0, 0.674516, 0, -0.318678, 18.3099, 0, 7.35835 )
+
+[node name="Tree_Evergreen8" parent="AbyssEvergreenContainer4" instance=ExtResource( 6 )]
+transform = Transform( -0.240524, 0, -1.00532, 0, 0.751277, 0, 0.674516, 0, -0.318678, 23.7365, 2.60025e-06, 32.2624 )
+
+[node name="Tree_Evergreen9" parent="AbyssEvergreenContainer4" instance=ExtResource( 6 )]
+transform = Transform( -0.240524, 0, -1.00532, 0, 0.751277, 0, 0.674516, 0, -0.318678, -10.4331, 2.60025e-06, 47.9991 )
+
+[node name="Tree_Evergreen10" parent="AbyssEvergreenContainer4" instance=ExtResource( 6 )]
+transform = Transform( -0.240524, 0, -1.00532, 0, 0.751277, 0, 0.674516, 0, -0.318678, -26.6597, 2.60025e-06, 10.1124 )
+
+[node name="Campfire_Var1" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7177, 0.965625, 0 )
+
+[node name="urn_shovel" parent="Campfire_Var1" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 0.953222, -0.30227, 0, 0.30227, 0.953222, 0, 1.23509, 0 )

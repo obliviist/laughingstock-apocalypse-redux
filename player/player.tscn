@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://player/player.gd" type="Script" id=1]
 [ext_resource path="res://player/interactRay.gd" type="Script" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://src/gui/prompt_mouth.png" type="Texture" id=11]
 [ext_resource path="res://src/gui/prompt_open_door.png" type="Texture" id=12]
 [ext_resource path="res://src/gui/cow_score.tscn" type="PackedScene" id=13]
+[ext_resource path="res://src/gui/cheat_console.tscn" type="PackedScene" id=14]
 
 [sub_resource type="CapsuleMesh" id=1]
 radius = 0.5
@@ -133,4 +134,16 @@ transform = Transform( 1, 0, 0, 0, 0.870036, 0, 0, 0, 1, 0, 0.0540307, -0.406845
 shape = SubResource( 3 )
 disabled = true
 
+[node name="CheatConsole" parent="." instance=ExtResource( 14 )]
+visible = false
+
+[node name="LineEdit" parent="CheatConsole/CenterContainer" index="0"]
+margin_left = 180.0
+margin_right = 370.0
+
 [connection signal="body_entered" from="InteractArea" to="." method="_on_InteractArea_body_entered"]
+[connection signal="cheat_activated" from="CheatConsole/NoclipListener" to="." method="_on_NoclipListener_cheat_activated"]
+[connection signal="cheat_activated" from="CheatConsole/FlyListener" to="." method="_on_FlyListener_cheat_activated"]
+[connection signal="cheat_activated" from="CheatConsole/HorsepowerListener" to="." method="_on_HorsepowerListener_cheat_activated"]
+
+[editable path="CheatConsole"]

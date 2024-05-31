@@ -1,0 +1,61 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=1]
+[ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=2]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=4]
+[ext_resource path="res://levels/environment_3.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/gui/game_score.gd" type="Script" id=6]
+[ext_resource path="res://levels/world_abyss.gd" type="Script" id=7]
+[ext_resource path="res://environment/world_abyss_environment.tres" type="Environment" id=8]
+[ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=9]
+
+[sub_resource type="BoxShape" id=60]
+extents = Vector3( 1000, 0.8, 1000 )
+
+[node name="World_Abyss" type="Spatial"]
+script = ExtResource( 7 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59547, 6.5 )
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 2 )]
+environment = ExtResource( 8 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+
+[node name="Env" parent="." instance=ExtResource( 4 )]
+
+[node name="Environment_3" parent="." instance=ExtResource( 5 )]
+
+[node name="Death" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.4023, 0 )
+monitorable = false
+
+[node name="WaterCollisionShape" type="CollisionShape" parent="Death"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+shape = SubResource( 60 )
+
+[node name="Score" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.16223, 0 )
+monitorable = false
+
+[node name="WaterCollisionShape" type="CollisionShape" parent="Score"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+shape = SubResource( 60 )
+
+[node name="GUI" parent="." instance=ExtResource( 1 )]
+
+[node name="GameScore" type="Label" parent="."]
+visible = false
+margin_left = 21.0
+margin_top = 21.0
+margin_right = 162.0
+margin_bottom = 69.0
+theme = ExtResource( 9 )
+script = ExtResource( 6 )
+
+[connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
+
+[editable path="Environment_3"]
+[editable path="GUI"]

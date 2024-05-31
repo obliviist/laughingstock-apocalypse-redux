@@ -8,8 +8,29 @@ signal brightness_updated(value)
 signal fov_updated(value)
 signal mouse_sens_updated(value)
 
-var player
+#goldenboi
+signal playerRefSet(ref)
+
 var score = 0 setget set_score
+
+#goldenboi
+var playerRef : KinematicBody = null setget setPlayerRef, getPlayerRef
+var cameraRef : Camera = null setget setCameraRef, getCameraRef
+
+func setPlayerRef(player : KinematicBody):
+	if player.is_in_group("Player"):
+		playerRef = player
+		emit_signal("playerRefSet", player)
+		
+func getPlayerRef():
+	return playerRef
+	
+func setCameraRef(camera : Camera):
+	cameraRef = camera
+	
+func getCameraRef():
+	return cameraRef
+# / goldenboi
 
 func reset():
 	self.score = 0

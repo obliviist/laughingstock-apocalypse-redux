@@ -1,0 +1,78 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Sfx",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_ajax.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey, welcome to my humble abode!\nWhy the look of shock and awe?!\nI never said I was an interior decorator!\nIf you're feeling a little claustrophobic, join the club!!"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ask Ajax:"
+		},
+		{
+			"choice": "What now?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, according to you we're looking for a child who was catapulted into the Nav by a mad cow demon.\nY'know... nothing out of the ordinary. "
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "How about I hang out here and you have a look around my Urn and see if you can find one of my warp points?\nI gave up when you had to help me out of the Urn... but there has to be a working warp point around my room somewhere.\nI'm feeling lazy and you seem WAY more enthused about looking around than this scrambled brain of mine."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1723751967.json",
+		"name": "ajax4"
+	}
+}

@@ -22,7 +22,7 @@
 		},
 		{
 			"audio": "play",
-			"audio_bus": "Master",
+			"audio_bus": "Sfx",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
 			"file": "res://src/sfx/one_shots/voice_tracker.wav",

@@ -8,14 +8,21 @@ signal brightness_updated(value)
 signal fov_updated(value)
 signal mouse_sens_updated(value)
 
-#goldenboi
+# golden: noclip | fly
 signal playerRefSet(ref)
 
-var score = 0 setget set_score
-
-#goldenboi
+# golden: noclip | fly
 var playerRef : KinematicBody = null setget setPlayerRef, getPlayerRef
 var cameraRef : Camera = null setget setCameraRef, getCameraRef
+
+# cow score
+var cow_score = 0 setget set_cow_score
+
+# mask score
+var mask_score = 0 setget set_mask_score
+
+# below is var that will disable input
+var input_disabled = false
 
 func setPlayerRef(player : KinematicBody):
 	if player.is_in_group("Player"):
@@ -34,10 +41,21 @@ func getCameraRef():
 
 func reset():
 	self.score = 0
+	self.mask_score = 0
 	
-func set_score(new_score: int) -> void:
-	score = new_score
+func set_cow_score(new_cow_score: int) -> void:
+	cow_score = new_cow_score
 	emit_signal("updated")
+
+func set_mask_score(new_mask_score: int) -> void:
+	mask_score = new_mask_score
+	emit_signal("updated")
+	
+func set_disable_input(value):
+	input_disabled = value
+
+func get_disabled_input():
+   return input_disabled
 
 func toggle_fullscreen(value):
 	OS.window_fullscreen = value
@@ -72,7 +90,9 @@ func update_brightness(value):
 	emit_signal("brightness_updated", value)
 	Save.game_data.brightness = value
 	Save.save_data()
-	
+
+# anything commented out can be removed once the master vol slider has been fixed
+
 func update_master_vol(vol):
 	AudioServer.set_bus_volume_db(0, vol)
 	Save.game_data.master_vol = vol
@@ -82,7 +102,7 @@ func update_music_vol(vol):
 	AudioServer.set_bus_volume_db(1, vol)
 	Save.game_data.music_vol = vol
 	Save.save_data()
-
+	
 func update_sfx_vol(vol):
 	AudioServer.set_bus_volume_db(2, vol)
 	Save.game_data.sfx_vol = vol

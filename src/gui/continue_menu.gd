@@ -16,13 +16,17 @@ func _ready():
 	#result.text = "Score: %s" % GlobalSettings.score
 
 func _on_ContinueBtn_pressed():
-	get_tree().change_scene("res://levels/world_1.tscn")
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-RolandishLo.wav")
+	Sfx.play()
 	Music.stop()
+	get_tree().change_scene("res://src/gui/world_abyss_slide.tscn")
 	
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			
 func _on_MenuBtn_pressed():
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-RolandishLo.wav")
+	Sfx.play()
 	get_tree().change_scene("res://src/gui/start_screen.tscn") 
 	Music.stop()
 	
@@ -31,6 +35,8 @@ func _on_MenuBtn_pressed():
 
 
 func _on_SettingsBtn_pressed():
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-RolandishHi.wav")
+	Sfx.play()
 	settings_menu.popup_centered()
 
 

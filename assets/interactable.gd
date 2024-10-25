@@ -17,6 +17,4 @@ func get_prompt():
 
 func interact(body):
 	emit_signal("interacted", body)
-	#$Sfx.stream = load("res://src/sfx/one_shots/[SFX_FILE_NAME_HERE].wav")
-	#$Sfx.play()
-
+	

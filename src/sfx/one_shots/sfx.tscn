@@ -3,6 +3,7 @@
 [ext_resource path="res://src/sfx/one_shots/cow_moo.wav" type="AudioStream" id=1]
 
 [node name="Sfx" type="AudioStreamPlayer"]
+pause_mode = 2
 stream = ExtResource( 1 )
 volume_db = -2.622
 bus = "Sfx"

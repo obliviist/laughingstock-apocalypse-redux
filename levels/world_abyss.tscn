@@ -1,14 +1,31 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=1]
 [ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=2]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=4]
 [ext_resource path="res://levels/environment_3.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/gui/game_score.gd" type="Script" id=6]
 [ext_resource path="res://levels/world_abyss.gd" type="Script" id=7]
 [ext_resource path="res://environment/world_abyss_environment.tres" type="Environment" id=8]
 [ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=9]
+[ext_resource path="res://assets/npcs_tscn/npc_bonfire_shovel.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets_raw/raw_assets_cheat/mask_canine.glb" type="PackedScene" id=11]
+[ext_resource path="res://assets/npcs_tscn/npc_gaseous_serpent.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/npcs_tscn/npc_mask.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets_raw/raw_assets_cheat/mask_bull.glb" type="PackedScene" id=14]
+[ext_resource path="res://assets_raw/raw_assets_cheat/mask_head.glb" type="PackedScene" id=15]
+[ext_resource path="res://assets_raw/raw_assets_cheat/mask_demon.glb" type="PackedScene" id=16]
+[ext_resource path="res://assets_raw/raw_assets_cheat/mask_kitsune.glb" type="PackedScene" id=17]
+[ext_resource path="res://assets_raw/raw_assets_cheat/mask_rabbit.glb" type="PackedScene" id=18]
+[ext_resource path="res://assets/npcs_tscn/npc_abyss_tracker.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/npcs_tscn/npc_urn.gd" type="Script" id=20]
+[ext_resource path="res://assets/npcs_tscn/npc_urn.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/cheat_tscn/urn_painting_6.tscn" type="PackedScene" id=22]
+[ext_resource path="res://assets/npcs_tscn/npc_painting.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/gui/mask_score.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/npcs_tscn/npc_gserpent.gd" type="Script" id=25]
+[ext_resource path="res://src/gui/mask_score.gd" type="Script" id=26]
 
 [sub_resource type="BoxShape" id=60]
 extents = Vector3( 1000, 0.8, 1000 )
@@ -17,14 +34,13 @@ extents = Vector3( 1000, 0.8, 1000 )
 script = ExtResource( 7 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.59547, 6.5 )
+transform = Transform( -0.99934, 0, -0.0363469, 0, 1, 0, 0.0363469, 0, -0.99934, -59.5226, 0.642882, -94.1473 )
+max_speed = 30
 
 [node name="WorldEnvironment" parent="." instance=ExtResource( 2 )]
 environment = ExtResource( 8 )
 
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-
-[node name="Env" parent="." instance=ExtResource( 4 )]
+[node name="Amb" parent="." instance=ExtResource( 4 )]
 
 [node name="Environment_3" parent="." instance=ExtResource( 5 )]
 
@@ -55,7 +71,92 @@ margin_bottom = 69.0
 theme = ExtResource( 9 )
 script = ExtResource( 6 )
 
+[node name="GaseousSerpent" parent="." instance=ExtResource( 12 )]
+transform = Transform( 0.821498, -0.118875, -0.557683, 0, 0.978028, -0.208475, 0.570212, 0.171262, 0.803448, 9.21288, 1.70211, -11.5533 )
+script = ExtResource( 25 )
+npc = "gaseous_serpent"
+
+[node name="MaskScore" parent="GaseousSerpent" instance=ExtResource( 24 )]
+visible = false
+script = ExtResource( 26 )
+
+[node name="AbyssTracker" parent="." instance=ExtResource( 19 )]
+transform = Transform( 0.287858, 0, -1.47212, 0, 1.5, 0, 1.47212, 0, 0.287858, 1.32743, 1.06915, -3.08441 )
+
+[node name="AbyssTrackerAnimationPlayer" parent="AbyssTracker/abyss_tracker_v2" index="2"]
+autoplay = "tracker_deadNLA"
+
+[node name="HeadMask" parent="." instance=ExtResource( 13 )]
+transform = Transform( 0.121194, 0.992629, 4.33892e-08, 0, -4.37114e-08, 1, 0.992629, -0.121194, -5.29755e-09, 3.20328, 0.950445, -6.26071 )
+npc = "abyss_mask"
+dialog_index = 4
+
+[node name="mask_head" parent="HeadMask" instance=ExtResource( 15 )]
+
+[node name="BonfireShovel" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.925647, 1.01083, -6.13421 )
+
+[node name="BullMask" parent="." instance=ExtResource( 13 )]
+transform = Transform( -0.258819, 0.423707, -0.868035, 0, 0.898656, 0.438653, 0.965926, 0.113532, -0.232589, 7.94956, 9.67451, -32.8656 )
+npc = "abyss_mask"
+dialog_index = 1
+
+[node name="mask_bull" parent="BullMask" instance=ExtResource( 14 )]
+
+[node name="CanineMask" parent="." instance=ExtResource( 13 )]
+transform = Transform( -0.981333, 0, -0.192316, 0, 1, 0, 0.192316, 0, -0.981333, -0.750895, 1.89482, -33.2015 )
+npc = "abyss_mask"
+dialog_index = 2
+
+[node name="mask_canine" parent="CanineMask" instance=ExtResource( 11 )]
+
+[node name="DemonMask" parent="." instance=ExtResource( 13 )]
+transform = Transform( -0.82106, 0.306873, -0.481342, 0, 0.843213, 0.537579, 0.570843, 0.441385, -0.692328, -10.4329, 1.55074, 25.2333 )
+npc = "abyss_mask"
+dialog_index = 3
+
+[node name="mask_demon" parent="DemonMask" instance=ExtResource( 16 )]
+
+[node name="KitsuneMask" parent="." instance=ExtResource( 13 )]
+transform = Transform( -0.707107, -7.40662e-05, 0.707107, 0, 1, 0.000104745, -0.707107, 7.40662e-05, -0.707107, -37.4152, 6.02464, 13.797 )
+npc = "abyss_mask"
+dialog_index = 5
+
+[node name="mask_kitsune" parent="KitsuneMask" instance=ExtResource( 17 )]
+
+[node name="RabbitMask" parent="." instance=ExtResource( 13 )]
+transform = Transform( 0.135612, 0.14629, -0.979902, 0, 0.989039, 0.147654, 0.990762, -0.0200236, 0.134125, 15.9735, 2.20273, -35.3479 )
+npc = "abyss_mask"
+dialog_index = 6
+
+[node name="mask_rabbit" parent="RabbitMask" instance=ExtResource( 18 )]
+
+[node name="Urn_Painting" parent="." instance=ExtResource( 22 )]
+transform = Transform( -0.994609, 0.00848092, -0.103345, -0.00347405, 0.993365, 0.114954, 0.103635, 0.114693, -0.98798, -57.4604, 2.36212, -78.1945 )
+
+[node name="Painting" parent="Urn_Painting" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, 0, 0 )
+dialog_index = 6
+
+[node name="Urn1" parent="." instance=ExtResource( 21 )]
+transform = Transform( -0.173665, 0, -0.984805, 0, 1, 0, 0.984805, 0, -0.173665, -46.3698, 1.02128, -82.8446 )
+script = ExtResource( 20 )
+dialog_index = 2
+
+[node name="Urn2" parent="." instance=ExtResource( 21 )]
+transform = Transform( -0.173665, 0, -0.984805, 0, 1, 0, 0.984805, 0, -0.173665, -14.0224, 1.15758, 23.5162 )
+script = ExtResource( 20 )
+dialog_index = 2
+
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
 
+[editable path="Player"]
+[editable path="Player/CheatConsole"]
+[editable path="Player/CheatHelpPopup"]
 [editable path="Environment_3"]
+[editable path="Environment_3/castle_exterior_v2"]
 [editable path="GUI"]
+[editable path="GaseousSerpent"]
+[editable path="GaseousSerpent/gaseous_serpent_v2"]
+[editable path="AbyssTracker"]
+[editable path="AbyssTracker/abyss_tracker_v2"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/gui/JinxedWizards.ttf" type="DynamicFontData" id=2]
@@ -6,12 +6,16 @@
 [ext_resource path="res://src/gui/LSA_continue_splash_800x500.png" type="Texture" id=4]
 [ext_resource path="res://src/gui/continue_menu.gd" type="Script" id=5]
 [ext_resource path="res://src/gui/LSA_continue_bg_1024x600.png" type="Texture" id=6]
+[ext_resource path="res://src/gui/Oswald.ttf" type="DynamicFontData" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 26
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 7 )
 
 [node name="Continue" type="Control"]
 pause_mode = 2
@@ -40,14 +44,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BG/Background/CenterContainer"]
-margin_left = 388.0
-margin_top = 114.0
-margin_right = 636.0
-margin_bottom = 486.0
+margin_left = 402.0
+margin_top = 171.0
+margin_right = 622.0
+margin_bottom = 429.0
 custom_constants/separation = 7
 
 [node name="ContinueText" type="Label" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_right = 248.0
+margin_right = 220.0
 margin_bottom = 25.0
 custom_colors/font_color = Color( 1, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
@@ -57,14 +61,13 @@ valign = 1
 
 [node name="ContinueText2" type="Label" parent="BG/Background/CenterContainer/VBoxContainer"]
 margin_top = 32.0
-margin_right = 248.0
-margin_bottom = 177.0
-text = "NOTE: if you 
-press continue you
-will start the game
-over again."
+margin_right = 220.0
+margin_bottom = 63.0
+custom_fonts/font = SubResource( 2 )
+text = "NOTE: if you press \"Continue?\" you will fall far into THE ABYSS!"
 align = 1
 valign = 1
+autowrap = true
 
 [node name="Result" type="Label" parent="BG/Background/CenterContainer/VBoxContainer"]
 visible = false
@@ -76,35 +79,35 @@ align = 1
 valign = 1
 
 [node name="Control" type="Control" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_top = 184.0
-margin_right = 248.0
-margin_bottom = 184.0
+margin_top = 70.0
+margin_right = 220.0
+margin_bottom = 70.0
 
 [node name="ContinueBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_top = 191.0
-margin_right = 248.0
-margin_bottom = 231.0
+margin_top = 77.0
+margin_right = 220.0
+margin_bottom = 117.0
 rect_min_size = Vector2( 0, 40 )
 text = "Continue?"
 
 [node name="MenuBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_top = 238.0
-margin_right = 248.0
-margin_bottom = 278.0
+margin_top = 124.0
+margin_right = 220.0
+margin_bottom = 164.0
 rect_min_size = Vector2( 0, 40 )
 text = "Main Menu"
 
 [node name="SettingsBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_top = 285.0
-margin_right = 248.0
-margin_bottom = 325.0
+margin_top = 171.0
+margin_right = 220.0
+margin_bottom = 211.0
 rect_min_size = Vector2( 0, 40 )
 text = "Settings"
 
 [node name="QuitBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_top = 332.0
-margin_right = 248.0
-margin_bottom = 372.0
+margin_top = 218.0
+margin_right = 220.0
+margin_bottom = 258.0
 rect_min_size = Vector2( 0, 40 )
 text = "Quit"
 

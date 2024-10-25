@@ -65,6 +65,7 @@ func _input(event: InputEvent) -> void:
 						emit_signal("cheat_activated")
 					first_time = true
 					code_progress = 0
+					
 
 					cooldown_timer.start(repeat_cooldown)
 				else:

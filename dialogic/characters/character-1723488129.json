@@ -1,0 +1,21 @@
+{
+	"color": "#ffff42d8",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1723488129.json",
+	"mirror_portraits": false,
+	"name": "Coffee",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -45,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/coffee_face.png"
+		}
+	],
+	"scale": 150,
+	"theme": ""
+}

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://levels/world_void.gd" type="Script" id=1]
 [ext_resource path="res://environment/world_void_environment.tscn" type="PackedScene" id=2]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets_raw/_textures/mountain_rock1.png" type="Texture" id=4]
 [ext_resource path="res://shaders/watershader.tres" type="Material" id=5]
 [ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=6]
@@ -488,7 +488,7 @@ script = ExtResource( 1 )
 [node name="WorldEnvironment" parent="." instance=ExtResource( 2 )]
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5705, 20.2562, 0 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.5705, 18.5253, 0 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 
@@ -542,6 +542,7 @@ anims/ajax_idle = SubResource( 62 )
 anims/ajax_ride = SubResource( 63 )
 
 [node name="AjaxAnimationPlayer" parent="WorldFlip/Ajax/ajax" index="2"]
+autoplay = "ajax_ride"
 anims/ajax_idle = SubResource( 64 )
 anims/ajax_ride = SubResource( 65 )
 

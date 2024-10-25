@@ -4,8 +4,9 @@
 font_path = "res://src/gui/Oswald.ttf"
 
 [resource]
-size = 48
+size = 45
 outline_size = 1
 outline_color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
 use_filter = true
+extra_spacing_top = 1
 font_data = SubResource( 1 )

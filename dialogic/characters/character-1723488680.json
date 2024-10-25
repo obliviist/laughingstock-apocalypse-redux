@@ -1,0 +1,21 @@
+{
+	"color": "#ffff00a1",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1723488680.json",
+	"mirror_portraits": false,
+	"name": "Moonraker",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -45,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/silence_face.png"
+		}
+	],
+	"scale": 150,
+	"theme": ""
+}

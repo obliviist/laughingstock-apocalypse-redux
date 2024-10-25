@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=1]
+[ext_resource path="res://assets_raw/raw_assets/abyss_tracker_v2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/asset_anims/tracker_deadNLA.tres" type="Animation" id=3]
+[ext_resource path="res://assets/asset_anims/tracker_sitNLA.tres" type="Animation" id=4]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.453198
+height = 1.34129
+
+[node name="AbyssTracker" type="KinematicBody"]
+script = ExtResource( 1 )
+npc = "abyss_tracker"
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, -0.0586239, 0.134678, -0.111304 )
+shape = SubResource( 1 )
+
+[node name="abyss_tracker_v2" parent="." instance=ExtResource( 2 )]
+
+[node name="AbyssTrackerAnimationPlayer" type="AnimationPlayer" parent="abyss_tracker_v2"]
+anims/tracker_deadNLA = ExtResource( 3 )
+anims/tracker_sitNLA = ExtResource( 4 )
+
+[editable path="abyss_tracker_v2"]

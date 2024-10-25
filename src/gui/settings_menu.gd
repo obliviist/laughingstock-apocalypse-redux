@@ -32,9 +32,9 @@ func _ready():
 	brightness_slider.value = Save.game_data.brightness
 	
 	master_vol_slider.value = Save.game_data.master_vol
-	music_vol_slider.value = Save.game_data.master_vol
-	sfx_vol_slider.value = Save.game_data.master_vol
-	amb_vol_slider.value = Save.game_data.master_vol
+	music_vol_slider.value = Save.game_data.music_vol
+	sfx_vol_slider.value = Save.game_data.sfx_vol
+	amb_vol_slider.value = Save.game_data.amb_vol
 	
 	fov_slider.value = Save.game_data.fov
 	mouse_sens_slider.value = Save.game_data.mouse_sens
@@ -65,20 +65,21 @@ func _on_BrightnessSlider_value_changed(value):
 	GlobalSettings.update_brightness(value)
 
 
-func _on_MasterVolSlider_value_changed(value):
-	GlobalSettings.update_master_vol(value)
+func _on_MasterVolSlider_value_changed(vol):
+	GlobalSettings.update_master_vol(vol)
 
-#implementing music (check)
-func _on_MusicVolSlider_value_changed(value):
-	GlobalSettings.update_master_vol(value)
 
-# implementing sfx (check)
-func _on_SfxVolSlider_value_changed(value):
-	GlobalSettings.update_master_vol(value)
+func _on_MusicVolSlider_value_changed(vol):
+	GlobalSettings.update_music_vol(vol)
 
-# implementing amb (check)
-func _on_AmbVolSlider_value_changed(value):
-	GlobalSettings.update_master_vol(value)
+
+func _on_SfxVolSlider_value_changed(vol):
+	GlobalSettings.update_sfx_vol(vol)
+
+
+func _on_AmbVolSlider_value_changed(vol):
+	GlobalSettings.update_amb_vol(vol)
+	
 
 func _on_FovSlider_value_changed(value):
 	GlobalSettings.update_fov(value)
@@ -89,4 +90,7 @@ func _on_MouseSensSlider_value_changed(value):
 	GlobalSettings.update_mouse_sens(value)
 	mouse_sens_val.text = str(value)
 
-
+func _on_CloseBtn_pressed():
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-RolandishHi.wav")
+	Sfx.play()
+	self.hide()

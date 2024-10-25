@@ -1,0 +1,79 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1723488142.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Sfx",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_defiance.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1723488142.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It is imperative that you not interrupt my students on their field trip.\nShoo!!!!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Eavesdrop on the class field trip?"
+		},
+		{
+			"choice": "I'm listening",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488142.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ahem, so as I was saying... \nReapers in the Coldheart Kingdom are familiar with cleaning out corpses wedged in narrow columns.\nSuch as the column behind me, actually!\nThey would use a special incantation called \"dullboy33\" to dematerialize and do this job.\n\"dullboy33\" would allow the user to clip through all instances of dense matter and vegetation... \nEven a dashing body like that of  [color=#c1ff00]Professor[/color] Grapnel! Hehehe!"
+		},
+		{
+			"choice": "Nah",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1723490930.json",
+		"name": "defiance1"
+	}
+}

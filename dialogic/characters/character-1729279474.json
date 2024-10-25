@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1729279474.json",
+	"mirror_portraits": false,
+	"name": "Angler",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 70,
+	"offset_y": -25,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/angler_face.png"
+		}
+	],
+	"scale": 200,
+	"theme": ""
+}

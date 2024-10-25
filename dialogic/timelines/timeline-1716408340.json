@@ -22,17 +22,146 @@
 		},
 		{
 			"audio": "play",
-			"audio_bus": "Master",
+			"audio_bus": "Sfx",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://src/sfx/one_shots/chicken_cluck.wav",
+			"file": "res://src/sfx/one_shots/voice_voyager.wav",
 			"volume": 0
+		},
+		{
+			"character": "character-1716408095.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "No entry!\nNo mortals are allowed to enter the church."
+		},
+		{
+			"choice": "Understood!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
 		},
 		{
 			"character": "character-1716408095.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "No entry!\nNo mortals are allowed to enter the church."
+			"text": "Good. Please stand back!\nThere's a solid magic barrier around the church so don't try to knock the door down.\nIt won't budge anyway!"
+		},
+		{
+			"choice": "Why not?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1716408095.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I think the proper question is \"Why are YOU here?\"\nThere's a solid magic barrier around the church so don't try to knock the door down.\nIt won't budge anyway!"
+		},
+		{
+			"character": "character-1716408095.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Tell me, do you consider yourself an Occultist or Necromancer?"
+		},
+		{
+			"choice": "Occultist",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1716408095.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "HAHAHAHA!\nDon't make my stitches split at the seams.\nBuzz off."
+		},
+		{
+			"choice": "Necromancer",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1716408095.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "LMAOOOOOO!\nYou make me puke.\nScram!"
+		},
+		{
+			"choice": "Reaper",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1716408095.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pathetic but I have to admit your answer was unexpected.\nI kind of feel sorry for you if that's your REAL job.\nTell you what... you can take a peek inside the church...\nbut ONLY if you take over my custodial duties and clean up some of the mess in there.\nAfter all... you say you're a Reaper."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "How do you respond?"
+		},
+		{
+			"choice": "I'll help!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1716408095.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Fabulous!\nI hope you use your powers wisely.\nSimply say \"PASSWORD\" when the door prompts you to respond.\nBlah blah! Why am I telling a Reaper how to do THEIR job?!"
+		},
+		{
+			"definition": "1729276364-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"choice": "Nah",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1716408095.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You're dead to me anyway.\nScram!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_022",

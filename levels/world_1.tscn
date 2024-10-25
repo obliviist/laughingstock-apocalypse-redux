@@ -1,8 +1,8 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://levels/environment_1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/npcs_tscn/npc_moose.tscn" type="PackedScene" id=2]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://levels/world_1.gd" type="Script" id=4]
 [ext_resource path="res://environment/world_1_environment.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=6]
@@ -27,6 +27,8 @@
 [ext_resource path="res://src/sfx/one_shots/sfx.tscn" type="PackedScene" id=25]
 [ext_resource path="res://assets/environment_tscn/cottage_forth.tscn" type="PackedScene" id=26]
 [ext_resource path="res://src/music/spiders and cows_loop.wav" type="AudioStream" id=27]
+[ext_resource path="res://src/gui/cow_score.gd" type="Script" id=28]
+[ext_resource path="res://src/music/music.tscn" type="PackedScene" id=29]
 [ext_resource path="res://assets/environment_tscn/music_player_3D.gd" type="Script" id=30]
 [ext_resource path="res://assets/environment_tscn/barrel_green.tscn" type="PackedScene" id=31]
 [ext_resource path="res://src/music/the void_loop.wav" type="AudioStream" id=32]
@@ -2119,7 +2121,14 @@ script = ExtResource( 4 )
 
 [node name="WorldEnvironment" parent="." instance=ExtResource( 5 )]
 
+[node name="Music" parent="." instance=ExtResource( 29 )]
+script = null
+
 [node name="Amb" parent="." instance=ExtResource( 6 )]
+script = null
+
+[node name="Sfx" parent="." instance=ExtResource( 25 )]
+script = null
 
 [node name="Environment_1" parent="." instance=ExtResource( 1 )]
 
@@ -2165,9 +2174,9 @@ stream = ExtResource( 32 )
 unit_db = -2.0
 bus = "Music"
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="MusicPlayer"]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer" parent="MusicPlayer"]
 stream = ExtResource( 27 )
-unit_db = -2.759
+bus = "Music"
 
 [node name="barrel_green" parent="MusicPlayer" instance=ExtResource( 31 )]
 transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, -1.15175, 0.0730457 )
@@ -2182,6 +2191,7 @@ npc = "jenna"
 [node name="CowScore" parent="Jenna" instance=ExtResource( 12 )]
 visible = false
 margin_bottom = 76.0
+script = ExtResource( 28 )
 
 [node name="Sfx" parent="Jenna/CowScore" instance=ExtResource( 25 )]
 
@@ -2196,6 +2206,7 @@ npc = "nikita"
 [node name="CowScore" parent="Nikita" instance=ExtResource( 12 )]
 visible = false
 margin_bottom = 76.0
+script = ExtResource( 28 )
 
 [node name="Sfx" parent="Nikita/CowScore" instance=ExtResource( 25 )]
 
@@ -2426,6 +2437,7 @@ shape = SubResource( 77 )
 [editable path="Environment_1"]
 [editable path="Player"]
 [editable path="Player/CheatConsole"]
+[editable path="Player/CheatHelpPopup"]
 [editable path="GUI"]
 [editable path="MusicPlayer"]
 [editable path="Moose"]

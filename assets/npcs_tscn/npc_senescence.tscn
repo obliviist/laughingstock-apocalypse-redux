@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=1]
+[ext_resource path="res://assets_raw/raw_assets_cheat/npc_senescence.glb" type="PackedScene" id=2]
+[ext_resource path="res://assets/asset_anims/senescence_danceNLA.tres" type="Animation" id=3]
+[ext_resource path="res://assets/asset_anims/senescence_tendNLA.tres" type="Animation" id=4]
+[ext_resource path="res://assets_raw/raw_assets_cheat/npc_senescence.material" type="Material" id=5]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.7
+height = 0.8
+
+[node name="Senescence" type="KinematicBody"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1, 0 )
+shape = SubResource( 1 )
+
+[node name="npc_senescence" parent="." instance=ExtResource( 2 )]
+
+[node name="modelM" parent="npc_senescence/Armature/Skeleton" index="0"]
+material/0 = ExtResource( 5 )
+
+[node name="SenescenceAnimationPlayer" type="AnimationPlayer" parent="npc_senescence"]
+anims/senescence_danceNLA = ExtResource( 3 )
+anims/senescence_tendNLA = ExtResource( 4 )
+
+[editable path="npc_senescence"]

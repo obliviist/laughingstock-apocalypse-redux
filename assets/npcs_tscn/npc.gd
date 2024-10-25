@@ -9,23 +9,20 @@ signal interacted(body)
 func _ready():
 	add_to_group("NPC")
 	
-func _process(delta):
-	if Input.is_action_pressed("pause"):
-		get_tree().set_input_as_handled()
-	#above code not working to disable pause button
-	
 func interact(body):
 	emit_signal("interacted", body)
 
 func start_dialog():
 	var dialog = Dialogic.start(npc + str(dialog_index))
-	get_tree().paused = true
+	GlobalSettings.set_disable_input("pause")
 	dialog.pause_mode = PAUSE_MODE_PROCESS
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	get_parent().add_child(dialog)
 	dialog.connect("timeline_end", self, "end_dialog")
+	get_tree().paused = true
 
 func end_dialog(data):
 	get_tree().paused = false
+	GlobalSettings.set_disable_input(false)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	

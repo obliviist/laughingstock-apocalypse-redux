@@ -1,0 +1,104 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://assets/cheat_tscn/lone_star.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/npcs_tscn/npc_nikita.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/npcs_tscn/npc_archdemon_maldoror.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/npcs_tscn/npc_ajax.tscn" type="PackedScene" id=4]
+[ext_resource path="res://levels/world_star.gd" type="Script" id=5]
+[ext_resource path="res://environment/world_star_environment.tres" type="Environment" id=6]
+[ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=7]
+[ext_resource path="res://levels/environment_3.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/gui/game_score.gd" type="Script" id=9]
+[ext_resource path="res://src/gui/cow_score.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=20]
+[ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=25]
+[ext_resource path="res://assets/environment_tscn/rock_void_var1.tscn" type="PackedScene" id=33]
+
+[sub_resource type="BoxShape" id=60]
+extents = Vector3( 1000, 0.8, 1000 )
+
+[node name="World_Star" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 22 )]
+environment = ExtResource( 6 )
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource( 25 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -4, 23.5151, 0.0409963 )
+max_speed = 6
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+
+[node name="Env" parent="." instance=ExtResource( 16 )]
+
+[node name="Death" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.59768, 0 )
+monitorable = false
+
+[node name="WaterCollisionShape" type="CollisionShape" parent="Death"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+shape = SubResource( 60 )
+
+[node name="Score" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.83777, 0 )
+monitorable = false
+
+[node name="WaterCollisionShape" type="CollisionShape" parent="Score"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+shape = SubResource( 60 )
+
+[node name="GUI" parent="." instance=ExtResource( 20 )]
+
+[node name="GameScore" type="Label" parent="."]
+visible = false
+margin_left = 21.0
+margin_top = 21.0
+margin_right = 162.0
+margin_bottom = 69.0
+theme = ExtResource( 7 )
+script = ExtResource( 9 )
+
+[node name="Lonely Rock" parent="." instance=ExtResource( 33 )]
+transform = Transform( 0.0517638, 0, 0.193185, 0, 0.2, 0, -0.193185, 0, 0.0517638, 7.8746, 27.6346, -3.25309 )
+
+[node name="lone_star" parent="." instance=ExtResource( 1 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 23.3713, 0 )
+
+[node name="Nikita" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.315119, 0, 0.949052, 0, 1, 0, -0.949052, 0, 0.315119, 1.51408, 24.712, -0.611608 )
+npc = "nikita"
+dialog_index = 3
+
+[node name="CowScore" parent="Nikita" instance=ExtResource( 10 )]
+visible = false
+
+[node name="ArchdemonMaldoror" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.591014, 0, 0.806661, 0, 1, 0, -0.806661, 0, -0.591014, -4.40274, 24.2913, 6 )
+npc = "archdemon"
+dialog_index = 1
+
+[node name="Ajax" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.279929, 0, -0.960021, 0, 1, 0, 0.960021, 0, -0.279929, 7.71482, 27.4092, 3.44734 )
+npc = "ajax"
+dialog_index = 5
+
+[node name="Environment_3" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 173.959, -207.432, 0 )
+
+[connection signal="body_entered" from="Death" to="Player" method="_on_Death_body_entered"]
+[connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
+
+[editable path="Player"]
+[editable path="Player/CheatConsole"]
+[editable path="Player/CheatHelpPopup"]
+[editable path="GUI"]
+[editable path="Nikita"]
+[editable path="Nikita/nikita"]
+[editable path="ArchdemonMaldoror"]
+[editable path="ArchdemonMaldoror/archdemon_maldoror"]
+[editable path="Ajax"]
+[editable path="Ajax/ajax"]
+[editable path="Environment_3"]
+[editable path="Environment_3/castle_exterior_v2"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/grassy-footstep4.wav-f86cd895364b8ae2c3821052b059df90.sample"
+
+[deps]
+
+source_file="res://src/sfx/one_shots/grassy-footstep4.wav"
+dest_files=[ "res://.import/grassy-footstep4.wav-f86cd895364b8ae2c3821052b059df90.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

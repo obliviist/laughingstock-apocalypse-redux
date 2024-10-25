@@ -1,7 +1,7 @@
 [gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://levels/world_3.gd" type="Script" id=1]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=5]
@@ -203,6 +203,9 @@ shape = SubResource( 60 )
 transform = Transform( -0.497143, 0, 0.0533657, 0, 0.5, 0, -0.0533657, 0, -0.497143, -0.55926, 2.67504, 43.706 )
 npc = "ajax"
 dialog_index = 2
+
+[node name="AjaxAnimationPlayer" parent="Ajax/ajax" index="2"]
+autoplay = "ajax_idle"
 
 [node name="Haybale" parent="." instance=ExtResource( 30 )]
 transform = Transform( 0.999216, 0, -0.0395912, 0, 1, 0, 0.0395912, 0, 0.999216, -0.477541, 1.99268, 43.6967 )

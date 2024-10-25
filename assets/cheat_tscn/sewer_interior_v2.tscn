@@ -20,9 +20,10 @@ data = PoolVector3Array( 0.6, -1, -1, 1.4, 1, -1, 1.4, -1, -1, 0.6, -1, -1, 0.6,
 [node name="Urn_Ladder" parent="." index="0"]
 material/0 = ExtResource( 6 )
 
-[node name="StaticBody" type="StaticBody" parent="Urn_Ladder" index="0"]
+[node name="Ladder" type="StaticBody" parent="Urn_Ladder" index="0"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Urn_Ladder/StaticBody" index="0"]
+[node name="CollisionShape" type="CollisionShape" parent="Urn_Ladder/Ladder" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.84011, 0 )
 shape = SubResource( 1 )
 
 [node name="Sewer_Interior" parent="." index="1"]

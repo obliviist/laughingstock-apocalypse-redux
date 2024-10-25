@@ -22,5 +22,4 @@ fog_depth_end = 800.0
 fog_depth_curve = 0.6
 auto_exposure_speed = 0.92
 dof_blur_far_distance = 20.0
-glow_enabled = true
 adjustment_enabled = true

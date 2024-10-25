@@ -22,7 +22,7 @@
 		},
 		{
 			"audio": "play",
-			"audio_bus": "Master",
+			"audio_bus": "Sfx",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
 			"file": "res://src/sfx/one_shots/cow_moo.wav",
@@ -33,6 +33,66 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Moooooooo!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "How do you respond?"
+		},
+		{
+			"choice": "What is this place?!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/cow_angry.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1716397056.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "MOOOOOO! (Fool!)"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[color=#38f5bc]Archdemon[/color] Maldoror hands you a pamphlet that says you are trespassing on private property."
+		},
+		{
+			"choice": "Why is the church closed?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/cow_angry.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1716397056.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "MOOOO! (Very important!)\nMoooo mooooo moooo... (Mortals are being punished)\nMOOOO! (Cults will not be tolerated!)\nMOO! (A sacrifice is necessary!)\nMOOOOOO! (Princess Coldheart is sending a message, IN DEATH, to the living!)\nMooo mooo! (Do not worship false idols... or face consequences)"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_022",

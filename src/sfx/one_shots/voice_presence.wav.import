@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/voice_presence.wav-526219bb3e02a967b50a4f2666928b54.sample"
+
+[deps]
+
+source_file="res://src/sfx/one_shots/voice_presence.wav"
+dest_files=[ "res://.import/voice_presence.wav-526219bb3e02a967b50a4f2666928b54.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://src/gui/def_oswald_dynamicfont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://addons/CheatCoder/CheatCodeListener.gd" type="Script" id=2]
@@ -11,8 +11,90 @@
 [ext_resource path="res://addons/CheatCoder/Presets/noclip.tres" type="Resource" id=9]
 [ext_resource path="res://addons/CheatCoder/Presets/horsepower.tres" type="Resource" id=10]
 [ext_resource path="res://addons/CheatCoder/Presets/fly.tres" type="Resource" id=11]
+[ext_resource path="res://src/gui/intro_fade_out.tres" type="Animation" id=12]
+[ext_resource path="res://src/gui_anims/text_fade_out.tres" type="Animation" id=13]
+[ext_resource path="res://src/sfx/one_shots/sfx.tscn" type="PackedScene" id=14]
+[ext_resource path="res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav" type="AudioStream" id=15]
+[ext_resource path="res://src/gui/close_cheat_console.png" type="Texture" id=16]
+[ext_resource path="res://addons/CheatCoder/Presets/macromode.tres" type="Resource" id=17]
+[ext_resource path="res://addons/CheatCoder/Presets/moonjump.tres" type="Resource" id=18]
+[ext_resource path="res://addons/dialogic/Example Assets/backgrounds/background_green.png" type="Texture" id=19]
+[ext_resource path="res://addons/CheatCoder/Presets/deactivate.tres" type="Resource" id=20]
 
 [sub_resource type="DynamicFontData" id=1]
+font_path = "res://src/gui/Oswald.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 36
+outline_size = 1
+outline_color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
+use_filter = true
+font_data = SubResource( 1 )
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "intro_fade_out"
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "text_fade_out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="DynamicFontData" id=5]
 font_path = "res://src/gui/Oswald.ttf"
 
 [sub_resource type="DynamicFont" id=2]
@@ -20,7 +102,15 @@ size = 28
 outline_size = 2
 outline_color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
 use_filter = true
-font_data = SubResource( 1 )
+font_data = SubResource( 5 )
+
+[sub_resource type="StyleBoxTexture" id=9]
+texture = ExtResource( 19 )
+region_rect = Rect2( 0, 0, 320, 80 )
+margin_left = 15.0
+margin_right = 10.0
+margin_top = 10.0
+margin_bottom = 10.0
 
 [node name="CheatConsole" type="Control"]
 pause_mode = 2
@@ -28,61 +118,124 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 3 )
 
-[node name="LabelHidden" type="Label" parent="."]
+[node name="CheatActivated" type="Label" parent="."]
 visible = false
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 368.0
+margin_top = 24.0
+margin_right = 692.0
+margin_bottom = 55.0
+custom_colors/font_color = Color( 0.219608, 0.960784, 0.737255, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "CHEAT CODE ACTIVATED!"
+
+[node name="CheatActivatedFadeOut" type="AnimationPlayer" parent="CheatActivated"]
+autoplay = "text_fade_out"
+anims/RESET = SubResource( 4 )
+anims/intro_fade_out = ExtResource( 12 )
+anims/text_fade_out = ExtResource( 13 )
+
+[node name="CheatDeactivated" type="Label" parent="."]
+visible = false
+margin_left = 368.0
+margin_top = 24.0
+margin_right = 692.0
+margin_bottom = 55.0
+custom_colors/font_color = Color( 1, 0.235294, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "CHEAT CODE DEACTIVATED!"
+
+[node name="CheatDeactivatedFadeOut" type="AnimationPlayer" parent="CheatDeactivated"]
+autoplay = "text_fade_out"
+anims/RESET = SubResource( 6 )
+anims/intro_fade_out = SubResource( 7 )
+anims/text_fade_out = SubResource( 8 )
 
 [node name="EnterCC" type="Label" parent="."]
 anchor_left = 0.570313
-anchor_top = 0.16
+anchor_top = 0.173333
 anchor_right = 0.716797
-anchor_bottom = 0.24
+anchor_bottom = 0.253333
 margin_right = 198.0
 custom_colors/font_color = Color( 0.682353, 1, 0.67451, 1 )
 custom_fonts/font = SubResource( 2 )
-text = "ENTER CHEAT CODE:"
+text = " ENTER CHEATCODE:"
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
 [node name="TheUrnListener" type="Node" parent="."]
 script = ExtResource( 2 )
+allow_mistakes = true
 code = ExtResource( 5 )
 
 [node name="TheAbyssListener" type="Node" parent="."]
 script = ExtResource( 2 )
+allow_mistakes = true
 code = ExtResource( 4 )
 
 [node name="TheKeepListener" type="Node" parent="."]
 script = ExtResource( 2 )
+allow_mistakes = true
 code = ExtResource( 6 )
 
 [node name="TheSaloonListener" type="Node" parent="."]
 script = ExtResource( 2 )
+allow_mistakes = true
 code = ExtResource( 7 )
 
 [node name="HelpListener" type="Node" parent="."]
 script = ExtResource( 2 )
+allow_mistakes = true
 code = ExtResource( 8 )
 
 [node name="NoclipListener" type="Node" parent="."]
 script = ExtResource( 2 )
+allow_mistakes = true
+repeat = true
 code = ExtResource( 9 )
 
 [node name="FlyListener" type="Node" parent="."]
 script = ExtResource( 2 )
+allow_mistakes = true
+repeat = true
 code = ExtResource( 11 )
 
 [node name="HorsepowerListener" type="Node" parent="."]
 script = ExtResource( 2 )
+allow_mistakes = true
+repeat = true
 code = ExtResource( 10 )
 
+[node name="MacroModeListener" type="Node" parent="."]
+script = ExtResource( 2 )
+allow_mistakes = true
+repeat = true
+code = ExtResource( 17 )
+
+[node name="MoonJumpListener" type="Node" parent="."]
+script = ExtResource( 2 )
+allow_mistakes = true
+repeat = true
+code = ExtResource( 18 )
+
+[node name="DeactivateListener" type="Node" parent="."]
+script = ExtResource( 2 )
+allow_mistakes = true
+repeat = true
+repeat_cooldown = 3.0
+code = ExtResource( 20 )
+
 [node name="CenterContainer" type="CenterContainer" parent="."]
-anchor_left = 0.398438
-anchor_top = 0.186667
-anchor_right = 0.9375
-anchor_bottom = 0.303333
+anchor_left = 0.280273
+anchor_top = 0.198333
+anchor_right = 0.819335
+anchor_bottom = 0.314999
+margin_left = 5.0
+margin_top = 10.0
+margin_right = 245.0
+margin_bottom = -10.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 __meta__ = {
@@ -90,8 +243,18 @@ __meta__ = {
 }
 
 [node name="LineEdit" type="LineEdit" parent="CenterContainer"]
-margin_left = 181.0
-margin_top = 9.0
-margin_right = 371.0
+margin_left = 299.0
+margin_right = 492.0
 margin_bottom = 60.0
+rect_clip_content = true
 custom_fonts/font = ExtResource( 1 )
+custom_styles/normal = SubResource( 9 )
+clear_button_enabled = true
+caret_blink = true
+
+[node name="Sfx" parent="." instance=ExtResource( 14 )]
+stream = ExtResource( 15 )
+
+[node name="CheatConsoleClose" type="Sprite" parent="."]
+position = Vector2( 832, 512 )
+texture = ExtResource( 16 )

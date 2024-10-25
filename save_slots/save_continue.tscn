@@ -1,40 +1,41 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=58 format=2]
 
 [ext_resource path="res://src/sfx/amb_loops/amb_wind.wav" type="AudioStream" id=1]
-[ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=2]
-[ext_resource path="res://assets/foliage_tscn/tree_orange.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/skyscrapers_tscn/building_container.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/environment_tscn/bed_nikita.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/npcs_tscn/pavyk.tscn" type="PackedScene" id=6]
-[ext_resource path="res://shaders/watershader.tres" type="Material" id=7]
-[ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=8]
-[ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=9]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=10]
-[ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=11]
-[ext_resource path="res://environment/world_2_environment.tres" type="Environment" id=12]
-[ext_resource path="res://assets/asset_anims/bed_float.tres" type="Animation" id=13]
-[ext_resource path="res://assets/asset_anims/urn_float.tres" type="Animation" id=14]
-[ext_resource path="res://assets/environment_tscn/tunnel_back.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/world_audio.gd" type="Script" id=2]
+[ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets_raw/raw_assets/ajax_urn1.material" type="Material" id=6]
+[ext_resource path="res://assets_raw/raw_assets/ajax_npc.material" type="Material" id=7]
+[ext_resource path="res://assets_raw/raw_assets/ajax_staff.material" type="Material" id=8]
+[ext_resource path="res://assets_raw/raw_assets/cow_maldoror.material" type="Material" id=9]
+[ext_resource path="res://assets_raw/raw_assets/ajax_urn2.material" type="Material" id=10]
+[ext_resource path="res://assets/asset_anims/urn_float.tres" type="Animation" id=11]
+[ext_resource path="res://assets/environment_tscn/bed_nikita.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/npcs_tscn/npc_ajax.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/environment_tscn/chasm.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/environment_tscn/boundaries.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/npcs_tscn/npc_maldoror.tscn" type="PackedScene" id=16]
-[ext_resource path="res://assets/environment_tscn/chasm.tscn" type="PackedScene" id=17]
-[ext_resource path="res://assets/environment_tscn/boundaries.tscn" type="PackedScene" id=18]
-[ext_resource path="res://assets/npcs_tscn/npc_urn.tscn" type="PackedScene" id=19]
-[ext_resource path="res://assets/foliage_tscn/tree_evergreen.tscn" type="PackedScene" id=20]
-[ext_resource path="res://assets/npcs_tscn/npc_ajax.tscn" type="PackedScene" id=21]
-[ext_resource path="res://assets/foliage_tscn/bush_green.tscn" type="PackedScene" id=22]
-[ext_resource path="res://src/gui/fps_label.gd" type="Script" id=23]
-[ext_resource path="res://src/gui/gui.gd" type="Script" id=24]
-[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=25]
-[ext_resource path="res://assets/environment_tscn/gate.gd" type="Script" id=26]
-[ext_resource path="res://player/player.gd" type="Script" id=27]
+[ext_resource path="res://assets/foliage_tscn/tree_evergreen.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/environment_tscn/tunnel_back.tscn" type="PackedScene" id=18]
+[ext_resource path="res://assets/foliage_tscn/bush_green.tscn" type="PackedScene" id=19]
+[ext_resource path="res://environment/world_2_environment.tres" type="Environment" id=20]
+[ext_resource path="res://assets/skyscrapers_tscn/building_container.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/npcs_tscn/pavyk.tscn" type="PackedScene" id=22]
+[ext_resource path="res://assets/foliage_tscn/tree_orange.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/npcs_tscn/npc_urn.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=26]
+[ext_resource path="res://src/gui/fps_label.gd" type="Script" id=27]
 [ext_resource path="res://levels/world_chasm.gd" type="Script" id=28]
 [ext_resource path="res://src/gui/pause_menu.gd" type="Script" id=29]
-[ext_resource path="res://environment/world_environment.gd" type="Script" id=30]
-[ext_resource path="res://assets_raw/raw_assets/ajax_staff.material" type="Material" id=31]
-[ext_resource path="res://assets_raw/raw_assets/ajax_urn2.material" type="Material" id=32]
-[ext_resource path="res://assets_raw/raw_assets/ajax_npc.material" type="Material" id=33]
-[ext_resource path="res://assets_raw/raw_assets/cow_maldoror.material" type="Material" id=34]
-[ext_resource path="res://assets_raw/raw_assets/ajax_urn1.material" type="Material" id=35]
+[ext_resource path="res://src/gui/gui.gd" type="Script" id=30]
+[ext_resource path="res://assets/asset_anims/bed_float.tres" type="Animation" id=31]
+[ext_resource path="res://shaders/watershader.tres" type="Material" id=32]
+[ext_resource path="res://environment/world_environment.gd" type="Script" id=33]
+[ext_resource path="res://src/player/player.gd" type="Script" id=34]
+[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=35]
+[ext_resource path="res://assets/environment_tscn/gate.gd" type="Script" id=36]
 
 [sub_resource type="PlaneMesh" id=21]
 size = Vector2( 768, 512 )
@@ -60,7 +61,7 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 2194711,
 "index_count": 306,
-"material": ExtResource( 35 ),
+"material": ExtResource( 6 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 196
@@ -72,7 +73,7 @@ surfaces/1 = {
 "blend_shape_data": [  ],
 "format": 2194711,
 "index_count": 114,
-"material": ExtResource( 32 ),
+"material": ExtResource( 10 ),
 "primitive": 4,
 "skeleton_aabb": [  ],
 "vertex_count": 72
@@ -121,7 +122,7 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 2194903,
 "index_count": 1380,
-"material": ExtResource( 33 ),
+"material": ExtResource( 7 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( -0.354394, 0.561941, -0.42569, 0.708788, 0.857942, 0.813233 ), AABB( -0.469208, 1.07558, -0.507004, 0.938415, 0.946016, 0.976711 ), AABB( 0.229258, 1.0318, -0.20313, 0.418843, 0.303129, 0.406259 ), AABB( 0.664741, 1.02054, -0.124757, 0.296405, 0.167616, 0.249514 ), AABB( 0.936782, 0.781879, -0.1152, 0.366556, 0.284647, 0.23041 ), AABB( 0.0559495, 0.345161, -0.0870495, 0.219568, 0.359888, 0.198809 ), AABB( 0.102626, 0.22917, -0.0712877, 0.157515, 0.076889, 0.157564 ), AABB( 0.0448296, -0.0137896, -0.227576, 0.305783, 0.146955, 0.571477 ), AABB( -0.648101, 1.0318, -0.20313, 0.418853, 0.303129, 0.406259 ), AABB( -0.961146, 1.02054, -0.124757, 0.296415, 0.167616, 0.249514 ), AABB( -1.30334, 0.781879, -0.1152, 0.366556, 0.284647, 0.23041 ), AABB( -0.275517, 0.345161, -0.0870495, 0.219568, 0.359888, 0.198809 ), AABB( -0.260141, 0.22917, -0.0712877, 0.157525, 0.076889, 0.157564 ), AABB( -0.350612, -0.0137896, -0.227576, 0.305783, 0.146955, 0.571477 ) ],
 "vertex_count": 894
@@ -133,7 +134,7 @@ surfaces/1 = {
 "blend_shape_data": [  ],
 "format": 2194903,
 "index_count": 174,
-"material": ExtResource( 31 ),
+"material": ExtResource( 8 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -1.22353, 0.606735, -0.877586, 0.229459, 0.399082, 1.45931 ) ],
 "vertex_count": 120
@@ -612,7 +613,7 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 2194903,
 "index_count": 972,
-"material": ExtResource( 34 ),
+"material": ExtResource( 9 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( -1, 0.00657619, -1.73581, 2, 3.12731, 3.57041 ), AABB( -0.840722, 2.11309, 1.85487, 1.68144, 1.21451, 1.00422 ) ],
 "vertex_count": 698
@@ -695,35 +696,38 @@ tracks/1/keys = {
 [node name="World_Chasm" type="Spatial"]
 script = ExtResource( 28 )
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." instance=ExtResource( 9 )]
-environment = ExtResource( 12 )
-script = ExtResource( 30 )
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." instance=ExtResource( 3 )]
+environment = ExtResource( 20 )
+script = ExtResource( 33 )
 
-[node name="Player" type="KinematicBody" parent="." groups=["player"] instance=ExtResource( 10 )]
-transform = Transform( 0.0174524, 0, -0.999848, 0, 1, 0, 0.999848, 0, 0.0174524, 3.72647, 2.37495, 8.84402 )
+[node name="Player" type="KinematicBody" parent="." groups=["player"] instance=ExtResource( 4 )]
+pause_mode = 1
+transform = Transform( -0.802818, 0, 0.596225, 0, 1, 0, -0.596225, 0, -0.802818, -1.82313, 2.40138, 8.51785 )
 collision_mask = 7
-script = ExtResource( 27 )
+script = ExtResource( 34 )
 max_speed = 12
 acceleration = 60
 friction = 50
 air_friction = 10
 jump_impulse = 15
 gravity = -40
-mouse_sensitivity = 0.5
+mouse_sensitivity = 0.2
 controller_sensitivity = 3
 push = 1
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 
-[node name="Env" type="AudioStreamPlayer" parent="." instance=ExtResource( 8 )]
+[node name="Env" type="AudioStreamPlayer" parent="." instance=ExtResource( 5 )]
+pause_mode = 2
 stream = ExtResource( 1 )
 volume_db = -7.992
 bus = "Amb"
+script = ExtResource( 2 )
 
 [node name="Water" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19.7559, 5.6645, 1.21081 )
 mesh = SubResource( 21 )
-material/0 = ExtResource( 7 )
+material/0 = ExtResource( 32 )
 
 [node name="Death" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.59768, 0 )
@@ -741,29 +745,29 @@ monitorable = false
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
 shape = SubResource( 60 )
 
-[node name="GUI" parent="." instance=ExtResource( 11 )]
-script = ExtResource( 24 )
+[node name="GUI" parent="." instance=ExtResource( 25 )]
+script = ExtResource( 30 )
 
 [node name="PauseMenu" parent="GUI" index="0"]
 pause_mode = 2
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
-theme = ExtResource( 2 )
+theme = ExtResource( 26 )
 script = ExtResource( 29 )
 
 [node name="FpsLabel" parent="GUI" index="1"]
 visible = false
 margin_right = 40.0
 margin_bottom = 14.0
-theme = ExtResource( 2 )
+theme = ExtResource( 26 )
 custom_styles/normal = SubResource( 1 )
 text = "FPS: 30"
-script = ExtResource( 23 )
+script = ExtResource( 27 )
 
-[node name="Urn" parent="." instance=ExtResource( 19 )]
+[node name="Urn" parent="." instance=ExtResource( 24 )]
 transform = Transform( -0.899855, 0, 0.436189, 0, 1, 0, -0.436189, 0, -0.899855, -10.8281, 21.2681, 0 )
-script = ExtResource( 25 )
+script = ExtResource( 35 )
 npc = "urn"
 dialog_index = 0
 
@@ -772,13 +776,13 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.44
 shape = SubResource( 68 )
 
 [node name="ajax_urn" parent="Urn" index="1"]
-transform = Transform( 0.35424, 0, 0.935155, 0, 1, 0, -0.935155, 0, 0.35424, 0, 0.038474, 0 )
+transform = Transform( 0.0619006, 0, -0.998082, 0, 1, 0, 0.998082, 0, 0.0619006, 0, 0.061555, 0 )
 
 [node name="ajax_urn" parent="Urn/ajax_urn" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.482665, 0 )
 mesh = SubResource( 69 )
-material/0 = ExtResource( 35 )
-material/1 = ExtResource( 32 )
+material/0 = ExtResource( 6 )
+material/1 = ExtResource( 10 )
 
 [node name="CollisionShape" parent="Urn/ajax_urn/ajax_urn/StaticBody" index="0"]
 shape = SubResource( 70 )
@@ -786,12 +790,12 @@ shape = SubResource( 70 )
 [node name="AnimationPlayer" parent="Urn/ajax_urn" index="1"]
 autoplay = "urn_float"
 anims/RESET = SubResource( 2 )
-anims/urn_float = ExtResource( 14 )
+anims/urn_float = ExtResource( 11 )
 
-[node name="Ajax" parent="." instance=ExtResource( 21 )]
+[node name="Ajax" parent="." instance=ExtResource( 13 )]
 transform = Transform( 0.29942, 0, 0.400433, 0, 0.5, 0, -0.400433, 0, 0.29942, -13.8638, 21.9844, -0.099483 )
 visible = false
-script = ExtResource( 25 )
+script = ExtResource( 35 )
 npc = "ajax"
 dialog_index = 0
 
@@ -877,22 +881,21 @@ bones/13/bound_children = [  ]
 [node name="modelF" parent="Ajax/ajax/ajax/Skeleton" index="0"]
 mesh = SubResource( 72 )
 skin = SubResource( 73 )
-material/0 = ExtResource( 33 )
-material/1 = ExtResource( 31 )
+material/0 = ExtResource( 7 )
+material/1 = ExtResource( 8 )
 
 [node name="AnimationPlayer" parent="Ajax/ajax" index="1"]
 anims/ajax_idle = SubResource( 62 )
 anims/ajax_ride = SubResource( 63 )
 
 [node name="AjaxAnimationPlayer" parent="Ajax/ajax" index="2"]
-autoplay = "ajax_ride"
 anims/ajax_idle = SubResource( 64 )
 anims/ajax_ride = SubResource( 65 )
 
 [node name="Maldoror" parent="." instance=ExtResource( 16 )]
 transform = Transform( 0.29942, 0, 0.400433, 0, 0.5, 0, -0.400433, 0, 0.29942, -13.9987, 20.6825, -0.222181 )
 visible = false
-script = ExtResource( 25 )
+script = ExtResource( 35 )
 npc = "npc name"
 dialog_index = 0
 
@@ -928,88 +931,88 @@ anims/cow_idle = SubResource( 66 )
 autoplay = "cow_idle"
 anims/cow_idle = SubResource( 67 )
 
-[node name="Boundaries_Chasm1" type="Spatial" parent="." instance=ExtResource( 18 )]
+[node name="Boundaries_Chasm1" type="Spatial" parent="." instance=ExtResource( 15 )]
 transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, -22.7635, 0 )
 
-[node name="Bush_Green1" type="Spatial" parent="." instance=ExtResource( 22 )]
+[node name="Bush_Green1" type="Spatial" parent="." instance=ExtResource( 19 )]
 transform = Transform( 0.26206, 0, -0.146029, 0, 0.3, 0, 0.146029, 0, 0.26206, -16.0897, 20.3624, -3.40485 )
 
-[node name="Bush_Green2" type="Spatial" parent="." instance=ExtResource( 22 )]
+[node name="Bush_Green2" type="Spatial" parent="." instance=ExtResource( 19 )]
 transform = Transform( 0.243206, 0, 0.175644, 0, 0.3, 0, -0.175644, 0, 0.243206, -12.7689, 20.3624, -6.21505 )
 
-[node name="Bush_Green3" type="Spatial" parent="." instance=ExtResource( 22 )]
+[node name="Bush_Green3" type="Spatial" parent="." instance=ExtResource( 19 )]
 transform = Transform( 0.243206, 0, 0.175644, 0, 0.3, 0, -0.175644, 0, 0.243206, -15.7585, 20.3624, 2.84762 )
 
-[node name="Bush_Green4" type="Spatial" parent="." instance=ExtResource( 22 )]
+[node name="Bush_Green4" type="Spatial" parent="." instance=ExtResource( 19 )]
 transform = Transform( 0.243206, 0, 0.175644, 0, 0.3, 0, -0.175644, 0, 0.243206, -12.781, 20.3624, 5.6395 )
 
-[node name="Chasm" type="Spatial" parent="." instance=ExtResource( 17 )]
+[node name="Chasm" type="Spatial" parent="." instance=ExtResource( 14 )]
 
-[node name="Tree_Evergreen1" type="Spatial" parent="." instance=ExtResource( 20 )]
+[node name="Tree_Evergreen1" type="Spatial" parent="." instance=ExtResource( 17 )]
 transform = Transform( 0.985019, 0, 0.172445, 0, 1, 0, -0.172445, 0, 0.985019, -14.7953, 20, 4.9501 )
 
-[node name="Tree_Evergreen2" type="Spatial" parent="." instance=ExtResource( 20 )]
+[node name="Tree_Evergreen2" type="Spatial" parent="." instance=ExtResource( 17 )]
 transform = Transform( 0.873534, 0, -0.486762, 0, 1, 0, 0.486762, 0, 0.873534, -14.8832, 20, -5.58828 )
 
-[node name="Tree_Evergreen3" type="Spatial" parent="." instance=ExtResource( 20 )]
+[node name="Tree_Evergreen3" type="Spatial" parent="." instance=ExtResource( 17 )]
 transform = Transform( 0.985019, 0, 0.172445, 0, 1, 0, -0.172445, 0, 0.985019, 13.9239, 20, 4.42715 )
 
-[node name="Tree_Evergreen4" type="Spatial" parent="." instance=ExtResource( 20 )]
+[node name="Tree_Evergreen4" type="Spatial" parent="." instance=ExtResource( 17 )]
 transform = Transform( 0.873534, 0, -0.486762, 0, 1, 0, 0.486762, 0, 0.873534, 14.2066, 20, -4.64215 )
 
-[node name="Tunnel_Back" type="StaticBody" parent="." instance=ExtResource( 15 )]
+[node name="Tunnel_Back" type="StaticBody" parent="." instance=ExtResource( 18 )]
 transform = Transform( 0.049948, 0, 0.998752, 0, 1, 0, -0.998752, 0, 0.049948, 20.126, 21.168, 0.162 )
-script = ExtResource( 26 )
+script = ExtResource( 36 )
 gate = "tunnel"
 dialog_index = 1
 
-[node name="bed" type="Spatial" parent="." instance=ExtResource( 5 )]
-transform = Transform( 3.02694, -0.588622, 19.7608, 0, 19.9911, 0.59548, -19.7696, -0.0901243, 3.02559, -2.19438, -4.84929, 72.8102 )
+[node name="bed" type="Spatial" parent="." instance=ExtResource( 12 )]
+transform = Transform( 3.02694, -0.378005, 19.766, 0, 19.9963, 0.38241, -19.7696, -0.0578767, 3.02638, -2.19438, -4.84929, 72.8102 )
 
 [node name="BedAnimationPlayer" type="AnimationPlayer" parent="bed"]
 autoplay = "bed_float"
 anims/RESET = SubResource( 61 )
-anims/bed_float = ExtResource( 13 )
+anims/bed_float = ExtResource( 31 )
 
-[node name="pavyk1" type="Spatial" parent="." instance=ExtResource( 6 )]
+[node name="pavyk1" type="Spatial" parent="." instance=ExtResource( 22 )]
 transform = Transform( -2.33555, 0, -1.88287, 0, 3, 0, 1.88287, 0, -2.33555, 49.5356, 29.0269, 116.213 )
 
-[node name="pavyk2" type="Spatial" parent="." instance=ExtResource( 6 )]
+[node name="pavyk2" type="Spatial" parent="." instance=ExtResource( 22 )]
 transform = Transform( -2.91056, 0, 0.727087, 0, 3, 0, -0.727087, 0, -2.91056, -21.0494, 40.6083, 152.248 )
 
-[node name="pavyk3" type="Spatial" parent="." instance=ExtResource( 6 )]
+[node name="pavyk3" type="Spatial" parent="." instance=ExtResource( 22 )]
 transform = Transform( -1.66017, 0, 2.49876, 0, 3, 0, -2.49876, 0, -1.66017, -89.2837, 40.5307, 110.429 )
 
 [node name="TreeContainer" type="Spatial" parent="."]
 
-[node name="Tree_Orange1" type="Spatial" parent="TreeContainer" instance=ExtResource( 3 )]
+[node name="Tree_Orange1" type="Spatial" parent="TreeContainer" instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 64.723, 27, 115.253 )
 
-[node name="Tree_Orange2" type="Spatial" parent="TreeContainer" instance=ExtResource( 3 )]
+[node name="Tree_Orange2" type="Spatial" parent="TreeContainer" instance=ExtResource( 23 )]
 transform = Transform( 0.560942, 0, -0.827855, 0, 1, 0, 0.827855, 0, 0.560942, 58.6604, 27, 124.241 )
 
-[node name="Tree_Orange3" type="Spatial" parent="TreeContainer" instance=ExtResource( 3 )]
+[node name="Tree_Orange3" type="Spatial" parent="TreeContainer" instance=ExtResource( 23 )]
 transform = Transform( -0.055717, 0, -0.998447, 0, 1, 0, 0.998447, 0, -0.055717, 48.6308, 27, 128.846 )
 
-[node name="Tree_Orange4" type="Spatial" parent="TreeContainer" instance=ExtResource( 3 )]
+[node name="Tree_Orange4" type="Spatial" parent="TreeContainer" instance=ExtResource( 23 )]
 transform = Transform( -0.055717, 0, -0.998447, 0, 1, 0, 0.998447, 0, -0.055717, -13.8974, 38.6643, 163.201 )
 
-[node name="Tree_Orange5" type="Spatial" parent="TreeContainer" instance=ExtResource( 3 )]
+[node name="Tree_Orange5" type="Spatial" parent="TreeContainer" instance=ExtResource( 23 )]
 transform = Transform( -0.991188, 0, -0.132464, 0, 1, 0, 0.132464, 0, -0.991188, -25.858, 38.6643, 163.422 )
 
-[node name="Tree_Orange6" type="Spatial" parent="TreeContainer" instance=ExtResource( 3 )]
+[node name="Tree_Orange6" type="Spatial" parent="TreeContainer" instance=ExtResource( 23 )]
 transform = Transform( -0.991188, 0, -0.132464, 0, 1, 0, 0.132464, 0, -0.991188, -32.5466, 38.6643, 155.038 )
 
-[node name="Tree_Orange7" type="Spatial" parent="TreeContainer" instance=ExtResource( 3 )]
+[node name="Tree_Orange7" type="Spatial" parent="TreeContainer" instance=ExtResource( 23 )]
 transform = Transform( -0.991188, 0, -0.132464, 0, 1, 0, 0.132464, 0, -0.991188, -86.4559, 37.7836, 122.133 )
 
-[node name="Tree_Orange8" type="Spatial" parent="TreeContainer" instance=ExtResource( 3 )]
+[node name="Tree_Orange8" type="Spatial" parent="TreeContainer" instance=ExtResource( 23 )]
 transform = Transform( -0.991188, 0, -0.132464, 0, 1, 0, 0.132464, 0, -0.991188, -102.588, 37.7836, 105.539 )
 
-[node name="BuildingContainer1" type="Spatial" parent="." instance=ExtResource( 4 )]
+[node name="BuildingContainer1" type="Spatial" parent="." instance=ExtResource( 21 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -21.7708, -67.5026, -124.532 )
 
-[node name="BuildingContainer2" parent="." instance=ExtResource( 4 )]
+[node name="BuildingContainer2" parent="." instance=ExtResource( 21 )]
 transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, -5.75844, -74.4296, 160.584 )
 
 [node name="buildingA1" parent="BuildingContainer2" index="0"]

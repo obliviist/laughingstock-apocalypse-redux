@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=1]
+[ext_resource path="res://assets/asset_anims/curious_snake_idle.tres" type="Animation" id=2]
+[ext_resource path="res://assets_raw/raw_assets_cheat/curious_serpent.material" type="Material" id=3]
+[ext_resource path="res://assets_raw/raw_assets_cheat/curious_serpent.glb" type="PackedScene" id=4]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 2.48979
+height = 0.002
+
+[node name="CuriousSerpent" type="KinematicBody"]
+script = ExtResource( 1 )
+npc = "gaseous_snake"
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( -4.37114e-08, 1.13993, 4.9828e-08, 0, -7.58649e-08, 1.73559, 1, 4.98279e-08, 2.17805e-15, 0, 1.19499, 0.696174 )
+visible = false
+shape = SubResource( 1 )
+
+[node name="curious_serpent" parent="." instance=ExtResource( 4 )]
+
+[node name="Curious_Serpent" parent="curious_serpent/Armature/Skeleton" index="0"]
+material/0 = ExtResource( 3 )
+
+[node name="CSerpentAnimationPlayer" type="AnimationPlayer" parent="curious_serpent"]
+autoplay = "curious_snake_idle"
+anims/curious_snake_idle = ExtResource( 2 )
+
+[editable path="curious_serpent"]

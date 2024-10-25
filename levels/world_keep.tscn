@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://src/gui/game_score.gd" type="Script" id=1]
 [ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=2]
@@ -6,13 +6,13 @@
 [ext_resource path="res://environment/world_castle_environment.tres" type="Environment" id=4]
 [ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=5]
 [ext_resource path="res://assets/npcs_tscn/npc_urn.gd" type="Script" id=6]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=7]
 [ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=10]
-[ext_resource path="res://assets/cheat_tscn/castle_perimeter.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/cheat_tscn/castle_perimeter_v2.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/npcs_tscn/npc_graves.tscn" type="PackedScene" id=12]
-[ext_resource path="res://assets/environment_tscn/cellar_wall.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/npcs_tscn/npc_angler.tscn" type="PackedScene" id=13]
 [ext_resource path="res://assets/npcs_tscn/npc_urn.tscn" type="PackedScene" id=14]
 [ext_resource path="res://assets/cheat_tscn/castle_exterior_v2.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/npcs_tscn/npc_spider.tscn" type="PackedScene" id=16]
@@ -20,26 +20,117 @@
 [ext_resource path="res://assets/npcs_tscn/npc_red_flower.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/environment_tscn/rock_void_var1.tscn" type="PackedScene" id=19]
 [ext_resource path="res://levels/environment_2.tscn" type="PackedScene" id=20]
-[ext_resource path="res://assets/cheat_tscn/church_inside.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/environment_tscn/gate.gd" type="Script" id=21]
 [ext_resource path="res://assets/npcs_tscn/npc_archdemon_maldoror.tscn" type="PackedScene" id=22]
-[ext_resource path="res://assets/cheat_tscn/castle_tower.tscn" type="PackedScene" id=23]
-[ext_resource path="res://assets/cheat_tscn/castle_outbuilding1.tscn" type="PackedScene" id=24]
-[ext_resource path="res://assets/cheat_tscn/castle_outbuilding2.tscn" type="PackedScene" id=25]
-[ext_resource path="res://assets/cheat_tscn/castle_outpost1.tscn" type="PackedScene" id=26]
-[ext_resource path="res://assets/cheat_tscn/castle_outpost2.tscn" type="PackedScene" id=27]
-[ext_resource path="res://assets/cheat_tscn/barstool.tscn" type="PackedScene" id=28]
-[ext_resource path="res://assets/cheat_tscn/bar.tscn" type="PackedScene" id=29]
-[ext_resource path="res://assets/cheat_tscn/bar_table.tscn" type="PackedScene" id=30]
+[ext_resource path="res://assets/cheat_tscn/sewer_interior_v3.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/npcs_tscn/npc_starfish.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/npcs_tscn/npc_coffee.tscn" type="PackedScene" id=25]
+[ext_resource path="res://assets/npcs_tscn/npc_presence.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/npcs_tscn/npc_riddance.tscn" type="PackedScene" id=27]
+[ext_resource path="res://assets/npcs_tscn/small_cow.tscn" type="PackedScene" id=28]
+[ext_resource path="res://assets/npcs_tscn/npc_jenna.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/npcs_tscn/npc_moose.tscn" type="PackedScene" id=30]
 [ext_resource path="res://assets/npcs_tscn/npc_coldheart_knight.tscn" type="PackedScene" id=31]
+[ext_resource path="res://assets/npcs_tscn/npc_senescence.tscn" type="PackedScene" id=32]
+[ext_resource path="res://assets/npcs_tscn/npc_obsolescence.tscn" type="PackedScene" id=33]
+[ext_resource path="res://assets/npcs_tscn/npc_defiance.tscn" type="PackedScene" id=34]
+[ext_resource path="res://assets/npcs_tscn/npc_myth.tscn" type="PackedScene" id=35]
+[ext_resource path="res://assets/npcs_tscn/npc_annoyance.tscn" type="PackedScene" id=36]
+[ext_resource path="res://assets/npcs_tscn/npc_silence.tscn" type="PackedScene" id=37]
+[ext_resource path="res://src/gui/cow_score.tscn" type="PackedScene" id=38]
+[ext_resource path="res://assets/npcs_tscn/npc_curious_serpent.tscn" type="PackedScene" id=39]
+[ext_resource path="res://assets/npcs_tscn/npc_princess_coldheart_asleep.tscn" type="PackedScene" id=40]
+[ext_resource path="res://assets/cheat_tscn/keep_monument1.tscn" type="PackedScene" id=41]
+[ext_resource path="res://assets/npcs_tscn/npc_modelX.tscn" type="PackedScene" id=42]
+[ext_resource path="res://assets/npcs_tscn/npc_modelW.tscn" type="PackedScene" id=43]
+[ext_resource path="res://assets/npcs_tscn/npc_modelZ.tscn" type="PackedScene" id=44]
+[ext_resource path="res://assets/npcs_tscn/npc_abyss_tracker.tscn" type="PackedScene" id=45]
 
 [sub_resource type="BoxShape" id=60]
 extents = Vector3( 1000, 0.8, 1000 )
+
+[sub_resource type="Animation" id=61]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=62]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=63]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=64]
+resource_name = "cow_idle"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, 0.000476077, 2.76867e-11, 8.69668e-13, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, 0.00377139, 2.19319e-10, 6.94447e-12, 0.999993, 1, 1, 1, 0.2, 1, 0, 0, 0, 0.0103762, 6.03386e-10, 1.9119e-11, 0.999946, 1, 1, 1, 0.733333, 1, 0, 0, 0, 0.0944749, 5.49382e-09, 1.74614e-10, 0.995527, 1, 1, 1, 0.8, 1, 0, 0, 0, 0.0983066, 4.56599e-09, 1.42983e-08, 0.995156, 1, 1, 1, 0.866667, 1, 0, 0, 0, 0.0983671, -3.33528e-11, 7.0767e-08, 0.99515, 1, 1, 1, 0.933333, 1, 0, 0, 0, 0.09489, -2.36529e-10, 7.07722e-08, 0.995488, 1, 1, 1, 1, 1, 0, 0, 0, 0.0886891, -5.98594e-10, 7.07794e-08, 0.996059, 1, 1, 1, 1.53333, 1, 0, 0, 0, 0.0068686, -5.35576e-09, 7.06182e-08, 0.999976, 1, 1, 1, 1.6, 1, 0, 0, 0, 0.00194934, -5.64055e-09, 7.05934e-08, 0.999998, 1, 1, 1, 1.66667, 1, 0, 0, 0, 2.98023e-08, -1.06581e-14, -3.19744e-14, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:body")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1, 1.66667, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879e-22, 1, 1, 1, 1 )
 
 [node name="World_Keep" type="Spatial"]
 script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 45.5 )
+transform = Transform( 0.658194, 0, 0.238288, 0, 0.7, 0, -0.238288, 0, 0.658194, 21.1058, 0.604811, 38.4333 )
+max_speed = 20
 
 [node name="WorldEnvironment" parent="." instance=ExtResource( 8 )]
 environment = ExtResource( 4 )
@@ -49,6 +140,9 @@ environment = ExtResource( 4 )
 [node name="Env" parent="." instance=ExtResource( 9 )]
 
 [node name="Environment_2" parent="." instance=ExtResource( 20 )]
+
+[node name="Tree_Evergreen2" parent="Environment_2/TreeEvergreenCluster5" index="1"]
+transform = Transform( 0.999999, 0, -2.38419e-07, 0, 1, 0, 2.38419e-07, 0, 0.999999, -56.53, 0, 11.3494 )
 
 [node name="Death" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.4023, 0 )
@@ -78,28 +172,113 @@ theme = ExtResource( 5 )
 script = ExtResource( 1 )
 
 [node name="Graves" parent="." instance=ExtResource( 12 )]
-transform = Transform( 0.665293, 0.00853497, -0.746534, -0.0128278, 0.999918, 0, 0.746472, 0.0095764, 0.665348, 40.7599, 1.37258, -34.8568 )
+transform = Transform( 0.665293, 0.00853497, -0.746534, -0.0128278, 0.999918, 0, 0.746472, 0.0095764, 0.665348, 41.8235, 1.35207, -33.6634 )
 npc = "graves"
+dialog_index = 1
 
 [node name="RedFlower" parent="." instance=ExtResource( 18 )]
-transform = Transform( 0.889807, 0, -0.456337, 0, 1, 0, 0.456337, 0, 0.889807, -5.6348, 1.00588, 22.2495 )
+transform = Transform( 0.889807, 0, -0.456337, 0, 1, 0, 0.456337, 0, 0.889807, 4.84617, 14.0393, -46.4443 )
 
 [node name="Urn" parent="." instance=ExtResource( 14 )]
-transform = Transform( -0.173665, 0, -0.984805, 0, 1, 0, 0.984805, 0, -0.173665, -5.49713, 1.17157, 26.9972 )
+transform = Transform( -0.173665, 0, -0.984805, 0, 1, 0, 0.984805, 0, -0.173665, -37.56, 6.40113, -35.6988 )
 script = ExtResource( 6 )
 dialog_index = 2
 
-[node name="CellarGate1" parent="." instance=ExtResource( 13 )]
-transform = Transform( -0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, -0.965926, 29.9344, 1.35184, 14 )
-gate = "wall"
-
-[node name="Rock1" parent="." instance=ExtResource( 19 )]
-transform = Transform( 0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, 24.2518, 2.5842, 30.8851 )
+[node name="Lonely Rock" parent="." instance=ExtResource( 19 )]
+transform = Transform( 0.499949, 0, -0.00716429, 0, 0.5, 0, 0.00716429, 0, 0.499949, 36.9739, 5.41213, -18.1104 )
 
 [node name="Spider1" parent="." instance=ExtResource( 16 )]
-transform = Transform( 0.739807, 0, -0.672819, 0, 1, 0, 0.672819, 0, 0.739807, -16.857, 1.5959, 23.2447 )
+transform = Transform( 0.437555, 0, -0.899192, 0, 1, 0, 0.899192, 0, 0.437555, -16.1075, 2.35674, 25.8202 )
 script = ExtResource( 2 )
-npc = "cellar_spider"
+npc = "spider"
+dialog_index = 4
+
+[node name="Spider2" parent="." instance=ExtResource( 16 )]
+transform = Transform( 0.174633, 0, -0.243933, 0, 0.3, 0, 0.243933, 0, 0.174633, -46.3136, 1.2534, -2.93471 )
+
+[node name="Spider3" parent="." instance=ExtResource( 16 )]
+transform = Transform( -0.243942, 0, -0.17462, 0, 0.3, 0, 0.17462, 0, -0.243942, -47.3436, 1.2534, -1.4797 )
+
+[node name="Spider4" parent="." instance=ExtResource( 16 )]
+transform = Transform( -0.224204, 0, 0.199331, 0, 0.3, 0, -0.199331, 0, -0.224204, -50.3397, 1.2534, -1.97709 )
+
+[node name="Spider5" parent="." instance=ExtResource( 16 )]
+transform = Transform( 0.143874, 0, 0.263249, 0, 0.3, 0, -0.263249, 0, 0.143874, -51.2571, 1.2534, -3.94086 )
+
+[node name="Annoyance" parent="." instance=ExtResource( 36 )]
+transform = Transform( 0.139829, 0, 0.990176, 0, 1, 0, -0.990176, 0, 0.139829, -29.548, 1.04081, 13.3668 )
+npc = "annoyance"
+dialog_index = 1
+
+[node name="AnnoyanceAnimationPlayer2" parent="Annoyance/npc_annoyance" index="2"]
+autoplay = "annoyance_converseNLA"
+
+[node name="Coffee" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.119063, 0, -0.992887, 0, 1, 0, 0.992887, 0, 0.119063, -28.3923, 1.15608, -16.3088 )
+dialog_index = 1
+
+[node name="Defiance" parent="." instance=ExtResource( 34 )]
+transform = Transform( 0.998883, 0, -0.0472629, 0, 1, 0, 0.0472629, 0, 0.998883, -48.4112, 0.976561, -3.91792 )
+npc = "defiance"
+dialog_index = 1
+
+[node name="DefianceAnimationPlayer" parent="Defiance/npc_defiance" index="2"]
+autoplay = "defiance_tend"
+
+[node name="Myth" parent="." instance=ExtResource( 35 )]
+transform = Transform( 0.870948, 0, 0.491375, 0, 1, 0, -0.491375, 0, 0.870948, 4.65318, 1.03074, 25.8029 )
+npc = "myth"
+dialog_index = 1
+
+[node name="MythAnimationPlayer" parent="Myth/npc_myth" index="2"]
+autoplay = "myth_waveNLA"
+
+[node name="Obsolescence" parent="." instance=ExtResource( 33 )]
+transform = Transform( -0.36068, 0, -0.93269, 0, 1, 0, 0.93269, 0, -0.36068, -27.0154, 1.21061, 14.0202 )
+npc = "obsolescence"
+dialog_index = 1
+
+[node name="ObsolescenceAnimationPlayer" parent="Obsolescence/npc_obsolescence" index="2"]
+autoplay = "obsolescence_converseNLA"
+
+[node name="Presence" parent="." instance=ExtResource( 26 )]
+transform = Transform( 0.769857, 0, -0.638217, 0, 1, 0, 0.638217, 0, 0.769857, -34.9583, 6.20181, -35.8995 )
+npc = "presence"
+dialog_index = 1
+
+[node name="PresenceAnimationPlayer" parent="Presence/npc_presence" index="2"]
+autoplay = "presence_danceNLA"
+
+[node name="Riddance" parent="." instance=ExtResource( 27 )]
+transform = Transform( 0.998087, 0, -0.061832, 0, 1, 0, 0.061832, 0, 0.998087, -29.3257, 0.863911, -11.1675 )
+npc = "riddance"
+dialog_index = 1
+
+[node name="CollisionShape" parent="Riddance" index="0"]
+transform = Transform( 1, 0, -2.22045e-16, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1, 0 )
+
+[node name="RiddanceAnimationPlayer" parent="Riddance/npc_riddance" index="2"]
+autoplay = "riddance_sitNLA"
+
+[node name="Senescence" parent="." instance=ExtResource( 32 )]
+transform = Transform( 0.851864, 0, -0.523763, 0, 1, 0, 0.523763, 0, 0.851864, 35.9275, 1.46449, 16.4249 )
+npc = "senescence"
+dialog_index = 1
+
+[node name="SenescenceAnimationPlayer" parent="Senescence/npc_senescence" index="2"]
+autoplay = "senescence_tendNLA"
+
+[node name="Silence" parent="." instance=ExtResource( 37 )]
+transform = Transform( 0.999125, 0, 0.0418411, 0, 1, 0, -0.0418411, 0, 0.999125, 13.1344, 33.6798, -19.483 )
+npc = "silence"
+dialog_index = 1
+
+[node name="SilenceAnimationPlayer" parent="Silence/npc_silence" index="2"]
+autoplay = "silence_danceNLA"
+
+[node name="Starfish" parent="." instance=ExtResource( 24 )]
+transform = Transform( -0.655374, 0, 0.755305, 0, 1, 0, -0.755305, 0, -0.655374, -20.9602, 1.7521, 29.6007 )
+dialog_index = 1
 
 [node name="castle_exterior_v2" parent="." instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00215721, 14.1707, -28.1302 )
@@ -110,89 +289,125 @@ transform = Transform( 0.911375, 0, -0.411578, 0, 0.80735, 0, 0.411578, 0, 0.911
 [node name="castle_keep" parent="." instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0797005, 1.04806, 18.5938 )
 
-[node name="castle_perimeter" parent="." instance=ExtResource( 11 )]
+[node name="castle_perimeter_v2" parent="." instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.518986, 0 )
 
-[node name="castle_tower1" parent="." instance=ExtResource( 23 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25.7074, -0.252391, -5.21823 )
-
-[node name="castle_tower2" parent="." instance=ExtResource( 23 )]
-transform = Transform( 0.179197, 0, -0.983813, 0, 1, 0, 0.983813, 0, 0.179197, 31.5354, 0.30048, -39.7116 )
-
 [node name="ColdheartKnight" parent="." instance=ExtResource( 31 )]
-transform = Transform( 0.943859, 0, -0.33035, 0, 1, 0, 0.33035, 0, 0.943859, 44.7046, -0.663438, -0.140566 )
+transform = Transform( 0.93713, 0, -0.348981, 0, 1, 0, 0.348981, 0, 0.93713, 44.7046, -4.23204, -0.140566 )
 npc = "coldheartknight"
 
 [node name="CollisionShape" parent="ColdheartKnight" index="0"]
 visible = false
 
-[node name="church_inside" parent="." instance=ExtResource( 21 )]
-transform = Transform( 0.998322, 0, -0.0579124, 0, 1, 0, 0.0579124, 0, 0.998322, 36.9887, 1.04806, -15.2574 )
+[node name="castle_knight" parent="ColdheartKnight/castle_tower_knight" index="1"]
+transform = Transform( 0.909255, -0.051499, -0.407294, 0.00588229, 0.588636, -0.193613, 0.416198, 0.104189, 0.892539, 0, 7.58425, -0.309528 )
 
 [node name="ArchdemonMaldoror" parent="." instance=ExtResource( 22 )]
-transform = Transform( 0.856222, 0, 0.516608, 0, 1, 0, -0.516608, 0, 0.856222, -7.41101, 14.536, -11.6425 )
+transform = Transform( 0.999814, 0, 0.0192847, 0, 1, 0, -0.0192847, 0, 0.999814, -7.45589, 14.1569, -13.9694 )
 npc = "archdemon"
 
-[node name="castle_outbuilding1A1" parent="." instance=ExtResource( 24 )]
-transform = Transform( -0.275184, 0, 0.961391, 0, 1, 0, -0.961391, 0, -0.275184, -43.9538, 1.21627, 12.185 )
+[node name="sewer_interior_v3" parent="." instance=ExtResource( 23 )]
+transform = Transform( -0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, -0.965926, 20.9472, -7.00232, 36.3583 )
 
-[node name="castle_outbuilding1A2" parent="." instance=ExtResource( 24 )]
-transform = Transform( 0.880568, 0, 0.473919, 0, 1, 0, -0.473919, 0, 0.880568, -36.9937, 1.21627, -37.6128 )
+[node name="StaticBody" parent="sewer_interior_v3/Sewer_Interior" index="0"]
+script = ExtResource( 21 )
+gate = "saloon"
 
-[node name="castle_outbuilding2B1" parent="." instance=ExtResource( 25 )]
-transform = Transform( 0.184449, 0, 0.982842, 0, 1, 0, -0.982842, 0, 0.184449, -45.8572, 1.21627, -23.5373 )
+[node name="Jenna" parent="." instance=ExtResource( 29 )]
+transform = Transform( -0.626955, 0, 0.311332, 0, 0.7, 0, -0.311332, 0, -0.626955, 36.0082, 1.24595, -16.1769 )
+npc = "jenna"
+dialog_index = 3
 
-[node name="castle_outbuilding2B2" parent="." instance=ExtResource( 25 )]
-transform = Transform( -0.287177, 0, 0.957878, 0, 1, 0, -0.957878, 0, -0.287177, -37.8095, 1.21627, 25.9183 )
+[node name="CowScore" parent="Jenna" instance=ExtResource( 38 )]
+visible = false
 
-[node name="bar1" parent="." instance=ExtResource( 29 )]
-transform = Transform( 0.966605, 0, 0.256273, 0, 1, 0, -0.256273, 0, 0.966605, -25.3135, 1.15607, 2.49846 )
+[node name="Moose" parent="." instance=ExtResource( 30 )]
+transform = Transform( -0.690829, 0, -0.112942, 0, 0.7, 0, 0.112942, 0, -0.690829, 38.9328, 1.21738, -15.8712 )
+dialog_index = 2
 
-[node name="bar2" parent="." instance=ExtResource( 29 )]
-transform = Transform( 0.119063, 0, -0.992887, 0, 1, 0, 0.992887, 0, 0.119063, -25.585, 1.15608, -16.6454 )
+[node name="Angler" parent="." instance=ExtResource( 13 )]
+transform = Transform( -0.299995, 0, 0.00169126, 0, 0.3, 0, -0.00169126, 0, -0.299995, 36.8599, 1.98779, -10.7151 )
+npc = "angler"
 
-[node name="bar3" parent="." instance=ExtResource( 29 )]
-transform = Transform( -0.966605, 0, -0.256273, 0, 1, 0, 0.256273, 0, -0.966605, -26.2079, 1.15607, -0.874912 )
+[node name="SmallCow1" parent="." instance=ExtResource( 28 )]
+transform = Transform( -0.209972, 0, 0.453776, 0, 0.5, 0, -0.453776, 0, -0.209972, 34.7291, 1.22933, -12.9973 )
 
-[node name="castle_outpost1A1" parent="." instance=ExtResource( 26 )]
-transform = Transform( 0.153762, 0, -0.988108, 0, 1, 0, 0.988108, 0, 0.153762, -29.8349, 1.15608, -22.8014 )
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="SmallCow1"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 61 )
 
-[node name="bar_table" parent="castle_outpost1A1" instance=ExtResource( 30 )]
-transform = Transform( -0.999991, 0, -0.00436342, 0, 1, 0, 0.00436342, 0, -0.999991, -0.160324, 9.53674e-07, -1.26052 )
+[node name="SmallCow2" parent="." instance=ExtResource( 28 )]
+transform = Transform( 0.0105846, 0, -0.499888, 0, 0.5, 0, 0.499888, 0, 0.0105846, 38.313, 1.22933, -13.9311 )
 
-[node name="barstool1" parent="castle_outpost1A1/bar_table" instance=ExtResource( 28 )]
-transform = Transform( -0.310046, 0, 0.950721, 0, 1, 0, -0.950721, 0, -0.310046, -1.55603, 0, 0.145409 )
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="SmallCow2"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 62 )
 
-[node name="barstool2" parent="castle_outpost1A1/bar_table" instance=ExtResource( 28 )]
-transform = Transform( -0.0940904, 0, -0.995563, 0, 1, 0, 0.995563, 0, -0.0940904, 1.42847, 0, 0.144264 )
+[node name="SmallCow3" parent="." instance=ExtResource( 28 )]
+transform = Transform( 0.167206, 0, 0.249082, 0, 0.3, 0, -0.249082, 0, 0.167206, 34.9775, 1.22933, -15.1832 )
 
-[node name="castle_outpost1A2" parent="." instance=ExtResource( 26 )]
-transform = Transform( 0.125749, 0, -0.992062, 0, 1, 0, 0.992062, 0, 0.125749, -28.7508, 1.15608, -9.24184 )
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="SmallCow3"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 63 )
 
-[node name="bar_table" parent="castle_outpost1A2" instance=ExtResource( 30 )]
-transform = Transform( 0.999991, 0, 0.00436351, 0, 1, 0, -0.00436351, 0, 0.999991, -0.0682278, 9.53674e-07, -1.50303 )
+[node name="SmallCow4" parent="." instance=ExtResource( 28 )]
+transform = Transform( -0.0568469, 0, -0.294565, 0, 0.3, 0, 0.294565, 0, -0.0568469, 38.4833, 1.25118, -12.3472 )
 
-[node name="barstool1" parent="castle_outpost1A2/bar_table" instance=ExtResource( 28 )]
-transform = Transform( -0.310046, 0, 0.950721, 0, 1, 0, -0.950721, 0, -0.310046, -1.55603, 0, 0.145409 )
+[node name="AnimationPlayerCow1" type="AnimationPlayer" parent="SmallCow4"]
+autoplay = "cow_idle"
+anims/cow_idle = SubResource( 64 )
 
-[node name="barstool2" parent="castle_outpost1A2/bar_table" instance=ExtResource( 28 )]
-transform = Transform( -0.0940904, 0, -0.995563, 0, 1, 0, 0.995563, 0, -0.0940904, 1.42847, 0, 0.144264 )
+[node name="CuriousSerpent" parent="." instance=ExtResource( 39 )]
+transform = Transform( 0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, -28.9177, 0.213076, 38.2983 )
+npc = "curious_serpent"
 
-[node name="castle_outpost2B1" parent="." instance=ExtResource( 27 )]
-transform = Transform( -0.967121, 0, -0.254315, 0, 1, 0, 0.254315, 0, -0.967121, -24.3797, 2.28822, 6.29489 )
+[node name="keep_monument1" parent="." instance=ExtResource( 41 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.75341, 13.8454, -18.7083 )
 
-[node name="castle_outpost2B2" parent="." instance=ExtResource( 27 )]
-transform = Transform( -0.985659, 0, 0.168747, 0, 1, 0, -0.168747, 0, -0.985659, -48.0649, 2.28822, -8.13105 )
+[node name="PrincessColdheart_Asleep" parent="." instance=ExtResource( 40 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.75341, 14.0985, -15.2241 )
+npc = "princess_coldheart_asleep"
 
-[node name="castle_outpost2B3" parent="." instance=ExtResource( 27 )]
-transform = Transform( 0.588914, 0, 0.808196, 0, 1, 0, -0.808196, 0, 0.588914, -28.8886, 2.28822, 41.3656 )
+[node name="modelW" parent="." instance=ExtResource( 43 )]
+transform = Transform( -0.274982, 0, 0.96145, 0, 1, 0, -0.96145, 0, -0.274982, -35.3754, 6.29246, 28.6269 )
+
+[node name="modelX" parent="." instance=ExtResource( 42 )]
+transform = Transform( -0.428699, 0, 0.903448, 0, 1, 0, -0.903448, 0, -0.428699, -45.3354, 1, 13.0596 )
+
+[node name="modelZ" parent="." instance=ExtResource( 44 )]
+transform = Transform( 0.905835, 0, -0.42363, 0, 1, 0, 0.42363, 0, 0.905835, -13.6255, 32.4041, -21.0405 )
+
+[node name="AbyssTracker" parent="." instance=ExtResource( 45 )]
+transform = Transform( -0.241397, 0, 0.970426, 0, 1, 0, -0.970426, 0, -0.241397, -21.3321, 8.61912, 41.1111 )
 
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
 
+[editable path="Player"]
+[editable path="Player/CheatConsole"]
+[editable path="Player/CheatHelpPopup"]
 [editable path="Environment_2"]
 [editable path="GUI"]
-[editable path="CellarGate1"]
-[editable path="CellarGate1/cellar_wall"]
+[editable path="Annoyance"]
+[editable path="Annoyance/npc_annoyance"]
+[editable path="Defiance"]
+[editable path="Defiance/npc_defiance"]
+[editable path="Myth"]
+[editable path="Myth/npc_myth"]
+[editable path="Obsolescence"]
+[editable path="Obsolescence/npc_obsolescence"]
+[editable path="Presence"]
+[editable path="Presence/npc_presence"]
+[editable path="Riddance"]
+[editable path="Riddance/npc_riddance"]
+[editable path="Senescence"]
+[editable path="Senescence/npc_senescence"]
+[editable path="Silence"]
+[editable path="Silence/npc_silence"]
 [editable path="castle_exterior_v2"]
 [editable path="castle_keep"]
 [editable path="ColdheartKnight"]
+[editable path="sewer_interior_v3"]
+[editable path="Jenna"]
+[editable path="Jenna/zhena"]
+[editable path="Angler"]
+[editable path="Angler/modelAngler"]

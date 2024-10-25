@@ -22,7 +22,7 @@
 		},
 		{
 			"audio": "play",
-			"audio_bus": "Master",
+			"audio_bus": "Sfx",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
 			"file": "res://src/sfx/one_shots/voice_spider.wav",
@@ -44,18 +44,25 @@
 			"question": "Take the plunge?"
 		},
 		{
-			"choice": "",
+			"choice": "Let's go!",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"choice": "",
+			"change_scene": "res://src/gui/world_abyss_slide.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "No way!",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_022",

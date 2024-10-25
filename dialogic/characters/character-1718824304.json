@@ -1,0 +1,21 @@
+{
+	"color": "#ff00ba2a",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1718824304.json",
+	"mirror_portraits": false,
+	"name": "Gaseous Serpent",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 35,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/gaseous_serpent_face.png"
+		}
+	],
+	"scale": 175,
+	"theme": ""
+}

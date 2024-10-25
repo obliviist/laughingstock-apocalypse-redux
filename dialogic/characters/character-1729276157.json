@@ -1,0 +1,21 @@
+{
+	"color": "#ff00ffed",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1729276157.json",
+	"mirror_portraits": false,
+	"name": "Church Door",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 70,
+	"offset_y": -25,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/church_door.png"
+		}
+	],
+	"scale": 175,
+	"theme": ""
+}

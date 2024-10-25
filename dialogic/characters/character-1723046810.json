@@ -1,0 +1,21 @@
+{
+	"color": "#ffff0000",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1723046810.json",
+	"mirror_portraits": false,
+	"name": "Bonfire Shovel",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/bonfire_shovel_face.png"
+		}
+	],
+	"scale": 125,
+	"theme": ""
+}

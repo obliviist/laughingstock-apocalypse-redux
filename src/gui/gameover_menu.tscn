@@ -1,10 +1,19 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/gui/gameover_menu.gd" type="Script" id=2]
 [ext_resource path="res://src/gui/settings_menu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/gui/LSA_gameover_splash_800x500.png" type="Texture" id=4]
 [ext_resource path="res://src/gui/LSA_gameover_bg_1024x600.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://src/gui/JinxedWizards.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 31
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 1 )
 
 [node name="GameOver" type="Control"]
 pause_mode = 2
@@ -33,15 +42,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BG/Background/CenterContainer"]
-margin_left = 464.0
-margin_top = 195.0
-margin_right = 559.0
-margin_bottom = 405.0
+margin_left = 437.0
+margin_top = 187.0
+margin_right = 586.0
+margin_bottom = 412.0
 custom_constants/separation = 7
 
 [node name="GameOver" type="Label" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_right = 95.0
-margin_bottom = 15.0
+margin_right = 149.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 2 )
 text = "Game Over"
 align = 1
 valign = 1
@@ -56,35 +66,39 @@ align = 1
 valign = 1
 
 [node name="Control" type="Control" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_top = 22.0
-margin_right = 95.0
-margin_bottom = 22.0
+margin_top = 37.0
+margin_right = 149.0
+margin_bottom = 37.0
 
 [node name="RestartBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_top = 29.0
-margin_right = 95.0
-margin_bottom = 69.0
+modulate = Color( 1, 1, 1, 0.882353 )
+margin_top = 44.0
+margin_right = 149.0
+margin_bottom = 84.0
 rect_min_size = Vector2( 0, 40 )
 text = "Play Again"
 
 [node name="MenuBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_top = 76.0
-margin_right = 95.0
-margin_bottom = 116.0
+modulate = Color( 1, 1, 1, 0.882353 )
+margin_top = 91.0
+margin_right = 149.0
+margin_bottom = 131.0
 rect_min_size = Vector2( 0, 40 )
 text = "Main Menu"
 
 [node name="SettingsBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_top = 123.0
-margin_right = 95.0
-margin_bottom = 163.0
+modulate = Color( 1, 1, 1, 0.882353 )
+margin_top = 138.0
+margin_right = 149.0
+margin_bottom = 178.0
 rect_min_size = Vector2( 0, 40 )
 text = "Settings"
 
 [node name="QuitBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
-margin_top = 170.0
-margin_right = 95.0
-margin_bottom = 210.0
+modulate = Color( 1, 1, 1, 0.882353 )
+margin_top = 185.0
+margin_right = 149.0
+margin_bottom = 225.0
 rect_min_size = Vector2( 0, 40 )
 text = "Quit"
 

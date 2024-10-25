@@ -3,6 +3,7 @@
 [ext_resource path="res://src/sfx/amb_loops/amb_wind.wav" type="AudioStream" id=1]
 
 [node name="Amb" type="AudioStreamPlayer"]
+pause_mode = 2
 stream = ExtResource( 1 )
 volume_db = -7.992
 bus = "Amb"

@@ -8,14 +8,16 @@ func _ready():
 	pass
 
 func _unhandled_input(event):
+	
+	if GlobalSettings.get_disabled_input():
+		return
+	
 	if event.is_action_pressed("pause"):
-		self.is_paused = !is_paused
+		if PAUSE_MODE_PROCESS:
+			self.is_paused = !is_paused
 	else:
-		is_paused = false
-		if event.is_action_pressed("pause"):
-			pass
-	#the above, below else, is used to disable esc key input when menu is opens
-	#NEXT: disable ability to pause when in dialogue: player.gd
+		if PAUSE_MODE_INHERIT:
+			self.is_paused = is_paused
 
 func set_is_paused(value):
 	is_paused = value
@@ -33,7 +35,21 @@ func _on_ResumeBtn_pressed():
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _on_SettingsBtn_pressed():
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-RolandishHi.wav")
+	Sfx.play()
 	settings_menu.popup_centered()
+	
+func _on_MenuBtn_pressed():
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-RolandishLo.wav")
+	Sfx.play()
+	get_tree().change_scene("res://src/gui/start_screen.tscn") 
+	Music.stop()
+	Amb.stop()
+	
+	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 func _on_QuitBtn_pressed():
 	get_tree().quit()
+
+

@@ -9,13 +9,13 @@
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
-	"offset_y": 0,
+	"offset_y": -45,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": "res://addons/dialogic/Assets/archdemon_face.png"
 		}
 	],
-	"scale": 100,
+	"scale": 150,
 	"theme": ""
 }

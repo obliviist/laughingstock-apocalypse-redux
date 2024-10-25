@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=1]
+[ext_resource path="res://assets/farm_tscn/campfire_var1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/cheat_tscn/urn_shovel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/foliage_tscn/bush_green.tscn" type="PackedScene" id=4]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 1.23088, 1.78049, 0.968388 )
+
+[node name="BonfireShovel" type="KinematicBody"]
+script = ExtResource( 1 )
+npc = "bonfire_shovel"
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0792511, 1.5919, 0.0535198 )
+shape = SubResource( 1 )
+
+[node name="Campfire_Var1" parent="." instance=ExtResource( 2 )]
+
+[node name="urn_shovel" parent="Campfire_Var1" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 0.953222, -0.30227, 0, 0.30227, 0.953222, 0, 1.23509, 0 )
+
+[node name="Bush_Green" parent="Campfire_Var1" instance=ExtResource( 4 )]
+transform = Transform( 0.3, 0, 0, 0, 0.251118, 0, 0, 0, 0.165407, 0, -0.471706, 0 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Campfire_Var1"]
+transform = Transform( 0.207297, 0, -0.978278, 0, 1, 0, 0.978278, 0, 0.207297, 0, 0, 0 )
+light_color = Color( 1, 0.584314, 0, 1 )
+light_energy = 4.0
+light_specular = 8.0

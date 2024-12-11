@@ -118,7 +118,10 @@ _global_script_class_icons={
 
 config/name="LaughingstockApocalypseREDUX"
 run/main_scene="res://src/gui/intro_slide1.tscn"
+<<<<<<< Updated upstream
 boot_splash/image="res://src/gui/maldoror_no outline.png"
+=======
+>>>>>>> Stashed changes
 config/icon="res://icon.png"
 config/macos_native_icon="res://icon.icns"
 

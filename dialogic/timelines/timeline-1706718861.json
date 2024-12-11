@@ -32,7 +32,7 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "How do I escape this dump?\nThis world sucks!!!\nI should've never left the [color=#ff0000]Urn[/color]. The joke is on both of us.\nMy boss is gonna be SO mad because I fell into the wrong vale.\n...\nYou look like you aren't computing a word I say.\n[color=#0f70ff]Vale of the Living[/color]? [color=#ff0000]Vale of the Dead[/color]? Buddy... do you even know where YOU are?\n[color=#0f70ff]Yav[/color]? [color=#ff0000]Nav[/color]? NO?"
+			"text": "How do I escape this dump?\nThis world sucks!!! I should've never left the [color=#ff0000]Urn[/color].\nMy boss is gonna be SO mad because I fell into the wrong Vale.\n...\nYou look like you aren't computing a word I say.\n[color=#0f70ff]Vale of the Living[/color]? [color=#ff0000]Vale of the Dead[/color]? Buddy... do you even know where YOU are?"
 		},
 		{
 			"character": "character-1706717628.json",
@@ -54,7 +54,7 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I HATE the [color=#9effef]spiders[/color], buddy - acting all smart, spinning their webs of lies, skittering all over the place.\nOr even worse: not moving at all like those ones you can see when you look above you.\nCreeps me out, man. I'll never ever get used to them as long as I've been a [color=#ff0000]Reaper[/color].\nI guess, they're nice though? I hate nice things, though.\nThat's why Maldoror and I here are such good pals."
+			"text": "I HATE the [color=#9effef]spiders[/color]! Acting all smart, spinning their webs of lies, skittering all over the place.\nOr even worse: not moving at all like those ones you can see when you look above you.\nCreeps me out, man. I'll never ever get used to them as long as I've been a Reaper.\nI guess, they're nice though? I hate nice things, though.\nThat's why Maldoror and I here are such good pals."
 		},
 		{
 			"character": "character-1706717628.json",
@@ -76,7 +76,7 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I made a mistake. I shouldn't even really discuss this with you [color=#0f70ff]Yav folk[/color].\nI was off-duty before my fall.\nI reap to eke out a nice deathly existence between [color=#0f70ff]Yav[/color] and [color=#ff0000]Nav[/color]... even if my Boss is a clown, I can't complain.\nBut don't get confused: I don't reap like you do on a \"Farm\". It's the other, less honorable definition.\nSee, when you die here, you end up in a very chaotic, very busy place. \nThe majority of [color=#ff0000]Nav folk[/color] leave this world kicking, screaming, knowing little peace.\nTherefore, [color=#ff0000]Nav folk[/color] are predisposed to panic attacks, melancholy, upset stomachs - \n- you name it - as they try to make sense of deathly existence upon arrival in the [color=#ff0000]Nav[/color].\nAnd that's where I come in.\nI help move corpses and ash so that expired friends, families, and enemies can be reunited in death.\nYou ever see a scary orb of light above a grave? That's no ghost, that's Ajax [color=#ff0000]Floodlamp[/color]."
+			"text": "I made a mistake. I shouldn't even really discuss this with a mortal.\nI was off-duty before my fall.\nI reap to eke out a deathly existence between [color=#0f70ff]your world[/color] and [color=#ff0000]mine[/color]... even if my Boss is a clown, I can't complain.\nBut don't get confused: I don't reap like a farmer works their land. It's the other, less honorable definition.\nSee, when you die in your world, you end up in a very chaotic, very busy place. \nThe dead leave this world kicking, screaming, knowing little peace.\nTherefore my fellow dead are predisposed to panic attacks, intrusive thoughts, upset stomachs,\nmelancholy - you name it - as they try to make sense of deathly existence upon arrival in the [color=#ff0000]Vale of the Dead[/color].\nAnd that's where I come in.\nI help move corpses and ash so that expired friends, families, and enemies can be reunited in death. \nI also moonlight as an arbiter for petty disputes between feuding Archdemons - my least favourite side hustle.\nYou ever see a scary orb of light above a grave? That's no ghost, that's Ajax [color=#ff0000]Floodlamp[/color]."
 		},
 		{
 			"choice": "No",
@@ -143,7 +143,7 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ah, that's right! You're good, kid. You really are. I think we could've been frenemies in another world.\nAnyway, check out these rocks and see if you can find a way out for us."
+			"text": "Ah, that's right! You're good, kid. You really are. I think we could've been frenemies in another world.\nAnyway, check out these [color=#bbff00]rocks and caves[/color] and see if you can find a way out for us."
 		},
 		{
 			"event_id": "dialogic_013"

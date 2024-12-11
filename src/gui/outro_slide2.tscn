@@ -3,7 +3,7 @@
 [ext_resource path="res://src/gui/intro_fade_in.tres" type="Animation" id=1]
 [ext_resource path="res://src/gui/intro_fade_out.tres" type="Animation" id=2]
 [ext_resource path="res://src/gui/outro_slide2.gd" type="Script" id=3]
-[ext_resource path="res://src/gui/outro_slide2.png" type="Texture" id=4]
+[ext_resource path="res://src/gui/outro_slide2_v2.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -24,7 +24,8 @@ tracks/0/keys = {
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 512, 300 )
+position = Vector2( 512, 287 )
+scale = Vector2( 0.85, 0.85 )
 texture = ExtResource( 4 )
 
 [node name="ColorRect" type="ColorRect" parent="."]

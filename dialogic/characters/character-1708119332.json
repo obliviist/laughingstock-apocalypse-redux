@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
 	"color": "#ff0f70ff",
+=======
+	"color": "#ff01d691",
+>>>>>>> Stashed changes
 	"description": "",
 	"display_name": "Styrofoam Cottage",
 	"display_name_bool": true,

@@ -29,6 +29,12 @@
 			"volume": 0
 		},
 		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1732806202",
+			"index": 0,
+			"name": "ask_ajax1"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
@@ -48,7 +54,7 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Now that we're out of [color=#a23e9c]The Void[/color], there is something pertinent you could help me with.\nI'm looking for that [color=#ff0000]Urn[/color] you released me from.\nI know it sounds convoluted but when I'm \"released\", the [color=#ff0000]Urn[/color] and I are cast far and away from one another.\nDuring my usual work, the [color=#ff0000]Urn[/color] is my last stop: a one-way ticket back to the [color=#ff0000]Nav[/color]."
+			"text": "Now that we're out of The Void, there is something pertinent you could help me with.\nI'm looking for that [color=#ff0000]Urn[/color] you released me from.\nI know it sounds convoluted but when I'm \"released\", the [color=#ff0000]Urn[/color] and I are cast far and away from one another.\nDuring my usual work, the [color=#ff0000]Urn[/color] is my last stop: a one-way ticket back to the [color=#ff0000]Vale of the Dead[/color]."
 		},
 		{
 			"character": "",
@@ -70,7 +76,11 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Really? That's mighty kind of you...\nTake a look around, the [color=#ff0000]Urn[/color] could practically be anywhere.\nMy thinking is that it often ends up being found in a cool, dark place.\nI know that sounds like a place [color=#0f70ff]Yav folk[/color] stash their oats or explosive agents.\nGet creative, my friend!"
+			"text": "Really? That's mighty kind of you...\nTake a look around, the [color=#ff0000]Urn[/color] could practically be anywhere.\nMy thinking is that it often ends up being found in a cool, dark place.\nI know that sounds like a place where mortals stash their oats or explosive agents.\nGet creative, my friend!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		},
 		{
 			"choice": "Nah",
@@ -83,7 +93,7 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I knew it. Say no more.\nI've already asked you for too much.\nSee ya when you land in the [color=#ff0000]Nav[/color] one day, buddy!"
+			"text": "I knew it. Say no more!\nI've already asked you for too much.\nSee ya when you land in the [color=#ff0000]Vale of the Dead[/color] one day, buddy!"
 		},
 		{
 			"event_id": "dialogic_013"
@@ -99,7 +109,7 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "YES!!!!!\nSo the [color=#9effef]spiders[/color] made you play Hide & Seek and you found my [color=#ff0000]Urn[/color] in the process?\nThat's just crazy. All that trouble. I probably would've passed on those terms if I were you.\nBut I gotta thank you a thousand times over for your help once again.\n....\nYou look like something's on your mind again."
+			"text": "YES!!!!!\nSo the [color=#9effef]spiders[/color] made you play Hide & Seek and you found my [color=#ff0000]Urn[/color] in the process?\nThat's just crazy. All that trouble. I probably would've passed on those terms if I were you.\nBut I gotta thank you a thousand times over for your help once again.\n....\nYou look like something's on your mind again..."
 		},
 		{
 			"change_timeline": "timeline-1709138484.json",
@@ -116,7 +126,11 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Jeez, I'm starting to think you're a bit obsessed with me, much?\nYeah, off-duty [color=#ff0000]Reaper[/color]... that's me.\nI was looking for some Enya cassettes in the [color=#0f70ff]Yav[/color] and got my coordinates all messed up.\nBelieve it or not: [color=#ff0000]Nav folk[/color] do not like to be soothed while they toil in the sweet inferno hereafter..."
+			"text": "Jeez, I'm starting to think you're a bit obsessed with me, much?\nYeah, off-duty [color=#ff0000]Reaper[/color]... that's me.\nI was looking for some Enya cassettes in a wreck and got my coordinates all messed up.\nBelieve it or not: [color=#ff0000]the dead[/color] like to be soothed while we toil in the sweet inferno hereafter..."
+		},
+		{
+			"anchor_id": "anchor-1732806202",
+			"event_id": "dialogic_016"
 		},
 		{
 			"choice": "Drifters?",
@@ -129,7 +143,11 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh, those bozos over at the campsite over there?\nThey're harmless squatters. I wouldn't worry too much.\nThe [color=#0f70ff]Yav[/color] is a hard place to live in, y'know? I see it in the eyes of newly minted [color=#ff0000]Nav folk[/color] daily.\nI don't blame people when there are so many barriers in place. They're doing the best they can.\nI mean, do you?"
+			"text": "Oh, those bozos over at the campsite over there?\nThey're harmless squatters. I wouldn't worry too much.\n[color=#0f70ff]This world[/color] is a hard place to live. I remember it well.\nThose Drifters are doing the best they can."
+		},
+		{
+			"anchor_id": "anchor-1732806202",
+			"event_id": "dialogic_016"
 		},
 		{
 			"event_id": "dialogic_013"

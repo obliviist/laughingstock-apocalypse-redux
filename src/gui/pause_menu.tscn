@@ -3,8 +3,13 @@
 [ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/gui/pause_menu.gd" type="Script" id=2]
 [ext_resource path="res://src/gui/settings_menu.tscn" type="PackedScene" id=3]
+<<<<<<< Updated upstream
 [ext_resource path="res://src/gui/LSA_controls_splash.png" type="Texture" id=4]
 [ext_resource path="res://src/gui/LSA_howtoplay_splash.png" type="Texture" id=5]
+=======
+[ext_resource path="res://src/gui/LSA_controls_splash_v4.png" type="Texture" id=4]
+[ext_resource path="res://src/gui/LSA_howtoplay_splash_v2.png" type="Texture" id=5]
+>>>>>>> Stashed changes
 
 [node name="PauseMenu" type="Control"]
 pause_mode = 2

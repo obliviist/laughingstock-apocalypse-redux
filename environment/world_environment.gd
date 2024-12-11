@@ -6,6 +6,10 @@ func _ready():
 
 func _on_bloom_toggled(value):
 	environment.glow_enabled = value
+<<<<<<< Updated upstream
+=======
+	environment.glow_bloom = 1
+>>>>>>> Stashed changes
 	
 func _on_brightness_updated(value):
 	environment.adjustment_brightness = value

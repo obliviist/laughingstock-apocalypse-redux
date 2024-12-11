@@ -51,7 +51,11 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
+<<<<<<< Updated upstream
 			"text": "There's an intruder in the [color=#0c5dd4]Styrofoam Cottage[/color]!\nWhat does the spider want??"
+=======
+			"text": "There's an intruder in the [color=#01d691]Styrofoam Cottage[/color]!\nWhat does the Spider want??"
+>>>>>>> Stashed changes
 		},
 		{
 			"event_id": "dialogic_013"

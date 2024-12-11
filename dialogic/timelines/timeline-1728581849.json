@@ -1,0 +1,107 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 0,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_ajax.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I've never been here before. The Abyss looks so pretty from here, huh?\nDon't look down!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ask Ajax:"
+		},
+		{
+			"choice": "What happened?",
+			"condition": "",
+			"definition": "1730489388-648",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Maldoror's [color=#38f5bc]Archdemon[/color] counterpart was just telling us about the hijinks you got up to!\nArchdemon Boggle's [color=#ff002b]serpent familiar[/color] got really bad food poisoning and tossed you over the Castle walls in a rage.\nY'know... typical impulsive demon behaviour. I think you hit your head when you fell!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "What happened?",
+			"condition": "",
+			"definition": "1730489388-648",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Maldoror's [color=#38f5bc]Archdemon[/color] counterpart was just telling us about the hijinks you got up to!\nYou managed to slay a pesky intruder and prevent them from ascending to the rank of Archdemon!\nI am very impressed. That is no easy feat."
+		},
+		{
+			"choice": "Never mind, sorry",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No need! I understand. Hope you enjoy your time with your long lost buddy..."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1728581849.json",
+		"name": "ajax5"
+	}
+}

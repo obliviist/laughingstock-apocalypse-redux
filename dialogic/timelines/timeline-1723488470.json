@@ -1,0 +1,79 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1723488239.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Sfx",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_starfish.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1723488239.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Can I help you?"
+		},
+		{
+			"choice": "Yes, actually...",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488239.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well I'm not interested. This is my part-timer.\nTalk to Coffee at the other end of the bar and maybe she can help you."
+		},
+		{
+			"choice": "Nah",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488239.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Good."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1723488470.json",
+		"name": "starfish0"
+	}
+}

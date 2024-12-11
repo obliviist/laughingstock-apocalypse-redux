@@ -51,7 +51,7 @@
 			"character": "character-1704748102.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh, hi bro!\nMaldoror is so cute, isn't she?\nShe's my favourite calf.\nI think she's sad because her family is gone.\nApple, Bully, Candy, Dizzee, Honey, Jumbo, and Suki... where could they be?!\nI know, I know! You can help!\nTalk to Jenna by the [color=#0c5dd4]Styrofoam Cottage[/color] and maybe she can tell you more. I'm just a kid."
+			"text": "Oh, hi VC!\nMaldoror is so cute, isn't she? She's my favourite calf.\nI think she's sad because her family is gone.\nApple, Bully, Candy, Dizzee, Honey, Jumbo, and Suki... where could they be?!\nI know, I know! You can help!\nTalk to Jenna by the [color=#01d691]Styrofoam Cottage[/color] and maybe she can tell you more."
 		},
 		{
 			"emit_signal": "show_cow_score",

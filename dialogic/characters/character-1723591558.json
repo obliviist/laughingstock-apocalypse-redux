@@ -1,0 +1,21 @@
+{
+	"color": "#ffff002b",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1723591558.json",
+	"mirror_portraits": false,
+	"name": "Curious Serpent",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 35,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/curious_serpent_face.png"
+		}
+	],
+	"scale": 185,
+	"theme": ""
+}

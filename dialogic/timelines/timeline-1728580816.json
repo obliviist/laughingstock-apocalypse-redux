@@ -1,0 +1,510 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_nikita.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hey [color=#ff0000]VC[/color]! Where did you go? I got so scared after you left [color=#01d691]Styrofoam Grove[/color] and didn't come back."
+		},
+		{
+			"choice": "Where did YOU go?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I guess [color=#38f5bc]Maldoror[/color] got carried away and dropped me at the [color=#ff0000]Castle[/color] where her double lived.\nThen a monster showed up and we trapped it in a dungeon of a church.\nOhhhh, and these weird astronauts were there! But they got trapped with the monster.\nIt's weird... it feels like I've been here forever. "
+		},
+		{
+			"choice": "Niki! Is it really you?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You're talking funny, [color=#ff0000]VC[/color]. Of course it's me, silly!\nI guess [color=#38f5bc]Maldoror[/color] got carried away and dropped me here."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyway Maldoror told me that Moose and Jenna are actually cult leaders.\nWhatever that means! She said that's not good, though, so I wanted to ask you about it.\nShe told me you'd come!! I didn't believe her at first but here you are."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What will you tell Niki?"
+		},
+		{
+			"choice": "Moose and Jenna kidnapped us",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": ".....\nI'm so confused. Moose and Jenna are bad guys.... or maybe not?!\nThey took care of us."
+		},
+		{
+			"choice": "(Lie) Don't trust Maldoror",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/cow_angry.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, then why should I trust you, VC?\nYou could be just like them."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Why should Niki trust your word?"
+		},
+		{
+			"choice": "I was there when it happened",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see... I was really small. Did you find the monster at the [color=#ff0000]Castle[/color]?\nThe monster reminded me of [color=#ff4df4]Jenna[/color] when she gets really worried about stuff.\nWhen things go wrong on the farm, Moose gives up and makes [color=#ff4df4]Jenna[/color] work extra hard.\nI hated that part about Boggle... but he's not a total jerk!\nYou always help us out, VC. That's why I had to help Maldoror, too."
+		},
+		{
+			"choice": "I'm sorry, Niki",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Why are you sorry if you didn't do anything, VC? I believe you.\nDid you find the weird looking monster I met at the [color=#ff0000]Castle[/color]?\nThe monster reminded me of [color=#ff4df4]Jenna[/color]when she gets really worried about stuff.\nWhen things go wrong on the farm, Moose gives up and makes [color=#ff4df4]Jenna[/color] work extra hard.\nI hated that part about Boggle... but he's not a total jerk!\nYou always help us out, VC. That's why I had to help Maldoror, too."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see...\nMaldoror says we can't go home."
+		},
+		{
+			"animation": "slide_in_left.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_ajax.wav",
+			"volume": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I beg to differ, Niki. You have to go home or you'll be stuck here forever. \nAnd forever is a long time! You'd have to get an underworld job.\nAnd those are hard to come by these days in the [color=#ff0000]Coldheart Kingdom[/color]!"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ummmm....\n[color=#38f5bc]Maldoror[/color] says if I touch this tree and ask really nice that all my dreams will come true.\n[color=#38f5bc]Maldoror[/color] says Princess Coldheart will jump over the moon and I'll become a star!"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/cow_moo.wav",
+			"volume": 0
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_ajax.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Maldoror, stop this madness! Niki is just a kid.\nYou can't meddle with these things, Maldoror. Bad things will happen. Trust me.\nYou're only cheering on an innocent to do something stupid.\nEvil must be ripped out at the roots."
+		},
+		{
+			"animation": "instant_out.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Promise you'll come with me, VC? \nI don't want to be alone..."
+		},
+		{
+			"animation": "instant_out.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1732138583",
+			"index": 0,
+			"name": "finale1"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Buddy, you gotta tell the kid to take \"NO!\" for an answer..."
+		},
+		{
+			"choice": "I'm right behind you, Niki.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"change_scene": "res://src/cams/ending_coldheart.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "The tree?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's a dead end! The tree sticking out of that Star will awaken another Archdemon.\nNeed I remind you that [wave amp 50.0 connected=1]some[/wave] Archdemons aren't as civilized as Maldoror and Boggle?!"
+		},
+		{
+			"anchor_id": "anchor-1732138583",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Styrofoam Grove?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bold of you to suggest that but no can do!\nA rift will open between this Star and Styrofoam Grove."
+		},
+		{
+			"anchor_id": "anchor-1732138583",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1728580816.json",
+		"name": "nikita3"
+	}
+}

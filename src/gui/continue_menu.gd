@@ -2,19 +2,14 @@ extends Control
 
 onready var scene_tree: SceneTree = get_tree()
 onready var settings_menu = $SettingsMenu
-#onready var result: Label = $BG/Background/CenterContainer/VBoxContainer/Result
 
 func _ready():
 	GlobalSettings.connect("updated", self, "update_interface")
-	#update_interface()
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	#else:
+			#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
-#func update_interface():
-	#result.text = "Score: %s" % GlobalSettings.score
-
 func _on_ContinueBtn_pressed():
 	get_tree().change_scene("res://levels/world_1.tscn")
 	Music.stop()

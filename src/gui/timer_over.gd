@@ -20,6 +20,4 @@ func _on_Timer_timeout():
 		
 		get_tree().change_scene("res://src/gui/gameover_menu.tscn")
 		
-		#Music.stream = load("res://src/music/pause_loop16.wav") 
-		#Music.play()
 

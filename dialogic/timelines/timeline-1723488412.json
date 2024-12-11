@@ -1,0 +1,130 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Sfx",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_coffee.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I hope you're enjoying yourself at the [color=#00ff64]Saloon[/color]. Can I help you?"
+		},
+		{
+			"choice": "Ask about the DJ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "DJ Crabbypants is our guest tonight.\nEveryone is having a good time!"
+		},
+		{
+			"choice": "Drink menu",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Can I let you in on a little secret?\nBooze proves to be fatal around these parts... but it doesn't mean we don't know how to PARTY!"
+		},
+		{
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I hope you like coffee, tea, and flavoured water 'cause that's all we've got! "
+		},
+		{
+			"choice": "Salad Water",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Interesting choice.... (gulp)"
+		},
+		{
+			"choice": "Cherry Moon Tea",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's been awhile since anyone ordered that brew...\nIn fact, two regular tea buff werewolves named Tracy and Tricky were the only ones to order it!"
+		},
+		{
+			"choice": "Brewed Bark Coffee",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My favourite! Enjoy, sweetie."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1723488412.json",
+		"name": "coffee0"
+	}
+}

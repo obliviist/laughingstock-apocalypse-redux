@@ -1,0 +1,21 @@
+{
+	"color": "#ff38f5bc",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1716397056.json",
+	"mirror_portraits": false,
+	"name": "Archdemon Maldoror",
+	"nickname": "Archdemon Cow",
+	"nickname_bool": true,
+	"offset_x": 30,
+	"offset_y": 10,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/archdemon_face.png"
+		}
+	],
+	"scale": 150,
+	"theme": ""
+}

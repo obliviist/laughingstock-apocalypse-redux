@@ -1,0 +1,85 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704747979.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_moose.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704747979.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I have nothing to say to you, Van.\nHaving dematerialized inside a grave for an agonizing, extended period of time...\nI guess Jenna and I have to thank you for releasing us."
+		},
+		{
+			"character": "character-1704747979.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Are we dead?!"
+		},
+		{
+			"choice": "No!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704747979.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'd beg to differ!\nWe'll start over again, Jenna and I, like we always do. Whether you stay or not.\nThis place isn't all that different from [color=#00b1ff]Styrofoam Grove[/color]...\nGoodbye, Van."
+		},
+		{
+			"choice": "I'm unsure",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704747979.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well no wonder the Archdemon tells us we can't leave. Oh well!\nWe'll start over again, Jenna and I, like we always do. Whether you stay or not.\nThis place isn't all that different from [color=#00b1ff]Styrofoam Grove[/color]...\nGoodbye, Van."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1731618688.json",
+		"name": "moose2"
+	}
+}

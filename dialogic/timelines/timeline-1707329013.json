@@ -41,10 +41,10 @@
 
 			],
 			"portrait": "",
-			"question": "Open the urn?"
+			"question": "Open the Urn?"
 		},
 		{
-			"choice": "Open the urn?",
+			"choice": "Open the lid",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",

@@ -22,6 +22,7 @@ extents = Vector2( 1280, 720 )
 [node name="DialogNode" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 script = ExtResource( 6 )
 
 [node name="Portraits" type="Control" parent="."]
@@ -29,19 +30,32 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
+<<<<<<< Updated upstream
 margin_left = 640.0
 margin_top = 720.0
 margin_right = 640.0
 margin_bottom = 720.0
+=======
+margin_left = 512.0
+margin_top = 600.0
+margin_right = 512.0
+margin_bottom = 600.0
+>>>>>>> Stashed changes
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextBubble" parent="." instance=ExtResource( 1 )]
+<<<<<<< Updated upstream
 margin_left = 185.0
 margin_top = 513.0
 margin_right = 1095.0
 margin_bottom = 680.0
+=======
+margin_left = 40.0
+margin_top = 380.0
+margin_right = 740.0
+>>>>>>> Stashed changes
 
 [node name="Options" type="VBoxContainer" parent="."]
 visible = false

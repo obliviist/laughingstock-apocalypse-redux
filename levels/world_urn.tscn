@@ -1,0 +1,168 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=1]
+[ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=4]
+[ext_resource path="res://levels/environment_2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/cheat_tscn/urn_interior.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/cheat_tscn/urn_bed.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/cheat_tscn/urn_painting_1.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/gui/game_score.gd" type="Script" id=9]
+[ext_resource path="res://levels/world_urn.gd" type="Script" id=10]
+[ext_resource path="res://assets/cheat_tscn/urn_painting_3.tscn" type="PackedScene" id=11]
+[ext_resource path="res://environment/world_castle_environment.tres" type="Environment" id=12]
+[ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=13]
+[ext_resource path="res://assets/cheat_tscn/urn_bookshelf.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/cheat_tscn/urn_book_1.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/cheat_tscn/urn_book_2.tscn" type="PackedScene" id=16]
+[ext_resource path="res://assets/cheat_tscn/urn_book_3.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/cheat_tscn/urn_shovel.tscn" type="PackedScene" id=18]
+[ext_resource path="res://assets/cheat_tscn/urn_painting_2.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/cheat_tscn/urn_tv.tscn" type="PackedScene" id=20]
+[ext_resource path="res://assets/cheat_tscn/urn_painting_4.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/cheat_tscn/urn_vendmachine.tscn" type="PackedScene" id=22]
+[ext_resource path="res://assets/npcs_tscn/npc_painting.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/cheat_tscn/urn_painting_5.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/farm_tscn/basket_var1.tscn" type="PackedScene" id=25]
+[ext_resource path="res://assets/farm_tscn/basket_var2.tscn" type="PackedScene" id=26]
+[ext_resource path="res://assets/cheat_tscn/urn_icebox.tscn" type="PackedScene" id=27]
+[ext_resource path="res://assets/environment_tscn/music_player.tscn" type="PackedScene" id=28]
+[ext_resource path="res://assets/npcs_tscn/npc_ajax.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/npcs_tscn/npc_maldoror.tscn" type="PackedScene" id=30]
+
+[sub_resource type="BoxShape" id=60]
+extents = Vector3( 1000, 0.8, 1000 )
+
+[node name="World_Urn" type="Spatial"]
+script = ExtResource( 10 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.980223, 0, -0.197897, 0, 1, 0, 0.197897, 0, 0.980223, -0.297835, 0.59547, 4.81942 )
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 2 )]
+environment = ExtResource( 12 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+
+[node name="Env" parent="." instance=ExtResource( 4 )]
+
+[node name="Environment_2" parent="." instance=ExtResource( 5 )]
+
+[node name="Death" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.4023, 0 )
+monitorable = false
+
+[node name="WaterCollisionShape" type="CollisionShape" parent="Death"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+shape = SubResource( 60 )
+
+[node name="Score" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.16223, 0 )
+monitorable = false
+
+[node name="WaterCollisionShape" type="CollisionShape" parent="Score"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+shape = SubResource( 60 )
+
+[node name="GUI" parent="." instance=ExtResource( 1 )]
+
+[node name="GameScore" type="Label" parent="."]
+visible = false
+margin_left = 21.0
+margin_top = 21.0
+margin_right = 162.0
+margin_bottom = 69.0
+theme = ExtResource( 13 )
+script = ExtResource( 9 )
+
+[node name="urn_interior" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.752881, 0 )
+
+[node name="urn_bed" parent="." instance=ExtResource( 7 )]
+transform = Transform( -0.186953, 0, 0.982369, 0, 1, 0, -0.982369, 0, -0.186953, -0.315038, 1.03981, 0.782309 )
+
+[node name="urn_bookshelf" parent="." instance=ExtResource( 14 )]
+transform = Transform( 0.965482, 0, 0.260471, 0, 1, 0, -0.260471, 0, 0.965482, -0.715003, 1.03981, -1.66137 )
+
+[node name="urn_book_1" parent="." instance=ExtResource( 15 )]
+transform = Transform( 0.977036, 0.197644, 0.0796145, 0.0100368, 0.330538, -0.94374, -0.21284, 0.922866, 0.320964, 0.75013, 1.49531, 1.72736 )
+
+[node name="urn_book_2" parent="." instance=ExtResource( 16 )]
+transform = Transform( 0.52299, 0, 0.852339, 0, 1, 0, -0.852339, 0, 0.52299, -0.62364, 1.17509, 2.23403 )
+
+[node name="urn_book_3" parent="." instance=ExtResource( 17 )]
+transform = Transform( 0.948274, 0, -0.317454, 0, 1, 0, 0.317454, 0, 0.948274, -0.128085, 2.08826, 0.780692 )
+
+[node name="urn_shovel" parent="." instance=ExtResource( 18 )]
+transform = Transform( 0.866025, 0.264575, -0.424264, 0, 0.848529, 0.529149, 0.5, -0.458257, 0.734847, 1.77403, 1.10894, -5.48803 )
+
+[node name="urn_painting_1" parent="." instance=ExtResource( 8 )]
+transform = Transform( 0.361999, 0, -0.932179, 0, 1, 0, 0.932179, 0, 0.361999, 4.75866, 1.98257, -2.24663 )
+
+[node name="Painting" parent="urn_painting_1" instance=ExtResource( 23 )]
+dialog_index = 1
+
+[node name="urn_painting_2" parent="." instance=ExtResource( 19 )]
+transform = Transform( 0.994036, 0.0287407, -0.105202, 0, 0.964649, 0.263536, 0.109058, -0.261964, 0.958896, 1.39414, 1.07039, -1.01771 )
+
+[node name="Painting" parent="urn_painting_2" instance=ExtResource( 23 )]
+dialog_index = 2
+
+[node name="urn_painting_3" parent="." instance=ExtResource( 11 )]
+transform = Transform( 0.920784, 0, 0.390072, 0, 1, 0, -0.390072, 0, 0.920784, -2.06066, 1.97923, -5.08926 )
+
+[node name="Painting" parent="urn_painting_3" instance=ExtResource( 23 )]
+dialog_index = 3
+
+[node name="urn_painting_4" parent="." instance=ExtResource( 21 )]
+transform = Transform( -0.390072, 0, 0.920784, 0, 1, 0, -0.920784, 0, -0.390072, -4.78519, 1.97923, 2.22444 )
+
+[node name="Painting" parent="urn_painting_4" instance=ExtResource( 23 )]
+dialog_index = 4
+
+[node name="urn_painting_5" parent="." instance=ExtResource( 24 )]
+transform = Transform( -0.920784, 0, -0.390072, 0, 1, 0, 0.390072, 0, -0.920784, 2.10591, 1.97923, 5.11961 )
+
+[node name="Painting" parent="urn_painting_5" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0 )
+dialog_index = 5
+
+[node name="urn_tv" parent="." instance=ExtResource( 20 )]
+transform = Transform( -0.376613, 0, -0.926371, 0, 1, 0, 0.926371, 0, -0.376613, 4.74794, 4.14535, 2.03815 )
+
+[node name="urn_vendmachine" parent="." instance=ExtResource( 22 )]
+transform = Transform( -0.376612, 0, -0.926371, 0, 1, 0, 0.926371, 0, -0.376612, 4.72419, 1.06911, 2.04817 )
+
+[node name="urn_icebox" parent="urn_vendmachine" instance=ExtResource( 27 )]
+transform = Transform( -0.0237519, 0, -0.999719, 0, 1, 0, 0.999719, 0, -0.0237519, 5.25406, 0, 5.18553 )
+
+[node name="Basket_Var1" parent="." instance=ExtResource( 25 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3795, 1.70769, 4.07876 )
+
+[node name="Basket_Var2" parent="." instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.470937, 1.70769, -6.00112 )
+
+[node name="music_player" parent="." instance=ExtResource( 28 )]
+transform = Transform( -0.944794, 0, 0.327663, 0, 1, 0, -0.327663, 0, -0.944794, -1.93839, 3.57549, 4.6704 )
+
+[node name="Ajax" parent="." instance=ExtResource( 29 )]
+transform = Transform( 0.929943, 0, -0.367703, 0, 1, 0, 0.367703, 0, 0.929943, 2.69589, 1.02871, 0.210924 )
+npc = "ajax"
+dialog_index = 4
+
+[node name="AjaxAnimationPlayer" parent="Ajax/ajax" index="2"]
+autoplay = "ajax_idle"
+
+[node name="Maldoror" parent="." instance=ExtResource( 30 )]
+transform = Transform( 0.925757, -0.34349, -0.158078, 0.028904, 0.481127, -0.876174, 0.377012, 0.806556, 0.455335, 3.53931, 14.9794, -5.59749 )
+
+[connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
+
+[editable path="Environment_2"]
+[editable path="Environment_2/ChurchGate"]
+[editable path="Environment_2/ChurchGate/church_v6"]
+[editable path="GUI"]
+[editable path="urn_interior"]
+[editable path="Ajax"]
+[editable path="Ajax/ajax"]

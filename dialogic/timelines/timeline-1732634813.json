@@ -1,0 +1,130 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_ajax.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This is it, pal! The last dance!"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1732653630",
+			"index": 0,
+			"name": "ask_ajax4"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ask Ajax:"
+		},
+		{
+			"choice": "Archdemon Coldheart?!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[color=#08ff00]Princess Coldheart[/color] has returned as an Archdemon prone to dancing fits!\nAnd I never saw this plot twist coming...\nShe is going to DANCE over [color=#01d691]Styrofoam Grove[/color] until it's reduced to ash!"
+		},
+		{
+			"anchor_id": "anchor-1732653630",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Niki!!!!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Relax! The kid is fine.\nThis isn't some fake-out where the kid is lost in some other place.\nYou'll find Niki in the big barn down below in the [color=#01d691]Grove[/color].\nHe wanted to get a head start!"
+		},
+		{
+			"anchor_id": "anchor-1732653630",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "What do I do?!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Simply? You gotta annoy an Archdemon to make them go away.\nRight, Maldoror?"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/cow_angry.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Right! Now this is goodbye for now...\nMortals can't become full-fledged Reapers. You might be sick if you can see and visit the [color=#ff0000]Vale of the Dead[/color].\nI can't thank you enough for helping me out of my [color=#ff0000]Urn[/color]!\nMaybe we'll meet again one day, HAHAHAHA! The [color=#ff0000]Vale of the Dead[/color] is a big place.\nAnyway go see [color=#00e529]Niki[/color] in the big barn down below in the [color=#01d691]Grove[/color].\n[color=#00e529]Niki[/color] tells us that he's an expert in being annoying. Best of luck!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1732634813.json",
+		"name": "ajax6"
+	}
+}

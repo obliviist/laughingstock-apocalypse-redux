@@ -12,6 +12,15 @@ export var controller_sensitivity = 3
 
 export (int, 0, 10) var push = 1
 
+<<<<<<< Updated upstream:player/player.gd
+=======
+var gravity_enabled := false
+var move_vec = Vector3.ZERO
+
+var noclip := false
+var fly := false
+
+>>>>>>> Stashed changes:src/player/player.gd
 var velocity = Vector3.ZERO
 var snap_vector = Vector3.ZERO
 
@@ -23,6 +32,18 @@ onready var staticbody = $Head/Camera/StaticBody
 onready var camera =$Head/Camera
 onready var anim = get_node("VanyaAnimationPlayer")
 
+<<<<<<< Updated upstream:player/player.gd
+=======
+onready var cheathelp_popup = $CheatHelpPopup
+
+onready var crosshair = $Head/Camera/InteractRay/CenterContainer/Crosshair
+
+onready var activated_label = $CheatConsole/CheatActivated
+onready var deactivated_label = $CheatConsole/CheatDeactivated
+onready var activate_fade_anim = get_node("CheatConsole/CheatActivated/CheatActivatedFadeOut")
+onready var deactivate_fade_anim = get_node("CheatConsole/CheatDeactivated/CheatDeactivatedFadeOut")
+
+>>>>>>> Stashed changes:src/player/player.gd
 var picked_object
 var pull_power = 4
 var rotation_power = 0.05
@@ -80,9 +101,17 @@ func _input(event):
 			var knockback = picked_object.translation - translation
 			picked_object.apply_central_impulse(knockback * 5)
 			remove_object()
+<<<<<<< Updated upstream:player/player.gd
 			
 	#if Input.is_action_just_pressed("capture_screen"):
 		#_capture_screen()
+=======
+	
+
+	if GlobalSettings.get_disabled_input():
+		return
+
+>>>>>>> Stashed changes:src/player/player.gd
 	
 func _physics_process(delta):
 	var input_vector = get_input_vector()
@@ -146,6 +175,10 @@ func _process(delta):
 func set_anim(dir):
 	if dir == Vector2(0, 0) and anim.current_animation != "vanya_idle":
 		anim.play("vanya_idle", 0.1)
+<<<<<<< Updated upstream:player/player.gd
+=======
+	
+>>>>>>> Stashed changes:src/player/player.gd
 
 func get_input_vector():
 	var input_vector = Vector3.ZERO
@@ -203,7 +236,22 @@ func _on_Death_body_entered(body):
 	if body.is_in_group("player"):
 		SimpleSave.save_scene(get_tree(), "res://save_slots/save_continue.tscn")
 		get_tree().change_scene("res://src/gui/continue_menu.tscn")
-		
+
+func _on_AbyssDeath_body_entered(body):
+	if body.is_in_group("player"):
+		SimpleSave.save_scene(get_tree(), "res://save_slots/save_continue.tscn")
+		get_tree().change_scene("res://src/gui/world_abyss_slide.tscn")
+
+func _on_BossDeath_body_entered(body):
+	if body.is_in_group("player"):
+		SimpleSave.save_scene(get_tree(), "res://save_slots/save_continue.tscn")
+		get_tree().change_scene("res://src/gui/world_4_slide.tscn")
+
+func _on_StarDeath_body_entered(body):
+	if body.is_in_group("player"):
+		SimpleSave.save_scene(get_tree(), "res://save_slots/save_continue.tscn")
+		get_tree().change_scene("res://src/gui/world_star_slide.tscn")
+
 func _on_fov_updated(value):
 	camera.fov = value
 
@@ -219,6 +267,111 @@ func update_interaction():
 func _on_InteractArea_body_entered(body):
 	if body.is_in_group("NPC"):
 		body.start_dialog()
+		crosshair.visible = false
 	elif body.is_in_group("level_gate"):
 		body.start_level_request_dialog()
+		crosshair.visible = false
 	#the above code can be used to start dialog on load of another level
+<<<<<<< Updated upstream:player/player.gd
+=======
+	#for example, I can have different groups other than NPC and Gates
+	
+
+func _on_NoclipListener_cheat_activated():
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav")
+	Sfx.play()
+	activated_label.visible = true
+	activate_fade_anim.play("text_fade_out")
+	gravity_enabled = true
+	gravity = -10
+	noclip = !noclip
+	$CollisionShape.disabled = noclip
+
+
+func _on_FlyListener_cheat_activated():
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav")
+	Sfx.play()
+	activated_label.visible = true
+	activate_fade_anim.play("text_fade_out")
+	gravity_enabled = true
+	gravity = -10
+	fly = !fly
+
+
+func _on_HorsepowerListener_cheat_activated():
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav")
+	Sfx.play()
+	activated_label.visible = true
+	activate_fade_anim.play("text_fade_out")
+	max_speed = 50
+
+
+func _on_MacroModeListener_cheat_activated():
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav")
+	Sfx.play()
+	activated_label.visible = true
+	activate_fade_anim.play("text_fade_out")
+	self.scale = Vector3(0.2, 0.2, 0.2)
+	max_speed = 65
+
+func _on_MoonJumpListener_cheat_activated():
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav")
+	Sfx.play()
+	activated_label.visible = true
+	activate_fade_anim.play("text_fade_out")
+	jump_impulse = 50
+
+
+func _on_HelpListener_cheat_activated():
+	activated_label.visible = true
+	activate_fade_anim.play("text_fade_out")
+	cheathelp_popup.popup_centered()
+
+
+func _on_TheUrnListener_cheat_activated():
+	Amb.stop()
+	Music.stop()
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav")
+	Sfx.play()
+	get_tree().change_scene("res://src/gui/world_urn_slide.tscn")
+
+
+func _on_TheAbyssListener_cheat_activated():
+	Amb.stop()
+	Music.stop()
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav")
+	Sfx.play()
+	get_tree().change_scene("res://src/gui/world_abyss_slide.tscn")
+
+
+func _on_TheKeepListener_cheat_activated():
+	Amb.stop()
+	Music.stop()
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav")
+	Sfx.play()
+	get_tree().change_scene("res://src/gui/world_keep_slide.tscn")
+
+
+func _on_TheSaloonListener_cheat_activated():
+	Amb.stop()
+	Music.stop()
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav")
+	Sfx.play()
+	get_tree().change_scene("res://src/gui/world_saloon_slide.tscn")
+
+
+func _on_DeactivateListener_cheat_activated():
+	Sfx.stream = load("res://src/sfx/one_shots/Drums-ShortDigiBD.wav")
+	Sfx.play()
+	deactivated_label.visible = true
+	deactivate_fade_anim.play("text_fade_out")
+	jump_impulse = 20
+	gravity = -40
+	max_speed = 12
+	self.scale = Vector3(0.9, 0.9, 0.9)
+	noclip = false
+	$CollisionShape.disabled = false
+	fly = false
+
+
+>>>>>>> Stashed changes:src/player/player.gd

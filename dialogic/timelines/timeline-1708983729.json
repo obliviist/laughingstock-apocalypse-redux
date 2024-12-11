@@ -32,7 +32,7 @@
 			"character": "character-1708983634.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "WRONG!!!!\nAre you crazy? We are NOT playing Hide & Seek.\nKeep looking!!!"
+			"text": "WRONG!!!!\nAre you crazy?! We are NOT playing Hide & Seek.\nKeep looking!!!"
 		},
 		{
 			"definition": "1708994432-648",
@@ -81,7 +81,7 @@
 			"character": "character-1708983634.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Did you forget the rules, human??? SHAME ON YOU!\nYou are looking for a teeny, tiny one of us.\nWe hide very well when tiny. BUT!\nWe could be hiding in a secret place behind stuff, not out in the open.\nGot it?? KEEP TRYING PATHETIC!!!!"
+			"text": "Did you forget the rules, human??? SHAME ON YOU!\nYou are looking for a teeny, tiny one of us. We hide very well when tiny. BUT!\nWe could be hiding in a secret place behind stuff, not out in the open.\nGot it?? KEEP TRYING PATHETIC!!!!"
 		},
 		{
 			"event_id": "dialogic_013"

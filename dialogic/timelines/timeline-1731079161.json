@@ -1,0 +1,252 @@
+{
+	"events": [
+		{
+			"animation": "bouncing_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": ">=",
+			"definition": "1731524591-779",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "STOP THROWING MY CITIZENS AROUND!!!!\nThat's it! I'm revoking your esteemed title!\nThere is zero tolerance for bullying and harrassment in the Boggle Kingdom!\nVisit my Curious Serpent to receive your sentencing!"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/cow_angry.wav",
+			"volume": 0
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_angler1.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's a good day!!!!!"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1731079343",
+			"index": 0,
+			"name": "ask_angler3"
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Things are SO much better around here now that a REAL leader is in charge!"
+		},
+		{
+			"choice": "Where did everyone go?",
+			"condition": "",
+			"definition": "1733338475-648",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What do you mean?!\nYou can't possibly be talking about those diabolical freeloaders who lived here before...\nThe new citizens of Boggle Castle are docile and obedient. A dream come true!"
+		},
+		{
+			"anchor_id": "anchor-1731079343",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Ask about the cows",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah yes, my [color=#ffc740]Bovine Battalion[/color]! Thanks to you we are becoming quite a big player in the this free market.\nI am told that our furry friends will fetch a high price when the next Archdemon comes to collect their living souls.\nAnd by the time that visit comes, Boggle will be RICH!!! HAHAHAHA!"
+		},
+		{
+			"anchor_id": "anchor-1731079343",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "About my wish...",
+			"condition": "",
+			"definition": "1733338475-648",
+			"event_id": "dialogic_011",
+			"value": "0"
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh yes, right! I promised the mortal I would grant them a wish and a title.\nEsteemed mortal... I hereby declare you will be forever known as [color=#ff0000]Lord VC Reaper[/color]!!!\nYou serve a legitimate Archdemon now so if you're up for a task...\nGo visit our disgraced comrade, [color=#38f5bc]Archdemon[/color] Maldoror, in the prison beside the gates to the Keep.\nBut don't visit for too long! She is quite a manipulative little devil."
+		},
+		{
+			"definition": "1733338475-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"anchor_id": "anchor-1731079343",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Ask about wish (again)...",
+			"condition": "",
+			"definition": "1733338475-648",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": ".......\nAren't you persistent?!\nRight! Your wish..."
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "If you could gain a new ability what would you choose?"
+		},
+		{
+			"choice": "Moon Jump",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ahhhh. How predictable.\nI learned this spell called [color=#aeffac]lodger979[/color] from a wizard that fell from the sky to their death.\nPerhaps you will find [color=#aeffac]lodger979[/color] useful to reach great heights."
+		},
+		{
+			"definition": "1733338475-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "0"
+		},
+		{
+			"choice": "Horse Power",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Interesting... Are you sure? Hm.\nI learned this spell called [color=#aeffac]cowboy555[/color] from a rancher that lost a diabolical lottery.\nTragically this rancher could not outrun their untimely crucifixion at the hands of men that act like dogs.\nPerhaps you will find [color=#aeffac]cowboy555[/color] useful to run faster!"
+		},
+		{
+			"definition": "1733338475-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "0"
+		},
+		{
+			"choice": "Go back in time",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Odd. Hmph. Let's see...\nI learned this spell called [color=#aeffac]pureevil1[/color] but it's quite dangerous...\nIn fact, this is the spell that allowed me to lead my siege on [color=#08ff00]Coldheart Castle Keep[/color]! MUAHAHA!\nPerhaps you will find [color=#aeffac]pureevil1[/color] useful in whatever-it-is you do, my liege."
+		},
+		{
+			"definition": "1733338475-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "0"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "See ya later!",
+			"condition": "",
+			"definition": "1733338475-648",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Very good, my liege.\nNow go visit our disgraced comrade, [color=#38f5bc]Archdemon[/color] Maldoror, in the prison beside the gates to the Keep."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1731079161.json",
+		"name": "angler2"
+	}
+}

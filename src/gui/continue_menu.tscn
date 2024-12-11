@@ -32,6 +32,7 @@ margin_bottom = 304.0
 color = Color( 1, 1, 1, 0 )
 
 [node name="Splash" type="Sprite" parent="BG/Background"]
+modulate = Color( 1, 1, 1, 0.509804 )
 position = Vector2( 510, 299 )
 texture = ExtResource( 4 )
 
@@ -81,32 +82,64 @@ margin_right = 248.0
 margin_bottom = 184.0
 
 [node name="ContinueBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
+<<<<<<< Updated upstream
 margin_top = 191.0
 margin_right = 248.0
 margin_bottom = 231.0
+=======
+margin_left = 69.0
+margin_top = 77.0
+margin_right = 150.0
+margin_bottom = 117.0
+>>>>>>> Stashed changes
 rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 4
 text = "Continue?"
 
 [node name="MenuBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
+<<<<<<< Updated upstream
 margin_top = 238.0
 margin_right = 248.0
 margin_bottom = 278.0
+=======
+margin_left = 68.0
+margin_top = 124.0
+margin_right = 152.0
+margin_bottom = 164.0
+>>>>>>> Stashed changes
 rect_min_size = Vector2( 0, 40 )
+size_flags_horizontal = 4
 text = "Main Menu"
 
 [node name="SettingsBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
+<<<<<<< Updated upstream
 margin_top = 285.0
 margin_right = 248.0
 margin_bottom = 325.0
+=======
+margin_left = 69.0
+margin_top = 171.0
+margin_right = 151.0
+margin_bottom = 211.0
+>>>>>>> Stashed changes
 rect_min_size = Vector2( 0, 40 )
-text = "Settings"
+size_flags_horizontal = 4
+text = " Settings "
 
 [node name="QuitBtn" type="Button" parent="BG/Background/CenterContainer/VBoxContainer"]
+<<<<<<< Updated upstream
 margin_top = 332.0
 margin_right = 248.0
 margin_bottom = 372.0
+=======
+margin_left = 69.0
+margin_top = 218.0
+margin_right = 150.0
+margin_bottom = 258.0
+>>>>>>> Stashed changes
 rect_min_size = Vector2( 0, 40 )
-text = "Quit"
+size_flags_horizontal = 4
+text = "Quit Game"
 
 [node name="SettingsMenu" parent="." instance=ExtResource( 3 )]
 

@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "The Goblin",
+	"display_name_bool": true,
+	"id": "character-1727375569.json",
+	"mirror_portraits": false,
+	"name": "modelX",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 30,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/modelX_face.png"
+		}
+	],
+	"scale": 150,
+	"theme": ""
+}

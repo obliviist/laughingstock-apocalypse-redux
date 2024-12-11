@@ -24,4 +24,3 @@ func end_dialog(data):
 func dialogic_signal_event(param):
 	if param == "show_cow_score":
 		cow_score_ui.visible = true
-		

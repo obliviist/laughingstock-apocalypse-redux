@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "The Urchin",
+	"display_name_bool": true,
+	"id": "character-1727375562.json",
+	"mirror_portraits": false,
+	"name": "modelW",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 30,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/modelW_face.png"
+		}
+	],
+	"scale": 150,
+	"theme": ""
+}

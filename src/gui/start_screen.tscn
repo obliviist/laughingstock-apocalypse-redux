@@ -70,6 +70,9 @@ tracks/0/keys = {
 
 [node name="StartScreen" type="CanvasLayer"]
 script = ExtResource( 9 )
+__meta__ = {
+"_edit_horizontal_guides_": [ -440.0 ]
+}
 
 [node name="Environment" type="Spatial" parent="."]
 

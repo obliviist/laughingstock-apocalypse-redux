@@ -35,6 +35,12 @@
 			"text": "Hey, pal.\nWhy the long face?\nWe're just crashing in this area for the night."
 		},
 		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1731706654",
+			"index": 0,
+			"name": "voyager1"
+		},
+		{
 			"character": "character-1704748422.json",
 			"event_id": "dialogic_010",
 			"options": [
@@ -51,7 +57,7 @@
 			"value": ""
 		},
 		{
-			"choice": "Insult (STR=0)",
+			"choice": "Insult",
 			"condition": "",
 			"definition": "1708997325-787",
 			"event_id": "dialogic_011",
@@ -64,7 +70,19 @@
 			"text": "I bet you're really proud of that one but it's not gonna work.\nI've had just about every insult in the book hurled at me.\nTake a walk."
 		},
 		{
-			"choice": "Intimidate (STR+1)",
+			"definition": "1708997325-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"anchor_id": "anchor-1731706654",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "INTIMIDATE",
 			"condition": "==",
 			"definition": "1708997325-787",
 			"event_id": "dialogic_011",
@@ -75,6 +93,44 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Easy, easy!!!\nLoud and clear. I'm sorry we stole your cattle last night. I really am.\nThings are tough for us right now and we were so downtrodden, we were deranged before we found your farm.\nWe won't be any more trouble and we'll be gone in the morning, I promise."
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I can show you how to move faster if you want?"
+		},
+		{
+			"choice": "Show me!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cool! Watch this...\nYou're gonna take a deep breath, ready your fingers...\nPress [color=#aeffac];[/color] and tell the console [color=#aeffac]cowboy555[/color], got it?\nHave fun!!!"
+		},
+		{
+			"choice": "No thanks",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748422.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey it's your time, not mine."
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_013"

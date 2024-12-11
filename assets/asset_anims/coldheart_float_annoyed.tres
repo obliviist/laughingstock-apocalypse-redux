@@ -1,0 +1,30 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "coldheart_float_annoyed"
+length = 8.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4, 5, 6, 7, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -25.5172, 83.7714, 24.9125 ), Vector3( -25.5172, 80.1908, 24.9125 ), Vector3( -25.5172, 73.5742, 24.9125 ), Vector3( -25.5172, 75.2737, 24.9125 ), Vector3( -25.5172, 76.9732, 34.8055 ), Vector3( -18.1009, 78.6728, 18.5018 ), Vector3( -22.2114, 78.4675, 10.9313 ), Vector3( -17.5512, 76.4899, 17.9219 ), Vector3( -25.5172, 83.7714, 24.9125 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4, 5, 6, 7, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 49.756, 46.1285, 0 ), Vector3( 49.756, 31.4865, 0 ), Vector3( 49.756, 52.8782, 0 ), Vector3( 49.756, 51.7533, 0 ), Vector3( 49.756, 31.6193, 0 ), Vector3( 49.756, 63.0126, 0 ), Vector3( 49.756, 35.0326, 0 ), Vector3( 49.756, 27.6266, 0 ), Vector3( 49.756, 46.1285, 0 ) ]
+}

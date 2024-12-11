@@ -8,7 +8,7 @@
 	"name": "Cave",
 	"nickname": "",
 	"nickname_bool": true,
-	"offset_x": 0,
+	"offset_x": 80,
 	"offset_y": 0,
 	"portraits": [
 		{

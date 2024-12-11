@@ -4,8 +4,19 @@
 	],
 	"variables": [
 		{
+<<<<<<< Updated upstream
 			"id": "1708711763-648",
 			"name": "cow_score",
+=======
+			"id": "1724958660-163",
+			"name": "player_in_dialogic",
+			"type": 0,
+			"value": "false"
+		},
+		{
+			"id": "1729713967-648",
+			"name": "met_ajax",
+>>>>>>> Stashed changes
 			"type": 0,
 			"value": "0"
 		},
@@ -16,8 +27,126 @@
 			"value": "0"
 		},
 		{
+<<<<<<< Updated upstream
 			"id": "1708994432-648",
 			"name": "cellar_spider_score",
+=======
+			"id": "1730400190-787",
+			"name": "help_angler",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1730400182-648",
+			"name": "help_archdemon",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1731082324-648",
+			"name": "help_myth",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1731526476-284",
+			"name": "find_tuna_steak",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1732204765-648",
+			"name": "discover_abyss",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1732127386-648",
+			"name": "discover_keep",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1732127406-787",
+			"name": "discover_saloon",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1708711763-648",
+			"name": "cow_score",
+>>>>>>> Stashed changes
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1732644708-648",
+			"name": "coldheart_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1731515881-648",
+			"name": "warp_points",
+			"type": 0,
+			"value": "0"
+		},
+		{
+<<<<<<< Updated upstream
+=======
+			"id": "1708994432-648",
+			"name": "cellar_spider_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1729276364-648",
+			"name": "unlock_church_door",
+			"type": 0,
+			"value": "0"
+		},
+		{
+>>>>>>> Stashed changes
+			"id": "1709066220-648",
+			"name": "find_urn",
+			"type": 0,
+			"value": "0"
+<<<<<<< Updated upstream
+=======
+		},
+		{
+			"id": "1709051878-648",
+			"name": "radio_handler",
+			"type": 0,
+			"value": "2"
+		},
+		{
+			"id": "1719589019-648",
+			"name": "abyss_mask_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1730489388-648",
+			"name": "helped_archdemon",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1731524591-779",
+			"name": "cow_derby_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1709064271-787",
+			"name": "hide_seek_win",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1732738089-648",
+			"name": "the_star",
 			"type": 0,
 			"value": "0"
 		},
@@ -28,22 +157,11 @@
 			"value": "0"
 		},
 		{
-			"id": "1709051878-648",
-			"name": "radio_handler",
-			"type": 0,
-			"value": "2"
-		},
-		{
-			"id": "1709064271-787",
-			"name": "hide_seek_win",
+			"id": "1733338475-648",
+			"name": "boggle_wish",
 			"type": 0,
 			"value": "0"
-		},
-		{
-			"id": "1709066220-648",
-			"name": "find_urn",
-			"type": 0,
-			"value": "0"
+>>>>>>> Stashed changes
 		}
 	]
 }

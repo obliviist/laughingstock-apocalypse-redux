@@ -5,7 +5,7 @@
 [ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/environment_tscn/music_player_3D.gd" type="Script" id=6]
+[ext_resource path="res://assets/environment_tscn/radio0.gd" type="Script" id=6]
 [ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=7]
 [ext_resource path="res://assets/interactable.gd" type="Script" id=8]
 [ext_resource path="res://src/music/spiders and cows_loop.wav" type="AudioStream" id=9]
@@ -372,19 +372,19 @@ transform = Transform( -0.930226, 0, 0.366988, 0, 1, 0, -0.366988, 0, -0.930226,
 script = ExtResource( 6 )
 npc = "radio"
 
-[node name="DemoSong1" type="AudioStreamPlayer3D" parent="MusicPlayer"]
+[node name="Song0" type="AudioStreamPlayer3D" parent="MusicPlayer"]
 transform = Transform( -0.825429, 0, 0.564506, 0, 1, 0, -0.564506, 0, -0.825429, 4.53834, -10.719, -133.196 )
 stream = ExtResource( 13 )
 unit_db = -1.0
 bus = "Music"
 
-[node name="DemoSong2" type="AudioStreamPlayer3D" parent="MusicPlayer"]
+[node name="Song1" type="AudioStreamPlayer3D" parent="MusicPlayer"]
 transform = Transform( -0.825429, 0, 0.564506, 0, 1, 0, -0.564506, 0, -0.825429, 4.53834, -10.719, -133.196 )
 stream = ExtResource( 17 )
 unit_db = -2.0
 bus = "Music"
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="MusicPlayer"]
+[node name="Song2" type="AudioStreamPlayer3D" parent="MusicPlayer"]
 stream = ExtResource( 9 )
 unit_db = -2.759
 

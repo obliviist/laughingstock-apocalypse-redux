@@ -1,0 +1,151 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_spider.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "CONGRATS, HUMAN! YOU BEAT [color=#38f5bc]LAUGHINGSTOCK APOCALYPSE[/color]!\nYou unlocked a few secret cheat codes which equals more FUN!!!!"
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ready?!"
+		},
+		{
+			"choice": "Yes!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "YAYYYYY!!!!!\nUse this special cheat to rush to [color=#ff0000]THE URN OF AJAX FLOODLAMP[/color]: [color=#aeffac]reaper666[/color]\nThis cheat is great if a human HATES playing Hide & Seek with us...\nAnd use this special cheat to FLY: [color=#aeffac]bestboy77[/color]\nBe careful you don't hurt yourself, Human! You'll crash a lot when you fly!\nGOODBYE FOR NOW!!!!"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"emit_signal": "cheat_fade_out",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"change_scene": "res://src/gui/start_screen.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "I don't cheat!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "SILLY HUMAN!!!!\nThat's why we want to teach you [color=#aeffac]nocheater[/color]!\nUse that special cheat to TURN OFF ALL ACTIVE CHEATS! Don't you read CONTROLS?!\nGOODBYE FOR NOW!!!!"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"emit_signal": "cheat_fade_out",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"change_scene": "res://src/gui/start_screen.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1732909191.json",
+		"name": "cheat_slide1"
+	}
+}

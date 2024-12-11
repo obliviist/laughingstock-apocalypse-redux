@@ -1,0 +1,21 @@
+{
+	"color": "#ff38ff00",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1731984131.json",
+	"mirror_portraits": false,
+	"name": "Archdemon Coldheart",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 40,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://addons/dialogic/Assets/archdemon_coldheart_face.png"
+		}
+	],
+	"scale": 150,
+	"theme": ""
+}

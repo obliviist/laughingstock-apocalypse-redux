@@ -1,0 +1,299 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/cheat_tscn/castle_perimeter_v2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/npcs_tscn/npc_archdemon_coldheart.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/cheat_tscn/castle_keep.tscn" type="PackedScene" id=4]
+[ext_resource path="res://levels/environment_2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/cheat_tscn/castle_exterior_v2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/player/vanya.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/npcs_tscn/npc_archdemon_maldoror.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/cams/ending_boggle.gd" type="Script" id=9]
+[ext_resource path="res://src/music/coldheart castle keep_loop.wav" type="AudioStream" id=10]
+
+[sub_resource type="ProceduralSky" id=1]
+sky_top_color = Color( 0.152941, 0.243137, 0.247059, 1 )
+sky_horizon_color = Color( 0.745098, 0.639216, 0.607843, 1 )
+ground_bottom_color = Color( 0.0901961, 0.0941176, 0.0941176, 1 )
+ground_horizon_color = Color( 0.141176, 0.301961, 0.305882, 1 )
+sun_color = Color( 0.639216, 0.639216, 0.639216, 1 )
+sun_latitude = 45.0
+sun_curve = 0.0233258
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+ambient_light_energy = 10.0
+fog_enabled = true
+fog_color = Color( 0.556863, 0.341176, 0.341176, 1 )
+fog_sun_color = Color( 0.235294, 0.301961, 0.0666667, 1 )
+fog_depth_end = 171.2
+adjustment_enabled = true
+adjustment_contrast = 1.3
+adjustment_saturation = 1.3
+
+[sub_resource type="Animation" id=3]
+resource_name = "church_door_fall"
+length = 1.66667
+tracks/0/type = "transform"
+tracks/0/path = NodePath("church_door")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0.860359, 7.87473, 0, 0, 0, 1, 1, 1.5, 0.2, 0.0666667, 1, 0, 0.866823, 7.87477, 0, 0, -0.0028381, 0.999996, 1, 1.5, 0.2, 0.133333, 1, 0, 0.907568, 7.8756, 0, 0, -0.017217, 0.999852, 1, 1.5, 0.2, 0.2, 1, 0, 0.976521, 7.8789, 0, 0, -0.0293229, 0.99957, 1, 1.5, 0.2, 0.266667, 1, 0, 1.04782, 7.88662, 0, 0, -0.0260366, 0.999661, 1, 1.5, 0.2, 0.333333, 1, 0, 1.10032, 7.9, 0, 0, -0.0131163, 0.999914, 1, 1.5, 0.2, 0.4, 1, 0, 1.10158, 7.9241, 0, 0, 0.00964828, 0.999953, 1, 1.5, 0.2, 0.466667, 1, 0, 1.03408, 7.96466, 0, 0, 0.034523, 0.999404, 1, 1.5, 0.2, 0.533333, 1, 0, 0.893693, 8.01071, 0, 0, 0.0482446, 0.998836, 1, 1.5, 0.2, 0.6, 1, 0, 0.68933, 8.04194, 0, 0, 0.0147724, 0.999891, 1, 1.5, 0.2, 0.666667, 1, 0, 0.433162, 8.05127, 0, 0, 0, 1, 1, 1.5, 0.2, 1.46667, 1, 0, -3.79824, 8.09385, 0, 0, 0, 1, 1, 1.5, 0.2, 1.53333, 1, 0, -3.98087, 8.40195, 0, 0, 0, 1, 1, 1.5, 0.2, 1.6, 1, 0, -4.09546, 8.88435, 0, 0, 0, 1, 1, 1.5, 0.2, 1.66667, 1, 0, -4.13964, 9.158, 0, 0, 0, 1, 1, 1.5, 0.2 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "church_mask_bounce"
+length = 1.66667
+tracks/0/type = "transform"
+tracks/0/path = NodePath("church_mask_head_1")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, -6.65574e-05, 8.47141, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.0666667, 1, -6.65574e-05, 8.46967, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.133333, 1, -6.65574e-05, 8.45854, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.333333, 1, -6.65574e-05, 8.39787, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.4, 1, -6.65574e-05, 8.3884, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.466667, 1, -6.65574e-05, 8.39088, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.533333, 1, -6.65574e-05, 8.40354, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.733333, 1, -6.65574e-05, 8.45888, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.8, 1, -6.65574e-05, 8.46952, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.866667, 1, -6.65574e-05, 8.46952, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.933333, 1, -6.65574e-05, 8.45888, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.13333, 1, -6.65574e-05, 8.40354, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.2, 1, -6.65574e-05, 8.39088, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.26667, 1, -6.65574e-05, 8.38819, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.33333, 1, -6.65574e-05, 8.396, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.6, 1, -6.65574e-05, 8.46521, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.66667, 1, -6.65574e-05, 8.47141, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "church_door_fall"
+length = 1.66667
+tracks/0/type = "transform"
+tracks/0/path = NodePath("church_door")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0.860359, 7.87473, 0, 0, 0, 1, 1, 1.5, 0.2, 0.0666667, 1, 0, 0.866823, 7.87477, 0, 0, -0.0028381, 0.999996, 1, 1.5, 0.2, 0.133333, 1, 0, 0.907568, 7.8756, 0, 0, -0.017217, 0.999852, 1, 1.5, 0.2, 0.2, 1, 0, 0.976521, 7.8789, 0, 0, -0.0293229, 0.99957, 1, 1.5, 0.2, 0.266667, 1, 0, 1.04782, 7.88662, 0, 0, -0.0260366, 0.999661, 1, 1.5, 0.2, 0.333333, 1, 0, 1.10032, 7.9, 0, 0, -0.0131163, 0.999914, 1, 1.5, 0.2, 0.4, 1, 0, 1.10158, 7.9241, 0, 0, 0.00964828, 0.999953, 1, 1.5, 0.2, 0.466667, 1, 0, 1.03408, 7.96466, 0, 0, 0.034523, 0.999404, 1, 1.5, 0.2, 0.533333, 1, 0, 0.893693, 8.01071, 0, 0, 0.0482446, 0.998836, 1, 1.5, 0.2, 0.6, 1, 0, 0.68933, 8.04194, 0, 0, 0.0147724, 0.999891, 1, 1.5, 0.2, 0.666667, 1, 0, 0.433162, 8.05127, 0, 0, 0, 1, 1, 1.5, 0.2, 1.46667, 1, 0, -3.79824, 8.09385, 0, 0, 0, 1, 1, 1.5, 0.2, 1.53333, 1, 0, -3.98087, 8.40195, 0, 0, 0, 1, 1, 1.5, 0.2, 1.6, 1, 0, -4.09546, 8.88435, 0, 0, 0, 1, 1, 1.5, 0.2, 1.66667, 1, 0, -4.13964, 9.158, 0, 0, 0, 1, 1, 1.5, 0.2 )
+
+[sub_resource type="Animation" id=6]
+resource_name = "church_mask_bounce"
+length = 1.66667
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("church_mask_head_1")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, -6.65574e-05, 8.47141, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.0666667, 1, -6.65574e-05, 8.46967, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.133333, 1, -6.65574e-05, 8.45854, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.333333, 1, -6.65574e-05, 8.39787, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.4, 1, -6.65574e-05, 8.3884, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.466667, 1, -6.65574e-05, 8.39088, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.533333, 1, -6.65574e-05, 8.40354, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.733333, 1, -6.65574e-05, 8.45888, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.8, 1, -6.65574e-05, 8.46952, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.866667, 1, -6.65574e-05, 8.46952, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 0.933333, 1, -6.65574e-05, 8.45888, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.13333, 1, -6.65574e-05, 8.40354, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.2, 1, -6.65574e-05, 8.39088, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.26667, 1, -6.65574e-05, 8.38819, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.33333, 1, -6.65574e-05, 8.396, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.6, 1, -6.65574e-05, 8.46521, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205, 1.66667, 1, -6.65574e-05, 8.47141, 8.00047, 0.737277, 0, 0, 0.67559, 1.11259, 0.333575, 1.0205 )
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -3.30101e-14, -180, 29.163 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "cams_player_fly"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 2.2, 2.7, 3, 3.6, 4.3, 5, 5.1, 6.9, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( -8.96774, 3.04988, 5.29439e-07 ), Vector3( -8.52368, 26.6861, 7.45164e-07 ), Vector3( -1.33667, 28.2335, 7.6102e-07 ), Vector3( 19.2064, 38.8334, 7.45164e-07 ), Vector3( 42.6123, 81.955, 13.8305 ), Vector3( 53.9357, 142.326, 7.45164e-07 ), Vector3( 19.2064, 148.638, 7.45164e-07 ), Vector3( 62.5929, 18.5826, -39.544 ), Vector3( 79.596, -10.4558, -43.4619 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 3.6 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( -14.3151, 106.326, 29.163 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "intro_fade_in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "intro_fade_out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="BoggleEnding" type="Spatial"]
+script = ExtResource( 9 )
+
+[node name="ArchdemonColdheart" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 0.865676, -0.500604, 0, 0.500604, 0.865676, 0, 276.128, -241.64 )
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 1 )]
+environment = SubResource( 2 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.177039, 0.01696, 0.984058, -0.0350996, 0.999324, -0.0109085, -0.983578, -0.0326088, 0.177515, 70.0356, 33.3572, -22.5594 )
+far = 5050.2
+
+[node name="Environment_2" parent="." instance=ExtResource( 5 )]
+
+[node name="table2" parent="Environment_2" index="9"]
+transform = Transform( 0.249767, 0, -0.110789, 0, 0.5, 0, 0.166183, 0, 0.16651, -9.40548, 13.8944, -10.9983 )
+
+[node name="urn_tv2" parent="Environment_2" index="10"]
+transform = Transform( -0.799716, 0, 0.600378, 0, 1, 0, -0.600378, 0, -0.799716, -9.57821, 14.9065, -10.7953 )
+
+[node name="FishPackage_1" parent="Environment_2/bar_table" index="3"]
+transform = Transform( -0.0520142, 0, -0.315744, 0, 0.32, 0, 0.315744, 0, -0.0520142, -0.0567379, -0.178398, 0.0502205 )
+
+[node name="chainlink_fence" parent="Environment_2/castle_outpost_v3" index="1"]
+transform = Transform( 0.984093, 0, -0.177652, 0, 1, 0, 0.177652, 0, 0.984093, -2.5448, -0.632106, 1.87591 )
+
+[node name="chainlink_fence2" parent="Environment_2/castle_outpost_v3" index="2"]
+transform = Transform( -0.992614, 0, -0.121315, 0, 1, 0, 0.121315, 0, -0.992614, 2.17755, -0.632106, 2.01623 )
+
+[node name="table" parent="Environment_2/castle_outpost_v2" index="3"]
+transform = Transform( -0.299396, 0, 0.0126905, 0, 0.5, 0, -0.0190357, 0, -0.199597, 0.136654, -5.06364, 2.31338 )
+
+[node name="urn_tv" parent="Environment_2/castle_outpost_v2" index="4"]
+transform = Transform( 0.992764, 0, -0.120085, 0, 1, 0, 0.120085, 0, 0.992764, 0.1483, -4.0516, 2.19304 )
+
+[node name="ChurchGate" parent="Environment_2" index="21"]
+dialog_index = 1
+
+[node name="AnimationPlayer" parent="Environment_2/ChurchGate/church_v6" index="5"]
+anims/church_door_fall = SubResource( 3 )
+anims/church_mask_bounce = SubResource( 4 )
+
+[node name="ChurchAnimationPlayer" parent="Environment_2/ChurchGate/church_v6" index="6"]
+anims/church_door_fall = SubResource( 5 )
+anims/church_mask_bounce = SubResource( 6 )
+
+[node name="Tree_Evergreen2" parent="Environment_2/TreeEvergreenCluster5" index="1"]
+transform = Transform( 0.999999, 0, -2.38419e-07, 0, 1, 0, 2.38419e-07, 0, 0.999999, -56.53, 0, 11.3494 )
+
+[node name="Haybale_Var3A4" parent="Environment_2" index="32"]
+transform = Transform( -0.155764, 0, 0.987794, 0, 1, 0, -0.987794, 0, -0.155764, 9.67765, 14.2201, -17.2861 )
+
+[node name="Haybale_Var3A5" parent="Environment_2" index="33"]
+transform = Transform( 0.147292, 0, -0.989093, 0, 1, 0, 0.989093, 0, 0.147292, 10.4073, 14.2201, -17.3669 )
+
+[node name="Haybale_Var3A6" parent="Environment_2" index="34"]
+transform = Transform( -0.00439849, 0, 0.99999, 0, 1, 0, -0.99999, 0, -0.00439849, 10.0135, 14.8692, -17.3462 )
+
+[node name="castle_exterior_v2" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00215721, 14.1707, -28.1302 )
+
+[node name="C_Tree" parent="castle_exterior_v2" index="4"]
+transform = Transform( 0.911375, 0, -0.411578, 0, 0.80735, 0, 0.411578, 0, 0.911375, 7.43914, 4.86402, -15.0205 )
+
+[node name="castle_keep" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0797005, 1.04806, 18.5938 )
+
+[node name="castle_perimeter_v2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.518986, 0 )
+
+[node name="vanya_v2" parent="." instance=ExtResource( 7 )]
+transform = Transform( -5.23942, 2.92377, 5.24537e-07, 2.92377, 5.23942, 3.45681e-15, -4.58044e-07, 2.55604e-07, -6, 0, 0, 0 )
+
+[node name="AnimationPlayer" parent="vanya_v2" index="1"]
+autoplay = "vanya_walk_NLA"
+
+[node name="FlyAnimationPlayer" type="AnimationPlayer" parent="vanya_v2"]
+autoplay = "cams_player_fly"
+anims/RESET = SubResource( 7 )
+anims/cams_player_fly = SubResource( 8 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 96.5369, 0 )
+light_color = Color( 1, 0, 0, 1 )
+light_energy = 4.429
+light_negative = true
+light_specular = 13.986
+
+[node name="ArchdemonMaldoror" parent="." instance=ExtResource( 8 )]
+transform = Transform( 0.118536, -0.653714, 1.88642, 0.000181429, 1.88975, 0.654854, -1.99649, -0.0386406, 0.11206, 53.4797, 32.6661, -26.5937 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = -1.5
+pitch_scale = 1.5
+autoplay = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "intro_fade_in"
+anims/RESET = SubResource( 9 )
+anims/intro_fade_in = SubResource( 10 )
+anims/intro_fade_out = SubResource( 11 )
+
+[editable path="WorldEnvironment"]
+[editable path="Environment_2"]
+[editable path="Environment_2/ChurchGate"]
+[editable path="Environment_2/ChurchGate/church_v6"]
+[editable path="castle_exterior_v2"]
+[editable path="castle_keep"]
+[editable path="vanya_v2"]

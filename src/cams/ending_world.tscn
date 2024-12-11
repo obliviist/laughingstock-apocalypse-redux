@@ -1,0 +1,123 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://src/music/druids picnic_loop.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/npcs_tscn/npc_nikita.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/npcs_tscn/npc_spider.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/environment_tscn/cottage_inside.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/cams/ending_world.gd" type="Script" id=5]
+[ext_resource path="res://src/cams/cams_tracking_shot.tres" type="Animation" id=6]
+[ext_resource path="res://src/gui/end_splash_1024x600.png" type="Texture" id=7]
+[ext_resource path="res://assets/cheat_tscn/urn_painting_4.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/cheat_tscn/urn_painting_2.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/cheat_tscn/urn_painting_1.tscn" type="PackedScene" id=10]
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 6.87663, 178.725, 0.149785 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:far")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 100.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="ProceduralSky" id=1]
+sky_top_color = Color( 0, 0, 0, 1 )
+sky_horizon_color = Color( 0.854902, 0.980392, 0.839216, 1 )
+sky_energy = 0.8
+ground_bottom_color = Color( 0.239216, 0.00784314, 0.109804, 1 )
+ground_horizon_color = Color( 0.635294, 0.611765, 0.541176, 1 )
+ground_curve = 0.00784585
+ground_energy = 0.5
+sun_curve = 0.0535887
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+
+[node name="WorldEnding" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -0.999742, 0.00527772, 0.0220908, 0.00259543, 0.992803, -0.119732, -0.0225637, -0.119644, -0.99256, -2.43172, 81.552, 247.783 )
+current = true
+near = 700.0
+
+[node name="Sprite" type="Sprite" parent="Camera"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 520, 392 )
+texture = ExtResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera"]
+anims/RESET = SubResource( 3 )
+anims/cams_tracking_shot = ExtResource( 6 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+pitch_scale = 0.6
+autoplay = true
+bus = "Music"
+
+[node name="Spider" parent="." instance=ExtResource( 3 )]
+transform = Transform( 49.9056, 0.782292, -2.9703, 0, 48.3512, 12.7343, 3.07159, -12.7103, 48.2599, -1.75482, 496.775, 508.903 )
+
+[node name="Spider2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 39.9245, 0.625833, -2.37624, 0, 38.681, 10.1875, 2.45727, -10.1682, 38.6079, 219.826, 496.775, 522.541 )
+
+[node name="Spider3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 39.9245, 0.625833, -2.37624, 0, 38.681, 10.1875, 2.45727, -10.1682, 38.6079, -210.514, 487.28, 498.56 )
+
+[node name="urn_painting_1" parent="." instance=ExtResource( 10 )]
+transform = Transform( 206.085, 0, 0, 0, -31.0986, 126.767, 0, -100.118, -39.3761, 469.861, 722.651, 567.484 )
+
+[node name="urn_painting_2" parent="." instance=ExtResource( 9 )]
+transform = Transform( 206.085, 0, 0, 0, -37.4207, 126.767, 0, -120.471, -39.3761, -472.383, 719.729, 558.074 )
+
+[node name="urn_painting_4" parent="." instance=ExtResource( 8 )]
+transform = Transform( 206.085, 0, 0, 0, -37.4207, 126.767, 0, -120.472, -39.3761, -44.6132, 728.529, 534.529 )
+
+[node name="Cottage_Inside" parent="." instance=ExtResource( 4 )]
+transform = Transform( 50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0 )
+script = null
+
+[node name="Nikita" parent="." instance=ExtResource( 2 )]
+transform = Transform( 120, 0, 0, 0, 120, 0, 0, 0, 120, 0, -29.0165, 500.53 )
+script = null
+
+[editable path="Spider"]
+[editable path="Spider/pavyk"]
+[editable path="Cottage_Inside"]
+[editable path="Nikita"]
+[editable path="Nikita/nikita"]

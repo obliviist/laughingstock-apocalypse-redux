@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://levels/world_cottage.gd" type="Script" id=1]
 [ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=2]
@@ -13,6 +13,8 @@
 [ext_resource path="res://assets/npcs_tscn/npc_spider.tscn" type="PackedScene" id=11]
 [ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=12]
 [ext_resource path="res://assets/npcs_tscn/npc_spider.gd" type="Script" id=13]
+[ext_resource path="res://assets/npcs_tscn/npc_angler.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=15]
 [ext_resource path="res://src/gui/game_score.gd" type="Script" id=26]
 
 [sub_resource type="BoxShape" id=60]
@@ -155,6 +157,26 @@ shape = SubResource( 64 )
 transform = Transform( 0.972541, 0, 0.232733, 0, 1, 0, -0.232733, 0, 0.972541, -1.89911, 24.9055, 1.98988 )
 script = ExtResource( 13 )
 npc = "spider"
+
+[node name="Angler1" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 26, -17 )
+script = ExtResource( 15 )
+npc = "angler"
+
+[node name="Angler2" parent="." instance=ExtResource( 14 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 26, 18 )
+script = ExtResource( 15 )
+npc = "angler"
+
+[node name="Angler3" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 13, 26, 0 )
+script = ExtResource( 15 )
+npc = "angler"
+
+[node name="Angler4" parent="." instance=ExtResource( 14 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -13, 26, 0 )
+script = ExtResource( 15 )
+npc = "angler"
 
 [connection signal="body_entered" from="Death" to="Player" method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]

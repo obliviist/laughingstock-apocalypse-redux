@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/npcs_tscn/npc_graves.tscn" type="PackedScene" id=2]
@@ -33,6 +33,9 @@
 [ext_resource path="res://assets/npcs_tscn/npc_urn.gd" type="Script" id=31]
 [ext_resource path="res://src/gui/cow_score.tscn" type="PackedScene" id=32]
 [ext_resource path="res://src/sfx/one_shots/sfx.tscn" type="PackedScene" id=33]
+[ext_resource path="res://assets/npcs_tscn/npc_angler.tscn" type="PackedScene" id=34]
+[ext_resource path="res://assets/interactable.gd" type="Script" id=35]
+[ext_resource path="res://assets/npcs_tscn/npc_archdemon_maldoror.tscn" type="PackedScene" id=36]
 
 [sub_resource type="BoxShape" id=60]
 extents = Vector3( 1000, 0.8, 1000 )
@@ -58,6 +61,12 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = PoolRealArray( 0, 1, 0, -0.417084, 0, 0, 0, 0, 1, 1, 1, 1, 0.0666667, 1, 0, -0.417084, 0, 0, 0, 0, 1, 1, 1, 1, 0.133333, 1, -0.00072724, -0.509266, -0.0045594, 0.00343855, -3.38961e-06, -0.000652793, 0.999994, 1, 1, 1, 0.2, 1, -0.00250494, -0.7346, -0.0157046, 0.016757, -5.00274e-05, -0.00282837, 0.999856, 1, 1, 1, 0.266667, 1, -0.00303017, -0.811773, -0.0189975, 0.0398199, -0.000234808, -0.00569937, 0.999191, 1, 1, 1, 0.333333, 1, -0.00161609, -0.706715, -0.010132, 0.0710141, -0.000596047, -0.00837187, 0.99744, 1, 1, 1, 0.4, 1, -0.000202011, -0.601658, -0.0012665, 0.110537, -0.0010834, -0.00971612, 0.993824, 1, 1, 1, 0.466667, 1, 0, -0.616921, 0, 0.156048, -0.00149419, -0.00925753, 0.987705, 1, 1, 1, 0.533333, 1, 0, -0.715513, 0, 0.206486, -0.00167362, -0.00717301, 0.978422, 1, 1, 1, 0.666667, 1, 0, -0.944789, 0, 0.314029, -0.00084793, -0.0007455, 0.949413, 1, 1, 1, 0.733333, 1, 0, -1.01223, 0, 0.367359, 0.000110937, 0.00234551, 0.930076, 1, 1, 1, 0.8, 1, 0, -1.05426, 0, 0.418084, 0.00111477, 0.00463457, 0.908396, 1, 1, 1, 0.866667, 1, 0, -1.07719, 0, 0.464613, 0.00180008, 0.00557995, 0.885495, 1, 1, 1, 1, 1, 0, -1.10289, 0, 0.541897, 0.00172369, 0.00445037, 0.840431, 1, 1, 1, 1.06667, 1, 0, -1.1238, 0, 0.573026, 0.00120411, 0.00331353, 0.81953, 1, 1, 1, 1.13333, 1, 0, -1.15509, 0, 0.600249, 0.00054485, 0.00211772, 0.79981, 1, 1, 1, 1.4, 1, 0, -1.30152, 0, 0.677012, -0.000625958, -0.000141665, 0.735972, 1, 1, 1, 1.46667, 1, 0, -1.31892, 0, 0.689545, -0.000431498, -0.000119565, 0.724243, 1, 1, 1, 1.53333, 1, 0, -1.3219, 0, 0.698961, -0.000227924, -7.04766e-05, 0.71516, 1, 1, 1, 1.6, 1, 0, -1.3219, 0, 0.704842, -7.0049e-05, -2.32786e-05, 0.709365, 1, 1, 1, 1.66667, 1, 0, -1.3219, 0, 0.707107, 0, 0, 0.707107, 1, 1, 1 )
+
+[sub_resource type="BoxShape" id=63]
+extents = Vector3( 1.21612, 0.763694, 0.949569 )
+
+[sub_resource type="BoxShape" id=64]
+extents = Vector3( 1.21612, 0.763694, 0.105938 )
 
 [node name="World_Cellar" type="Spatial"]
 script = ExtResource( 11 )
@@ -156,12 +165,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1262, 14.9919, -4.53953 )
 transform = Transform( 0.0405678, 0, 0.999177, 0, 1, 0, -0.999177, 0, 0.0405678, -26.1105, 14.9919, 4.53375 )
 
 [node name="Chair1" parent="." instance=ExtResource( 21 )]
-transform = Transform( -0.821209, 0, 0.570628, 0, 1, 0, -0.570628, 0, -0.821209, -13.0577, 14.929, 37.7372 )
-
-[node name="Chair2" parent="." instance=ExtResource( 21 )]
-transform = Transform( -0.0386736, 0.751743, 0.658322, 0.998679, 0.0513773, 2.87593e-08, -0.0338227, 0.657452, -0.752737, -13.2342, 15.3792, 33.5078 )
-
-[node name="Chair3" parent="." instance=ExtResource( 21 )]
 transform = Transform( -0.0226608, 0.440485, -0.897474, 0.998679, 0.0513773, 2.87593e-08, 0.0461098, -0.896289, -0.441067, 60.332, 15.3792, -1.68796 )
 
 [node name="logs1" parent="." instance=ExtResource( 20 )]
@@ -197,12 +200,18 @@ script = ExtResource( 16 )
 npc = "spider"
 dialog_index = 1
 
+[node name="Spider5" parent="." instance=ExtResource( 23 )]
+transform = Transform( 0.632704, -0.0191409, -0.298863, 0.0117387, 0.699617, -0.0199564, 0.299245, 0.0130261, 0.632679, -9.75381, 15.3424, 30.1767 )
+script = ExtResource( 16 )
+npc = "cellar_spider"
+dialog_index = 1
+
 [node name="Moose" parent="." instance=ExtResource( 15 )]
-transform = Transform( 0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 59.9548, 14.7806, 3 )
+transform = Transform( 0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 62.6502, 14.7806, 2.01051 )
 dialog_index = 1
 
 [node name="Jenna" parent="." instance=ExtResource( 30 )]
-transform = Transform( 0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 58.997, 14.7806, 4.21189 )
+transform = Transform( 0.800815, 0, -0.598912, 0, 1, 0, 0.598912, 0, 0.800815, 59.1317, 14.7806, 1.8845 )
 npc = "jenna"
 dialog_index = 1
 
@@ -234,7 +243,7 @@ transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.07688, 14.6669, 9.8968
 transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -4.09565, 14.6669, 21.5955 )
 
 [node name="Bush_Green5" parent="." instance=ExtResource( 25 )]
-transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -12.4556, 14.6669, 29.3531 )
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -13.2801, 14.6669, 29.3531 )
 
 [node name="Bush_Green6" parent="." instance=ExtResource( 25 )]
 transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 13.0802, 14.6669, 30.9116 )
@@ -257,11 +266,83 @@ transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 43.8352, 14.6669, 9.0459
 [node name="Bush_Green12" parent="." instance=ExtResource( 25 )]
 transform = Transform( 0.0469355, 0, -0.296306, 0, 0.3, 0, 0.296306, 0, 0.0469355, 52.5103, 14.6669, -0.167233 )
 
+[node name="Bush_Green13" parent="." instance=ExtResource( 25 )]
+transform = Transform( -0.0970291, 0, -0.376457, 0, 0.333484, 0, 0.384954, 0, -0.0992191, -13.1198, 14.6669, 37.8299 )
+
+[node name="Bush_Green14" parent="." instance=ExtResource( 25 )]
+transform = Transform( -0.246205, 0, 0.0433946, 0, 0.25, 0, -0.0433946, 0, -0.246205, -12.2637, 14.6669, 36.0847 )
+
+[node name="Bush_Green15" parent="." instance=ExtResource( 25 )]
+transform = Transform( -0.345088, 0, -0.192464, 0, 0.333484, 0, 0.196261, 0, -0.338411, -13.0376, 14.6669, 33.7323 )
+
 [node name="barrel_red" parent="." instance=ExtResource( 29 )]
 transform = Transform( 0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, 62.7579, 14.8117, 16.9206 )
 
 [node name="barrel_blue" parent="." instance=ExtResource( 27 )]
 transform = Transform( 0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, 0.258819, 61.6127, 14.8117, 17.7528 )
+
+[node name="Misty\'s Chair" type="RigidBody" parent="."]
+transform = Transform( -0.316179, 0, 0.9487, 0, 1, 0, -0.9487, 0, -0.316179, -12.9422, 15.0523, 31.6522 )
+script = ExtResource( 35 )
+
+[node name="chair" parent="Misty\'s Chair" instance=ExtResource( 21 )]
+
+[node name="CollisionShape" type="CollisionShape" parent="Misty\'s Chair"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.480522, 0 )
+shape = SubResource( 63 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Misty\'s Chair"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.95006, -0.869168 )
+shape = SubResource( 64 )
+
+[node name="Cookie\'s Chair" type="RigidBody" parent="."]
+transform = Transform( -0.645937, 0, -0.76339, 0, 1, 0, 0.76339, 0, -0.645937, -9.52686, 15.0787, 34.1963 )
+script = ExtResource( 35 )
+
+[node name="chair" parent="Cookie\'s Chair" instance=ExtResource( 21 )]
+
+[node name="CollisionShape" type="CollisionShape" parent="Cookie\'s Chair"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.480522, 0 )
+shape = SubResource( 63 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Cookie\'s Chair"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.95006, -0.869168 )
+shape = SubResource( 64 )
+
+[node name="Dido\'s Chair" type="RigidBody" parent="."]
+transform = Transform( 0.0414785, -0.939381, -0.340358, -0.992224, 0.00128284, -0.12446, 0.117352, 0.342873, -0.932023, -9.75144, 16.6553, 37.0175 )
+script = ExtResource( 35 )
+
+[node name="chair" parent="Dido\'s Chair" instance=ExtResource( 21 )]
+
+[node name="CollisionShape" type="CollisionShape" parent="Dido\'s Chair"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.480522, 0 )
+shape = SubResource( 63 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Dido\'s Chair"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.95006, -0.869168 )
+shape = SubResource( 64 )
+
+[node name="Yuri\'s Chair" type="RigidBody" parent="."]
+transform = Transform( -0.645937, 0, -0.76339, 0, 1, 0, 0.76339, 0, -0.645937, -7.53664, 16.2028, 36.5978 )
+script = ExtResource( 35 )
+
+[node name="chair" parent="Yuri\'s Chair" instance=ExtResource( 21 )]
+
+[node name="CollisionShape" type="CollisionShape" parent="Yuri\'s Chair"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.480522, 0 )
+shape = SubResource( 63 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Yuri\'s Chair"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.95006, -0.869168 )
+shape = SubResource( 64 )
+
+[node name="ArchdemonMaldoror" parent="." instance=ExtResource( 36 )]
+transform = Transform( 0.554053, 0.156664, 0.817607, 0.0181269, 0.97963, -0.199993, -0.832284, 0.125628, 0.539927, 58.6269, 37.1412, 13.5698 )
+script = null
+
+[node name="Angler" parent="." instance=ExtResource( 34 )]
+transform = Transform( -5.10815e-09, 0.992193, -0.12471, -1.01314e-08, 0.12471, 0.992193, 1, 6.33176e-09, 9.41531e-09, 66.7773, 22.2012, 14.5717 )
 
 [connection signal="body_entered" from="Death" to="Player" method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]

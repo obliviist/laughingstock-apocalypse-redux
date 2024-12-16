@@ -8,14 +8,14 @@
 	"name": "Cellar Spider",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 0,
-	"offset_y": 0,
+	"offset_x": 60,
+	"offset_y": -55,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": "res://addons/dialogic/Assets/pavyk_side.png"
 		}
 	],
-	"scale": 80,
+	"scale": 50,
 	"theme": ""
 }

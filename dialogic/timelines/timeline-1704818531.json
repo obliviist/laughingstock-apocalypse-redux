@@ -22,7 +22,7 @@
 		},
 		{
 			"audio": "play",
-			"audio_bus": "Sfx",
+			"audio_bus": "SFX",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
 			"file": "res://src/sfx/one_shots/voice_moose.wav",
@@ -35,7 +35,7 @@
 
 			],
 			"portrait": "",
-			"question": "My head hurts! This is so messed up, VC!!!! All our livestock for the winter... gone."
+			"question": "My head hurts! This is so messed up, VC! All our livestock for the winter... gone."
 		},
 		{
 			"choice": "How can I help?",

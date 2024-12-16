@@ -1,0 +1,177 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 2
+		},
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1733254779.cfg"
+		},
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_nikita.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We did it, VC! We annoyed an Archdemon!\nI just wish everyone was still here with us to see that we saved the [color=#01d691]Grove[/color]..."
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Moose and Jenna were wrong about doomsday this whole time!"
+		},
+		{
+			"choice": "Maybe?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " Well I think so! Let's go look outside in the morning then."
+		},
+		{
+			"choice": "Thanks to you",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aw give yourself more credit, VC!\nRemember what Jenna said? You're always too hard on yourself."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyway that Ajax guy seemed to think you were pretty cool.\nI wish we could have stayed with him and Maldoror.\nIt sounded like you had more fun in the [color=#ff0000]Vale of the Dead[/color] than me."
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Are you gonna teach me to be a Reaper like you and Ajax?"
+		},
+		{
+			"choice": "If you want",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Teach me everything... wait.... are you teasing me?!\nI get it. I'm just a kid.\nAt least I'm not afraid of anything anymore."
+		},
+		{
+			"choice": "Absolutely not",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Darn! I knew you'd say that!\nI guess that job would be pretty hard for us without Ajax.\nAt least I'm not afraid of anything anymore."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well I'm glad you're feeling better! You didn't look so good when Maldoror picked you up.\nI'm feeling pretty tired... I better get some rest because it's just you, me, and the farm from now on.\nGoodnight, VC!"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"emit_signal": "tracking_shot",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 12
+		},
+		{
+			"change_scene": "res://src/gui/outro_slide2.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1732652890.json",
+		"name": "ending_world0"
+	}
+}

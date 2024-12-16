@@ -22,7 +22,7 @@
 		},
 		{
 			"audio": "play",
-			"audio_bus": "Sfx",
+			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
 			"file": "res://src/sfx/one_shots/voice_voyager.wav",
@@ -149,7 +149,7 @@
 			"character": "character-1704748422.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "A kid called \"Niki\", you say?\nOh, right. I remember. The kid with the weird alien lookin' cow by his side.\nMatter of fact, I didn't see him. \ni just saw the two adults jet the hell out of here in their camper like the Grim Reaper was hot on their tail."
+			"text": "A kid called \"Niki\", you say?\nOh, right. I remember. The kid with the weird alien lookin' cow by his side.\nMatter of fact, I didn't see him. \nI just saw the two adults jet the hell out of here in their camper like the Grim Reaper was hot on their tail.\nSomething strange is going on..."
 		},
 		{
 			"choice": "No. Leave.",
@@ -162,7 +162,7 @@
 			"character": "character-1704748422.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "We'll be gone in the morning. I'll shake on that.\nJeez... I feel bad for you now, kid.\nIf the other Drifters and I hear or see anything, we'll be sure to tell you."
+			"text": "We'll be gone in the morning. I'll shake on that.\nJeez... I feel bad for you now, kid.\nIf the other Drifters hear or see anything, we'll be sure to tell you.\nSomething strange is going on..."
 		},
 		{
 			"event_id": "dialogic_013"

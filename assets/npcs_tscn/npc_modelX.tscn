@@ -3,9 +3,9 @@
 [ext_resource path="res://assets/npcs_tscn/npc.gd" type="Script" id=1]
 [ext_resource path="res://assets_raw/raw_assets_cheat/face3.material" type="Material" id=2]
 [ext_resource path="res://assets_raw/raw_assets_cheat/pants3.material" type="Material" id=3]
-[ext_resource path="res://assets_raw/raw_assets_cheat/shirt3.material" type="Material" id=4]
+[ext_resource path="res://assets_raw/raw_assets_cheat/shirt3_v2.material" type="Material" id=4]
 [ext_resource path="res://assets_raw/raw_assets_cheat/accessory3.material" type="Material" id=5]
-[ext_resource path="res://assets_raw/raw_assets_cheat/modelX.glb" type="PackedScene" id=6]
+[ext_resource path="res://assets_raw/raw_assets_cheat/modelX_v2.glb" type="PackedScene" id=6]
 [ext_resource path="res://assets/asset_anims/modelX_sit.tres" type="Animation" id=7]
 
 [sub_resource type="CapsuleShape" id=1]
@@ -20,16 +20,16 @@ npc = "modelX"
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1, 0 )
 shape = SubResource( 1 )
 
-[node name="modelX" parent="." instance=ExtResource( 6 )]
+[node name="modelX_v2" parent="." instance=ExtResource( 6 )]
 
-[node name="modelX" parent="modelX/Armature/Skeleton" index="0"]
+[node name="modelX" parent="modelX_v2/Armature/Skeleton" index="0"]
 material/0 = ExtResource( 2 )
 material/1 = ExtResource( 4 )
 material/2 = ExtResource( 3 )
 material/3 = ExtResource( 5 )
 
-[node name="modelXAnimationPlayer" type="AnimationPlayer" parent="modelX"]
+[node name="modelXAnimationPlayer" type="AnimationPlayer" parent="modelX_v2"]
 autoplay = "modelX_sit"
 anims/modelX_sit = ExtResource( 7 )
 
-[editable path="modelX"]
+[editable path="modelX_v2"]

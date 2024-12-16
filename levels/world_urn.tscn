@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=1]
 [ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://assets/cheat_tscn/urn_icebox.tscn" type="PackedScene" id=27]
 [ext_resource path="res://assets/environment_tscn/music_player.tscn" type="PackedScene" id=28]
 [ext_resource path="res://assets/npcs_tscn/npc_ajax.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/npcs_tscn/npc_maldoror.tscn" type="PackedScene" id=30]
 
 [sub_resource type="BoxShape" id=60]
 extents = Vector3( 1000, 0.8, 1000 )
@@ -153,9 +154,15 @@ dialog_index = 4
 [node name="AjaxAnimationPlayer" parent="Ajax/ajax" index="2"]
 autoplay = "ajax_idle"
 
+[node name="Maldoror" parent="." instance=ExtResource( 30 )]
+transform = Transform( 0.925757, -0.34349, -0.158078, 0.028904, 0.481127, -0.876174, 0.377012, 0.806556, 0.455335, 3.53931, 14.9794, -5.59749 )
+
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
 
 [editable path="Environment_2"]
+[editable path="Environment_2/ChurchGate"]
+[editable path="Environment_2/ChurchGate/church_v6"]
 [editable path="GUI"]
+[editable path="urn_interior"]
 [editable path="Ajax"]
 [editable path="Ajax/ajax"]

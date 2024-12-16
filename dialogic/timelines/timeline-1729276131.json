@@ -30,32 +30,6 @@
 			"question": "WHAT'S THE PASSWORD?"
 		},
 		{
-			"choice": "I don't know",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"character": "character-1729276157.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "SCRAM!"
-		},
-		{
-			"choice": "Speak friend and enter!",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"character": "character-1729276157.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "NERD ALERT! NERD ALERT!\nPlease find it in your heart to let Beezlebub in and SCRAM!"
-		},
-		{
 			"choice": "Password",
 			"condition": "",
 			"definition": "1729276364-648",
@@ -73,7 +47,24 @@
 			"event_id": "dialogic_040"
 		},
 		{
+			"choice": "I don't know",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729276157.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "SCRAM!"
+		},
+		{
 			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		}
 	],
 	"metadata": {

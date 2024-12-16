@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/gui/intro_slide1.gd" type="Script" id=1]
-[ext_resource path="res://src/gui/intro_1024x600.png" type="Texture" id=2]
+[ext_resource path="res://src/gui/intro_logo_slide1.png" type="Texture" id=2]
 [ext_resource path="res://src/gui/intro_fade_out.tres" type="Animation" id=3]
 [ext_resource path="res://src/gui/intro_fade_in.tres" type="Animation" id=4]
 

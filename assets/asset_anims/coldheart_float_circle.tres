@@ -1,0 +1,30 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "coldheart_float_circle"
+length = 10.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 100, 60.123 ), Vector3( 46.326, 90, 50.234 ), Vector3( 62.397, 110, 37.317 ), Vector3( 104.908, 126.779, 13.4402 ), Vector3( 94.4304, 113.368, -30.4997 ), Vector3( 70.1584, 110.58, -68.2145 ), Vector3( 1.90183, 131.543, -42.5471 ), Vector3( -1.20694, 135.751, -16.8797 ), Vector3( -4.31571, 120.503, 8.78771 ), Vector3( 0, 108.872, 60.1225 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 30.04, -16.916, 0 ), Vector3( 30.04, 20.1394, 0 ), Vector3( 30.04, 57.2506, 0 ), Vector3( 30.04, 69.201, 0 ), Vector3( 30.04, 135.587, 0 ), Vector3( 30.04, 147.602, 0 ), Vector3( 30.04, -141.422, 0 ), Vector3( 30.04, -113.557, 0 ), Vector3( 30.04, -85.6922, 0 ), Vector3( 30.04, -16.916, 0 ) ]
+}

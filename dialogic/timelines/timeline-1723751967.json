@@ -29,10 +29,93 @@
 			"volume": 0
 		},
 		{
+			"definition": "1729713967-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hey, welcome to my humble abode!\nWhy the look of shock and awe?!\nI never said I was an interior decorator!\nIf you're feeling a little claustrophobic, join the club!!"
+			"text": "Welcome to my humble abode!\nWhy the look of shock?! I never said I was an interior decorator!\nIf you're feeling a little claustrophobic, join the club!"
+		},
+		{
+			"condition": "",
+			"definition": "1732204765-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Back from The Abyss? What a delightful spot!\nI hope you sent the [color=#00ba2a]Delicious Serpent[/color] my best regards.\nThey make a KILLER adrakaroni casserole! I wouldn't try a sample if I were you though."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1732127386-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh! You just visited [color=#08ff00]Coldheart Castle Keep[/color] for the first time?\nThat place is the kegger capital of the [color=#ff0000]Vale of the Dead[/color].\nYou might want to check out the old haunts: we partied in a sewer and a church basement."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1732127406-787",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The [color=#08ff00]Psycho Sewer Saloon[/color] is still open?! No way!\nBefore I became a boring and grizzled  [color=#38f5bc]Reaper[/color], I used to party there a lot.\n[color=#08ff00]Princess Coldheart[/color] threw the most wicked parties before her eternal hangover set in."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1731515965",
+			"index": 0,
+			"name": "ask_ajax3"
 		},
 		{
 			"character": "character-1706717628.json",
@@ -44,7 +127,54 @@
 			"question": "Ask Ajax:"
 		},
 		{
-			"choice": "What now?",
+			"choice": "What's next?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1731515881-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, according to you we're looking for a child who was catapulted into the [color=#ff0000]underworld[/color] by a [color=#38f5bc]mad cow demon[/color].\nY'know... nothing out of the ordinary. \nHow about I hang out here and you have a look around my [color=#ff0000]Urn[/color] and see if you can find one of my warp points?\nI gave up when you had to help me out of the [color=#ff0000]Urn[/color]... \nbut there has to be a working warp point around my room somewhere.\nYou seem WAY more excited about looking around than this scrambled brain of mine."
+		},
+		{
+			"anchor_id": "anchor-1731515965",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Warp points?",
+			"condition": "",
+			"definition": "1731515881-648",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No luck yet? Hm...\nThe Reaper who owned this [color=#ff0000]Urn[/color]  before me said there was an \"emergency exit\".\nI never was able to find it, hence my imprisonment, but maybe you're more clever than me."
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I can tell you about what the Reaper left behind when they moved?"
+		},
+		{
+			"choice": "Sure!",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -54,16 +184,39 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Well, according to you we're looking for a child who was catapulted into the Nav by a mad cow demon.\nY'know... nothing out of the ordinary. "
+			"text": "Let's see...\nThe Reaper left behind that TV above the vending machine,\nthat ugly painting across from my bed,\nand that essential tome that I prefer to use as a step stool: Reaper 101.\nSee if any of those things remind you of an \"emergency exit\" - I'm stumped!"
 		},
 		{
-			"event_id": "dialogic_013"
+			"choice": "Nah",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
 		},
 		{
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "How about I hang out here and you have a look around my Urn and see if you can find one of my warp points?\nI gave up when you had to help me out of the Urn... but there has to be a working warp point around my room somewhere.\nI'm feeling lazy and you seem WAY more enthused about looking around than this scrambled brain of mine."
+			"text": "No worries! I guess inventories aren't your thing...\nI'll be here if you need me."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Never mind",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Suit yourself!"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_022",

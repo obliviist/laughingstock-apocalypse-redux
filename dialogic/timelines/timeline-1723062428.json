@@ -61,7 +61,7 @@
 			"character": "character-1706717628.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "As I live and breathe, I mean, REAP!\nFind the serpent who watches over this abyss.\nDon't be afraid! The serpent is friendly and happy to help.\nJust PLEASE don't try their cooking if they offer.\nMy severed guts are still paying for their noodles all these years later."
+			"text": "As I live and reap!\nFind the [color=#00ba2a]Serpent[/color] who watches over this Abyss.\nDon't be afraid! The [color=#00ba2a]Serpent[/color] is friendly and happy to help."
 		},
 		{
 			"choice": "Enter the painting",

@@ -30,7 +30,7 @@
 			"question": "Change song?"
 		},
 		{
-			"choice": "Druid Cassette",
+			"choice": "Picnic Cassette",
 			"condition": "!=",
 			"definition": "1709051878-648",
 			"event_id": "dialogic_011",
@@ -47,7 +47,7 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"choice": "Void Cassette",
+			"choice": "Abyss Cassette",
 			"condition": "!=",
 			"definition": "1709051878-648",
 			"event_id": "dialogic_011",
@@ -57,7 +57,7 @@
 			"character": "character-1708998462.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "SONG: [color=#ffeb00]\"The Void\"[/color]"
+			"text": "SONG: [color=#ffeb00]\"The Abyss\"[/color]"
 		},
 		{
 			"emit_signal": "song1",

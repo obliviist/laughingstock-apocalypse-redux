@@ -35,6 +35,126 @@
 			"text": "Moooooooo!"
 		},
 		{
+			"condition": "",
+			"definition": "1730489388-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1716397056.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "MOOOOO!!!!! (You got rid of our pest problem!!!!)\nMooooo! (Thank you!)"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[color=#38f5bc]Archdemon Maldoror[/color] wants to know if you're ready to see [color=#00e529]Niki[/color]?"
+		},
+		{
+			"choice": "Lead the way!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"change_scene": "res://src/cams/ending_maldoror.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "Not yet",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1730400190-787",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Tell [color=#38f5bc]Archdemon Maldoror[/color] about Boggle's plot?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/cow_angry.wav",
+			"volume": 0
+		},
+		{
+			"definition": "1730400182-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1716397056.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "MOOOOOOOO!!!! (Affectionate)\nMoooo mooo?! (Can you do the [color=#08ff00]Coldheart Kingdom[/color] a favour?!)\nMoooo! (Slay the Boggle)\nMoooooo! (Give it word that it is not welcome here anymore)"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1730401709",
+			"index": 0,
+			"name": "ask_archdemon1"
+		},
+		{
 			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
@@ -68,7 +188,11 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "[color=#38f5bc]Archdemon[/color] Maldoror hands you a pamphlet that says you are trespassing on private property."
+			"text": "[color=#38f5bc]Archdemon Maldoror[/color] hands you a notethat says you are trespassing on private property."
+		},
+		{
+			"anchor_id": "anchor-1730401709",
+			"event_id": "dialogic_016"
 		},
 		{
 			"choice": "Why is the church closed?",
@@ -89,7 +213,18 @@
 			"character": "character-1716397056.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "MOOOO! (Very important!)\nMoooo mooooo moooo... (Mortals are being punished)\nMOOOO! (Cults will not be tolerated!)\nMOO! (A sacrifice is necessary!)\nMOOOOOO! (Princess Coldheart is sending a message, IN DEATH, to the living!)\nMooo mooo! (Do not worship false idols... or face consequences)"
+			"text": "MOOOO! (Very important!)\nMoooo mooooo... (Mortals and scheming demons are being punished)\nMOO! (A sacrifice is necessary!)\nMOOOOOO! (Princess Coldheart is sending a message, IN DEATH, to the living!)\nMooo mooo! (Do not worship false idols... or face consequences)"
+		},
+		{
+			"anchor_id": "anchor-1730401709",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Never mind",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
 		},
 		{
 			"event_id": "dialogic_013"

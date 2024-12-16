@@ -1,0 +1,110 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748416.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_seeker.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748416.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Alright! Alright!\nI'll take a request... JUST THIS ONCE!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Request song?"
+		},
+		{
+			"choice": "Theme Song Cassette",
+			"condition": "!=",
+			"definition": "1709051878-648",
+			"event_id": "dialogic_011",
+			"value": "3"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "SONG: [color=#ffeb00]\"Arp One\"[/color]"
+		},
+		{
+			"emit_signal": "song3",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Coldheart Cassette B",
+			"condition": "!=",
+			"definition": "1709051878-648",
+			"event_id": "dialogic_011",
+			"value": "4"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "SONG: [color=#ffeb00]\"Coldheart Castle Keep\"[/color]"
+		},
+		{
+			"emit_signal": "song4",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Coldheart Cassette A",
+			"condition": "!=",
+			"definition": "1709051878-648",
+			"event_id": "dialogic_011",
+			"value": "5"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "SONG: [color=#ffeb00]\"Coldheart Dancehall Mix\"[/color]"
+		},
+		{
+			"emit_signal": "song5",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1733775857.json",
+		"name": "radio2"
+	}
+}

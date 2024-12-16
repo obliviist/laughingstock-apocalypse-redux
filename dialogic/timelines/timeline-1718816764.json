@@ -32,7 +32,7 @@
 			"character": "character-1718816363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "The tree-lined abyss of the painting stares back at you..."
+			"text": "The tree-lined abyss in the painting stares back at you..."
 		},
 		{
 			"character": "character-1718816363.json",
@@ -55,7 +55,7 @@
 			"event_id": "dialogic_041"
 		},
 		{
-			"choice": "Nah",
+			"choice": "Not yet",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",

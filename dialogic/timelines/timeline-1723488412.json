@@ -35,7 +35,7 @@
 
 			],
 			"portrait": "",
-			"question": "I hope you're enjoying yourself at the Saloon. Can I help you?"
+			"question": "I hope you're enjoying yourself at the [color=#00ff64]Saloon[/color]. Can I help you?"
 		},
 		{
 			"choice": "Ask about the DJ",
@@ -61,7 +61,7 @@
 			"character": "character-1723488129.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Can I let you in on a little secret?\nBooze proves to be fatal around these parts..."
+			"text": "Can I let you in on a little secret?\nBooze proves to be fatal around these parts... but it doesn't mean we don't know how to PARTY!"
 		},
 		{
 			"character": "character-1723488129.json",
@@ -80,11 +80,23 @@
 			"value": ""
 		},
 		{
-			"choice": "Fungus Tea",
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Interesting choice.... (gulp)"
+		},
+		{
+			"choice": "Cherry Moon Tea",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It's been awhile since anyone ordered that brew...\nIn fact, two regular tea buff werewolves named Tracy and Tricky were the only ones to order it!"
 		},
 		{
 			"choice": "Brewed Bark Coffee",
@@ -92,6 +104,12 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"character": "character-1723488129.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My favourite! Enjoy, sweetie."
 		},
 		{
 			"event_id": "dialogic_013"

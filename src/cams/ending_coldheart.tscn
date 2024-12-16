@@ -1,0 +1,128 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://src/music/druids picnic_loop.wav" type="AudioStream" id=1]
+[ext_resource path="res://assets/npcs_tscn/npc_archdemon_coldheart.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/cheat_tscn/abyss_perimeter_v2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/cams/ending_coldheart.gd" type="Script" id=5]
+[ext_resource path="res://environment/world_coldheart_environment.tres" type="Environment" id=6]
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 137, -1.2 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "cams_coldheart_moving"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 76.5788, -1.2 ), Vector3( 0, 137, -1.2 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "intro_fade_in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "intro_fade_out"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
+}
+
+[node name="ColdheartEnding" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="ArchdemonColdheart" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 0.865676, -0.500604, 0, 0.500604, 0.865676, 0, 137, -1.2 )
+script = null
+
+[node name="RiseAnimationPlayer" type="AnimationPlayer" parent="ArchdemonColdheart"]
+autoplay = "cams_coldheart_moving"
+anims/RESET = SubResource( 5 )
+anims/cams_coldheart_moving = SubResource( 4 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 6 )
+
+[node name="abyss_perimeter_v2" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1.85452, 0, 1.06384, 0, 0.90363, 0, -1.12243, 0, 1.75772, 22.7741, 83.261, -66.6193 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+pitch_scale = 0.6
+autoplay = true
+bus = "Music"
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.86178, -0.507283, 0, 0.507283, 0.86178, -0.97703, 105.817, 64.1415 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "intro_fade_in"
+anims/RESET = SubResource( 6 )
+anims/intro_fade_in = SubResource( 7 )
+anims/intro_fade_out = SubResource( 8 )
+
+[editable path="ArchdemonColdheart"]
+[editable path="ArchdemonColdheart/archdemon_coldheart"]

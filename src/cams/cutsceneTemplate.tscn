@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/environment_tscn/cottage_inside.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/npcs_tscn/npc_spider.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/npcs_tscn/npc_nikita.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/music/druids picnic_loop.wav" type="AudioStream" id=4]
+
+[sub_resource type="Animation" id=3]
+resource_name = "cams_tracking_shot"
+
+[sub_resource type="ProceduralSky" id=1]
+sky_top_color = Color( 0, 0, 0, 1 )
+sky_horizon_color = Color( 0.854902, 0.980392, 0.839216, 1 )
+sky_energy = 0.8
+ground_bottom_color = Color( 0.239216, 0.00784314, 0.109804, 1 )
+ground_horizon_color = Color( 0.635294, 0.611765, 0.541176, 1 )
+ground_curve = 0.00784585
+ground_energy = 0.5
+sun_curve = 0.0535887
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+
+[node name="CutsceneTemplate" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -0.999742, 0.00616908, 0.0218505, 0.00259544, 0.987123, -0.159944, -0.0225559, -0.159846, -0.986884, -2.42701, 111.443, 197.985 )
+near = 4636.79
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera"]
+anims/cams_tracking_shot = SubResource( 3 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+pitch_scale = 0.6
+autoplay = true
+bus = "Music"
+
+[node name="Cottage_Inside" parent="." instance=ExtResource( 1 )]
+transform = Transform( 50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0 )
+
+[node name="Spider" parent="." instance=ExtResource( 2 )]
+transform = Transform( 49.9056, 0.782292, -2.9703, 0, 48.3512, 12.7343, 3.07159, -12.7103, 48.2599, -1.75482, 496.775, 508.903 )
+
+[node name="Spider2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 39.9245, 0.625833, -2.37624, 0, 38.681, 10.1875, 2.45727, -10.1682, 38.6079, 219.826, 496.775, 522.541 )
+
+[node name="Spider3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 39.9245, 0.625833, -2.37624, 0, 38.681, 10.1875, 2.45727, -10.1682, 38.6079, -210.514, 487.28, 498.56 )
+
+[node name="Nikita" parent="." instance=ExtResource( 3 )]
+transform = Transform( 80, 0, 0, 0, 80, 0, 0, 0, 80, 0, -34.6212, 500.53 )

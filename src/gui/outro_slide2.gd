@@ -6,4 +6,4 @@ func _ready():
 	yield(get_tree().create_timer(4), "timeout")
 	$AnimationPlayer.play("intro_fade_out")
 	yield(get_tree().create_timer(2), "timeout")
-	get_tree().change_scene("res://src/gui/start_screen.tscn")
+	get_tree().change_scene("res://src/cams/ending_cheat.tscn")

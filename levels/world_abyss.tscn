@@ -24,8 +24,8 @@
 [ext_resource path="res://assets/cheat_tscn/urn_painting_6.tscn" type="PackedScene" id=22]
 [ext_resource path="res://assets/npcs_tscn/npc_painting.tscn" type="PackedScene" id=23]
 [ext_resource path="res://src/gui/mask_score.tscn" type="PackedScene" id=24]
-[ext_resource path="res://assets/npcs_tscn/npc_gserpent.gd" type="Script" id=25]
 [ext_resource path="res://src/gui/mask_score.gd" type="Script" id=26]
+[ext_resource path="res://assets/npcs_tscn/npc_red_flower.tscn" type="PackedScene" id=27]
 
 [sub_resource type="BoxShape" id=60]
 extents = Vector3( 1000, 0.8, 1000 )
@@ -44,12 +44,12 @@ environment = ExtResource( 8 )
 
 [node name="Environment_3" parent="." instance=ExtResource( 5 )]
 
-[node name="Death" type="Area" parent="."]
+[node name="AbyssDeath" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10.4023, 0 )
 monitorable = false
 
-[node name="WaterCollisionShape" type="CollisionShape" parent="Death"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.33513, 0 )
+[node name="WaterCollisionShape" type="CollisionShape" parent="AbyssDeath"]
+transform = Transform( 1.52247, 0, 0, 0, 1, 0, 0, 0, 4.95425, 0, -85.2197, 0 )
 shape = SubResource( 60 )
 
 [node name="Score" type="Area" parent="."]
@@ -71,12 +71,11 @@ margin_bottom = 69.0
 theme = ExtResource( 9 )
 script = ExtResource( 6 )
 
-[node name="GaseousSerpent" parent="." instance=ExtResource( 12 )]
+[node name="DeliciousSerpent" parent="." instance=ExtResource( 12 )]
 transform = Transform( 0.821498, -0.118875, -0.557683, 0, 0.978028, -0.208475, 0.570212, 0.171262, 0.803448, 9.21288, 1.70211, -11.5533 )
-script = ExtResource( 25 )
-npc = "gaseous_serpent"
+npc = "delicious_serpent"
 
-[node name="MaskScore" parent="GaseousSerpent" instance=ExtResource( 24 )]
+[node name="MaskScore" parent="DeliciousSerpent" instance=ExtResource( 24 )]
 visible = false
 script = ExtResource( 26 )
 
@@ -104,7 +103,7 @@ dialog_index = 1
 [node name="mask_bull" parent="BullMask" instance=ExtResource( 14 )]
 
 [node name="CanineMask" parent="." instance=ExtResource( 13 )]
-transform = Transform( -0.981333, 0, -0.192316, 0, 1, 0, 0.192316, 0, -0.981333, -0.750895, 1.89482, -33.2015 )
+transform = Transform( -0.525873, 0, -0.850563, 0, 1, 0, 0.850563, 0, -0.525873, -1.00092, 1.89482, -32.6613 )
 npc = "abyss_mask"
 dialog_index = 2
 
@@ -138,16 +137,16 @@ transform = Transform( -0.994609, 0.00848092, -0.103345, -0.00347405, 0.993365, 
 transform = Transform( 1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, 0, 0 )
 dialog_index = 6
 
-[node name="Urn1" parent="." instance=ExtResource( 21 )]
-transform = Transform( -0.173665, 0, -0.984805, 0, 1, 0, 0.984805, 0, -0.173665, -46.3698, 1.02128, -82.8446 )
-script = ExtResource( 20 )
-dialog_index = 2
-
-[node name="Urn2" parent="." instance=ExtResource( 21 )]
+[node name="Urn" parent="." instance=ExtResource( 21 )]
 transform = Transform( -0.173665, 0, -0.984805, 0, 1, 0, 0.984805, 0, -0.173665, -14.0224, 1.15758, 23.5162 )
 script = ExtResource( 20 )
-dialog_index = 2
+dialog_index = 4
 
+[node name="RedFlower" parent="." instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -46.7562, 0.826895, -83.4996 )
+dialog_index = 1
+
+[connection signal="body_entered" from="AbyssDeath" to="Player" method="_on_AbyssDeath_body_entered"]
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
 
 [editable path="Player"]
@@ -156,7 +155,7 @@ dialog_index = 2
 [editable path="Environment_3"]
 [editable path="Environment_3/castle_exterior_v2"]
 [editable path="GUI"]
-[editable path="GaseousSerpent"]
-[editable path="GaseousSerpent/gaseous_serpent_v2"]
+[editable path="DeliciousSerpent"]
+[editable path="DeliciousSerpent/gaseous_serpent_v2"]
 [editable path="AbyssTracker"]
 [editable path="AbyssTracker/abyss_tracker_v2"]

@@ -1,0 +1,99 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704747799.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_jenna.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704747799.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I knew I could count on you, VC.\nWe thought we'd never get out bodies back!\nIgnore [color=#00b1ff]Moose's[/color] angst... this whole ordeal has been very hard on his feeble mind."
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1732118332",
+			"index": 0,
+			"name": "ask_jenna2"
+		},
+		{
+			"character": "character-1704747799.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Are you going to stay and help us rebuild this place?"
+		},
+		{
+			"choice": "What happened at the Grove?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704747799.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A mystery that has evaded you for some time now, huh?\nI'll do my best to tell you everything.\nJust after dusk, Niki and Moose went searching for you in the old dumping grounds.\nIn that hole in the ground they discovered a host of giant, shrieking [color=#9effef]spiders[/color] with human heads!\nWe took off as fast as we could in the RV... but you know how Niki is..."
+		},
+		{
+			"anchor_id": "anchor-1732118332",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "What about Niki?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704747799.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah yes, the poor little lad... you haven't seen him either?\nNiki outright refused to join us in the RV and went into hiding when we were trying to leave.\nHe probably found Maldoror and hid in the abandoned factory.\nWe promise we didn't MEAN to leave him for dead! I know how close you two are...\nAs a Circle my aim was to \"laugh in the face of tyranny and the inevitable collapse of civilization\".\nTurns out we didn't know anything! I don't blame you if you don't want to be a part of this Family anymore... "
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1731618683.json",
+		"name": "jenna3"
+	}
+}

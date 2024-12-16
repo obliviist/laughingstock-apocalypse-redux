@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/gui/LSA_theme.tres" type="Theme" id=2]
@@ -19,13 +19,7 @@
 [ext_resource path="res://assets/farm_tscn/storage_destroyed.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/gui_anims/urn_spin_2d.tres" type="Animation" id=18]
 [ext_resource path="res://src/gui/title_redux_cow.png" type="Texture" id=19]
-[ext_resource path="res://src/gui/cheat_console.tscn" type="PackedScene" id=20]
-[ext_resource path="res://src/gui/cheathelp_popup.tscn" type="PackedScene" id=21]
-[ext_resource path="res://src/gui/open_cheat_console.png" type="Texture" id=22]
-[ext_resource path="res://src/sfx/one_shots/sfx.tscn" type="PackedScene" id=23]
-[ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=24]
 [ext_resource path="res://src/gui/controls_popup.tscn" type="PackedScene" id=25]
-[ext_resource path="res://src/music/music.tscn" type="PackedScene" id=26]
 
 [sub_resource type="Animation" id=12]
 length = 0.001
@@ -76,6 +70,9 @@ tracks/0/keys = {
 
 [node name="StartScreen" type="CanvasLayer"]
 script = ExtResource( 9 )
+__meta__ = {
+"_edit_horizontal_guides_": [ -440.0 ]
+}
 
 [node name="Environment" type="Spatial" parent="."]
 
@@ -226,10 +223,6 @@ autoplay = "urn_spin_2d"
 anims/RESET = SubResource( 71 )
 anims/urn_spin_2d = ExtResource( 18 )
 
-[node name="CheatConsoleOpen" type="Sprite" parent="MainMenu/MarginContainer"]
-position = Vector2( 832, 512 )
-texture = ExtResource( 22 )
-
 [node name="FpsLabel" parent="." instance=ExtResource( 10 )]
 
 [node name="SettingsMenu" parent="." instance=ExtResource( 12 )]
@@ -240,37 +233,10 @@ texture = ExtResource( 22 )
 
 [node name="HowToPlayPopup" parent="." instance=ExtResource( 8 )]
 
-[node name="CheatHelpPopup" parent="." instance=ExtResource( 21 )]
-anchor_top = 0.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = 0.0
-margin_right = 0.0
-margin_bottom = 0.0
-
-[node name="CheatConsole" parent="." instance=ExtResource( 20 )]
-visible = false
-
-[node name="HelpListener" parent="CheatConsole" index="7"]
-repeat = true
-
-[node name="Music" parent="." instance=ExtResource( 26 )]
-
-[node name="Sfx" parent="." instance=ExtResource( 23 )]
-
-[node name="Amb" parent="." instance=ExtResource( 24 )]
-
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/StartBtn" to="." method="_on_StartBtn_pressed"]
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/HowToPlayBtn" to="." method="_on_HowToPlayBtn_pressed"]
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/ControlsBtn" to="." method="_on_ControlsBtn_pressed"]
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/SettingsBtn" to="." method="_on_SettingsBtn_pressed"]
 [connection signal="pressed" from="MainMenu/MarginContainer/VBoxContainer/QuitBtn" to="." method="_on_QuitBtn_pressed"]
-[connection signal="cheat_activated" from="CheatConsole/TheUrnListener" to="." method="_on_TheUrnListener_cheat_activated"]
-[connection signal="cheat_activated" from="CheatConsole/TheAbyssListener" to="." method="_on_TheAbyssListener_cheat_activated"]
-[connection signal="cheat_activated" from="CheatConsole/TheKeepListener" to="." method="_on_TheKeepListener_cheat_activated"]
-[connection signal="cheat_activated" from="CheatConsole/TheSaloonListener" to="." method="_on_TheSaloonListener_cheat_activated"]
-[connection signal="cheat_activated" from="CheatConsole/HelpListener" to="." method="_on_HelpListener_cheat_activated"]
 
 [editable path="ControlsPopup"]
-[editable path="CheatHelpPopup"]
-[editable path="CheatConsole"]

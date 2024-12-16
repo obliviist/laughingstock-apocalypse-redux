@@ -1,6 +1,6 @@
 extends Gate
 
-onready var church_door_anim = get_node("church_v5/ChurchAnimationPlayer")
+onready var church_door_anim = get_node("church_v6/ChurchAnimationPlayer")
 
 func _ready():
 	add_to_group("level_gate")

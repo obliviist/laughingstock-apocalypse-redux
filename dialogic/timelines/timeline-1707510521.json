@@ -22,7 +22,7 @@
 		},
 		{
 			"audio": "play",
-			"audio_bus": "Sfx",
+			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
 			"file": "res://src/sfx/one_shots/npc_cave.wav",
@@ -39,8 +39,111 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "",
+			"file": "res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav",
 			"volume": 0
+		},
+		{
+			"condition": "",
+			"definition": "1729713967-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1707510355.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You're pretty clever, pal.\nI was completely stumped by these annoying [color=#bbff00]caves[/color] and I HATE being surrounded by [color=#9effef]spiders[/color].\nI'm a Reaper so I don't usually solve puzzles, HA!!!!"
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Can I follow you to [color=#01d691]Styrofoam Grove[/color]?!"
+		},
+		{
+			"choice": "Let's go",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1729713967-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"change_scene": "res://src/gui/world_2_slide.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "No way",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, come talk to me and maybe I can convince you?!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"change_scene": "res://src/gui/world_2_slide.tscn",

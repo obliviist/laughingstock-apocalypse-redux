@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"animation": "slide_in_right.gd",
+			"animation": "bouncing_in.gd",
 			"animation_length": 0,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
@@ -27,17 +27,25 @@
 
 			],
 			"portrait": "",
-			"question": "Leave world? (Return to menu)"
+			"question": "Leave world? (Return to [color=#ff0000]The Urn[/color])"
 		},
 		{
-			"choice": "Let's go!",
+			"choice": "Let's go",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"change_scene": "res://src/gui/start_screen.tscn",
+			"definition": "1732127406-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"change_scene": "res://src/gui/world_urn_slide.tscn",
 			"event_id": "dialogic_041"
 		},
 		{
@@ -45,7 +53,7 @@
 			"transition_duration": 1
 		},
 		{
-			"choice": "Not yet.",
+			"choice": "Not yet",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -54,6 +62,9 @@
 		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
 		}
 	],
 	"metadata": {

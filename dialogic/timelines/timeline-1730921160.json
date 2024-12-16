@@ -1,0 +1,137 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1723488160.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_myth.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1723488160.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "HEYYYYYYY!!!!"
+		},
+		{
+			"character": "character-1723488160.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You're the jerk who is responsible for the fall of [color=#08ff00]Coldheart Castle[/color], right?"
+		},
+		{
+			"choice": "It'sa me!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488160.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I always knew you were a jerk!"
+		},
+		{
+			"choice": "No! You're crazy!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488160.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Give it up, buttercup.\nYou really assume us dead people were born YESTERDAY?\nThat's crazy."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1723488160.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyway, since I have your ear... you fell for Boggle's charms like a dunce!\nArchdemon Boggle is only in this game to fool around, okay?\nI wanted to let you know that there is a way to fix things.\nBy any chance did you see our former [color=#38f5bc]Archdemon[/color] is currently imprisoned?\nIf you even care at all... [color=#38f5bc]Archdemon[/color] Maldoror can help you find missing mortals.\nArchdemon Boggle can't help you... at all. Can't even help itself!"
+		},
+		{
+			"character": "character-1723488160.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Sooo... do you pledge allegiance to [color=#08ff00]Our Lady of Slumbers,[/color] Princess Coldheart?"
+		},
+		{
+			"choice": "Not a chance.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723488160.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Foul Necromancer! We don't need your help anyway.\nMay you rot and reek like a Necromancer's Underpants for the rest of your days!"
+		},
+		{
+			"choice": "I do. I'll make things right.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1731082324-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1723488160.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "FABULOUS!!!!! It's good to have you on board.\nNow this [color=#08ff00]Operation Coldheart[/color] mission is more simple than you think.\nWe need to trick the [color=#ff0000]Curious Serpent[/color] into causing a major distraction outside the Keep.\n\"But how do I do this, fair Myth?\" You may ask. It's easy. Don't worry.\nYou must give the [color=#ff0000]Curious Serpent[/color] food poisoning. Non-lethal, of course. Ha!\nWhat you choose to feed to the [color=#ff0000]Curious Serpent[/color] is up to you. I leave it to your discretion.\nNow fly, Foul Necromancer! Serve the [color=#ff0000]Curious Serpent[/color] its last meal!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1730921160.json",
+		"name": "myth2"
+	}
+}

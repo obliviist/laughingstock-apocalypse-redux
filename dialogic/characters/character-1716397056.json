@@ -6,10 +6,10 @@
 	"id": "character-1716397056.json",
 	"mirror_portraits": false,
 	"name": "Archdemon Maldoror",
-	"nickname": "",
-	"nickname_bool": false,
-	"offset_x": 0,
-	"offset_y": -45,
+	"nickname": "Archdemon Cow",
+	"nickname_bool": true,
+	"offset_x": 30,
+	"offset_y": 10,
 	"portraits": [
 		{
 			"name": "Default",

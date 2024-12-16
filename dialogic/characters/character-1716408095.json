@@ -1,5 +1,5 @@
 {
-	"color": "#ffff0000",
+	"color": "#ff08ff00",
 	"description": "",
 	"display_name": "",
 	"display_name_bool": false,
@@ -8,7 +8,7 @@
 	"name": "Coldheart Knight",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 0,
+	"offset_x": 30,
 	"offset_y": 0,
 	"portraits": [
 		{
@@ -16,6 +16,6 @@
 			"path": "res://addons/dialogic/Assets/coldheart_knight_face.png"
 		}
 	],
-	"scale": 100,
+	"scale": 150,
 	"theme": ""
 }

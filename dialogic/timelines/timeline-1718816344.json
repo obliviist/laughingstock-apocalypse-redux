@@ -32,7 +32,33 @@
 			"character": "character-1718816363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "\"Tower of Silence\""
+			"text": "\"Tower of Silence\" (date unknown)"
+		},
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1706717628.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That structure is called a dakhma... look it up in a book sometime!\nCorpse disposal and decomposition perfected!"
 		},
 		{
 			"event_id": "dialogic_022",

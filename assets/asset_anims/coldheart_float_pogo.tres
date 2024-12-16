@@ -1,0 +1,30 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "coldheart_float_pogo"
+length = 8.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 2.9, 4, 4.6, 4.8, 5, 6, 6.9, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 74.5345, 60.123 ), Vector3( 0, 258.123, 60.123 ), Vector3( 80.3724, 150.15, 60.123 ), Vector3( 80.3724, 187.177, -7.0547 ), Vector3( 51.1729, 80.3339, -19.879 ), Vector3( -64.754, 130.815, -19.879 ), Vector3( -66.7414, 128.071, -22.067 ), Vector3( -64.8252, 126.071, -20.1482 ), Vector3( -38.822, 91.1455, 63.4846 ), Vector3( -23.2932, 118.008, 62.14 ), Vector3( 0, 74.5345, 60.123 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2, 2.9, 4, 4.6, 4.8, 5, 6, 6.9, 8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 30.04, -167.603, 0 ), Vector3( 37.4461, -166.462, 2.04925 ), Vector3( 37.4461, -113.476, 2.04925 ), Vector3( 37.4461, -64.4992, 2.04925 ), Vector3( 37.4461, -54.1152, 2.04925 ), Vector3( 37.4461, 45.0068, 2.04925 ), Vector3( 47.078, 45.5105, 2.38924 ), Vector3( 36.4088, 44.9606, 2.02155 ), Vector3( 52.7524, 115.78, 2.68844 ), Vector3( 43.6675, 2.42686, 1.61306 ), Vector3( 30.04, -167.603, 0 ) ]
+}

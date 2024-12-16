@@ -35,6 +35,50 @@
 			"text": "MOOOOO!!! (Furious)"
 		},
 		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "[color=#38f5bc]Archdemon[/color] Maldoror is understandably annoyed and awaiting an explanation from you."
+		},
+		{
+			"choice": "Jailbreak time?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "[color=#38f5bc]Archdemon[/color] Maldoror looks surprised. You're responsible for her arrest, after all."
+		},
+		{
+			"character": "character-1716397056.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mooo? Mooo! (Jailbreak? An Archdemon can walk out of here at any time.)\nMooo mooo! (Look for the demon named [color=#fdff0b]Myth[/color]. They look like a techno teddy bear.)\nMooo... (Perhaps Myth can help you outsmart Boggle...)"
+		},
+		{
+			"choice": "Never mind",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1716397056.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Moooooo.... (Devastated)"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 1
 		}

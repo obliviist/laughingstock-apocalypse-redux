@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/boggle castle keep_loop.wav-a64f9a209586cbb967d5d838d77e7a07.sample"
+
+[deps]
+
+source_file="res://src/music/boggle castle keep_loop.wav"
+dest_files=[ "res://.import/boggle castle keep_loop.wav-a64f9a209586cbb967d5d838d77e7a07.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

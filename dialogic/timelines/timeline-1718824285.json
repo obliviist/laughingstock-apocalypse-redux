@@ -32,7 +32,7 @@
 			"character": "character-1718824304.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Greetings Undead Human..."
+			"text": "Greetings..."
 		},
 		{
 			"condition": "<=",
@@ -44,7 +44,7 @@
 			"character": "character-1718824304.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Look for my masks. They flew away when I was making spaghetti!\nThere should be a total of SIX masks. Hurry!"
+			"text": "Look for my masks, please and thanks. They flew away when I was making spaghetti!\nThere should be a total of SIX masks. Hurry!"
 		},
 		{
 			"emit_signal": "show_mask_score",
@@ -73,7 +73,7 @@
 			"character": "character-1718824304.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You found all the masks! Thanksssss!\nNow dig your way out, I say, DIG!!!!\nI have a feeling that the future holds much work for you to do.\nTalk to the Bonfire for your prize."
+			"text": "You found all the masks! Thanksssss! Have some of my fresh Abyssal Spaghetti!\nNow dig your way out, I say, DIG!!!!\nI have a feeling that the future holds much work for you to do.\nTalk to the Bonfire for your prize."
 		},
 		{
 			"event_id": "dialogic_022",
@@ -92,7 +92,7 @@
 			"character": "character-1718824304.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You found all the masks! Thankssss!\nTalk to the Bonfire for your prize.\nYour journey has been long so far.\nYou deserve a short break. A party, if you will.\nTalk to the Bonfire for your prize."
+			"text": "You found all the masks! Thankssss! Have some of my fresh Abyssal Spaghetti!\nYour journey has been long so far.\nYou deserve a short break. A party, if you will.\nTalk to the Bonfire for your prize."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -131,6 +131,6 @@
 	"metadata": {
 		"dialogic-version": "1.5",
 		"file": "timeline-1718824285.json",
-		"name": "gaseous_serpent0"
+		"name": "delicious_serpent0"
 	}
 }

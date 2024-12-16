@@ -47,6 +47,67 @@
 			"event_id": "dialogic_041"
 		},
 		{
+			"choice": "Helpful Hint",
+			"condition": "<=",
+			"definition": "1719589019-648",
+			"event_id": "dialogic_011",
+			"value": "5"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1723046810.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1718824304.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_serpent1.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1718824304.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Why are you just standing there?!\nCome talk to me. I don't bite!!!!!"
+		},
+		{
 			"choice": "Not yet",
 			"condition": "",
 			"definition": "",
@@ -82,6 +143,67 @@
 		{
 			"change_scene": "res://src/gui/world_void_slide.tscn",
 			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "Helpful Hint",
+			"condition": "<=",
+			"definition": "1719589019-648",
+			"event_id": "dialogic_011",
+			"value": "5"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1723046810.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "instant_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1718824304.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_serpent1.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1718824304.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Why are you just standing there?!\nCome talk to me. I don't bite!!!!!"
 		},
 		{
 			"choice": "Not yet",

@@ -54,7 +54,7 @@
 			"character": "character-1723488142.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ahem, so as I was saying... \nReapers in the Coldheart Kingdom are familiar with cleaning out corpses wedged in narrow columns.\nSuch as the column behind me, actually!\nThey would use a special incantation called \"dullboy33\" to dematerialize and do this job.\n\"dullboy33\" would allow the user to clip through all instances of dense matter and vegetation... \nEven a dashing body like that of  [color=#c1ff00]Professor[/color] Grapnel! Hehehe!"
+			"text": "Ahem, so as I was saying... \nReapers in the [color=#08ff00]Coldheart Kingdom[/color] are familiar with cleaning out corpses wedged in narrow columns.\nSuch as the column behind me, actually!\nThey would use a special incantation called [color=#aeffac]dullboy33[/color] to dematerialize and do this job.\nThe [color=#aeffac]dullboy33[/color] spell would allow the user to clip through all instances of dense matter and vegetation... \nEven a dashing body like that of  [color=#c1ff00]Professor[/color] Grapnel! Hehehe!"
 		},
 		{
 			"choice": "Nah",

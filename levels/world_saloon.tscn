@@ -184,6 +184,8 @@ transform = Transform( 0.714342, -0.0723251, 0.696049, 0.0435813, 0.997312, 0.05
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
 
 [editable path="Environment_2"]
+[editable path="Environment_2/ChurchGate"]
+[editable path="Environment_2/ChurchGate/church_v6"]
 [editable path="GUI"]
 [editable path="Annoyance"]
 [editable path="Annoyance/npc_annoyance"]

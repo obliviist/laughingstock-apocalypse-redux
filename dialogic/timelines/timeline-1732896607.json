@@ -1,0 +1,45 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1708547002.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You can't help but breathe in the acrid stench of this flower..."
+		},
+		{
+			"character": "character-1708547002.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "“You who pass over this bridge, go not yonder. There crime fraternises with vice.\" \n\"One day his friends awaited in vain a young man who crossed that fatal threshold.”\n\"Curiosity was stronger than fear.\"\n[color=#38f5bc]Les Chants de Maldoror,[/color] [color=#ff0000]Comte De Latreaumont (1868)[/color]"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1732896607.json",
+		"name": "flower3"
+	}
+}

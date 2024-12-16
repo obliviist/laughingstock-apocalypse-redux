@@ -37,7 +37,7 @@
 			"value": "1"
 		},
 		{
-			"change_scene": "res://levels/world_3.tscn",
+			"change_scene": "res://src/gui/world_3_slide.tscn",
 			"event_id": "dialogic_041"
 		},
 		{
@@ -54,7 +54,7 @@
 			"text": "It feels like something heavy is pressing against the door. There's no way out this way for now."
 		},
 		{
-			"choice": "Nah",
+			"choice": "Not yet",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",

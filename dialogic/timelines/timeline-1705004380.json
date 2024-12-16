@@ -22,11 +22,17 @@
 		},
 		{
 			"audio": "play",
-			"audio_bus": "Sfx",
+			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
 			"file": "res://src/sfx/one_shots/voice_jenna.wav",
 			"volume": 0
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1730482759",
+			"index": 0,
+			"name": "ask_jenna1"
 		},
 		{
 			"character": "character-1704747799.json",
@@ -48,7 +54,11 @@
 			"character": "character-1704747799.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Do me a favour and have a look around?\nI imagine the cows haven't gotten far but be careful and don't wander too much!\nMaldoror doesn't leave the barn so that gives you a head start, at least.\nIf you need help with cattle numbers, look for Niki.\nYou know how much he loves to give names to each of them.\nI think Niki might be in the barn with Maldoror."
+			"text": "Do me a favour and have a look around?\nI imagine the [color=#ffc740]cows[/color] haven't gotten far but be careful and don't wander too much!\nMaldoror doesn't leave the barn so that gives you a head start, at least.\nIf you need help with [color=#ffc740]cattle[/color] numbers, look for [color=#00e529]Niki[/color].\nYou know how much he loves to give names to each of them.\nI think Niki might be in the barn with Maldoror."
+		},
+		{
+			"anchor_id": "anchor-1730482759",
+			"event_id": "dialogic_016"
 		},
 		{
 			"choice": "Found Cows",
@@ -61,7 +71,7 @@
 			"character": "character-1704747799.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I can tell from the smell around here you found some of our cattle.\nAdequate work, VC. I would go speak to Niki in the barn once you're done."
+			"text": "I can tell from the smell around here you found some of our cattle.\nAdequate work, [color=#ff0000]VC[/color]. I would go speak to [color=#00e529]Niki[/color] in the barn once you're done."
 		},
 		{
 			"event_id": "dialogic_022",
@@ -78,7 +88,7 @@
 			"character": "character-1704747799.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Here is how I would go about the search:\nSTEP 1: Carry or throw the cow within barn-distance\nThis is the fun part: pick up a cow with Left-Click, throw with \"F\".\nSTEP 2: The cow can be placed anywhere in the barn or just outside if that's too much work.\nDrop the cow with Left-Click again.\nIf the cow makes a noise, that means it shouldn't wander away again."
+			"text": "Here is how I would go about the search:\nSTEP 1: Carry or throw the [color=#ffc740]cow[/color] as close to the large barn as possible\nThis is the fun part: pick up a [color=#ffc740]cow[/color] with Left-Click, throw with \"F\".\nSTEP 2: The [color=#ffc740]cow[/color] can be placed anywhere in the barn or just outside if that's too much work.\nDrop the [color=#ffc740]cow[/color] with Left-Click again.\nIf the [color=#ffc740]cow[/color] makes a noise, that means the deed is done and it shouldn't wander away again."
 		},
 		{
 			"emit_signal": "show_cow_score",

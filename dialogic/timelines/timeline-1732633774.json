@@ -1,0 +1,96 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1708998462.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1708998462.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Change song?"
+		},
+		{
+			"choice": "Theme Song Cassette",
+			"condition": "!=",
+			"definition": "1709051878-648",
+			"event_id": "dialogic_011",
+			"value": "3"
+		},
+		{
+			"character": "character-1708998462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "SONG: [color=#ffeb00]\"Arp One\"[/color]"
+		},
+		{
+			"emit_signal": "song3",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Coldheart Cassette B",
+			"condition": "!=",
+			"definition": "1709051878-648",
+			"event_id": "dialogic_011",
+			"value": "4"
+		},
+		{
+			"character": "character-1708998462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "SONG: [color=#ffeb00]\"Coldheart Castle Keep\"[/color]"
+		},
+		{
+			"emit_signal": "song4",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Coldheart Cassette A",
+			"condition": "!=",
+			"definition": "1709051878-648",
+			"event_id": "dialogic_011",
+			"value": "5"
+		},
+		{
+			"character": "character-1708998462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "SONG: [color=#ffeb00]\"Coldheart Dancehall Mix\"[/color]"
+		},
+		{
+			"emit_signal": "song5",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1732633774.json",
+		"name": "radio1"
+	}
+}

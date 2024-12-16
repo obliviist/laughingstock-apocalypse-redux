@@ -51,7 +51,7 @@
 			"text": "Well I'm not interested. This is my part-timer.\nTalk to Coffee at the other end of the bar and maybe she can help you."
 		},
 		{
-			"choice": "Drink menu",
+			"choice": "Nah",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -59,43 +59,9 @@
 		},
 		{
 			"character": "character-1723488239.json",
-			"event_id": "dialogic_010",
-			"options": [
-
-			],
+			"event_id": "dialogic_001",
 			"portrait": "",
-			"question": "We don't have much... it's your lucky night, though, 'cause cheaters drink for free."
-		},
-		{
-			"choice": "Salad Water",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "Fungus Tea",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"choice": "Brewed Bark Coffee",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"choice": "Nah",
-			"condition": "",
-			"definition": "",
-			"event_id": "dialogic_011",
-			"value": ""
+			"text": "Good."
 		},
 		{
 			"event_id": "dialogic_013"

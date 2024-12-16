@@ -1,0 +1,51 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_nikita.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748102.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You ready to annoy an Archdemon, VC?\nThis is gonna be a piece of cake! Our cows and our [color=#08ff00]new demon friends[/color] will help us.\nThrow them at Archdemon Coldheart until she gets tired of dancing!\nOnce a [color=#ffc740]cow[/color] or [color=#08ff00]demon[/color] hits her, give them a break and move on to another friend."
+		},
+		{
+			"emit_signal": "show_coldheart_score",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1732634804.json",
+		"name": "nikita4"
+	}
+}

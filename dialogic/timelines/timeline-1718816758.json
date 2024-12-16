@@ -29,10 +29,55 @@
 			"volume": 0
 		},
 		{
+			"condition": "",
+			"definition": "1732127406-787",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
 			"character": "character-1718816363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": " \"Dance of Death\" (1493)\nfrom Liber Chronicarum by Hartmann Schedel"
+			"text": "[rainbow freq=1.0 sat=0.8 val=0.8]The dancing skeletons seem to be inviting you to join them...[/rainbow]"
+		},
+		{
+			"character": "character-1718816363.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Enter the Psycho Sewer Saloon?"
+		},
+		{
+			"choice": "Let's go",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"change_scene": "res://src/gui/world_saloon_slide.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "Not yet",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1718816363.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " \"Dance of Death\" (1493) from Liber Chronicarum by Hartmann Schedel"
 		},
 		{
 			"event_id": "dialogic_022",

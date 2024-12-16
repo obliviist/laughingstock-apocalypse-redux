@@ -1,7 +1,7 @@
 {
 	"events": [
 		{
-			"animation": "slide_in_right.gd",
+			"animation": "instant_in.gd",
 			"animation_length": 1,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
@@ -25,7 +25,7 @@
 			"audio_bus": "Sfx",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://src/sfx/one_shots/voice_voyager.wav",
+			"file": "res://src/sfx/one_shots/chicken_cluck.wav",
 			"volume": 0
 		},
 		{
@@ -48,7 +48,7 @@
 			"character": "character-1716408095.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Good. Please stand back!\nThere's a solid magic barrier around the church so don't try to knock the door down.\nIt won't budge anyway!"
+			"text": "Good. Please stand back!"
 		},
 		{
 			"choice": "Why not?",

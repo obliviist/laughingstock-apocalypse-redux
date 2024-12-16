@@ -1,0 +1,253 @@
+{
+	"events": [
+		{
+			"animation": "bouncing_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_angler1.wav",
+			"volume": 0
+		},
+		{
+			"condition": "",
+			"definition": "1730400182-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_angler2.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "FINE, YOU WIN!!!!!\nBYE!!!! AHHHHHHH!!!!!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The Boggle is twice dead. Slay!\nGo talk to [color=#38f5bc]Archdemon Maldoror[/color]."
+		},
+		{
+			"emit_signal": "slay_angler",
+			"event_id": "dialogic_040"
+		},
+		{
+			"definition": "1730489388-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "AHHHH YOU SCARED ME SILLY!!!!!\nI don't know who you are, mortal...\nor how you managed to sweet talk that [color=#08ff00]egghead Knight[/color] outside...\nbut trust me when I assure you that I am no disturbance..."
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1730395759",
+			"index": 0,
+			"name": "ask_angler1"
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ask Boggle:"
+		},
+		{
+			"choice": "Who are you?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "(Stay calm... this mortal is an idiot after all)\nWho am I? WHO AM I?????\nWhy... I am the monster under your bed!\nI am Boggle!"
+		},
+		{
+			"anchor_id": "anchor-1730395759",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Ask about hostages",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "\"Ho-sta-ges\"?! Hmm..."
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You mean my ARMY?"
+		},
+		{
+			"choice": "Um... sure!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "In my business, animals of the bovine variety are as valuable as they come.\nDid you know [color=#08ff00]Princess Coldheart's Kingdom[/color] used to be a bustling farm?\nThis was before she fainted and fell into a deep, eternal sleep...\nThe powerful soil and mulch under the [color=#08ff00]Coldheart Castle Keep[/color] froze with her.\nThat's why I infested this church... \nI intend to stay here and build an [color=#ffc740]Army of Unusual Oxen[/color]."
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1730396013",
+			"index": 0,
+			"name": "ask_angler2"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ask Boggle:"
+		},
+		{
+			"choice": "Army of Unusual Oxen?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Correct. \nTell me... have you spoken to that useless [color=#38f5bc]Archdemon Maldoror[/color] who watches from the doorway to [color=#08ff00]Coldheart Castle Keep[/color]?\nWhat a poor excuse for a leader. No wonder this town is so DEAD!\nIf Boggle was in charge, it would really spice things up around here."
+		},
+		{
+			"anchor_id": "anchor-1730396013",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Ask about the Drifters",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ahh, my newest recruits. Emphasis on \"unusual\".... what did you say?\nI need to learn the definition of \"Oxen\"?!\nOh, I see. You're not as stupid as you look, mortal!\nThere was another mortal that came here before you and said the same thing.\n[color=#38f5bc]Archdemon Maldoror[/color] weakened this tiny mortal's mind. \nThat tiny mortal is the reason the [color=#08ff00]Coldheart Knight[/color] locked the church!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"definition": "1730400190-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I am growing tired of this idle chit-chat.\nI'm angry about that tiny mortal who discarded my generous offer as easily as a soul drops a dead body.\nIf you care at all about my mission and want to see these mortals safe and sound...\nFind the Curious Serpent and tell it:\n\"I turn away my eyes and stare into the horizon that flees before our approach.\" All will be revealed.\nTo sweeten the deal, I'll grant you an honorific title AND grant you one special wish... within reason, of course."
+		},
+		{
+			"choice": "Never mind",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "How BRAVE of you, mortal...\n\"Never mind\" this, \"never mind\" that...\nCome back and visit when you feel like having a conversation."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Never mind",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1729279474.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Come back and visit when you feel like having a conversation."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1730227945.json",
+		"name": "angler1"
+	}
+}

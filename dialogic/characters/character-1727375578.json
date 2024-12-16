@@ -1,15 +1,15 @@
 {
 	"color": "#ffffffff",
 	"description": "",
-	"display_name": "Unused Model Z",
+	"display_name": "The Imp",
 	"display_name_bool": true,
 	"id": "character-1727375578.json",
 	"mirror_portraits": false,
 	"name": "modelZ",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 0,
-	"offset_y": -45,
+	"offset_x": 30,
+	"offset_y": 0,
 	"portraits": [
 		{
 			"name": "Default",

@@ -1,0 +1,161 @@
+{
+	"events": [
+		{
+			"animation": "bouncing_in.gd",
+			"animation_length": 1,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1723591558.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_serpent2.wav",
+			"volume": 0
+		},
+		{
+			"condition": "",
+			"definition": "1731082324-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Dinner time!\nWhat will you serve the [color=#ff002b]Curious Serpent[/color]?"
+		},
+		{
+			"choice": "Bucket of Apples",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723591558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "YUCK! Do I look like a vegetarian to you????\nGot any meat or alternatives??\nI'll eat anything fishy too!!!!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "Moldy Tuna Steak",
+			"condition": "",
+			"definition": "1731526476-284",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"character": "character-1723591558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "MMMMMMM.... MOLDY!!!!!\nYOU CALL THIS FOOD????\nI'm gonna be sick!!!!!"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_serpent2.wav",
+			"volume": 0
+		},
+		{
+			"change_scene": "res://src/cams/ending_boggle.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "Abyssal Spaghetti",
+			"condition": ">=",
+			"definition": "1719589019-648",
+			"event_id": "dialogic_011",
+			"value": "6"
+		},
+		{
+			"character": "character-1723591558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "YUMMMYYY!!!\nUh oh.... I know what this tastes like!\n[color=#00ba2a]My Cousin[/color] makes the WORST SPAGHETTI EVER, BLEHHHHH!!!!\nI'm gonna be sick!!!!!"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_serpent2.wav",
+			"volume": 0
+		},
+		{
+			"change_scene": "res://src/cams/ending_boggle.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "Nothing",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1723591558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Come back when you have tasty food to share. I'M WAITING!!!!!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1723591558.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "YOUR EXCELLENCY!\nArchdemon Boggle awaits to grant your one wish!\nVisit them at their camp atop the hill.\nThe Boggle Castle Keep is undergoing construction. This explains the retro look around here.\nWe apologize for the eyesore exterior!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1730923135.json",
+		"name": "curious_serpent1"
+	}
+}

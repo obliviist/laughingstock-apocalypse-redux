@@ -1,7 +1,7 @@
 [gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://levels/world_3.gd" type="Script" id=1]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/gui/gui.tscn" type="PackedScene" id=5]
@@ -178,8 +178,7 @@ script = ExtResource( 1 )
 environment = ExtResource( 24 )
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource( 2 )]
-transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 1.88464, 0.586191, 35.1024 )
-gravity = -25
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.885, 0.586, 35.102 )
 
 [node name="Death" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.5053, 0 )

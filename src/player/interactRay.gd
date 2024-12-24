@@ -26,4 +26,5 @@ func _physics_process(_delta):
 		
 		if detected is Gate:
 			open_door.visible = true
+			crosshair.visible = false
 		

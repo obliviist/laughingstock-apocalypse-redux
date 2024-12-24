@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://src/music/druids picnic_loop.wav" type="AudioStream" id=1]
 [ext_resource path="res://assets/npcs_tscn/npc_nikita.tscn" type="PackedScene" id=2]
@@ -10,6 +10,18 @@
 [ext_resource path="res://assets/cheat_tscn/urn_painting_4.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/cheat_tscn/urn_painting_2.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/cheat_tscn/urn_painting_1.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/cheat_tscn/castle_keep.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/npcs_tscn/npc_coldheart_knight.tscn" type="PackedScene" id=12]
+[ext_resource path="res://assets/npcs_tscn/npc_myth.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/farm_tscn/basket_var2.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/npcs_tscn/npc_defiance.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/cheat_tscn/urn_bed.tscn" type="PackedScene" id=17]
+[ext_resource path="res://environment/world_ending_environment.tres" type="Environment" id=18]
+[ext_resource path="res://assets/npcs_tscn/npc_annoyance.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/npcs_tscn/npc_silence.tscn" type="PackedScene" id=20]
+[ext_resource path="res://assets/npcs_tscn/npc_gaseous_serpent.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/npcs_tscn/npc_curious_serpent.tscn" type="PackedScene" id=22]
+[ext_resource path="res://assets/farm_tscn/basket_var1.tscn" type="PackedScene" id=23]
 
 [sub_resource type="Animation" id=3]
 length = 0.001
@@ -23,7 +35,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector3( 6.87663, 178.725, 0.149785 ) ]
+"values": [ Vector3( 6.877, 180, 0.15 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath(".:far")
@@ -50,27 +62,13 @@ tracks/2/keys = {
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="ProceduralSky" id=1]
-sky_top_color = Color( 0, 0, 0, 1 )
-sky_horizon_color = Color( 0.854902, 0.980392, 0.839216, 1 )
-sky_energy = 0.8
-ground_bottom_color = Color( 0.239216, 0.00784314, 0.109804, 1 )
-ground_horizon_color = Color( 0.635294, 0.611765, 0.541176, 1 )
-ground_curve = 0.00784585
-ground_energy = 0.5
-sun_curve = 0.0535887
-
-[sub_resource type="Environment" id=2]
-background_mode = 2
-background_sky = SubResource( 1 )
-
 [node name="WorldEnding" type="Spatial"]
 script = ExtResource( 5 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( -0.999742, 0.00527772, 0.0220908, 0.00259543, 0.992803, -0.119732, -0.0225637, -0.119644, -0.99256, -2.43172, 81.552, 247.783 )
+transform = Transform( -0.999997, 0.00261798, -8.67938e-08, 0.00259916, 0.992802, -0.119738, -0.000313387, -0.119738, -0.992805, -2.43172, 81.552, 247.783 )
 current = true
-near = 700.0
+near = 900.0
 
 [node name="Sprite" type="Sprite" parent="Camera"]
 modulate = Color( 1, 1, 1, 0 )
@@ -82,7 +80,7 @@ anims/RESET = SubResource( 3 )
 anims/cams_tracking_shot = ExtResource( 6 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 2 )
+environment = ExtResource( 18 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
@@ -90,30 +88,83 @@ pitch_scale = 0.6
 autoplay = true
 bus = "Music"
 
+[node name="urn_bed2" parent="." instance=ExtResource( 17 )]
+transform = Transform( 82.0631, -5.78761, 47.3729, 19.3061, 60.8904, -19.6681, -40.8638, 17.145, 85.8427, -352.301, -64.248, 679.306 )
+
 [node name="Spider" parent="." instance=ExtResource( 3 )]
-transform = Transform( 49.9056, 0.782292, -2.9703, 0, 48.3512, 12.7343, 3.07159, -12.7103, 48.2599, -1.75482, 496.775, 508.903 )
+transform = Transform( 49.9056, 0.782292, -2.9703, 0, 48.3512, 12.7343, 3.07159, -12.7103, 48.2599, 5.17156, 472.46, 539.566 )
 
 [node name="Spider2" parent="." instance=ExtResource( 3 )]
-transform = Transform( 39.9245, 0.625833, -2.37624, 0, 38.681, 10.1875, 2.45727, -10.1682, 38.6079, 219.826, 496.775, 522.541 )
+transform = Transform( 39.9245, 0.625833, -2.37624, 0, 38.681, 10.1875, 2.45727, -10.1682, 38.6079, 226.752, 472.46, 553.204 )
 
 [node name="Spider3" parent="." instance=ExtResource( 3 )]
-transform = Transform( 39.9245, 0.625833, -2.37624, 0, 38.681, 10.1875, 2.45727, -10.1682, 38.6079, -210.514, 487.28, 498.56 )
+transform = Transform( 39.9245, 0.625833, -2.37624, 0, 38.681, 10.1875, 2.45727, -10.1682, 38.6079, -203.724, 454.546, 531.436 )
 
-[node name="urn_painting_1" parent="." instance=ExtResource( 10 )]
-transform = Transform( 206.085, 0, 0, 0, -31.0986, 126.767, 0, -100.118, -39.3761, 469.861, 722.651, 567.484 )
+[node name="PaintingGroup" type="Spatial" parent="."]
+transform = Transform( 186.436, 0, 0, 0, -53.8698, 126.767, 0, -173.428, -39.376, -44.6132, 728.529, 534.529 )
 
-[node name="urn_painting_2" parent="." instance=ExtResource( 9 )]
-transform = Transform( 206.085, 0, 0, 0, -37.4207, 126.767, 0, -120.471, -39.3761, -472.383, 719.729, 558.074 )
+[node name="urn_painting_1" parent="PaintingGroup" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 0.831048, 2.98023e-08, 0, -1.51992e-06, 1, 2.42384, -0.345497, -0.207835 )
 
-[node name="urn_painting_4" parent="." instance=ExtResource( 8 )]
-transform = Transform( 206.085, 0, 0, 0, -37.4207, 126.767, 0, -120.472, -39.3761, -44.6132, 728.529, 534.529 )
+[node name="urn_painting_2" parent="PaintingGroup" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 0.999992, 2.98023e-08, 0, -2.20537e-06, 1, -1.96416, -0.349105, -0.202497 )
+
+[node name="urn_painting_4" parent="PaintingGroup" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 1.49012e-08, 0, 5.96046e-08, 1, 0, -0.322727, -0.137143 )
 
 [node name="Cottage_Inside" parent="." instance=ExtResource( 4 )]
-transform = Transform( 50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0 )
+transform = Transform( 50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 63.0975 )
 script = null
 
 [node name="Nikita" parent="." instance=ExtResource( 2 )]
-transform = Transform( 120, 0, 0, 0, 120, 0, 0, 0, 120, 0, -29.0165, 500.53 )
+transform = Transform( 120, 0, 0, 0, 120, 0, 0, 0, 120, 0, -29.0165, 551.769 )
+script = null
+
+[node name="ColdheartKnight" parent="." instance=ExtResource( 12 )]
+transform = Transform( 9.02525, 0, 4.30637, 0, 10, 0, -4.30637, 0, 9.02525, 330.13, -69.2595, 628.291 )
+script = null
+
+[node name="castle_keep" parent="." instance=ExtResource( 11 )]
+transform = Transform( -6.35869, 0, -2.92695, 0, 7, 0, 2.92695, 0, -6.35869, 260.498, -139.496, 788 )
+
+[node name="Annoyance" parent="." instance=ExtResource( 19 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, -363.809, -12.4105, 727.035 )
+script = null
+
+[node name="AnnoyanceAnimationPlayer2" parent="Annoyance/npc_annoyance" index="2"]
+autoplay = "annoyance_danceNLA"
+
+[node name="Myth" parent="." instance=ExtResource( 13 )]
+transform = Transform( 15.3862, 0, 12.7775, 0, 20, 0, -12.7775, 0, 15.3862, 286.366, -84.8336, 636.628 )
+script = null
+
+[node name="MythAnimationPlayer" parent="Myth/npc_myth" index="2"]
+autoplay = "myth_waveNLA"
+
+[node name="Silence" parent="." instance=ExtResource( 20 )]
+transform = Transform( 13.9496, 0, -14.3321, 0, 20, 0, 14.3321, 0, 13.9496, -309.924, -12.411, 733.755 )
+script = null
+
+[node name="SilenceAnimationPlayer" parent="Silence/npc_silence" index="2"]
+autoplay = "silence_danceNLA"
+
+[node name="Defiance" parent="." instance=ExtResource( 15 )]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, -177.706, -51.5351, 553.105 )
+
+[node name="DefianceAnimationPlayer" parent="Defiance/npc_defiance" index="2"]
+autoplay = "defiance_dance"
+
+[node name="CuriousSerpent" parent="." instance=ExtResource( 22 )]
+transform = Transform( 16.3081, 3.95315, 6.51294, -0.968743, 16.3384, -7.49122, -7.55694, 6.43657, 15.0154, 312.646, -54.0638, 782.946 )
+
+[node name="Basket_Var1" parent="." instance=ExtResource( 23 )]
+transform = Transform( 11.3031, 15.2542, -46.2553, -23.5784, 43.2632, 8.50583, 42.618, 19.8897, 16.9736, 312.991, -58.8434, 787.9 )
+
+[node name="Basket_Var2" parent="." instance=ExtResource( 14 )]
+transform = Transform( 24.2993, -18.1399, -39.7554, -9.65644, 42.1348, -25.1278, 42.618, 19.8897, 16.9736, -491.191, -58.8435, 695.951 )
+
+[node name="DeliciousSerpent" parent="." instance=ExtResource( 21 )]
+transform = Transform( 13.2675, -4.41115, -11.3365, -0.968743, 16.3384, -7.49122, 12.1258, 6.13177, 11.8054, -496.527, -54.0638, 697.521 )
 script = null
 
 [editable path="Spider"]
@@ -121,3 +172,15 @@ script = null
 [editable path="Cottage_Inside"]
 [editable path="Nikita"]
 [editable path="Nikita/nikita"]
+[editable path="Annoyance"]
+[editable path="Annoyance/npc_annoyance"]
+[editable path="Myth"]
+[editable path="Myth/npc_myth"]
+[editable path="Silence"]
+[editable path="Silence/npc_silence"]
+[editable path="Defiance"]
+[editable path="Defiance/npc_defiance"]
+[editable path="CuriousSerpent"]
+[editable path="CuriousSerpent/curious_serpent"]
+[editable path="DeliciousSerpent"]
+[editable path="DeliciousSerpent/gaseous_serpent_v2"]

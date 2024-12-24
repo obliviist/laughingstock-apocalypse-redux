@@ -2122,13 +2122,10 @@ script = ExtResource( 4 )
 [node name="WorldEnvironment" parent="." instance=ExtResource( 5 )]
 
 [node name="Music" parent="." instance=ExtResource( 29 )]
-script = null
 
 [node name="Amb" parent="." instance=ExtResource( 6 )]
-script = null
 
 [node name="Sfx" parent="." instance=ExtResource( 25 )]
-script = null
 
 [node name="Environment_1" parent="." instance=ExtResource( 1 )]
 
@@ -2137,7 +2134,6 @@ transform = Transform( 0.771547, 0, -0.636172, 0, 1, 0, 0.636172, 0, 0.771547, 6
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource( 3 )]
 transform = Transform( 0.54981, 0, -0.835289, 0, 1, 0, 0.835289, 0, 0.54981, -40.0666, 0.586199, 48.4025 )
-gravity = -25
 
 [node name="Death" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.5053, 0 )
@@ -2162,19 +2158,19 @@ transform = Transform( -0.930226, 0, 0.366988, 0, 1, 0, -0.366988, 0, -0.930226,
 script = ExtResource( 30 )
 npc = "radio"
 
-[node name="DemoSong1" type="AudioStreamPlayer3D" parent="MusicPlayer"]
+[node name="Song0" type="AudioStreamPlayer3D" parent="MusicPlayer"]
 transform = Transform( -0.825429, 0, 0.564506, 0, 1, 0, -0.564506, 0, -0.825429, 4.53834, -10.719, -133.196 )
 stream = ExtResource( 33 )
 unit_db = -1.0
 bus = "Music"
 
-[node name="DemoSong2" type="AudioStreamPlayer3D" parent="MusicPlayer"]
+[node name="Song1" type="AudioStreamPlayer3D" parent="MusicPlayer"]
 transform = Transform( -0.825429, 0, 0.564506, 0, 1, 0, -0.564506, 0, -0.825429, 4.53834, -10.719, -133.196 )
 stream = ExtResource( 32 )
 unit_db = -2.0
 bus = "Music"
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer" parent="MusicPlayer"]
+[node name="Song2" type="AudioStreamPlayer3D" parent="MusicPlayer"]
 stream = ExtResource( 27 )
 bus = "Music"
 
@@ -2254,19 +2250,19 @@ transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0.0907478
 script = ExtResource( 30 )
 npc = "radio"
 
-[node name="DemoSong1" type="AudioStreamPlayer3D" parent="Spatial/MusicPlayer"]
+[node name="Song0" type="AudioStreamPlayer3D" parent="Spatial/MusicPlayer"]
 transform = Transform( -0.825429, 0, 0.564506, 0, 1, 0, -0.564506, 0, -0.825429, 4.53834, -10.719, -133.196 )
 stream = ExtResource( 33 )
 unit_db = -1.0
 bus = "Music"
 
-[node name="DemoSong2" type="AudioStreamPlayer3D" parent="Spatial/MusicPlayer"]
+[node name="Song1" type="AudioStreamPlayer3D" parent="Spatial/MusicPlayer"]
 transform = Transform( -0.825429, 0, 0.564506, 0, 1, 0, -0.564506, 0, -0.825429, 4.53834, -10.719, -133.196 )
 stream = ExtResource( 32 )
 unit_db = -2.0
 bus = "Music"
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Spatial/MusicPlayer"]
+[node name="Song2" type="AudioStreamPlayer3D" parent="Spatial/MusicPlayer"]
 stream = ExtResource( 27 )
 unit_db = -2.759
 
@@ -2431,7 +2427,7 @@ anims/cow_idle = SubResource( 91 )
 transform = Transform( -5.30219e-08, 1.056, 0, -1.213, -4.61592e-08, 0, 1.77636e-15, -2.98023e-08, 0.475, -7.62939e-06, 0.877226, 0.275177 )
 shape = SubResource( 77 )
 
-[connection signal="body_entered" from="Death" to="Player" method="_on_Death_body_entered"]
+[connection signal="body_entered" from="Death" to="Player" method="_on_VoidDeath_body_entered"]
 [connection signal="body_entered" from="Score" to="Jenna/CowScore" method="_on_Score_body_entered"]
 
 [editable path="Environment_1"]

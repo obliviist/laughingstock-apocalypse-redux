@@ -25,7 +25,6 @@ func end_dialog(data):
 	
 
 func _on_Score_body_entered(body):
-
 		if GlobalSettings.coldheart_score == 100:
 			coldheart_anim.play("coldheart_float_pogo", -1, 1.0)
 		if GlobalSettings.coldheart_score == 64:

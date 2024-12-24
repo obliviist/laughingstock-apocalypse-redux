@@ -2,7 +2,7 @@
 
 [ext_resource path="res://levels/world_cottage.gd" type="Script" id=1]
 [ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=2]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/environment_tscn/cottage_inside.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/environment_tscn/hatch_forth.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=6]
@@ -37,10 +37,10 @@ script = ExtResource( 1 )
 
 [node name="WorldEnvironment" parent="." instance=ExtResource( 2 )]
 
-[node name="Player" parent="." groups=["player"] instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 24.7217, 7.52102 )
-
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 24.722, 7.521 )
 
 [node name="Env" parent="." instance=ExtResource( 6 )]
 
@@ -161,24 +161,23 @@ npc = "spider"
 [node name="Angler1" parent="." instance=ExtResource( 14 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 26, -17 )
 script = ExtResource( 15 )
-npc = "angler"
+npc = "boggle"
 
 [node name="Angler2" parent="." instance=ExtResource( 14 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 26, 18 )
 script = ExtResource( 15 )
-npc = "angler"
+npc = "boggle"
 
 [node name="Angler3" parent="." instance=ExtResource( 14 )]
 transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 13, 26, 0 )
 script = ExtResource( 15 )
-npc = "angler"
+npc = "boggle"
 
 [node name="Angler4" parent="." instance=ExtResource( 14 )]
 transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -13, 26, 0 )
 script = ExtResource( 15 )
-npc = "angler"
+npc = "boggle"
 
-[connection signal="body_entered" from="Death" to="Player" method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
 
 [editable path="GUI"]

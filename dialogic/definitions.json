@@ -4,26 +4,8 @@
 	],
 	"variables": [
 		{
-			"id": "1708994432-648",
-			"name": "cellar_spider_score",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1708980730-573",
 			"name": "unlock_hatch",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1708711763-648",
-			"name": "cow_score",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1708997325-787",
-			"name": "player_strength",
 			"type": 0,
 			"value": "0"
 		},
@@ -34,26 +16,26 @@
 			"value": "2"
 		},
 		{
-			"id": "1709064271-787",
-			"name": "hide_seek_win",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1709066220-648",
-			"name": "find_urn",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1724958660-163",
 			"name": "player_in_dialogic",
 			"type": 0,
 			"value": "false"
 		},
 		{
-			"id": "1719589019-648",
-			"name": "abyss_mask_score",
+			"id": "1734375136-554",
+			"name": "help_archdemon",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375505-557",
+			"name": "warp_points",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1708997325-787",
+			"name": "player_strength",
 			"type": 0,
 			"value": "0"
 		},
@@ -68,6 +50,114 @@
 			"name": "met_ajax",
 			"type": 0,
 			"value": "0"
+		},
+		{
+			"id": "1734375125-992",
+			"name": "help_angler",
+			"type": 0,
+			"value": ""
+		},
+		{
+			"id": "1709064271-787",
+			"name": "hide_seek_win",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375629-440",
+			"name": "the_star",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375145-285",
+			"name": "helped_archdemon",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375257-954",
+			"name": "help_myth",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734642546-648",
+			"name": "unlock_cheats",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1719589019-648",
+			"name": "abyss_mask_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375654-247",
+			"name": "boggle_wish",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1708994432-648",
+			"name": "cellar_spider_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734374643-421",
+			"name": "coldheart_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1708711763-648",
+			"name": "cow_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375294-731",
+			"name": "discover_saloon",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375282-364",
+			"name": "discover_keep",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375273-967",
+			"name": "discover_abyss",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375265-767",
+			"name": "find_tuna_steak",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1709066220-648",
+			"name": "find_urn",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375673-695",
+			"name": "help_boggle",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375612-267",
+			"name": "cow_derby_score",
+			"type": 0,
+			"value": "2"
 		}
 	]
 }

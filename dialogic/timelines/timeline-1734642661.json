@@ -1,0 +1,89 @@
+{
+	"events": [
+		{
+			"animation": "bouncing_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_spider.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "CONGRATS, HUMAN! YOU BEAT [color=#38f5bc]LAUGHINGSTOCK APOCALYPSE[/color]... [rainbow freq=1.0 sat=0.8 val=0.8]AGAIN[/rainbow]!\nYou unlocked a VERY POWERFUL secret cheat code!"
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ready for cheat code?"
+		},
+		{
+			"choice": "Yes!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Use this special cheat to magically REVEAL [color=#ffeb00]ALL CHEATS[/color]: [color=#aeffac]hbic4hire[/color]\nSo special! Human can reveal all cheats in menu or in-game."
+		},
+		{
+			"choice": "I don't cheat",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1704748369.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh well! We hope the human knows how to have fun?!\nGoodbye!!!!!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"change_scene": "res://src/gui/start_screen.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1734642661.json",
+		"name": "cheat_slide2"
+	}
+}

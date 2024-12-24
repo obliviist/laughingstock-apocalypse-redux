@@ -1,7 +1,6 @@
 extends Node2D
 
 func _ready():
-	
 	$AnimationPlayer.play("intro_fade_in")
 	yield(get_tree().create_timer(6), "timeout")
 	$AnimationPlayer.play("intro_fade_out")

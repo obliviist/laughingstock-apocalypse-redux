@@ -117,7 +117,7 @@ _global_script_class_icons={
 [application]
 
 config/name="LaughingstockApocalypseREDUX"
-run/main_scene="res://src/gui/start_screen.tscn"
+run/main_scene="res://src/gui/intro_slide1.tscn"
 config/icon="res://icon.png"
 config/macos_native_icon="res://icon.icns"
 

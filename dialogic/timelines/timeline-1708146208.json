@@ -27,7 +27,7 @@
 
 			],
 			"portrait": "",
-			"question": "Enter the cellar?"
+			"question": "Enter the Cellar?"
 		},
 		{
 			"choice": "Yes",
@@ -51,7 +51,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "There's an intruder in the [color=#0c5dd4]Styrofoam Cottage[/color]!\nWhat does the Spider want??"
+			"text": "There's an intruder in the [color=#01d691]Styrofoam Cottage[/color]!\nWhat does the Spider want??"
 		},
 		{
 			"event_id": "dialogic_013"

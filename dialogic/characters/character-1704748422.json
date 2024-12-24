@@ -8,7 +8,7 @@
 	"name": "Voyager",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 0,
+	"offset_x": 30,
 	"offset_y": 0,
 	"portraits": [
 		{
@@ -16,6 +16,6 @@
 			"path": "res://addons/dialogic/Assets/voyager_face.png"
 		}
 	],
-	"scale": 100,
+	"scale": 150,
 	"theme": ""
 }

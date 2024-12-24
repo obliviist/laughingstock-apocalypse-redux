@@ -1409,8 +1409,6 @@ environment = ExtResource( 6 )
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource( 17 )]
 transform = Transform( -0.973227, 0, -0.229846, 0, 1, 0, 0.229846, 0, -0.973227, -56.8556, 173.195, -167.703 )
-max_speed = 30
-gravity = -25
 
 [node name="BossDeath" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -34.5053, 0 )

@@ -1,0 +1,141 @@
+{
+	"events": [
+		{
+			"animation": "slide_in_right.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1727375578.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Ask the Imp:"
+		},
+		{
+			"choice": "Tuna Steak?",
+			"condition": ">=",
+			"definition": "1734375612-267",
+			"event_id": "dialogic_011",
+			"value": "2"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_starfish.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1727375578.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You tossed a few of Archdemon Boggle's [color=#ffc740]cow[/color] buddies outside the [color=#ff0000]Castle[/color] walls. \nThat was AWESOME! Here's that Tuna Steak you wanted! Sorry it's a little moldy..."
+		},
+		{
+			"definition": "1734375265-767",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"emit_signal": "hide_cow_derby_score",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "Tuna Steak?",
+			"condition": "<=",
+			"definition": "1734375612-267",
+			"event_id": "dialogic_011",
+			"value": "1"
+		},
+		{
+			"audio": "play",
+			"audio_bus": "Master",
+			"event_id": "dialogic_030",
+			"event_name": "AudioEvent",
+			"file": "res://src/sfx/one_shots/voice_starfish.wav",
+			"volume": 0
+		},
+		{
+			"character": "character-1727375578.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You mean my DINNER?! No, I'm not sharing... unless...\nI'm in a zany mood today so it's your lucky day!\nIf you show me your best [color=#ffc740]Cow Catapult[/color] skills...\nI'll trade you for the Tuna Steak. Deal?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Show The Imp your best [color=#ffc740]Cow Catapult[/color] skills?"
+		},
+		{
+			"choice": "I can do that!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1727375578.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "FAR OUT!!!!!! You just made my day.\nToss a bunch of Archdemon Boggle's cow buddies outside the [color=#ff0000]Castle[/color] walls.\nAt least two [color=#ffc740]Cow Catapults[/color] should provide enough entertainment.\nCome see me when you're done and I'll give you the Tuna Steak."
+		},
+		{
+			"emit_signal": "show_cow_derby_score",
+			"event_id": "dialogic_040"
+		},
+		{
+			"choice": "No way!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1727375578.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I should've known you'd be a bootlicker to Archdemon Boggle!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.5",
+		"file": "timeline-1734468751.json",
+		"name": "modelZ1"
+	}
+}

@@ -25,7 +25,7 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://src/sfx/one_shots/voice_spider.wav",
+			"file": "res://src/sfx/one_shots/voice_cellar_spider.wav",
 			"volume": 0
 		},
 		{
@@ -59,8 +59,8 @@
 		},
 		{
 			"choice": "Help me?",
-			"condition": "<=",
-			"definition": "",
+			"condition": "<",
+			"definition": "1708994432-648",
 			"event_id": "dialogic_011",
 			"value": "2"
 		},

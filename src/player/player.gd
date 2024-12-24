@@ -12,7 +12,6 @@ export var controller_sensitivity = 3
 
 export (int, 0, 10) var push = 1
 
-# hons hons
 var gravity_enabled := false
 var move_vec = Vector3.ZERO
 
@@ -42,14 +41,14 @@ var pull_power = 4
 var rotation_power = 0.05
 var locked = false
 
-
 func _ready():
+	
+	
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	GlobalSettings.connect("fov_updated", self, "_on_fov_updated")
 	GlobalSettings.connect("mouse_sens_updated", self, "_on_mouse_sens_updated")
 
-	
 func _unhandled_input(event):
 	if event.is_action_pressed("lclick"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -76,9 +75,6 @@ func remove_object():
 		joint.set_node_b(joint.get_path())
 		
 func _input(event):
-	
-	# this is the orig input check space
-	# WORKS HERE but... breaks throwables upon level slide load
 	
 	if Input.is_action_just_pressed("lclick"):
 		if picked_object == null:
@@ -194,15 +190,12 @@ func _process(delta):
 			$JumpPlayer.pitch_scale = rand_range(0.8, 1.2)
 			$JumpPlayer.play()
 			$Timer.start(0.8)
-		
 	
 	set_anim(target_dir)
 	
 func set_anim(dir):
 	if dir == Vector2(0, 0) and anim.current_animation != "vanya_idle":
 		anim.play("vanya_idle", 0.1)
-	
-		
 
 func get_input_vector():
 	var input_vector = Vector3.ZERO
@@ -228,15 +221,12 @@ func apply_friction(direction, delta):
 			velocity.x = velocity.move_toward(Vector3.ZERO, air_friction * delta).x
 			velocity.z = velocity.move_toward(Vector3.ZERO, air_friction * delta).z
 
-
 func apply_gravity(delta):
 	velocity.y += gravity * delta
 	velocity.y = clamp(velocity.y, gravity, jump_impulse)
 	
-	
 func update_snap_vector():
 	snap_vector = -get_floor_normal() if is_on_floor() else Vector3.DOWN
-	
 	
 func jump():
 	if Input.is_action_just_pressed("jump") and is_on_floor():
@@ -246,8 +236,6 @@ func jump():
 	if Input.is_action_just_released("jump") and velocity.y > jump_impulse / 2:
 		velocity.y = jump_impulse / 2
 		
-
-
 func apply_controller_rotation():
 	var axis_vector = Vector2.ZERO
 	axis_vector.x = Input.get_action_strength("look_right") - Input.get_action_strength("look_left")
@@ -262,6 +250,26 @@ func _on_Death_body_entered(body):
 		SimpleSave.save_scene(get_tree(), "res://save_slots/save_continue.tscn")
 		get_tree().change_scene("res://src/gui/continue_menu.tscn")
 		
+func _on_VoidDeath_body_entered(body):
+	if body.is_in_group("player"):
+		SimpleSave.save_scene(get_tree(), "res://save_slots/save_continue.tscn")
+		get_tree().change_scene("res://src/gui/world_void_slide.tscn")
+
+func _on_AbyssDeath_body_entered(body):
+	if body.is_in_group("player"):
+		SimpleSave.save_scene(get_tree(), "res://save_slots/save_continue.tscn")
+		get_tree().change_scene("res://src/gui/world_abyss_slide.tscn")
+
+func _on_BossDeath_body_entered(body):
+	if body.is_in_group("player"):
+		SimpleSave.save_scene(get_tree(), "res://save_slots/save_continue.tscn")
+		get_tree().change_scene("res://src/gui/world_4_slide.tscn")
+
+func _on_StarDeath_body_entered(body):
+	if body.is_in_group("player"):
+		SimpleSave.save_scene(get_tree(), "res://save_slots/save_continue.tscn")
+		get_tree().change_scene("res://src/gui/world_star_slide.tscn")
+
 func _on_fov_updated(value):
 	camera.fov = value
 
@@ -274,13 +282,11 @@ func update_interaction():
 	if Input.is_action_just_pressed("interact"):
 		$InteractArea/CollisionShape.disabled = false
 
-
 func _on_InteractArea_body_entered(body):
 	if body.is_in_group("NPC"):
 		body.start_dialog()
 	elif body.is_in_group("level_gate"):
 		body.start_level_request_dialog()
-	#the above code can be used to start dialog on load of another level
 	
 
 func _on_NoclipListener_cheat_activated():
@@ -378,3 +384,5 @@ func _on_DeactivateListener_cheat_activated():
 	noclip = false
 	$CollisionShape.disabled = false
 	fly = false
+
+

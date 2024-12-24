@@ -241,7 +241,6 @@ environment = ExtResource( 2 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 pitch_scale = 0.6
-autoplay = true
 bus = "Music"
 
 [node name="Camera" type="Camera" parent="."]

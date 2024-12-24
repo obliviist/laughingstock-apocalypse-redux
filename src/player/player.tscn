@@ -33,7 +33,9 @@ extents = Vector3( 0.244931, 0.32941, 0.288929 )
 pause_mode = 1
 collision_mask = 7
 script = ExtResource( 1 )
+max_speed = 30
 jump_impulse = 15
+gravity = -25
 
 [node name="vanya" parent="." instance=ExtResource( 5 )]
 transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0.5, 0.419118 )

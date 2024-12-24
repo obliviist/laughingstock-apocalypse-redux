@@ -8,20 +8,19 @@ signal brightness_updated(value)
 signal fov_updated(value)
 signal mouse_sens_updated(value)
 
-# golden: noclip | fly
 signal playerRefSet(ref)
 
-# golden: noclip | fly
 var playerRef : KinematicBody = null setget setPlayerRef, getPlayerRef
 var cameraRef : Camera = null setget setCameraRef, getCameraRef
 
-# cow score
 var cow_score = 0 setget set_cow_score
 
-# mask score
 var mask_score = 0 setget set_mask_score
 
-# below is var that will disable input
+var cow_derby_score = 0 setget set_cow_derby_score
+
+var coldheart_score = 100 setget set_coldheart_score
+
 var input_disabled = false
 
 func setPlayerRef(player : KinematicBody):
@@ -37,11 +36,12 @@ func setCameraRef(camera : Camera):
 	
 func getCameraRef():
 	return cameraRef
-# / goldenboi
 
 func reset():
 	self.score = 0
 	self.mask_score = 0
+	self.cow_derby_score = 0
+	self.coldheart_score = 100
 	
 func set_cow_score(new_cow_score: int) -> void:
 	cow_score = new_cow_score
@@ -49,6 +49,14 @@ func set_cow_score(new_cow_score: int) -> void:
 
 func set_mask_score(new_mask_score: int) -> void:
 	mask_score = new_mask_score
+	emit_signal("updated")
+
+func set_cow_derby_score(new_cow_derby_score: int) -> void:
+	cow_derby_score = new_cow_derby_score
+	emit_signal("updated")
+	
+func set_coldheart_score(new_coldheart_score: int) -> void:
+	coldheart_score = new_coldheart_score
 	emit_signal("updated")
 	
 func set_disable_input(value):
@@ -79,19 +87,16 @@ func set_max_fps(value):
 	Save.game_data.max_fps = Engine.target_fps if value < 500 else 500
 	Save.save_data()
 
-
 func toggle_bloom(value):
 	emit_signal("bloom_toggled", value)
 	Save.game_data.bloom_on = value
 	Save.save_data()
 
-
 func update_brightness(value):
 	emit_signal("brightness_updated", value)
 	Save.game_data.brightness = value
 	Save.save_data()
-
-# anything commented out can be removed once the master vol slider has been fixed
+	
 
 func update_master_vol(vol):
 	AudioServer.set_bus_volume_db(0, vol)

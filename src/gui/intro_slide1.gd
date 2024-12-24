@@ -2,7 +2,7 @@ extends Node2D
 
 func _ready():
 	$AnimationPlayer.play("intro_fade_in")
-	Sfx.stream = load("res://src/sfx/one_shots/cow_moo.wav")
+	Sfx.stream = load("res://src/sfx/one_shots/Synth-SpaceJazzUpwards.wav")
 	Sfx.play()
 	yield(get_tree().create_timer(4), "timeout")
 	$AnimationPlayer.play("intro_fade_out")

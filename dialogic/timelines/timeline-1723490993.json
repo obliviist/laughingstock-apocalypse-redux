@@ -32,7 +32,7 @@
 			"character": "character-1723488239.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "It's a good day to Taste The Ocean! We've got fresh meat from Dreamland!\nKeep out of the cold storage and buy fresh TODAY!"
+			"text": "It's a good day to [tornado radius=10.0 freq=1.0 connected=1]Taste The Ocean[/tornado]! We've got fresh meat from [rainbow freq=1.0 sat=0.8 val=0.8]Dreamland[/rainbow]!\nKeep out of the cold storage, [rainbow freq=1.0 sat=0.8 val=0.8]buy fresh TODAY[/rainbow]!"
 		},
 		{
 			"event_id": "dialogic_022",

@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/npcs_tscn/npc_graves.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/environment_tscn/cellar.tscn" type="PackedScene" id=3]
 [ext_resource path="res://environment/world_2_environment.tscn" type="PackedScene" id=4]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/player/player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/sfx/amb_loops/amb.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/environment_tscn/hatch_forth.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/environment_tscn/rock_void_var2.tscn" type="PackedScene" id=8]
@@ -74,8 +74,8 @@ script = ExtResource( 11 )
 [node name="WorldEnvironment" parent="." instance=ExtResource( 4 )]
 environment = ExtResource( 14 )
 
-[node name="Player" parent="." groups=["player"] instance=ExtResource( 5 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 17.7217, -0.815005 )
+[node name="Player" parent="." instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 14.3, 0 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 
@@ -344,7 +344,6 @@ script = null
 [node name="Angler" parent="." instance=ExtResource( 34 )]
 transform = Transform( -5.10815e-09, 0.992193, -0.12471, -1.01314e-08, 0.12471, 0.992193, 1, 6.33176e-09, 9.41531e-09, 66.7773, 22.2012, 14.5717 )
 
-[connection signal="body_entered" from="Death" to="Player" method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
 
 [editable path="GUI"]

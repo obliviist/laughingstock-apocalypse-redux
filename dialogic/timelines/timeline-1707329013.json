@@ -57,10 +57,6 @@
 			"text": "My thanks..."
 		},
 		{
-			"emit_signal": "show_ajax_maldoror",
-			"event_id": "dialogic_040"
-		},
-		{
 			"change_scene": "res://src/gui/world_void_slide.tscn",
 			"event_id": "dialogic_041"
 		},
@@ -75,7 +71,7 @@
 			"character": "character-1707329633.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Go swim with the spiders, chump!"
+			"text": "Go swim with the [color=#9effef]spiders[/color], chump!"
 		},
 		{
 			"event_id": "dialogic_013"

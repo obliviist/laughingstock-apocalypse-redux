@@ -29,12 +29,6 @@
 			"volume": 0
 		},
 		{
-			"event_id": "dialogic_015",
-			"id": "anchor-1730482759",
-			"index": 0,
-			"name": "ask_jenna1"
-		},
-		{
 			"character": "character-1704747799.json",
 			"event_id": "dialogic_010",
 			"options": [
@@ -55,10 +49,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Do me a favour and have a look around?\nI imagine the [color=#ffc740]cows[/color] haven't gotten far but be careful and don't wander too much!\nMaldoror doesn't leave the barn so that gives you a head start, at least.\nIf you need help with [color=#ffc740]cattle[/color] numbers, look for [color=#00e529]Niki[/color].\nYou know how much he loves to give names to each of them.\nI think Niki might be in the barn with Maldoror."
-		},
-		{
-			"anchor_id": "anchor-1730482759",
-			"event_id": "dialogic_016"
 		},
 		{
 			"choice": "Found Cows",

@@ -1,8 +1,7 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://player/player.gd" type="Script" id=1]
 [ext_resource path="res://player/interactRay.gd" type="Script" id=2]
-[ext_resource path="res://player/crosshair.png" type="Texture" id=3]
 [ext_resource path="res://src/gui/def_oswald_dynamicfont.tres" type="DynamicFont" id=4]
 [ext_resource path="res://player/vanya.tscn" type="PackedScene" id=5]
 [ext_resource path="res://player/player_anim/vanya_walk.tres" type="Animation" id=6]
@@ -28,7 +27,7 @@ extents = Vector3( 0.244931, 0.32941, 0.288929 )
 [node name="Player" type="KinematicBody"]
 collision_mask = 7
 script = ExtResource( 1 )
-jump_impulse = 15
+acceleration = 65
 
 [node name="vanya" parent="." instance=ExtResource( 5 )]
 transform = Transform( -1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0.5, 0.419118 )
@@ -122,7 +121,6 @@ margin_top = 300.0
 margin_right = 512.0
 margin_bottom = 300.0
 mouse_filter = 2
-texture = ExtResource( 3 )
 expand = true
 stretch_mode = 4
 

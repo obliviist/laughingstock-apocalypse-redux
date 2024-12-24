@@ -132,7 +132,7 @@ tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.49012e-08, -7.10543e-15, 1.05879
 [node name="World_Keep" type="Spatial"]
 script = ExtResource( 3 )
 
-[node name="Player" parent="." instance=ExtResource( 7 )]
+[node name="Player" parent="." groups=["player"] instance=ExtResource( 7 )]
 transform = Transform( 0.658194, 0, 0.238288, 0, 0.7, 0, -0.238288, 0, 0.658194, 21.1058, 0.604811, 38.4333 )
 max_speed = 20
 
@@ -321,7 +321,7 @@ gate = "saloon"
 [node name="Angler" parent="." instance=ExtResource( 13 )]
 transform = Transform( -0.299995, 0, 0.00169126, 0, 0.3, 0, -0.00169126, 0, -0.299995, 36.8599, 1.98779, -10.7151 )
 script = ExtResource( 46 )
-npc = "angler"
+npc = "boggle"
 dialog_index = 1
 
 [node name="SmallCow1" parent="." instance=ExtResource( 28 )]
@@ -437,6 +437,7 @@ transform = Transform( -0.390566, 0, 0.788854, 0, 0.769031, 0, -0.726514, 0, -0.
 [node name="Terrain_Var6" parent="." instance=ExtResource( 49 )]
 transform = Transform( -0.995565, 0, 0.0940736, 0, 1, 0, -0.0940736, 0, -0.995565, -48.2585, 1.0145, -2.69569 )
 
+[connection signal="body_entered" from="Death" to="Player" method="_on_Death_body_entered"]
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
 
 [editable path="Player"]

@@ -1,6 +1,6 @@
 extends Label
 
-onready var coldheart_score = Dialogic.get_variable("coldheart_score") 
+onready var coldheart_score = Dialogic.get_variable("coldheart_score")
 
 func _process(delta):
 	self.text = str(GlobalSettings.coldheart_score)
@@ -10,7 +10,6 @@ func _on_Score_body_entered(body):
 			$Sfx.stream = load("res://src/sfx/one_shots/voice_coldheart_hit.wav")
 			$Sfx.play()
 			GlobalSettings.coldheart_score -= 18
-			body.remove_from_group("score")
 			
 			if GlobalSettings.coldheart_score == 100:
 				Dialogic.set_variable("coldheart_score", 82)
@@ -25,5 +24,6 @@ func _on_Score_body_entered(body):
 			if GlobalSettings.coldheart_score == 10:
 				Dialogic.set_variable("coldheart_score", -8)
 			if GlobalSettings.coldheart_score == -8:
+				Dialogic.set_variable("coldheart_score", 100)
 				get_tree().change_scene("res://src/cams/ending_coldheart_1.tscn")
 

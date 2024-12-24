@@ -2,10 +2,10 @@
 	"events": [
 		{
 			"animation": "bouncing_in.gd",
-			"animation_length": 1,
+			"animation_length": 0,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
-			"character": "character-1729279474.json",
+			"character": "character-1708983634.json",
 			"event_id": "dialogic_002",
 			"mirror_portrait": false,
 			"portrait": "Default",
@@ -25,14 +25,14 @@
 			"audio_bus": "Master",
 			"event_id": "dialogic_030",
 			"event_name": "AudioEvent",
-			"file": "res://src/sfx/one_shots/voice_angler1.wav",
+			"file": "res://src/sfx/one_shots/voice_cellar_spider.wav",
 			"volume": 0
 		},
 		{
-			"character": "character-1729279474.json",
+			"character": "character-1708983634.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Very clever but you are OUT OF BOUNDS!!!"
+			"text": "[shake rate=20.0 level=5 connected=1]Who are all these extra chairs for?![/shake]\nWRONG!!!! Are you crazy?! \nWe are NOT playing Hide & Seek. Keep looking!!!"
 		},
 		{
 			"event_id": "dialogic_022",
@@ -41,7 +41,7 @@
 	],
 	"metadata": {
 		"dialogic-version": "1.5",
-		"file": "timeline-1729279425.json",
-		"name": "angler0"
+		"file": "timeline-1734454227.json",
+		"name": "cellar_spider1"
 	}
 }

@@ -35,6 +35,14 @@
 			"text": "You ready to annoy an Archdemon, VC?\nThis is gonna be a piece of cake! Our cows and our [color=#08ff00]new demon friends[/color] will help us.\nThrow a [color=#ffc740]cow[/color] or [color=#08ff00]demon[/color] at Archdemon Coldheart until she gets tired of dancing!"
 		},
 		{
+			"definition": "1734374643-421",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "100"
+		},
+		{
 			"emit_signal": "show_coldheart_score",
 			"event_id": "dialogic_040"
 		},

@@ -156,6 +156,7 @@ autoplay = "ajax_idle"
 
 [node name="Maldoror" parent="." instance=ExtResource( 30 )]
 transform = Transform( 0.925757, -0.34349, -0.158078, 0.028904, 0.481127, -0.876174, 0.377012, 0.806556, 0.455335, 3.53931, 14.9794, -5.59749 )
+npc = "maldoror"
 
 [connection signal="body_entered" from="Score" to="GameScore" method="_on_Score_body_entered"]
 

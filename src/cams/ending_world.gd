@@ -1,6 +1,7 @@
 extends Spatial
 
 onready var tracking_shot_anim = get_node("Camera/AnimationPlayer")
+onready var hidden_friends = get_node("HiddenFriends")
 
 func _ready():
 	Amb.stop()
@@ -11,7 +12,6 @@ func _ready():
 	new_dialog.connect("dialogic_signal", self, "dialog_listener")
 	add_child(new_dialog)
 	new_dialog.connect("timeline_end", self, "end_dialog")
-	
 
 func end_dialog():
 	get_tree().paused = false
@@ -23,4 +23,6 @@ func dialog_listener(string):
 		"tracking_shot":
 			tracking_shot_anim.play("cams_tracking_shot")
 			# using: 0.25 easing for first frame of anim to prevent jolt
+		"hidden_friends":
+			hidden_friends.visible = true
 	

@@ -19,8 +19,7 @@ func _on_ContinueBtn_pressed():
 	Sfx.stream = load("res://src/sfx/one_shots/Synth-RolandishLo.wav")
 	Sfx.play()
 	Music.stop()
-	get_tree().change_scene("res://levels/world_4.tscn")
-	# the above scene change should be the world 4 slide
+	get_tree().change_scene("res://src/gui/world_4_slide.tscn")
 	
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

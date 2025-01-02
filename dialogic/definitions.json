@@ -64,12 +64,6 @@
 			"value": "0"
 		},
 		{
-			"id": "1734375629-440",
-			"name": "the_star",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1734375145-285",
 			"name": "helped_archdemon",
 			"type": 0,
@@ -78,12 +72,6 @@
 		{
 			"id": "1734375257-954",
 			"name": "help_myth",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1734642546-648",
-			"name": "unlock_cheats",
 			"type": 0,
 			"value": "0"
 		},
@@ -106,12 +94,6 @@
 			"value": "0"
 		},
 		{
-			"id": "1734374643-421",
-			"name": "coldheart_score",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1708711763-648",
 			"name": "cow_score",
 			"type": 0,
@@ -124,8 +106,20 @@
 			"value": "0"
 		},
 		{
-			"id": "1734375282-364",
-			"name": "discover_keep",
+			"id": "1734375612-267",
+			"name": "cow_derby_score",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375629-440",
+			"name": "the_star",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734642546-648",
+			"name": "unlock_cheats",
 			"type": 0,
 			"value": "0"
 		},
@@ -136,14 +130,26 @@
 			"value": "0"
 		},
 		{
-			"id": "1734375265-767",
-			"name": "find_tuna_steak",
+			"id": "1734375282-364",
+			"name": "discover_keep",
 			"type": 0,
 			"value": "0"
 		},
 		{
-			"id": "1709066220-648",
-			"name": "find_urn",
+			"id": "1734374643-421",
+			"name": "coldheart_score",
+			"type": 0,
+			"value": "100"
+		},
+		{
+			"id": "1735594186-648",
+			"name": "discover_dance",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1734375265-767",
+			"name": "find_tuna_steak",
 			"type": 0,
 			"value": "0"
 		},
@@ -154,10 +160,10 @@
 			"value": "0"
 		},
 		{
-			"id": "1734375612-267",
-			"name": "cow_derby_score",
+			"id": "1709066220-648",
+			"name": "find_urn",
 			"type": 0,
-			"value": "2"
+			"value": "0"
 		}
 	]
 }

@@ -24,6 +24,6 @@ func _on_Score_body_entered(body):
 			if GlobalSettings.coldheart_score == 10:
 				Dialogic.set_variable("coldheart_score", -8)
 			if GlobalSettings.coldheart_score == -8:
-				Dialogic.set_variable("coldheart_score", 100)
+				GlobalSettings.set_coldheart_score(100)
 				get_tree().change_scene("res://src/cams/ending_coldheart_1.tscn")
-
+			# turns out it was the set_coldheart_score this whole time <3 luvvv
